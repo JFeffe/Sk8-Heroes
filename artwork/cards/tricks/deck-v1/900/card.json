@@ -42,9 +42,9 @@
   "rule": "Deux paires distinctes · 4, 5 ou 6",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/900/01-illustration.webp?v=8d6bf0c87bf0",
-    "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
-    "information": "assets/tricks/900/03-textes-symboles.webp?v=cf8bf6166b27"
+    "illustration": "assets/tricks/900/01-illustration.webp?v=96ca1782c9be",
+    "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
+    "information": "assets/tricks/900/03-textes-symboles.webp?v=77cf67aa9d4d"
   },
   "printedPoints": 16,
   "p": 0.12281378600823045,
@@ -77,8 +77,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

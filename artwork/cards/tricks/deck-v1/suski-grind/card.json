@@ -24,9 +24,9 @@
     "type": "adjust"
   },
   "layers": {
-    "illustration": "assets/tricks/suski-grind/01-illustration.webp?v=b68568c95848",
-    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-    "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=88ae17c49c63"
+    "illustration": "assets/tricks/suski-grind/01-illustration.webp?v=0ffd60a7f98e",
+    "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
+    "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=1ef8e8f75c4e"
   },
   "printedPoints": 7,
   "p": 0.6488340192043895,
@@ -47,8 +47,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

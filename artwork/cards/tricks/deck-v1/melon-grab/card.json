@@ -38,9 +38,9 @@
   "rule": "Un dé ≤ 2 et un dé ≥ 5",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/melon-grab/01-illustration.webp?v=a81bac30230a",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/melon-grab/03-textes-symboles.webp?v=cfb2f633bfa0"
+    "illustration": "assets/tricks/melon-grab/01-illustration.webp?v=292cd6cfc9cf",
+    "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+    "information": "assets/tricks/melon-grab/03-textes-symboles.webp?v=bdbc904cd3a9"
   },
   "printedPoints": 5,
   "p": 0.8257887517146777,
@@ -61,8 +61,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

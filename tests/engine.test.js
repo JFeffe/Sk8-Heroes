@@ -61,7 +61,7 @@ test('save/resume preserves active card, pending dice, locks and spent bonus',()
 });
 test('module progression keeps best of two, awards PV once, then reward and draft',()=>{
  const s=ready();land(s,1,[1,1,3,4,5,6]);E.stop(s);E.proceed(s);E.pass(s);E.proceed(s);
- assert.equal(s.phase,'reward');assert.equal(s.pv,2);assert.equal(s.history[0].best,9);assert.equal(s.history[0].total,9);
+ assert.equal(s.phase,'reward');assert.equal(s.pv,2);assert.equal(s.history[0].best,9);assert.equal(Object.hasOwn(s.history[0],'total'),false);
  assert(!E.proceed(s));assert(!E.addBonus(s,'boost'));assert(E.claim(s,'reroll',rng));assert.equal(s.bank.adjust+s.bank.reroll,3);
  const n=s.hand.length;assert(E.choose(s,s.offer[0],rng));assert.equal(s.hand.length,n+1);assert.equal(s.module,1);assert.equal(s.phase,'select');assert.equal(s.attempts.length,0);
 });

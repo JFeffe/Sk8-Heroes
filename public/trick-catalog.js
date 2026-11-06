@@ -23,9 +23,9 @@ export const TRICKS=[
     "rule": "Deux dés ≥ 2",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/ollie/01-illustration.webp?v=6952a6873a83",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/ollie/03-textes-symboles.webp?v=1f7dfb4837e1"
+      "illustration": "assets/tricks/ollie/01-illustration.webp?v=58cab4ab4fe3",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/ollie/03-textes-symboles.webp?v=5d997594676a"
     }
   },
   {
@@ -79,9 +79,9 @@ export const TRICKS=[
       "type": "adjust"
     },
     "layers": {
-      "illustration": "assets/tricks/nollie/01-illustration.webp?v=38109aa8f042",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/nollie/03-textes-symboles.webp?v=edd470042023"
+      "illustration": "assets/tricks/nollie/01-illustration.webp?v=15f62ba28905",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/nollie/03-textes-symboles.webp?v=a957484ad02f"
     }
   },
   {
@@ -148,9 +148,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/pop-shuvit/01-illustration.webp?v=1da47ac4f47e",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=d0fae62269e3"
+      "illustration": "assets/tricks/pop-shuvit/01-illustration.webp?v=81bd27a3b9e9",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=1e53740b412b"
     }
   },
   {
@@ -205,9 +205,9 @@ export const TRICKS=[
     "rule": "Écart ≥ 2 · au moins un impair",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/frontside-180/01-illustration.webp?v=fb455dfb3a6c",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=cc90e7000517"
+      "illustration": "assets/tricks/frontside-180/01-illustration.webp?v=2730b3989318",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=3482e4cda643"
     }
   },
   {
@@ -235,9 +235,9 @@ export const TRICKS=[
       "type": "freeze"
     },
     "layers": {
-      "illustration": "assets/tricks/heelflip/01-illustration.webp?v=5acb3db8b329",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/heelflip/03-textes-symboles.webp?v=b86eef16943e"
+      "illustration": "assets/tricks/heelflip/01-illustration.webp?v=41f1f0679757",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/heelflip/03-textes-symboles.webp?v=09456c276f9c"
     }
   },
   {
@@ -263,9 +263,9 @@ export const TRICKS=[
     "rule": "Deux dés ≥ 4",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/kickflip/01-illustration.webp?v=0cda534e7a7c",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/kickflip/03-textes-symboles.webp?v=c2621e2bc4dc"
+      "illustration": "assets/tricks/kickflip/01-illustration.webp?v=2e093ff87df0",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/kickflip/03-textes-symboles.webp?v=3481ecdf842b"
     }
   },
   {
@@ -308,9 +308,9 @@ export const TRICKS=[
     "rule": "Un dé ≤ 2 et un dé ≥ 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/varial-kickflip/01-illustration.webp?v=0daea3056c48",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/varial-kickflip/03-textes-symboles.webp?v=68f0fa284a14"
+      "illustration": "assets/tricks/varial-kickflip/01-illustration.webp?v=1f5ca0720969",
+      "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+      "information": "assets/tricks/varial-kickflip/03-textes-symboles.webp?v=ccfba2e8f001"
     }
   },
   {
@@ -353,9 +353,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/frontside-flip/01-illustration.webp?v=0a9026d088ce",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/frontside-flip/03-textes-symboles.webp?v=101e748e98df"
+      "illustration": "assets/tricks/frontside-flip/01-illustration.webp?v=bc62e272808e",
+      "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
+      "information": "assets/tricks/frontside-flip/03-textes-symboles.webp?v=49cb2571967d"
     }
   },
   {
@@ -426,9 +426,9 @@ export const TRICKS=[
       "type": "adjust"
     },
     "layers": {
-      "illustration": "assets/tricks/backside-flip/01-illustration.webp?v=ca94f3cf907d",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/backside-flip/03-textes-symboles.webp?v=94ed652f7406"
+      "illustration": "assets/tricks/backside-flip/01-illustration.webp?v=a288b7be06af",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/backside-flip/03-textes-symboles.webp?v=c2a14c820d5f"
     }
   },
   {
@@ -510,9 +510,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/varial-heelflip/01-illustration.webp?v=f9dc12e84a1e",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=bccb7d8b0c5f"
+      "illustration": "assets/tricks/varial-heelflip/01-illustration.webp?v=c949cdcd3e27",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=2e3829279ea1"
     }
   },
   {
@@ -541,9 +541,9 @@ export const TRICKS=[
       "type": "reroll"
     },
     "layers": {
-      "illustration": "assets/tricks/bigspin/01-illustration.webp?v=605a7e4d5da1",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/bigspin/03-textes-symboles.webp?v=8b2a52d3fff6"
+      "illustration": "assets/tricks/bigspin/01-illustration.webp?v=f70bb80ab7da",
+      "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
+      "information": "assets/tricks/bigspin/03-textes-symboles.webp?v=bd983fd03938"
     }
   },
   {
@@ -573,9 +573,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/inward-heelflip/01-illustration.webp?v=eb4349c721df",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/inward-heelflip/03-textes-symboles.webp?v=98cc7cd43cdf"
+      "illustration": "assets/tricks/inward-heelflip/01-illustration.webp?v=ac857cd4cdd4",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/inward-heelflip/03-textes-symboles.webp?v=472b111e5939"
     }
   },
   {
@@ -604,9 +604,9 @@ export const TRICKS=[
     "rule": "Un 3 et un 6",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/hardflip/01-illustration.webp?v=651a3f9bd9b5",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=42d823e263a7"
+      "illustration": "assets/tricks/hardflip/01-illustration.webp?v=8d56e305e4a8",
+      "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+      "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=4c06951b0587"
     }
   },
   {
@@ -635,9 +635,9 @@ export const TRICKS=[
     "rule": "Deux 4",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/360-flip/01-illustration.webp?v=664891a132b8",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=5a2f3e187dd2"
+      "illustration": "assets/tricks/360-flip/01-illustration.webp?v=c1765df7d67e",
+      "graphics": "assets/tricks/frames/epic-2-plain.svg?v=d46e18e069c9",
+      "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=f0dccd6bad58"
     }
   },
   {
@@ -668,9 +668,9 @@ export const TRICKS=[
     "rule": "Deux 4 et un 6",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/laser-flip/01-illustration.webp?v=9cf4407b86e0",
-      "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-      "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=e0643bc75e9f"
+      "illustration": "assets/tricks/laser-flip/01-illustration.webp?v=e5bb72263e80",
+      "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+      "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=7f005e4a7e2e"
     }
   },
   {
@@ -701,9 +701,9 @@ export const TRICKS=[
     "rule": "Trois 6",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/impossible/01-illustration.webp?v=93d26bec1c0c",
-      "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-      "information": "assets/tricks/impossible/03-textes-symboles.webp?v=01fa9b626f38"
+      "illustration": "assets/tricks/impossible/01-illustration.webp?v=ee13847a47c2",
+      "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+      "information": "assets/tricks/impossible/03-textes-symboles.webp?v=452c79059e99"
     }
   },
   {
@@ -729,9 +729,9 @@ export const TRICKS=[
     "rule": "Deux dés ≤ 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/50-50-grind/01-illustration.webp?v=997738d9cf7c",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/50-50-grind/03-textes-symboles.webp?v=8a5cb2518eda"
+      "illustration": "assets/tricks/50-50-grind/01-illustration.webp?v=c4cbe598393c",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/50-50-grind/03-textes-symboles.webp?v=f57107eff333"
     }
   },
   {
@@ -798,9 +798,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/boardslide/01-illustration.webp?v=e41130500178",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/boardslide/03-textes-symboles.webp?v=0336f12cf46b"
+      "illustration": "assets/tricks/boardslide/01-illustration.webp?v=89b4cf25e26e",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/boardslide/03-textes-symboles.webp?v=b61013b27722"
     }
   },
   {
@@ -828,9 +828,9 @@ export const TRICKS=[
       "type": "reroll"
     },
     "layers": {
-      "illustration": "assets/tricks/lipslide/01-illustration.webp?v=c15f0d0055a5",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/lipslide/03-textes-symboles.webp?v=385a20453a89"
+      "illustration": "assets/tricks/lipslide/01-illustration.webp?v=299a356ff7b6",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/lipslide/03-textes-symboles.webp?v=648b5c42e471"
     }
   },
   {
@@ -884,9 +884,9 @@ export const TRICKS=[
       "type": "freeze"
     },
     "layers": {
-      "illustration": "assets/tricks/tailslide/01-illustration.webp?v=af8e53447d02",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=e30b29a955fd"
+      "illustration": "assets/tricks/tailslide/01-illustration.webp?v=ebf04eac1d19",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=f2b31060c329"
     }
   },
   {
@@ -937,9 +937,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/noseslide/01-illustration.webp?v=e67bbbbb7043",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/noseslide/03-textes-symboles.webp?v=a39d183e0538"
+      "illustration": "assets/tricks/noseslide/01-illustration.webp?v=3c8c6ee57312",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/noseslide/03-textes-symboles.webp?v=59f77feb0fc3"
     }
   },
   {
@@ -982,9 +982,9 @@ export const TRICKS=[
     "rule": "Deux valeurs d’écart 2",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/nosegrind/01-illustration.webp?v=a9abd411481b",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=f76a69163b47"
+      "illustration": "assets/tricks/nosegrind/01-illustration.webp?v=858881e06ee1",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=4263fb47719e"
     }
   },
   {
@@ -1027,9 +1027,9 @@ export const TRICKS=[
     "rule": "Un dé ≤ 2 et un dé ≥ 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/5-0-grind/01-illustration.webp?v=91307371cc90",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/5-0-grind/03-textes-symboles.webp?v=b5759cba14eb"
+      "illustration": "assets/tricks/5-0-grind/01-illustration.webp?v=c02b032dc4e1",
+      "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+      "information": "assets/tricks/5-0-grind/03-textes-symboles.webp?v=4afbaaedc759"
     }
   },
   {
@@ -1072,9 +1072,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/crooked-grind/01-illustration.webp?v=dc25e65afa04",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/crooked-grind/03-textes-symboles.webp?v=56a99064a459"
+      "illustration": "assets/tricks/crooked-grind/01-illustration.webp?v=78b4c5288bab",
+      "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
+      "information": "assets/tricks/crooked-grind/03-textes-symboles.webp?v=6525c56810be"
     }
   },
   {
@@ -1145,9 +1145,9 @@ export const TRICKS=[
       "type": "reroll"
     },
     "layers": {
-      "illustration": "assets/tricks/feeble-grind/01-illustration.webp?v=c4bf13485b39",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/feeble-grind/03-textes-symboles.webp?v=7a63c2aeec08"
+      "illustration": "assets/tricks/feeble-grind/01-illustration.webp?v=a42884878a97",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/feeble-grind/03-textes-symboles.webp?v=4e6e35e386ae"
     }
   },
   {
@@ -1229,9 +1229,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/smith-grind/01-illustration.webp?v=0b0efa7e807d",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=f0bb9dd24360"
+      "illustration": "assets/tricks/smith-grind/01-illustration.webp?v=f83f9b661508",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=4d1dd21ea75c"
     }
   },
   {
@@ -1260,9 +1260,9 @@ export const TRICKS=[
       "type": "adjust"
     },
     "layers": {
-      "illustration": "assets/tricks/suski-grind/01-illustration.webp?v=b68568c95848",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=88ae17c49c63"
+      "illustration": "assets/tricks/suski-grind/01-illustration.webp?v=0ffd60a7f98e",
+      "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
+      "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=1ef8e8f75c4e"
     }
   },
   {
@@ -1292,9 +1292,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/salad-grind/01-illustration.webp?v=cdcd506255e6",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/salad-grind/03-textes-symboles.webp?v=a145214fb691"
+      "illustration": "assets/tricks/salad-grind/01-illustration.webp?v=90adee3f01bc",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/salad-grind/03-textes-symboles.webp?v=836716b7a010"
     }
   },
   {
@@ -1323,9 +1323,9 @@ export const TRICKS=[
     "rule": "Un 2 et un 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/overcrook/01-illustration.webp?v=bd24bc152fba",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/overcrook/03-textes-symboles.webp?v=e8d78c200b5e"
+      "illustration": "assets/tricks/overcrook/01-illustration.webp?v=d1364f933c51",
+      "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+      "information": "assets/tricks/overcrook/03-textes-symboles.webp?v=cfb93040fee1"
     }
   },
   {
@@ -1352,9 +1352,9 @@ export const TRICKS=[
     "rule": "Trois dés ≥ 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/bluntslide/01-illustration.webp?v=d79eca7e98c6",
-      "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-      "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=e71dd327eab3"
+      "illustration": "assets/tricks/bluntslide/01-illustration.webp?v=165f5d5273a0",
+      "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+      "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=b1b606c0029a"
     }
   },
   {
@@ -1385,9 +1385,9 @@ export const TRICKS=[
     "rule": "Un 3 et deux 6",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/nosebluntslide/01-illustration.webp?v=dfc4127c72e0",
-      "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-      "information": "assets/tricks/nosebluntslide/03-textes-symboles.webp?v=c179d6455c1b"
+      "illustration": "assets/tricks/nosebluntslide/01-illustration.webp?v=68acc655c333",
+      "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+      "information": "assets/tricks/nosebluntslide/03-textes-symboles.webp?v=8dacdc62d98d"
     }
   },
   {
@@ -1420,9 +1420,9 @@ export const TRICKS=[
     "rule": "Un 2, un 3, un 4 et un 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/hurricane/01-illustration.webp?v=f54f6dcdf276",
-      "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
-      "information": "assets/tricks/hurricane/03-textes-symboles.webp?v=c97a15c9b407"
+      "illustration": "assets/tricks/hurricane/01-illustration.webp?v=d8139c3f2c37",
+      "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
+      "information": "assets/tricks/hurricane/03-textes-symboles.webp?v=544f176e6533"
     }
   },
   {
@@ -1448,9 +1448,9 @@ export const TRICKS=[
     "rule": "Deux dés ≤ 4",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/180/01-illustration.webp?v=642f4bf3a203",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/180/03-textes-symboles.webp?v=2e212bfbb880"
+      "illustration": "assets/tricks/180/01-illustration.webp?v=a837b736df06",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/180/03-textes-symboles.webp?v=02b23eccb2ad"
     }
   },
   {
@@ -1517,9 +1517,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/indy-grab/01-illustration.webp?v=45c97094dafd",
-      "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-      "information": "assets/tricks/indy-grab/03-textes-symboles.webp?v=3e5a4b62e32b"
+      "illustration": "assets/tricks/indy-grab/01-illustration.webp?v=09446090a9a7",
+      "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+      "information": "assets/tricks/indy-grab/03-textes-symboles.webp?v=f47d61330e29"
     }
   },
   {
@@ -1558,9 +1558,9 @@ export const TRICKS=[
     "rule": "Deux valeurs d’écart 3",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/360/01-illustration.webp?v=209fe43e3586",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/360/03-textes-symboles.webp?v=2e8fcc35951b"
+      "illustration": "assets/tricks/360/01-illustration.webp?v=dd17a165e256",
+      "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+      "information": "assets/tricks/360/03-textes-symboles.webp?v=a4e738bcd4c4"
     }
   },
   {
@@ -1603,9 +1603,9 @@ export const TRICKS=[
     "rule": "Un dé ≤ 2 et un dé ≥ 5",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/melon-grab/01-illustration.webp?v=a81bac30230a",
-      "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-      "information": "assets/tricks/melon-grab/03-textes-symboles.webp?v=cfb2f633bfa0"
+      "illustration": "assets/tricks/melon-grab/01-illustration.webp?v=292cd6cfc9cf",
+      "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+      "information": "assets/tricks/melon-grab/03-textes-symboles.webp?v=bdbc904cd3a9"
     }
   },
   {
@@ -1676,9 +1676,9 @@ export const TRICKS=[
       "type": "reroll"
     },
     "layers": {
-      "illustration": "assets/tricks/stalefish/01-illustration.webp?v=ea88b1391dc3",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/stalefish/03-textes-symboles.webp?v=8a33092074b1"
+      "illustration": "assets/tricks/stalefish/01-illustration.webp?v=18d1e2d00432",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/stalefish/03-textes-symboles.webp?v=6351004d41c9"
     }
   },
   {
@@ -1708,9 +1708,9 @@ export const TRICKS=[
       "points": 1
     },
     "layers": {
-      "illustration": "assets/tricks/540/01-illustration.webp?v=b4e50e93c05d",
-      "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-      "information": "assets/tricks/540/03-textes-symboles.webp?v=802602238726"
+      "illustration": "assets/tricks/540/01-illustration.webp?v=3b34ef010de2",
+      "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+      "information": "assets/tricks/540/03-textes-symboles.webp?v=8c85f0e82f1c"
     }
   },
   {
@@ -1748,9 +1748,9 @@ export const TRICKS=[
     "rule": "1·3·5 ou 2·4·6",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/720/01-illustration.webp?v=42d6c3d9537c",
-      "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-      "information": "assets/tricks/720/03-textes-symboles.webp?v=9e951443ed88"
+      "illustration": "assets/tricks/720/01-illustration.webp?v=08353636f5c0",
+      "graphics": "assets/tricks/frames/advanced-3-plain.svg?v=9b1769042b51",
+      "information": "assets/tricks/720/03-textes-symboles.webp?v=0422d4fd2118"
     }
   },
   {
@@ -1797,9 +1797,9 @@ export const TRICKS=[
     "rule": "Deux paires distinctes · 4, 5 ou 6",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/900/01-illustration.webp?v=8d6bf0c87bf0",
-      "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
-      "information": "assets/tricks/900/03-textes-symboles.webp?v=cf8bf6166b27"
+      "illustration": "assets/tricks/900/01-illustration.webp?v=96ca1782c9be",
+      "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
+      "information": "assets/tricks/900/03-textes-symboles.webp?v=77cf67aa9d4d"
     }
   },
   {
@@ -1864,9 +1864,9 @@ export const TRICKS=[
     "rule": "Quatre dés identiques",
     "comboBonus": null,
     "layers": {
-      "illustration": "assets/tricks/1080/01-illustration.webp?v=8c1a6364aeed",
-      "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
-      "information": "assets/tricks/1080/03-textes-symboles.webp?v=195b382b2eea"
+      "illustration": "assets/tricks/1080/01-illustration.webp?v=67a031a14446",
+      "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
+      "information": "assets/tricks/1080/03-textes-symboles.webp?v=3ed2feca6734"
     }
   }
 ];

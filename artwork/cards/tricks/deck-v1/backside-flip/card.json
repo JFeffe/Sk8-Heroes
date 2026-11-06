@@ -66,9 +66,9 @@
     "type": "adjust"
   },
   "layers": {
-    "illustration": "assets/tricks/backside-flip/01-illustration.webp?v=ca94f3cf907d",
-    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-    "information": "assets/tricks/backside-flip/03-textes-symboles.webp?v=94ed652f7406"
+    "illustration": "assets/tricks/backside-flip/01-illustration.webp?v=a288b7be06af",
+    "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+    "information": "assets/tricks/backside-flip/03-textes-symboles.webp?v=c2a14c820d5f"
   },
   "printedPoints": 8,
   "p": 0.7407407407407407,
@@ -95,8 +95,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

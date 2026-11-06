@@ -1,5 +1,33 @@
-export const APP_VERSION='0.5.5';
-export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-04',changes:[
+export const APP_VERSION='0.6.3';
+export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-06',changes:[
+ 'Sol possède Réserve renforcée : en Avancé, sa capacité passe à 4 jetons ±1. Relance et gel restent limités à 3.',
+ 'Ce pouvoir est passif pendant toute la partie. La correction gratuite est supprimée ; les NPC utilisent la nouvelle capacité au draft et aux récompenses.',
+ 'Carte, repère de spécialité et compteurs mis à jour. Nouvelle partie nécessaire.'
+]},{version:'0.6.2',date:'2026-11-06',changes:[
+ 'Sol possède Réglage précis : un ±1 gratuit sur un dé disponible après le lancer, une fois par module entre les deux essais.',
+ 'Les NPC choisissent la carte signature de Jade selon les séquences du module, les dés restants et le meilleur score à dépasser. Ils anticipent la récupération d’une carte au premier essai.',
+ 'Les NPC prévoient la correction gratuite de Sol et peuvent la combiner avec un jeton ordinaire. Carte et jeton imprimables mis à jour ; nouvelle partie nécessaire.'
+]},{version:'0.6.1',date:'2026-11-06',changes:[
+ 'Jade possède désormais Trick signature : une fois par module, elle peut reprendre une carte du premier essai encaissé pour la rejouer au deuxième.',
+ 'Le score et les dés du premier essai restent archivés. La carte doit être réussie à nouveau ; son éventuel jeton de fin de module est attribué une seule fois.',
+ 'La carte avancée et les deux faces du jeton de Jade sont mises à jour. Nouvelle partie nécessaire pour utiliser ces règles.'
+]},{version:'0.6.0',date:'2026-11-06',changes:[
+ 'Choisis Base ou Avancé au début de la partie, en local ou en ligne. En Avancé, chaque skater possède sa spécialité.',
+ 'Troc, Dé porte-bonheur, Main sur mesure, Double réglage, Bon rythme et Rebond : une utilisation par module, partagée entre les deux essais.',
+ 'Les cartes skaters avancées expliquent leur pouvoir. Un jeton couleur devient noir et blanc après utilisation et se réactive au module suivant.'
+]},{version:'0.5.8',date:'2026-11-06',changes:[
+ 'Le Coping Bleu et Les Marches des Palmiers passent à 4 trophées. Le parcours tire deux modules de chaque niveau parmi quatre cartes.',
+ 'Un draft Épique précède chacun des modules 5 et 6. Les 85 cartes suffisent pour quatre joueurs, avec un maximum de deux Épiques en main par joueur.',
+ 'La carte du parc se lit de bas en haut. Nouvelle partie nécessaire pour le parcours et les drafts mis à jour ; les anciennes sauvegardes sont conservées.'
+]},{version:'0.5.7',date:'2026-11-06',changes:[
+ 'Toutes les cartes utilisent le format poker 63 × 88 mm. La carte skater garde le nom et trois emplacements de bonus.',
+ 'Une carte du Lagon à l’horizontale suit les records de tous les joueurs avec deux marqueurs chacun : dizaines et unités. Les marqueurs reviennent à zéro au début de chaque module.',
+ 'Les points de victoire sont représentés par des jetons trophée sur chaque table : un trophée vaut un PV. Les totaux et bilans gardent leurs informations avec la même icône.'
+]},{version:'0.5.6',date:'2026-11-06',changes:[
+ 'Les 41 tricks affichent leurs chances fixes selon le nombre de dés, sans joker ni bonus, et un badge de niveau coloré.',
+ 'Chaque table reçoit la fiche du skater, trois réserves de bonus et un marqueur du meilleur essai sur une grille 0–35 en 6 × 6.',
+ 'Les trois pioches et leurs défausses affichent leur nombre de cartes, aussi en ligne. Seul le meilleur des deux essais compte.'
+]},{version:'0.5.5',date:'2026-11-04',changes:[
  'Réserve limitée à trois jetons par type et par joueur. Un compteur indique le stock sur trois.',
  'Les récompenses et le draft tiennent compte de la place disponible. Les jetons excédentaires retournent à la banque.'
 ]},{version:'0.5.4',date:'2026-11-04',changes:[

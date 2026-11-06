@@ -13,7 +13,8 @@ export function validDiceIds(card,dice,ownColor=null,pending=[]){
 export function detectRolls(match,previous={}){
  const stamps={},rolled={};
  for(const p of match.players){
-  const g=p.game,stamp={turn:`${g.module}:${g.attempt}`,rolls:g.rolls||0,rerolls:g.used.reroll||0},old=previous[p.id];stamps[p.id]=stamp;
+  const g=p.game,stamp={turn:`${g.module}:${g.attempt}`,rolls:g.rolls||0,rerolls:g.used.reroll||0,personal:g.specialty?.personalRolls||0},old=previous[p.id];stamps[p.id]=stamp;
+  if(old&&g.phase==='rolled'&&stamp.personal>(old.personal||0)){rolled[p.id]=g.dice.filter(d=>d.id===g.specialty?.rolledDie).map(d=>d.id);continue;}
   if(old&&g.phase==='rolled'&&(old.turn!==stamp.turn?stamp.rolls>0:stamp.rolls>old.rolls||stamp.rerolls>old.rerolls))rolled[p.id]=g.dice.filter(d=>d.locked===null&&!g.heldLastRoll.includes(d.id)).map(d=>d.id);
  }
  return {stamps,rolled};

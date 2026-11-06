@@ -24,9 +24,9 @@
   "rule": "Deux 4",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/360-flip/01-illustration.webp?v=664891a132b8",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=5a2f3e187dd2"
+    "illustration": "assets/tricks/360-flip/01-illustration.webp?v=c1765df7d67e",
+    "graphics": "assets/tricks/frames/epic-2-plain.svg?v=d46e18e069c9",
+    "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=f0dccd6bad58"
   },
   "printedPoints": 10,
   "p": 0.263224451303155,
@@ -47,8 +47,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

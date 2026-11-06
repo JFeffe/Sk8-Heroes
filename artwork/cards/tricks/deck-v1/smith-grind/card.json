@@ -77,9 +77,9 @@
     "points": 1
   },
   "layers": {
-    "illustration": "assets/tricks/smith-grind/01-illustration.webp?v=0b0efa7e807d",
-    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-    "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=f0bb9dd24360"
+    "illustration": "assets/tricks/smith-grind/01-illustration.webp?v=f83f9b661508",
+    "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+    "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=4d1dd21ea75c"
   },
   "printedPoints": 8,
   "p": 0.65625,
@@ -106,8 +106,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

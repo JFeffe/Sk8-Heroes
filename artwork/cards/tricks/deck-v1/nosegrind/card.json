@@ -38,9 +38,9 @@
   "rule": "Deux valeurs d’écart 2",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/nosegrind/01-illustration.webp?v=a9abd411481b",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=f76a69163b47"
+    "illustration": "assets/tricks/nosegrind/01-illustration.webp?v=858881e06ee1",
+    "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+    "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=4263fb47719e"
   },
   "printedPoints": 4,
   "p": 0.8823731138545954,
@@ -61,8 +61,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

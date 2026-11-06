@@ -49,9 +49,9 @@
     "type": "freeze"
   },
   "layers": {
-    "illustration": "assets/tricks/tailslide/01-illustration.webp?v=af8e53447d02",
-    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-    "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=e30b29a955fd"
+    "illustration": "assets/tricks/tailslide/01-illustration.webp?v=ebf04eac1d19",
+    "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+    "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=f2b31060c329"
   },
   "printedPoints": 3,
   "p": 0.9416152263374485,
@@ -72,8 +72,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

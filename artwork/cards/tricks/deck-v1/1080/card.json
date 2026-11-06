@@ -60,9 +60,9 @@
   "rule": "Quatre dés identiques",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/1080/01-illustration.webp?v=8c1a6364aeed",
-    "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
-    "information": "assets/tricks/1080/03-textes-symboles.webp?v=195b382b2eea"
+    "illustration": "assets/tricks/1080/01-illustration.webp?v=67a031a14446",
+    "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
+    "information": "assets/tricks/1080/03-textes-symboles.webp?v=3ed2feca6734"
   },
   "printedPoints": 18,
   "p": 0.0522119341563786,
@@ -95,8 +95,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

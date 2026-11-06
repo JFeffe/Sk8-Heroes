@@ -21,9 +21,9 @@
   "rule": "Deux dés ≤ 5",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/50-50-grind/01-illustration.webp?v=997738d9cf7c",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/50-50-grind/03-textes-symboles.webp?v=8a5cb2518eda"
+    "illustration": "assets/tricks/50-50-grind/01-illustration.webp?v=c4cbe598393c",
+    "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+    "information": "assets/tricks/50-50-grind/03-textes-symboles.webp?v=f57107eff333"
   },
   "printedPoints": 2,
   "p": 0.9993355624142661,
@@ -44,8 +44,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

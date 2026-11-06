@@ -1,10 +1,13 @@
+import {POKER,CARD_SIDE,CARD_VIEW_WIDTH} from '../../public/card-format.js';
 import assert from 'node:assert/strict';
+import {TRICKS} from '../../public/trick-catalog.js';
+import {printedOdds,printedPercent} from '../../public/physical-table.js';
 import {typeIcon} from '../../public/icons.js';
 export function createCardTemplate(sharp){
 const W=900,H=1300,C={cream:'#fff7df',navy:'#063e50',aqua:'#31c4c3',pale:'#a6e2da',orange:'#ff742b'};
 const alignment={badge:{transform:'rotate(-1.3 250 217)',labelX:169,chanceX:358,centerY:217,fontSize:40},requirement:{centerX:321,headingY:994.5,socketY:1073},score:{centerX:733,headingY:994.5,bodyTop:1019,bodyBottom:1166,numberSize:118,unitSize:25,gap:10}};
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const svg=(body,title='')=>`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img"><title>${esc(title)}</title>${body}</svg>`;
+const svg=(body,title='')=>`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${POKER.widthPx}" height="${POKER.heightPx}" viewBox="${-CARD_SIDE} 0 ${CARD_VIEW_WIDTH} ${H}" role="img"><title>${esc(title)}</title>${body}<rect x="${-CARD_SIDE}" y="0" width="${CARD_SIDE}" height="${H}" fill="${C.cream}"/><rect x="900" y="0" width="${CARD_SIDE}" height="${H}" fill="${C.cream}"/></svg>`;
 const text=(x,y,value,size=36,fill=C.navy,extra='')=>`<text x="${x}" y="${y}" fill="${fill}" ${extra.includes('font-family=')?'':'font-family="Impact,Arial Narrow,sans-serif"'} font-size="${size}" font-weight="400" ${extra}>${esc(value)}</text>`;
 function roundRect(x,y,w,h,r){return `M${x+r} ${y}H${x+w-r}Q${x+w} ${y} ${x+w} ${y+r}V${y+h-r}Q${x+w} ${y+h} ${x+w-r} ${y+h}H${x+r}Q${x} ${y+h} ${x} ${y+h-r}V${y+r}Q${x} ${y} ${x+r} ${y}Z`;}
 function sockets(cost){const size=cost===2?128:cost===3?116:106,gap=cost===2?42:cost===3?32:18,start=alignment.requirement.centerX-(cost*size+(cost-1)*gap)/2;return Array.from({length:cost},(_,i)=>({x:start+i*(size+gap),y:1025,size,height:96}));}
@@ -32,8 +35,7 @@ function graphics(card){
  <path d="M27 185C255 222 418 166 588 179C711 186 758 214 877 165" fill="none" stroke="${C.cream}" stroke-width="12"/>
  <path d="M27 195C255 231 418 176 588 189C711 196 758 225 877 175" fill="none" stroke="${C.aqua}" stroke-width="8"/>
  ${speckles(11,165,[30,30,840,162],C.cream,.15)}
- <path d="M82 183L412 176Q457 176 445 211L435 239Q430 250 407 251L79 259Q47 259 51 231L56 208Q58 185 82 183Z" fill="${C.orange}" stroke="${C.cream}" stroke-width="8"/>
- ${card.kind==='module'?'':`<g transform="${alignment.badge.transform}"><path d="M282 188V246" stroke="${C.cream}" stroke-width="2" opacity=".5"/></g>`}
+ ${card.kind==='module'?`<path d="M82 183L412 176Q457 176 445 211L435 239Q430 250 407 251L79 259Q47 259 51 231L56 208Q58 185 82 183Z" fill="${[C.orange,'#3688dc','#9663bf'][card.stage??0]}" stroke="${C.cream}" stroke-width="8"/>`:`<rect x="55" y="205" width="235" height="${70+[6,4,3,2].filter(n=>n>=card.cost).length*43}" rx="15" fill="${C.cream}" stroke="${C.navy}" stroke-width="3"/><path d="M70 205H275Q290 205 290 220V239H55V220Q55 205 70 205" fill="${C.orange}"/>${[6,4,3,2].filter(n=>n>=card.cost).map((n,i)=>`<path d="M67 ${240+(i+1)*43}H278" stroke="${C.navy}" stroke-opacity=".18"/>`).join('')}<rect x="690" y="205" width="171" height="54" rx="12" fill="${({base:C.orange,advanced:'#3688dc',epic:'#9663bf'})[card.tier]||C.orange}" stroke="${C.cream}" stroke-width="5"/>`}
  <circle cx="780" cy="119" r="79" fill="${C.navy}" stroke="${C.cream}" stroke-width="10"/>
  <path d="M713 74A79 79 0 0 1 859 127" fill="none" stroke="${C.aqua}" stroke-width="5"/>
  <path d="M28 1170C223 1139 354 1192 502 1178C652 1164 750 1130 872 1165V1273H28Z" fill="${C.pale}" fill-opacity=".96"/>
@@ -67,7 +69,9 @@ async function information(card){
  const chance=(card.p*100).toFixed(card.p>.99&&card.p<1?1:card.p>.9?0:1).replace('.',',');let titleSize=card.name.length>10?89:102;
  const titleBounds=await ink(card.name,titleSize);if(titleBounds.width>626)titleSize=Math.floor(titleSize*626/titleBounds.width);
  const slotText=(await Promise.all(sockets(card.cost).map((s,i)=>centeredText(s.x+s.size/2,alignment.requirement.socketY,card.symbols[i],card.cost===4?62:card.symbols[i].length>2?49:68,C.navy,`id="socket-${i}"`)))).join('');
- const badge=`<g id="badge-information" transform="${alignment.badge.transform}">${await centeredText(alignment.badge.labelX,alignment.badge.centerY,card.tierLabel,alignment.badge.fontSize,C.navy,'id="badge-label"',true)}${await centeredText(alignment.badge.chanceX,alignment.badge.centerY,chance+' %',alignment.badge.fontSize,C.navy,'id="badge-chance"',true)}</g>`;
+ const rows=printedOdds(card.id===undefined?{...card,id:TRICKS.find(c=>c.name===card.name).id}:card);
+ const badge=`<g id="badge-information">${await centeredText(172.5,223,'DÉS / CHANCE',26)}${(await Promise.all(rows.map(async(row,i)=>`${await centeredText(92,261+i*43,String(row.dice),31)}${await centeredText(210,261+i*43,printedPercent(row.probability),31)}`))).join('')}${await centeredText(172.5,257+rows.length*43,'SANS JOKER / BONUS',18)}${await centeredText(775.5,232,card.tierLabel,32,card.tier==='base'?C.navy:C.cream,'id="badge-label"')}</g>`;
+
  const digit=await ink(card.printedPoints,alignment.score.numberSize),unit=await ink('PTS',alignment.score.unitSize);
  const groupHeight=digit.height+alignment.score.gap+unit.height,groupTop=alignment.score.bodyTop+(alignment.score.bodyBottom-alignment.score.bodyTop-groupHeight)/2;
  const score=await centeredText(alignment.score.centerX,groupTop+(digit.height-1)/2,card.printedPoints,alignment.score.numberSize,C.navy,'id="card-score"');

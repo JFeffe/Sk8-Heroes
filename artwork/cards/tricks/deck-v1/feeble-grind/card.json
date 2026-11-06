@@ -66,9 +66,9 @@
     "type": "reroll"
   },
   "layers": {
-    "illustration": "assets/tricks/feeble-grind/01-illustration.webp?v=c4bf13485b39",
-    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-    "information": "assets/tricks/feeble-grind/03-textes-symboles.webp?v=7a63c2aeec08"
+    "illustration": "assets/tricks/feeble-grind/01-illustration.webp?v=a42884878a97",
+    "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+    "information": "assets/tricks/feeble-grind/03-textes-symboles.webp?v=4e6e35e386ae"
   },
   "printedPoints": 8,
   "p": 0.7407407407407407,
@@ -95,8 +95,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

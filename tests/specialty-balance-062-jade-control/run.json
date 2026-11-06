@@ -1,0 +1,119 @@
+{
+  "build": "0.6.2",
+  "rules": 21,
+  "saveVersion": 16,
+  "createdAt": "2026-11-06T21:44:57.840Z",
+  "config": {
+    "normal": 20,
+    "expert": 10,
+    "ablation": 5,
+    "expertAblation": 0,
+    "onlyAblation": false,
+    "legacyJade": true,
+    "workers": 6,
+    "groups": 15,
+    "out": "tests/specialty-balance-062-jade-control"
+  },
+  "planned": 1200,
+  "completed": 1200,
+  "families": 1200,
+  "elapsedSeconds": 56.07,
+  "files": [
+    "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\tests\\specialty-balance-062-jade-control\\worker-0.jsonl",
+    "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\tests\\specialty-balance-062-jade-control\\worker-1.jsonl",
+    "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\tests\\specialty-balance-062-jade-control\\worker-2.jsonl",
+    "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\tests\\specialty-balance-062-jade-control\\worker-3.jsonl",
+    "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\tests\\specialty-balance-062-jade-control\\worker-4.jsonl",
+    "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\tests\\specialty-balance-062-jade-control\\worker-5.jsonl"
+  ],
+  "sourceUnchanged": true,
+  "sourceHashes": {
+    "package.json": "e5717b3581da5dbb50a9b6e1503c6a9a87f50e81f8a88e660e4115024f4d6c3b",
+    "public/app.js": "ce5e2a1181b207ff7bbb45d97a5771bd45f8c56997d58a98d3ec9c5e1d66f832",
+    "public/card-format.js": "858acf7c0152f7fcac0a0f4288d93456210b7b8bb7d250a4ebfd69f9383ec26e",
+    "public/card-library.js": "658a2a4e0eecd29843b5d50335a6692d674a244a2be49e2fdb7fc5e405e186dd",
+    "public/combinations.js": "f71bdf1a67811720506402cf30af2d6d2f5bbc3678996377336e5aa0b801d228",
+    "public/data.js": "c4dcb35d0c8661aaf395968dd54e6bfbd9441221e20c4493fcb4a15fd1c13357",
+    "public/dice-feedback.js": "0d0fe20be09b25fc6321b265676d725bc8c4c48e17bb83164532c1fb21a716a2",
+    "public/drag.js": "44f9bb979c881f88e235861b3988832ce8e1839edbda9e569ce82fa4c30db31b",
+    "public/engine.js": "628352933c860b78b919873382e9869c6a59db761c8cc63b752c57dabdc37fbd",
+    "public/icons.js": "084ee8dd4039e4e800c1b09fd397076865f6c54becd70c065ecb1c9dfa8f5d26",
+    "public/initial-draft.js": "1ab4610f0f20d386e848c11bb8ad20bebf13db5f66a439250c2ea70a966a36e4",
+    "public/match-statistics.js": "fc821764c8929fa78d39d29b763e2811fb6ece3dfa2b0c1646521ab323a55fc7",
+    "public/match-ui.js": "90b03bec6c0f373d341bc56daa0169de56107f2b27fe2d22e33fc91017f022a6",
+    "public/match.js": "7d7514c0ad4109cf6e6ff12c665d4382eaad7c9ef42108d4467bbeb849b505d3",
+    "public/module-card-assets.js": "0daef67d4afad8bcb1fc0e2776d9cb6a56e98c551f2cab422c9500960c0b3671",
+    "public/module-cards.js": "a346d35501d995cbc3461eeaef3ef9611ac5f82df72a7b560cc4d55c9216a389",
+    "public/module-catalog.js": "8b57b6949007661efa9a9d9bce8d0104bccb8bd57e465fa7c6626b3a27f4bcc8",
+    "public/module-goals.js": "f58c955454938716dabaf727f6acb896e6475afa304a6925ef7dfa1f7798d2d5",
+    "public/module-layers.js": "4b3dea939db802e91a814e6e3886e9e7ed56b3288164a49a2dbdf968f7d6a467",
+    "public/module-rules.js": "e957c14fa23485200c701d60c79a3bb218ab4d6f662678336bd2431d38f49511",
+    "public/module-trace.js": "4f36a4e700d9700aa145623690887f5b809b0ff1811c47efba3df39dbd18a34e",
+    "public/npc-choice.js": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14",
+    "public/npc-dice.js": "9dde7279cc2abdcb543e8ca8761fbe8c13f59ca7453d24ff21b770d6a565f2e9",
+    "public/npc-difficulty.js": "07cbcec80dbe5e9c4b7de4e4cac4506f0dc1c8c90f1d4438d4414fa404ce0cff",
+    "public/npc-strategy.js": "4d0964c4ed084e3f4933a2ac3c02f57c4b53a5c5c8124069c9757f555fc87d88",
+    "public/npc-view.js": "2a3027b13942e6f892f63068129b416181d6b649289f3956de94d7f41cf13ab1",
+    "public/npc.js": "ec71142a79431ecf6696213616604246c50c251936b7641cb59326b7f2fe3075",
+    "public/odds.js": "0a7d734ebcd30b00cc4444e28a7cc58ca288bd4f77a2a2d167df1a8ee9ac3fef",
+    "public/online-client.js": "457aacfbda0a41ce3c4a964dd22ddced34b494f86066b7055fedaceb722bec2d",
+    "public/online-ui.js": "704ad51a14d398dd62d5d2ed8eff56470d83c22b5cc7b61c243d0a73e6399d96",
+    "public/park-card.js": "ff9cd3b43e33622361dcbff6e73fe4142f0d98dd465602c04603bd1ead0e8d24",
+    "public/patch-notes-state.js": "d694a3e2515610101fc870d99db4ec7b60b2dbbc41ac9d1d7096ebd852c71bb8",
+    "public/physical-table.js": "29c1284c8d80377c0c9692c922a4987d0f7ef0e4c0597eaf7961d35d5bf86f0b",
+    "public/played-card.js": "3937ab1379e6238eb660f1d7ed140563378d9251c732e00ef8778ddeb9fa1271",
+    "public/release-notes.js": "a1f8b540616a474e460b9c7a6d906b070882fc02056a6b6c335d1336dcc2251e",
+    "public/roll-probability.js": "47c89055a093c01bf12c4c962deccc9b0eaf2d4917a66a0b3a26c47cb6dea31d",
+    "public/skaters.js": "819c596a2a4e71d6d925d24f5dfd7d5341480917f98ee3acb68400d7ea2b756d",
+    "public/specialties.js": "4d0e60480bbe630dc9c084f71d030baa43bbb141553fdc38ef90f90a2e018fe5",
+    "public/table-view.js": "8fcd94ee50d41b8d9eb9c30404e418c8cdc8cec377026a73a1e77bb74945e673",
+    "public/trick-catalog.js": "f75ea6969d39ecae2284204d35ab0ed61db6610a8c3abf26c3255fead0cb799a",
+    "public/trick-layers.js": "44f086b0c009a5653826de0012fe0fa98fe78897ed2b50bddb32cc4131c4bfb0",
+    "public/trick-presentation.js": "90b4c03f82f0d1a6c25d4399a432ac95e37965697ef0fe1d6d508afe5173c007",
+    "public/turn.js": "359a14925b0c4351c041c0e632c08d083c65f9d3011a849b9dac97a60f690a63",
+    "public/ui-feedback.js": "99e841ae7205fcde614ce0f19a0ea8c5e02fb93b4f6d8a673f3b55cdeb140d61"
+  },
+  "powers": {
+    "neo": {
+      "short": "Échange un jeton contre un autre type, sans dépasser la limite de réserve.",
+      "name": "Troc",
+      "text": "Échange un jeton contre un jeton d’un autre type, dans la limite de ta réserve."
+    },
+    "ruby": {
+      "short": "Relance gratuitement ton dé personnel après un lancer, s’il est libre et non gelé.",
+      "name": "Dé porte-bonheur",
+      "text": "Après un lancer, relance uniquement ton dé personnel disponible et non gelé, sans dépenser de jeton."
+    },
+    "jade": {
+      "short": "Au deuxième essai, reprends une carte du premier essai encaissé pour pouvoir la rejouer.",
+      "name": "Trick signature",
+      "text": "Pendant ton deuxième essai, reprends une carte utilisée dans ton premier essai encaissé. Elle redevient disponible pour être jouée, selon les règles habituelles."
+    },
+    "sol": {
+      "short": "Après un lancer, modifie un dé libre de +1 ou −1 sans dépenser de jeton.",
+      "name": "Réglage précis",
+      "text": "Après un lancer, modifie un dé disponible de +1 ou −1, entre 1 et 6, sans dépenser de jeton."
+    },
+    "milo": {
+      "short": "Encaisse exactement 2 tricks de types différents : gagne un jeton supplémentaire au choix.",
+      "name": "Bon rythme",
+      "text": "Après avoir encaissé exactement deux tricks de types différents, gagne un jeton supplémentaire au choix."
+    },
+    "iris": {
+      "short": "Après une chute, récupère un jeton dépensé dans cet essai, si ta réserve le permet.",
+      "name": "Rebond",
+      "text": "Après une chute, récupère un jeton dépensé pendant cet essai, dans la limite de ta réserve."
+    }
+  },
+  "method": {
+    "players": 4,
+    "modules": 6,
+    "compositions": "All 15 subsets of four among six skaters",
+    "rotations": "Four cyclic rider-to-seat assignments per composition and seed; all cautions = 1",
+    "win": "Fractional credit 1 / number of tied winners",
+    "pairing": "Identical starting state and independent keyed streams for each draft and each seat/module/attempt/trick/die; Ruby extra reroll has its own stream",
+    "ablation": "Only one named specialty disabled; opponents retain powers; not a change to production rules",
+    "controller": "Production opponents with reconstructed 0.6.1 Jade decisions in an isolated view; new Sol unchanged",
+    "intervalUnit": "Seed × composition, averaging four correlated rotations"
+  }
+}

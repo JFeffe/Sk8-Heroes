@@ -24,9 +24,9 @@
   "rule": "Un 3 et un 6",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/hardflip/01-illustration.webp?v=651a3f9bd9b5",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=42d823e263a7"
+    "illustration": "assets/tricks/hardflip/01-illustration.webp?v=8d56e305e4a8",
+    "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+    "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=4c06951b0587"
   },
   "printedPoints": 8,
   "p": 0.4179955418381344,
@@ -47,8 +47,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

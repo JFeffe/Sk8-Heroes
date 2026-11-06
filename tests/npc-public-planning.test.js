@@ -7,7 +7,7 @@ import {decide} from '../public/npc.js';
 import {npcGameView} from '../public/npc-view.js';
 
 function fixture(){
- const m=M.newMatch({seed:901,npcCount:3});m.phase='playing';m.route=[3,0,4,5,7,11];
+ const m=M.newMatch({seed:901,npcCount:3});m.phase='playing';m.route=[3,0,4,5,9,11];
  for(const p of m.players){const g=p.game;g.route=[...m.route];g.phase='select';g.hand=[0,5,16,21,32,37].map((id,i)=>({...TRICKS[id],uid:p.id+'-'+i}));}
  return m;
 }

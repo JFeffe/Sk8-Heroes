@@ -26,9 +26,9 @@
   "rule": "Trois 6",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/impossible/01-illustration.webp?v=93d26bec1c0c",
-    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-    "information": "assets/tricks/impossible/03-textes-symboles.webp?v=01fa9b626f38"
+    "illustration": "assets/tricks/impossible/01-illustration.webp?v=ee13847a47c2",
+    "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+    "information": "assets/tricks/impossible/03-textes-symboles.webp?v=452c79059e99"
   },
   "printedPoints": 17,
   "p": 0.062285665294924554,
@@ -55,8 +55,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

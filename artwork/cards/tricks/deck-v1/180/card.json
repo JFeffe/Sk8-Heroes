@@ -21,9 +21,9 @@
   "rule": "Deux dés ≤ 4",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/180/01-illustration.webp?v=642f4bf3a203",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/180/03-textes-symboles.webp?v=2e212bfbb880"
+    "illustration": "assets/tricks/180/01-illustration.webp?v=a837b736df06",
+    "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+    "information": "assets/tricks/180/03-textes-symboles.webp?v=02b23eccb2ad"
   },
   "printedPoints": 2,
   "p": 0.9821673525377229,
@@ -44,8 +44,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

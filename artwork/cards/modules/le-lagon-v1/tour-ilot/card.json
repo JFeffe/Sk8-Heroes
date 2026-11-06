@@ -16,23 +16,30 @@
   "park": "Le Lagon",
   "rounds": [
     3,
-    4,
-    5
+    4
   ],
   "image": "assets/modules/lagoon/tour-ilot.webp",
   "layers": {
-    "illustration": "assets/modules/lagoon/layers/tour-ilot/01-illustration.webp?v=9c2b3c4e72dc",
-    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
-    "information": "assets/modules/lagoon/layers/tour-ilot/03-textes-symboles.webp?v=b796f9f4f8a2"
+    "illustration": "assets/modules/lagoon/layers/tour-ilot/01-illustration.webp?v=ed26d1afc009",
+    "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
+    "information": "assets/modules/lagoon/layers/tour-ilot/03-textes-symboles.webp?v=e9f2d131879c"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/tour-ilot.png",
   "canvas": [
     900,
     1300
   ],
+  "trimMm": [
+    63,
+    88
+  ],
+  "rasterSize": [
+    1008,
+    1408
+  ],
   "textResolution": [
-    1800,
-    2600
+    2016,
+    2816
   ],
   "layerOrder": [
     "01-illustration",

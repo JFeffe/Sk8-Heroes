@@ -77,9 +77,9 @@
     "points": 1
   },
   "layers": {
-    "illustration": "assets/tricks/varial-heelflip/01-illustration.webp?v=f9dc12e84a1e",
-    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-    "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=bccb7d8b0c5f"
+    "illustration": "assets/tricks/varial-heelflip/01-illustration.webp?v=c949cdcd3e27",
+    "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+    "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=2e3829279ea1"
   },
   "printedPoints": 8,
   "p": 0.65625,
@@ -106,8 +106,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

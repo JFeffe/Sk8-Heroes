@@ -39,7 +39,7 @@ test('every web card assembles exactly three ordered layers, with live dice insi
 test('authoring and interactive dice sockets use the same normalized canvas for two, three and four dice',()=>{
  const manifest=JSON.parse(readFileSync(new URL('../artwork/cards/tricks/deck-v1/manifest.json',import.meta.url),'utf8'));
  assert.deepEqual(manifest.canvas,[900,1300]);assert.equal(manifest.physical,85);
- for(const entry of manifest.cards){const c=TRICKS[entry.id],expected=socketLayout(c.cost);assert.deepEqual(entry.sockets.map(s=>({x:s.x,y:s.y,width:s.size,height:s.height})),expected);assert.deepEqual(entry.textResolution,[1800,2600]);for(const s of expected){assert(s.x>40&&s.x+s.width<600);assert(s.y>970&&s.y+s.height<1166);}}
+ for(const entry of manifest.cards){const c=TRICKS[entry.id],expected=socketLayout(c.cost);assert.deepEqual(entry.sockets.map(s=>({x:s.x,y:s.y,width:s.size,height:s.height})),expected);assert.deepEqual(entry.textResolution,[2016,2816]);for(const s of expected){assert(s.x>40&&s.x+s.width<600);assert(s.y>970&&s.y+s.height<1166);}}
 });
 
 test('starting offers contain two Base and one Advanced; passed packets gain an Advanced and never an Epic',()=>{
@@ -56,10 +56,10 @@ test('starting offers contain two Base and one Advanced; passed packets gain an 
  }
 });
 
-test('even an all-Advanced starting draft leaves enough cards for all five markets at four players',()=>{
- let m=M.newMatch({seed:777});initial(m,true);
- for(const tier of ['base','advanced','advanced','advanced','epic']){
-  passModule(m);assert(M.advance(m));assert.equal(m.market.tier,tier);assert.equal(m.market.cards.length,4);assert.equal(m.market.tokens.length,4);assert(m.market.cards.every(c=>c.tier===tier));assert(m.market.reserve.every(c=>TIER_ORDER[c.tier]<TIER_ORDER[tier]));
+for(const npcCount of [1,2,3])test(`two Epic markets preserve the deck and resume safely at ${npcCount+1} players, even after an all-Advanced start`,()=>{
+ let m=M.newMatch({seed:777,npcCount});initial(m,true);
+ for(const tier of ['base','advanced','advanced','epic','epic']){
+  passModule(m);assert(M.advance(m));assert.equal(m.market.tier,tier);assert.equal(m.market.cards.length,npcCount+1);assert.equal(m.market.tokens.length,npcCount+1);assert(m.market.cards.every(c=>c.tier===tier));assert(m.market.reserve.every(c=>TIER_ORDER[c.tier]<TIER_ORDER[tier]));
   while(m.phase==='recovery'){
    m=M.restore(JSON.parse(JSON.stringify(m)));
    const [token]=E.draftBonusChoices(M.currentPlayer(m).game,m.market.tokens);
@@ -67,6 +67,8 @@ test('even an all-Advanced starting draft leaves enough cards for all five marke
   }
   assert.equal(m.market.cards.length,0);assert.equal(m.market.reserve.length,0);assert(M.startModule(m));
  }
+ assert(m.players.every(p=>p.game.hand.filter(c=>c.tier==='epic').length===2));
+ assert.equal(m.deck.filter(c=>c.tier==='epic').length,9-2*(npcCount+1));
  passModule(m);assert(M.advance(m));assert.equal(m.phase,'complete');assert.equal(m.recaps.length,6);
 });
 

@@ -17,18 +17,26 @@
   ],
   "image": "assets/modules/lagoon/rail-palmiers.webp",
   "layers": {
-    "illustration": "assets/modules/lagoon/layers/rail-palmiers/01-illustration.webp?v=2b72276f5f09",
-    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
-    "information": "assets/modules/lagoon/layers/rail-palmiers/03-textes-symboles.webp?v=9d4b505c483e"
+    "illustration": "assets/modules/lagoon/layers/rail-palmiers/01-illustration.webp?v=8e77ab20614d",
+    "graphics": "assets/modules/lagoon/layers/frames/module-0.svg?v=48e7b0ebcdf5",
+    "information": "assets/modules/lagoon/layers/rail-palmiers/03-textes-symboles.webp?v=6b596247b99d"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/rail-palmiers.png",
   "canvas": [
     900,
     1300
   ],
+  "trimMm": [
+    63,
+    88
+  ],
+  "rasterSize": [
+    1008,
+    1408
+  ],
   "textResolution": [
-    1800,
-    2600
+    2016,
+    2816
   ],
   "layerOrder": [
     "01-illustration",

@@ -1,3 +1,4 @@
+import {deckInventory} from '../public/physical-table.js';
 import {randomBytes,randomInt,timingSafeEqual} from 'node:crypto';
 import {mkdir,readFile,writeFile,rename} from 'node:fs/promises';
 import path from 'node:path';
@@ -12,7 +13,7 @@ const entropy=()=>randomInt(2**32)/2**32;
 const bindEntropy=m=>{Object.defineProperty(m,'randomSource',{value:entropy,enumerable:false,configurable:true});return m;};
 const cleanName=value=>typeof value==='string'?value.trim().slice(0,24):'';
 const sameSecret=(a,b)=>typeof a==='string'&&typeof b==='string'&&/^[a-f0-9]{64}$/.test(a)&&a.length===b.length&&timingSafeEqual(Buffer.from(a),Buffer.from(b));
-const playable=new Set(['draft','draft-pair','choose','roll','place','auto','reset-placement','bonus','land','stop','continue','fall','pass','proceed','claim-sequence']);
+const playable=new Set(['draft','draft-pair','choose','roll','place','auto','reset-placement','bonus','land','stop','continue','fall','pass','proceed','claim-sequence','specialty']);
 
 export class RoomStore{
  constructor(directory,{npcDelay=850,now=Date.now}={}){this.directory=directory;this.npcDelay=npcDelay;this.now=now;this.rooms=new Map();this.loading=new Map();this.closed=false;}
@@ -25,7 +26,7 @@ export class RoomStore{
  attach(room){room.queue=Promise.resolve();room.timer=null;room.seen={};this.rooms.set(room.id,room);return room;}
  async create(options={}){
   if(this.rooms.size>=32)fail(429,'Trop de salons ouverts sur cet hôte.');
-  const token=secret(),match=M.newMatch({name:cleanName(options.name)||'Hôte',npcCount:options.npcCount,npcDifficulty:options.npcDifficulty,skaterId:options.skaterId||'neo',length:6,randomSource:entropy});
+  const token=secret(),match=M.newMatch({name:cleanName(options.name)||'Hôte',npcCount:options.npcCount,npcDifficulty:options.npcDifficulty,mode:options.mode||'base',skaterId:options.skaterId||'neo',length:6,randomSource:entropy});
   const room=this.attach({id:randomBytes(12).toString('hex'),match,members:{p0:{token,host:true}},riderChoices:{p0:getSkater(options.skaterId)?.id||null},started:false,paused:false,fast:false,revision:0,created:Date.now(),receipts:[]});
   room.seen.p0=Date.now();try{await this.persist(room);}catch(error){this.rooms.delete(room.id);throw error;}return {token,...this.view(room,'p0')};
  }
@@ -51,10 +52,10 @@ export class RoomStore{
    try{return await run();}catch(error){Object.assign(room,previous,{match:bindEntropy(M.restore(previous.match))});M.restoreClockState(room.match,clock);throw error;}
   });room.queue=task.catch(()=>{});return task;
  }
- lobby(room){return {roomId:room.id,started:room.started,riderChoices:riderChoices(room),complete:room.match.phase==='complete',players:room.match.players.map(p=>({id:p.id,name:p.game.name,skaterId:p.skaterId,color:p.color,kind:p.kind,available:p.kind==='npc'}))};}
+ lobby(room){return {roomId:room.id,started:room.started,mode:room.match.mode,riderChoices:riderChoices(room),complete:room.match.phase==='complete',players:room.match.players.map(p=>({id:p.id,name:p.game.name,skaterId:p.skaterId,color:p.color,kind:p.kind,available:p.kind==='npc'}))};}
  presence(room){return room.match.players.map(p=>({id:p.id,connected:p.kind==='npc'||Date.now()-(room.seen[p.id]||0)<45000}));}
  view(room,viewerId){
-  const m=structuredClone(room.match);delete m.rngState;m.deck=[];m.viewerId=viewerId;
+  const m=structuredClone(room.match);delete m.rngState;m.deckCounts=deckInventory(room.match);m.deck=[];m.viewerId=viewerId;
   m.draftLog=m.draftLog.map(({offered,offeredBonus,...entry})=>entry);
   for(const p of m.players){
    const original=room.match.players.find(x=>x.id===p.id).game,g=p.game;

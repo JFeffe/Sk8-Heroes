@@ -21,9 +21,9 @@
   "rule": "Deux dés ≥ 2",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/ollie/01-illustration.webp?v=6952a6873a83",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/ollie/03-textes-symboles.webp?v=1f7dfb4837e1"
+    "illustration": "assets/tricks/ollie/01-illustration.webp?v=58cab4ab4fe3",
+    "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+    "information": "assets/tricks/ollie/03-textes-symboles.webp?v=5d997594676a"
   },
   "printedPoints": 2,
   "p": 0.9993355624142661,
@@ -44,8 +44,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

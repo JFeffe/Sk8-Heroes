@@ -1,4 +1,4 @@
-import {BONUS_LIMIT,BONUS_TYPES} from './engine.js';
+import {bonusLimit,BONUS_TYPES} from './engine.js';
 
 const stock=bank=>Object.fromEntries(BONUS_TYPES.map(type=>[type,bank?.[type]||0]));
 const ledger=(bank,complete)=>({complete,starting:stock(bank),gained:stock(),spent:stock()});
@@ -14,11 +14,11 @@ export function recordTokenChanges(m,player,before){
 export function limitSavedStock(m,player){
  const {bank}=player.game;
  for(const type of BONUS_TYPES){
-  const excess=(bank[type]||0)-BONUS_LIMIT;
+  const excess=(bank[type]||0)-bonusLimit(player.game,type);
   if(excess<=0)continue;
   const entry=m.statistics.players[player.id]??=ledger(bank,false);
   const discarded=entry.discarded??=stock();
-  discarded[type]+=excess;bank[type]=BONUS_LIMIT;
+  discarded[type]+=excess;bank[type]=bonusLimit(player.game,type);
  }
 }
 // Runtime anchors never enter a save or network view. Restoring a match starts

@@ -24,9 +24,9 @@
   "rule": "Un 2 et un 5",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/overcrook/01-illustration.webp?v=bd24bc152fba",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/overcrook/03-textes-symboles.webp?v=e8d78c200b5e"
+    "illustration": "assets/tricks/overcrook/01-illustration.webp?v=d1364f933c51",
+    "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
+    "information": "assets/tricks/overcrook/03-textes-symboles.webp?v=cfb93040fee1"
   },
   "printedPoints": 8,
   "p": 0.4179955418381344,
@@ -47,8 +47,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

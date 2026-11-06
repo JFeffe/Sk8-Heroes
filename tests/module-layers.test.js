@@ -27,13 +27,13 @@ test('every module layer exists, matches its version hash and keeps images and t
   assert(frame.includes('id="module-podium"'));assert(text.includes('id="module-appearance"'));
   assert(text.includes(`id="module-pv-first">${m.pv}</text>`));assert(text.includes('id="module-pv-second">1</text>'));
   assert.equal((text.match(/fill="#ffc344"/g)||[]).length,2);assert(!text.includes('>PV</text>'));
-  const metadata=JSON.parse(readFileSync(new URL('card.json',source),'utf8'));for(const key of ['name','pv','needs','rounds','bonus','bonusPoints','condition','layers'])assert.deepEqual(metadata[key],m[key]);assert.deepEqual(metadata.canvas,[900,1300]);assert.deepEqual(metadata.textResolution,[1800,2600]);
+  const metadata=JSON.parse(readFileSync(new URL('card.json',source),'utf8'));for(const key of ['name','pv','needs','rounds','bonus','bonusPoints','condition','layers'])assert.deepEqual(metadata[key],m[key]);assert.deepEqual(metadata.canvas,[900,1300]);assert.deepEqual(metadata.textResolution,[2016,2816]);
  }
 });
 
 test('module and trick frames share their canvas, score and badge anchors',()=>{
  const modules=JSON.parse(readFileSync(new URL('artwork/cards/modules/le-lagon-v1/manifest.json',root),'utf8')),tricks=JSON.parse(readFileSync(new URL('artwork/cards/tricks/layer-templates-v1/specification.json',root),'utf8'));
- assert.equal(modules.cards,12);assert.deepEqual(modules.canvas,[tricks.size.width,tricks.size.height]);assert.deepEqual(modules.alignment.score,tricks.alignment.score);assert.deepEqual(modules.alignment.badge,tricks.alignment.badge);assert.equal(new Set(MODULES.map(m=>m.layers.graphics)).size,1);
+ assert.equal(modules.cards,12);assert.deepEqual(modules.canvas,[tricks.size.width,tricks.size.height]);assert.deepEqual(modules.alignment.score,tricks.alignment.score);assert.deepEqual(modules.alignment.badge,tricks.alignment.badge);assert.equal(new Set(MODULES.map(m=>m.layers.graphics)).size,3);
 });
 
 test('the gallery and both route previews render all module faces with three layers',()=>{

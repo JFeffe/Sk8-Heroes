@@ -26,9 +26,9 @@
   "rule": "Deux 4 et un 6",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/laser-flip/01-illustration.webp?v=9cf4407b86e0",
-    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-    "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=e0643bc75e9f"
+    "illustration": "assets/tricks/laser-flip/01-illustration.webp?v=e5bb72263e80",
+    "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+    "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=7f005e4a7e2e"
   },
   "printedPoints": 15,
   "p": 0.14780521262002744,
@@ -55,8 +55,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

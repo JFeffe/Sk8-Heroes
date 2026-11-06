@@ -50,9 +50,9 @@
   "rule": "Écart ≥ 2 · au moins un impair",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/frontside-180/01-illustration.webp?v=fb455dfb3a6c",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=cc90e7000517"
+    "illustration": "assets/tricks/frontside-180/01-illustration.webp?v=2730b3989318",
+    "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+    "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=3482e4cda643"
   },
   "printedPoints": 3,
   "p": 0.9545181755829903,
@@ -73,8 +73,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

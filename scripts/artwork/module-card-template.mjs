@@ -50,7 +50,7 @@ export function createModuleTemplate(sharp){
  async function information(m){
   const firstSize=92,firstBottom=1149,firstDigit=await ink(m.pv,firstSize);
   return `<g>${await title(m.name)}${await symbols(m.needs,780,119,{header:true,separator:m.needs.length===2?'+':'·'})}
-   <g id="module-appearance" transform="${alignment.badge.transform}">${await fit(250,217,appearanceLabel(m),40,350)}</g>
+   <g id="module-appearance" transform="${alignment.badge.transform}">${await fit(250,217,appearanceLabel(m),40,350,m.stage===0?C.navy:C.cream)}</g>
    ${await fit(321,alignment.requirement.headingY,moduleGoalPresentation(m).heading,35,500,C.navy,'id="module-bonus-heading"')}${await condition(m)}
    <g id="module-podium-information">
     ${await centeredText(alignment.score.centerX,alignment.score.headingY,'POINTS DE VICTOIRE',27,C.cream,'id="module-prize-heading"')}
@@ -61,5 +61,5 @@ export function createModuleTemplate(sharp){
    ${await centeredText(450,1217,m.park.toUpperCase(),42,C.navy,'id="module-park"')}
   </g>`;
  }
- return {W,H,C,svg,alignment,graphics:()=>graphics({kind:'module'}),information};
+ return {W,H,C,svg,alignment,graphics:(m={stage:0})=>graphics({kind:'module',stage:m.stage}),information};
 }

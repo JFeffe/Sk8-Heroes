@@ -62,9 +62,9 @@
     "points": 1
   },
   "layers": {
-    "illustration": "assets/tricks/pop-shuvit/01-illustration.webp?v=1da47ac4f47e",
-    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
-    "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=d0fae62269e3"
+    "illustration": "assets/tricks/pop-shuvit/01-illustration.webp?v=81bd27a3b9e9",
+    "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
+    "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=1e53740b412b"
   },
   "printedPoints": 2,
   "p": 0.96875,
@@ -85,8 +85,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

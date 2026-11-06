@@ -10,10 +10,11 @@ import {moduleCard,moduleRoute,moduleCatalog} from '../public/module-cards.js';
 const cards=ids=>ids.map((id,i)=>({...TRICKS[id],uid:`card-${i}`}));
 function game(module,ids){const g=E.newGame({},()=>.4);g.route=[module];g.module=0;g.phase='select';g.hand=cards(ids).map(c=>({...c,tier:'base'}));return g;}
 function land(g,index,face=4){assert(E.chooseCard(g,g.hand[index].uid));assert(E.roll(g,()=>0));for(const d of E.freeDice(g))d.face=face;assert(E.autoPlace(g));assert(E.land(g));}
-test('Le Lagon has four discoveries, six linking modules and two finales with exact approved rewards',()=>{
- assert.equal(MODULES.length,12);assert.deepEqual([0,1,2].map(stage=>MODULES.filter(m=>m.stage===stage).length),[4,6,2]);
+test('Le Lagon has four discoveries, four linking modules and four finales with exact approved rewards',()=>{
+ assert.equal(MODULES.length,12);assert.deepEqual([0,1,2].map(stage=>MODULES.filter(m=>m.stage===stage).length),[4,4,4]);
  assert.equal(new Set(MODULES.map(m=>m.key)).size,12);
- for(const m of MODULES){assert.equal(m.id,MODULES.indexOf(m));assert.equal(m.pv,[2,3,4][m.stage]);assert(m.bonus.kind);assert(!('minimumTricks'in m.bonus));assert(!('target'in m));assert.deepEqual(m.rounds,[[1,2],[3,4,5],[6]][m.stage]);}
+ assert.deepEqual(MODULES.filter(m=>m.stage===2).map(m=>m.key),['coping-bleu','boucle-lagon','marches-palmiers','grande-vague']);
+ for(const m of MODULES){assert.equal(m.id,MODULES.indexOf(m));assert.equal(m.pv,[2,3,4][m.stage]);assert(m.bonus.kind);assert(!('minimumTricks'in m.bonus));assert(!('target'in m));assert.deepEqual(m.rounds,[[1,2],[3,4],[5,6]][m.stage]);}
 });
 test('module points, trick effects and the three-trick point stack once and grant the normal token choice',()=>{
  const g=game(0,[1,0,9]);land(g,0);assert(E.continueRun(g));land(g,1);
@@ -38,7 +39,7 @@ test('bonus conditions are optional: one legal trick can be banked without a min
 });
 test('all six modules are drawn without duplicates before the draft, in their allowed rounds, across 2000 seeds',()=>{
  const seen=new Set(),signatures=new Set();
- for(let seed=1;seed<=2000;seed++){let state=seed;const rng=()=>((state=(Math.imul(state,1664525)+1013904223)>>>0)/2**32);const route=E.drawModuleRoute(6,rng);assert(validModuleRoute(route,MODULES));assert.equal(route.length,6);route.forEach((id,i)=>{seen.add(id);assert(MODULES[id].rounds.includes(i+1));});signatures.add(route.join(','));}
+ for(let seed=1;seed<=2000;seed++){let state=seed;const rng=()=>((state=(Math.imul(state,1664525)+1013904223)>>>0)/2**32);const route=E.drawModuleRoute(6,rng);assert(validModuleRoute(route,MODULES));assert.equal(route.length,6);assert.deepEqual(route.map(id=>MODULES[id].pv),[2,2,3,3,4,4]);route.forEach((id,i)=>{seen.add(id);assert(MODULES[id].rounds.includes(i+1));});signatures.add(route.join(','));}
  assert.equal(seen.size,12);assert(signatures.size>400);
  const m=M.newMatch({seed:42}),route=[...m.route];assert.equal(m.phase,'initial');assert(m.players.every(p=>JSON.stringify(p.game.route)===JSON.stringify(route)));
  const resumed=M.restore(JSON.parse(JSON.stringify(m)));assert.deepEqual(resumed.route,route);

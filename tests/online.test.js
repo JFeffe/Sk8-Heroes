@@ -22,6 +22,20 @@ async function fixture(t,options={}){
 }
 const send=(store,room,viewerId,action,extra={})=>store.command(room,viewerId,{action,revision:room.revision,requestId:randomUUID(),...extra});
 
+test('Trick signature returns one card authoritatively and remains spent after duplicate requests and reconnect',async t=>{
+ const {store,directory}=await fixture(t);
+ const host=await store.create({name:'Jade',skaterId:'jade',mode:'advanced'}),room=await store.get(host.roomId),m=room.match;
+ while(m.phase==='initial')assert(M.dispatch(m,{playerId:M.currentPlayer(m).id,type:'draft',cardId:M.currentPlayer(m).game.offer[0]}));
+ assert(M.startModule(m));m.active=0;m.order=[0,1,2,3];m.position=0;m.round=1;room.started=true;room.paused=true;
+ const g=m.players[0].game,card=g.hand[0],requestId=randomUUID();g.attempt=1;g.secured=[card.uid];g.attempts=[{points:4}];g.sequences=[{attempt:0,points:4,entries:[{card:card.uid,dice:[]}]}];
+ const before=structuredClone(g.sequences),returned=await send(store,room,'p0',{type:'specialty',cardId:card.uid},{requestId});
+ assert(returned.match.players[0].game.specialty.used);assert(!returned.match.players[0].game.secured.includes(card.uid));
+ const repeated=await send(store,room,'p0',{type:'specialty',cardId:card.uid},{requestId});assert.deepEqual(repeated.match.players[0].game.specialty,returned.match.players[0].game.specialty);
+ const resumed=new RoomStore(directory);t.after(()=>resumed.close());const loaded=await resumed.get(room.id),restored=loaded.match.players[0].game;
+ assert.equal(loaded.match.mode,'advanced');assert(restored.specialty.used);assert.equal(restored.specialty.returnedCard,card.uid);assert.deepEqual(restored.sequences,before);assert.equal(restored.hand.length,6);
+ await assert.rejects(()=>send(resumed,loaded,'p0',{type:'specialty',cardId:card.uid}));assert(restored.specialty.used);
+});
+
 function moduleRewardFixture(room,module,bank=null){
  const m=room.match;m.route=[0,1,module,4,6,8];if(module===6)m.route[4]=7;
  m.module=2;m.phase='playing';m.round=0;m.position=0;m.active=0;m.order=[0,1,2,3];room.started=true;room.paused=true;

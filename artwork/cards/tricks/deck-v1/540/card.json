@@ -25,9 +25,9 @@
     "points": 1
   },
   "layers": {
-    "illustration": "assets/tricks/540/01-illustration.webp?v=b4e50e93c05d",
-    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-    "information": "assets/tricks/540/03-textes-symboles.webp?v=802602238726"
+    "illustration": "assets/tricks/540/01-illustration.webp?v=3b34ef010de2",
+    "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+    "information": "assets/tricks/540/03-textes-symboles.webp?v=8c85f0e82f1c"
   },
   "printedPoints": 9,
   "p": 0.5941358024691358,
@@ -54,8 +54,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

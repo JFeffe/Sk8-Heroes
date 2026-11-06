@@ -1,11 +1,13 @@
+import {newSpecialty} from './specialties.js';
 import {MODULES,makeDeck} from './data.js';
 import {createTurnEngine,newTurn,sequenceScore} from './turn.js';
 import {validModuleRoute} from './module-rules.js';
 export {freeDice,activeCard,banked,matches,findMatch,resolveDice,wildColor,isOwnStar,sequenceScore,sequenceView,rerollableDice} from './turn.js';
-export const RULESET_VERSION=17;
+export const RULESET_VERSION=22;
 export const BONUS_TYPES=['adjust','reroll','freeze'];
 export const BONUS_LIMIT=3;
-export const bonusSlots=(s,type)=>Math.max(0,BONUS_LIMIT-(s.bank[type]||0));
+export const bonusLimit=(s,type)=>s.mode==='advanced'&&s.skaterId==='sol'&&type==='adjust'?4:BONUS_LIMIT;
+export const bonusSlots=(s,type)=>Math.max(0,bonusLimit(s,type)-(s.bank[type]||0));
 export const canAddBonus=(s,type)=>BONUS_TYPES.includes(type)&&bonusSlots(s,type)>0;
 export function draftBonusChoices(s,tokens){
   const available=tokens.filter(token=>canAddBonus(s,token.type));
@@ -35,10 +37,11 @@ function finishAction(action){return s=>{
     fitSequenceReward(s);
     s.attempts.push({...s.last});
     if(!['fall','pass'].includes(s.reason)){
+      const alreadyRewarded=new Set(s.sequences.flatMap(seq=>seq.entries.map(e=>e.card)));
       s.sequences.push({attempt:s.attempt,points:s.score,bonus:scored.bonus,moduleBonus:scored.moduleBonus,sequenceBonus:scored.sequenceBonus,tokenRewards:[],rewardTokens:scored.rewardTokens,moduleEffect:scored.moduleEffect,
         entries:s.landed.map(e=>({card:e.card,bonus:scored.details.find(d=>d.card===e.card).points,dice:e.dice.map(id=>({id,color:s.dice[id].color,face:s.dice[id].face,wildValue:s.dice[id].wildValue}))}))});
       s.secured.push(...cards.map(c=>c.uid));
-      for(const c of cards)if(c.comboBonus?.kind==='reward')s.earned[c.comboBonus.type]=(s.earned[c.comboBonus.type]||0)+1;
+      for(const c of cards)if(c.comboBonus?.kind==='reward'&&!alreadyRewarded.has(c.uid))s.earned[c.comboBonus.type]=(s.earned[c.comboBonus.type]||0)+1;
     }
   }
   return changed;
@@ -46,13 +49,13 @@ function finishAction(action){return s=>{
 export const land=finishAction('land'),stop=finishAction('stop'),fall=finishAction('fall'),pass=finishAction('pass');
 export function drawModuleRoute(length=6,rng=Math.random){
   return [...shuffle(MODULES.filter(m=>m.stage===0),rng).slice(0,length===6?2:1),
-    ...shuffle(MODULES.filter(m=>m.stage===1),rng).slice(0,length===6?3:2),
-    ...shuffle(MODULES.filter(m=>m.stage===2),rng).slice(0,1)].map(m=>m.id);
+    ...shuffle(MODULES.filter(m=>m.stage===1),rng).slice(0,2),
+    ...shuffle(MODULES.filter(m=>m.stage===2),rng).slice(0,length===6?2:1)].map(m=>m.id);
 }
-export function newGame({name='Rider',length=6,skaterId=null,route:fixedRoute=null}={},rng=Math.random){
+export function newGame({name='Rider',length=6,skaterId=null,mode='base',route:fixedRoute=null}={},rng=Math.random){
   if(fixedRoute&&!validModuleRoute(fixedRoute,MODULES))throw Error('Parcours de modules invalide');
   const route=fixedRoute?[...fixedRoute]:drawModuleRoute(length,rng);
-  const s={...newTurn(),version:RULESET_VERSION,skaterId,name:name.trim().slice(0,24)||'Rider',route,module:0,attempt:0,
+  const s={...newTurn(),version:RULESET_VERSION,skaterId,mode,specialty:newSpecialty(),name:name.trim().slice(0,24)||'Rider',route,module:0,attempt:0,
     phase:'initial',deck:shuffle(makeDeck(),rng),hand:[],offer:[],bank:{adjust:1,reroll:1,freeze:1},draftPick:0,bonusOffer:null,secured:[],sequences:[],earned:emptyEarned(),attempts:[],history:[],pv:0,created:Date.now()};
   offer(s,rng);return s;
 }
@@ -85,21 +88,21 @@ function draftChoice(s,kind,value,rng){
   if(s.phase==='initial'){
     s.draftPick++;
     if(s.draftPick<6){if(!s.deferredOffer)offer(s,rng);}else Object.assign(s,newTurn());
-  }else{s.module++;s.attempt=0;s.attempts=[];s.secured=[];s.sequences=[];s.earned=emptyEarned();Object.assign(s,newTurn());}
+  }else{s.module++;s.specialty=newSpecialty();s.attempt=0;s.attempts=[];s.secured=[];s.sequences=[];s.earned=emptyEarned();Object.assign(s,newTurn());}
   return true;
 }
 export function proceed(s){
   if(s.phase!=='result'||s.sequenceReward?.pending)return false;
   if(s.attempt===0){s.attempt=1;Object.assign(s,newTurn());return true;}
   const m=currentModule(s),best=Math.max(...s.attempts.map(a=>a.points)),qualified=best>0,pv=qualified&&!s.competitive?m.pv:0;
-  s.history.push({module:m.id,best,total:s.attempts.reduce((n,a)=>n+a.points,0),attempts:structuredClone(s.attempts),sequences:structuredClone(s.sequences),pv});s.pv+=pv;
+  s.history.push({module:m.id,best,attempts:structuredClone(s.attempts),sequences:structuredClone(s.sequences),pv});s.pv+=pv;
   s.trickRewards=BONUS_TYPES.flatMap(type=>Array.from({length:s.earned[type]||0},()=>({type,added:addBonus(s,type)})));
   if(s.module===s.route.length-1){s.phase='complete';return true;}
   if(s.competitive){s.reward=null;s.phase='awaiting-draft';return true;}
   s.reward='choice';s.phase='reward';return true;
 }
 export function nextModule(s){
-  s.module++;s.attempt=0;s.attempts=[];s.secured=[];s.sequences=[];s.earned=emptyEarned();s.offer=[];s.bonusOffer=null;Object.assign(s,newTurn());
+  s.module++;s.specialty=newSpecialty();s.attempt=0;s.attempts=[];s.secured=[];s.sequences=[];s.earned=emptyEarned();s.offer=[];s.bonusOffer=null;Object.assign(s,newTurn());
 }
 export function addBonus(s,type){
   if(!canAddBonus(s,type))return false;

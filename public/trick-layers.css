@@ -1,5 +1,5 @@
 /* The only three card-face layers share a 900 × 1300 reference canvas. */
-.trick-card {position:relative;isolation:isolate;overflow:hidden;aspect-ratio:9/13!important;padding:0!important;border:0;border-radius:7.222% / 5%;background:#fff7df;container-type:inline-size;}
+.trick-card {position:relative;isolation:isolate;overflow:hidden;aspect-ratio:63/88!important;padding:0!important;border:0;border-radius:7.222% / 5%;background:#fff7df;container-type:inline-size;}
 .trick-card .trick-layer {position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;}
 .trick-card .trick-layer--illustration {z-index:0;}.trick-card .trick-layer--graphics {z-index:1;}.trick-card .trick-layer--information {z-index:2;}
 .trick-card .trick-layer>img {display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;user-select:none;-webkit-user-drag:none;}
@@ -10,16 +10,14 @@
 .trick-card .trick-layer .die-socket .table-die {position:relative;width:auto;height:90%;max-width:94%;aspect-ratio:1;min-width:0;min-height:0;margin:0;padding:0;border:0;border-radius:16%;box-shadow:0 1px 2px #063e5055;pointer-events:auto;font-size:8.5cqw;line-height:1;}
 .trick-card .trick-layer .die-socket .table-die>span {font-size:1em;line-height:1;}
 .trick-card .trick-layer .die-socket .table-die .wild-value {font-size:2.8cqw;}
-.trick-card .layered-chance {position:absolute;left:32%;top:14.25%;width:15.55%;height:4.5%;display:flex;align-items:center;justify-content:center;background:#ff742b;color:#063e50;transform:rotate(-1.3deg);font:400 4.4cqw/1 Impact,'Arial Narrow',sans-serif;white-space:nowrap;border-radius:5%;}
-.trick-card .layered-chance.is-landed {color:#085c43;}
 .trick-card .layered-score-bonus {position:absolute;right:4.8%;top:82%;border-radius:50%;padding:.6cqw;background:#b7efbb;color:#075d40;font:800 4cqw/1 system-ui,sans-serif;box-shadow:0 0 0 .3cqw #2e9369;}
 .archive-face {position:absolute;inset:0;width:100%;height:100%;}
-.trick-card.hand-card {position:absolute;width:calc(var(--hand-card-h)*.6923077);}
-.trick-space{aspect-ratio:9/13;}.trick-space:has(>.trick-card){border:0;}.trick-card.table-card{width:100%;height:100%;}
-.campaign-offer .trick-card,.library-card-button .trick-card,.draft-hand .trick-card,.attempt-full-cards>.trick-card,.played-trick-inspection>.trick-card,.trick-inspection>.trick-card {aspect-ratio:9/13;}
+.trick-card.hand-card {position:absolute;width:calc(var(--hand-card-h)*.7159091);}
+.trick-space{aspect-ratio:63/88;}.trick-space:has(>.trick-card){border:0;}.trick-card.table-card{width:100%;height:100%;}
+.campaign-offer .trick-card,.library-card-button .trick-card,.draft-hand .trick-card,.attempt-full-cards>.trick-card,.played-trick-inspection>.trick-card,.trick-inspection>.trick-card {aspect-ratio:63/88;}
 .draft-reserve {margin:20px 0;padding-top:12px;border-top:1px solid #b9c9bb;}.draft-reserve>h2 {font:800 20px var(--display);margin:0 0 12px;}
 .draft-reserve .reserve-card-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,145px));gap:12px;}
-.draft-reserve .trick-card {width:100%;height:auto;aspect-ratio:9/13;}
+.draft-reserve .trick-card {width:100%;height:auto;aspect-ratio:63/88;}
 .paired-draft .draft-main>.draft-hand{position:sticky;top:8px;z-index:4;margin:12px 0;background:#e4eee1f5;box-shadow:0 5px 16px #0b434322;backdrop-filter:blur(6px);}
 .draft-hand .owned-card{cursor:zoom-in;}
 .draft-hand-cards>p{grid-column:1/-1;}
@@ -67,13 +65,13 @@
 @media(min-width:601px) and (max-height:600px){
  .campaign-modal.trick-detail-modal{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 24px;max-width:680px;padding:14px 20px;align-items:center;}
  .trick-detail-modal>[data-action="dismiss"]{grid-column:1/-1;margin:0 0 2px auto;}
- .trick-detail-modal .trick-inspection{width:calc((100dvh - 110px)*9/13);margin:0;}
+ .trick-detail-modal .trick-inspection{width:calc((100dvh - 110px)*63/88);margin:0;}
  .trick-detail-modal .trick-inspection-note h2{margin:0 0 12px;}
  .trick-detail-modal .trick-inspection-note p{font-size:13px;}
  .campaign-modal.played-trick-modal{max-width:380px;padding:10px 18px;}
  .played-trick-modal>[data-action="dismiss"]{margin:0 0 5px auto;padding:5px 12px;font-size:11px;}
  .played-trick-modal .played-inspection-caption{margin:5px 0;font-size:11px;line-height:1.2;}
- .played-trick-modal .played-trick-inspection{width:calc((100dvh - 120px)*9/13);}
+ .played-trick-modal .played-trick-inspection{width:calc((100dvh - 120px)*63/88);}
 }
 /* A short landscape viewport gives the actions their own row above the hand. */
 @media(min-width:651px) and (max-height:500px){

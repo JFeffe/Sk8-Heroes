@@ -50,7 +50,7 @@ test('a 15–15–12–12 module pays all four riders and shows ranks 1, 1, 2, 2
  assert.deepEqual(restored.players.map(p=>p.game.history[0].pv),[award,1,award,1]);
  const html=recap(restored);
  assert.deepEqual([...html.matchAll(/class="rank">(\d)/g)].map(match=>Number(match[1])),[1,1,2,2]);
- assert.equal((html.match(/class="score-gain">\+1</g)||[]).length,2);
+ assert.equal((html.match(/class="score-gain">\+1(?:\s|<)/g)||[]).length,2);
  assert.match(html,/data-score-from="7" data-score-to="8"/);
  assert.match(html,/2e place : 1 PV/);
 });

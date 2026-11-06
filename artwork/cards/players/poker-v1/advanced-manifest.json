@@ -1,0 +1,94 @@
+{
+  "mode": "advanced",
+  "trimMm": [
+    63,
+    88
+  ],
+  "rasterSize": [
+    1008,
+    1408
+  ],
+  "specialtyTokenDiameterMm": 20,
+  "reset": "Active powers reset every module; Sol is passive and never flips",
+  "skaters": [
+    {
+      "id": "neo",
+      "card": "skater-neo-advanced",
+      "power": {
+        "short": "Échange un jeton contre un autre type, sans dépasser la limite de réserve.",
+        "name": "Troc",
+        "text": "Échange un jeton contre un jeton d’un autre type, dans la limite de ta réserve."
+      },
+      "token": {
+        "front": "specialty-neo-front",
+        "back": "specialty-neo-back"
+      }
+    },
+    {
+      "id": "ruby",
+      "card": "skater-ruby-advanced",
+      "power": {
+        "short": "Relance gratuitement ton dé personnel après un lancer, s’il est libre et non gelé.",
+        "name": "Dé porte-bonheur",
+        "text": "Après un lancer, relance uniquement ton dé personnel disponible et non gelé, sans dépenser de jeton."
+      },
+      "token": {
+        "front": "specialty-ruby-front",
+        "back": "specialty-ruby-back"
+      }
+    },
+    {
+      "id": "jade",
+      "card": "skater-jade-advanced",
+      "power": {
+        "short": "Au deuxième essai, reprends une carte du premier essai encaissé pour pouvoir la rejouer.",
+        "name": "Trick signature",
+        "text": "Pendant ton deuxième essai, reprends une carte utilisée dans ton premier essai encaissé. Elle redevient disponible pour être jouée, selon les règles habituelles."
+      },
+      "token": {
+        "front": "specialty-jade-front",
+        "back": "specialty-jade-back"
+      }
+    },
+    {
+      "id": "sol",
+      "card": "skater-sol-advanced",
+      "power": {
+        "passive": true,
+        "short": "Peut conserver 4 jetons ±1 au lieu de 3.",
+        "name": "Réserve renforcée",
+        "text": "Peut conserver 4 jetons de type ±1 au lieu de 3. Les réserves de relance et de gel restent limitées à 3."
+      },
+      "token": {
+        "front": "specialty-sol-front",
+        "back": "specialty-sol-back"
+      }
+    },
+    {
+      "id": "milo",
+      "card": "skater-milo-advanced",
+      "power": {
+        "short": "Encaisse exactement 2 tricks de types différents : gagne un jeton supplémentaire au choix.",
+        "name": "Bon rythme",
+        "text": "Après avoir encaissé exactement deux tricks de types différents, gagne un jeton supplémentaire au choix."
+      },
+      "token": {
+        "front": "specialty-milo-front",
+        "back": "specialty-milo-back"
+      }
+    },
+    {
+      "id": "iris",
+      "card": "skater-iris-advanced",
+      "power": {
+        "short": "Après une chute, récupère un jeton dépensé dans cet essai, si ta réserve le permet.",
+        "name": "Rebond",
+        "text": "Après une chute, récupère un jeton dépensé pendant cet essai, dans la limite de ta réserve."
+      },
+      "token": {
+        "front": "specialty-iris-front",
+        "back": "specialty-iris-back"
+      }
+    }
+  ]
+}

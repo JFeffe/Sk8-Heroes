@@ -14,4 +14,4 @@ const definitions={
 export function presentation(code){const pair=definitions[code];if(!pair)throw Error('Combinaison inconnue : '+code);return {symbols:pair[0].map(String),rule:pair[1]};}
 export function socketLayout(cost){const size=cost===2?128:cost===3?116:106,gap=cost===2?42:cost===3?32:18,start=321-(cost*size+(cost-1)*gap)/2;return Array.from({length:cost},(_,i)=>({x:start+i*(size+gap),y:1025,width:size,height:96}));}
 export const lowerTierCards=(deck,level)=>deck.filter(c=>TIER_ORDER[c.tier]<level);
-export const recoveryTier=completedModule=>completedModule===0?'base':completedModule===4?'epic':'advanced';
+export const recoveryTier=completedModule=>completedModule===0?'base':completedModule>=3?'epic':'advanced';

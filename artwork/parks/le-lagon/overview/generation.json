@@ -1,0 +1,6 @@
+{
+  "tool": "Built-in ImageGen",
+  "reference": "public/assets/modules/lagoon/boucle-lagon.webp",
+  "prompt": "Create a new landscape illustration for the board game Sk8 Heroes: an elevated wide three-quarter aerial establishing view of the ENTIRE Le Lagon skatepark. The attached image is a STYLE AND LOCATION REFERENCE, not a layout to copy. Match its warm cream concrete, turquoise wave-painted ramp sides, dark blue metal rails, tropical palms, blue ocean lagoon, distant volcanic mountains and seaside skyline, bright sunny afternoon, textured painted screen-print travel-poster illustration. Pull camera back and show the whole coherent park in one view: curved bowl and quarterpipes, flat low rail, ledges, stair handrail, small central funbox, double banks, all arranged within one landscaped waterfront park. Landscape 1.4:1 composition. No people, no lettering, no numbers, no border, no logos, no card UI; artwork only. Main park centered and completely visible, with a little breathing room at the edges for a separately overlaid title and score trackers. Keep the central landscape interesting and clear at playing-card size.",
+  "output": "park-overview.png"
+}

@@ -9,7 +9,7 @@ import {sequencePlanner} from '../public/npc-strategy.js';
 import {NPC_DIFFICULTIES} from '../public/npc-difficulty.js';
 
 function fixture(ids=[6,1]){
- const m=M.newMatch({seed:611,npcCount:1});m.route=[3,0,4,5,7,8];m.phase='playing';m.active=0;
+ const m=M.newMatch({seed:611,npcCount:1});m.route=[3,0,4,5,9,8];m.phase='playing';m.active=0;
  for(const p of m.players)p.game.route=[...m.route];
  const g=m.players[0].game;g.phase='select';g.hand=ids.map((id,i)=>({...TRICKS[id],uid:`fair-${i}`}));g.offer=[];
  return {m,g};

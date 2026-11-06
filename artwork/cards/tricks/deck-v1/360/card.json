@@ -34,9 +34,9 @@
   "rule": "Deux valeurs d’écart 3",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/360/01-illustration.webp?v=209fe43e3586",
-    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
-    "information": "assets/tricks/360/03-textes-symboles.webp?v=2e8fcc35951b"
+    "illustration": "assets/tricks/360/01-illustration.webp?v=dd17a165e256",
+    "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
+    "information": "assets/tricks/360/03-textes-symboles.webp?v=a4e738bcd4c4"
   },
   "printedPoints": 4,
   "p": 0.8913323045267489,
@@ -57,8 +57,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

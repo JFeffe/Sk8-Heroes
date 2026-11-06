@@ -1,3 +1,4 @@
+import {newSpecialty,applySpecialty,hasResultSpecialty} from './specialties.js';
 import * as E from './engine.js';
 import {TRICKS,MODULES} from './data.js';
 import {decide} from './npc.js';
@@ -11,7 +12,7 @@ import {TIER_ORDER,lowerTierCards,recoveryTier} from './trick-presentation.js';
 import {passingDraft,canInitialPick,concurrentInitialChoice,initializePassingDraft,chooseInitial,validatePassingDraft,waitingForPick} from './initial-draft.js';
 export {passingDraft,canInitialPick,concurrentInitialChoice,waitingForPick} from './initial-draft.js';
 export {matchSummary,checkpointClock,setClockRunning,clockState,restoreClockState} from './match-statistics.js';
-export const MATCH_VERSION=12;
+export const MATCH_VERSION=17;
 const npcCaution=[1.12,1,.9];
 export const currentPlayer=m=>m.players[m.active];
 export const human=m=>m.players[0];
@@ -20,10 +21,11 @@ export function random(m){if(typeof m.randomSource==='function')return m.randomS
 function bindDeck(m){for(const p of m.players){Object.defineProperty(p.game,'deck',{get:()=>m.deck,enumerable:false,configurable:true});Object.defineProperty(p.game,'draftCards',{get:()=>[...m.market.cards,...(m.market.reserve||[])],enumerable:false,configurable:true});Object.defineProperty(p.game,'draftTokens',{get:()=>m.market.tokens,enumerable:false,configurable:true});}return m;}
 export function restore(raw){
  if(raw?.version!==MATCH_VERSION||!Array.isArray(raw.players)||raw.players.length<2||!raw.deck||!Array.isArray(raw.market?.tokens))throw Error('Sauvegarde de partie incompatible');
+ if(!['base','advanced'].includes(raw.mode)||raw.players.some(p=>p.game.mode!==raw.mode))throw Error('Mode de partie incompatible');
  if(!validModuleRoute(raw.route,MODULES)||raw.players.some(p=>p.game.version!==E.RULESET_VERSION||JSON.stringify(p.game.route)!==JSON.stringify(raw.route)))throw Error('Parcours de modules incompatible');
  if(raw.players.some(p=>!getSkater(p.skaterId)||p.game.skaterId!==p.skaterId)||new Set(raw.players.map(p=>p.skaterId)).size!==raw.players.length)throw Error('Skaters incompatibles');
  raw.deck=raw.deck.map(c=>({...TRICKS[c.id],uid:c.uid}));
- for(const p of raw.players)p.game.hand=p.game.hand.map(c=>({...TRICKS[c.id],uid:c.uid}));
+ for(const p of raw.players){p.game.hand=p.game.hand.map(c=>({...TRICKS[c.id],uid:c.uid}));p.game.specialty??=newSpecialty();}
  // Legacy draft snapshots may still contain the former two-card offers. Keep
  // one offer per remaining pick and return the surplus without losing cards.
  if(raw.phase==='recovery'&&raw.market.cardsPerPlayer!==1){
@@ -37,17 +39,18 @@ export function restore(raw){
  validatePassingDraft(raw);
  return bindDeck(raw);
 }
-export function newMatch({name='Rider',length=6,npcCount=3,npcDifficulty='normal',skaterId='neo',seed=Date.now(),tieMode='full',randomSource=null}={}){
+export function newMatch({name='Rider',length=6,npcCount=3,npcDifficulty='normal',skaterId='neo',mode='base',seed=Date.now(),tieMode='full',randomSource=null}={}){
+ if(!['base','advanced'].includes(mode))throw Error('Mode de jeu inconnu');
  const selected=getSkater(skaterId);if(!selected)throw Error('Skater inconnu');
- const m={version:MATCH_VERSION,rngState:seed>>>0,phase:'initial',module:0,round:0,position:0,order:[],draftKind:'initial',draftRound:0,draftLog:[],draftOrder:[],market:{cards:[],tokens:[]},discard:[],discardedBonuses:[],leftover:null,active:0,players:[],deck:[],route:[],recaps:[],revision:0,lastEvent:'Choisis tes six cartes.',tieMode};
+ const m={version:MATCH_VERSION,mode,rngState:seed>>>0,phase:'initial',module:0,round:0,position:0,order:[],draftKind:'initial',draftRound:0,draftLog:[],draftOrder:[],market:{cards:[],tokens:[]},discard:[],discardedBonuses:[],leftover:null,active:0,players:[],deck:[],route:[],recaps:[],revision:0,lastEvent:'Choisis tes six cartes.',tieMode};
  m.npcDifficulty=difficultyPolicy(npcDifficulty).id;
  if(randomSource)Object.defineProperty(m,'randomSource',{value:randomSource,enumerable:false,configurable:true});
- const rng=()=>random(m),first=E.newGame({name,length,skaterId},rng);m.route=first.route;m.deck=first.deck;
+ const rng=()=>random(m),first=E.newGame({name,length,skaterId,mode},rng);m.route=first.route;m.deck=first.deck;
  const count=Math.max(1,Math.min(3,Math.trunc(npcCount)||3));
  const available=E.shuffle(SKATERS.filter(s=>s.id!==skaterId),rng);
  for(let seat=0;seat<=count;seat++){
   const character=seat===0?selected:available[seat-1];
-  const game=seat===0?first:E.newGame({name:character.name,length,skaterId:character.id,route:m.route},rng);
+  const game=seat===0?first:E.newGame({name:character.name,length,skaterId:character.id,mode,route:m.route},rng);
   game.route=[...m.route];game.competitive=true;game.deferredOffer=true;game.offer=[];
   m.players.push({id:`p${seat}`,seat,skaterId:character.id,kind:seat?'npc':'human',color:character.color,caution:seat?npcCaution[seat-1]:1,game});
  }
@@ -135,7 +138,7 @@ function sharedChoice(m,c){
  return true;
 }
 export function dispatch(m,command){
- if(!command||!['initial','playing','recovery'].includes(m.phase))return false;
+ if(!command||typeof command.type!=='string'||!['initial','playing','recovery'].includes(m.phase))return false;
  if(m.phase==='initial'&&passingDraft(m)){
   if(command.type!=='draft'||command.revision!==undefined&&command.revision!==m.revision&&!concurrentInitialChoice(m,command))return false;
   const changed=chooseInitial(m,command,()=>random(m));if(changed)Stats.checkpointClock(m);return changed;
@@ -150,13 +153,15 @@ export function dispatch(m,command){
  const card=g.hand.find(t=>t.uid===c.cardId)?.name;
  const offered=g.offer.map(uid=>g.deck.find(c=>c.uid===uid)?.name),chosen=g.deck.find(x=>x.uid===c.cardId)?.name,offeredBonus=g.bonusOffer,reward=g.reward;
  const previousPhase=g.phase,before={...g.bank};
- if(!apply(g,c,rng))return false;
+ const changed=c.type==='specialty'?applySpecialty(g,c,rng):apply(g,c,rng);
+ if(!changed)return false;
+ if(c.type.startsWith('specialty'))E.fitSequenceReward(g);
  // Clicked falls and sequence rewards hand over atomically, including online.
  // Plain commands still expose the result for controllers and saved games.
- const advanceResult=['fall','claim-sequence'].includes(c.type)&&c.advance===true&&!g.sequenceReward?.pending;
+ const advanceResult=['fall','claim-sequence'].includes(c.type)&&c.advance===true&&!g.sequenceReward?.pending&&!hasResultSpecialty(g);
  if(advanceResult)E.proceed(g);
  Stats.recordTokenChanges(m,p,before);Stats.checkpointClock(m);
- m.revision++;m.lastEvent=describe(g,c,card)||m.lastEvent;
+ m.revision++;m.lastEvent=c.type.startsWith('specialty')?`${g.name} utilise sa spécialité.`:describe(g,c,card)||m.lastEvent;
  if(['initial','recovery'].includes(m.phase)){
   m.draftLog.push({module:m.module,kind:m.draftKind,round:m.draftRound,playerId:p.id,action:c.type,name:chosen||null,bonus:c.type==='claim'?(reward==='choice'?c.choice:reward):c.type==='draft-bonus'?c.choice:null,offered,offeredBonus});
   if(draftActions.includes(c.type))nextDraftSeat(m);

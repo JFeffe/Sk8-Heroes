@@ -1,0 +1,742 @@
+{
+  "build": "0.6.3",
+  "totals": {
+    "games": 7200,
+    "attempts": 345600,
+    "commands": 4370666,
+    "invariantChecks": 134771
+  },
+  "sameBase": 1800,
+  "sol": {
+    "normal": {
+      "before": {
+        "id": "sol",
+        "name": "Sol",
+        "power": "Réglage précis",
+        "appearances": 800,
+        "win": {
+          "mean": 0.34541666666666665,
+          "low": 0.31543226119534784,
+          "high": 0.37540107213798546,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "baseWin": {
+          "mean": 0.27125000000000005,
+          "low": 0.24011192519310057,
+          "high": 0.30238807480689955,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "winChange": {
+          "mean": 0.07416666666666667,
+          "low": 0.03508140045780565,
+          "high": 0.11325193287552769,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "pv": {
+          "mean": 9.3825,
+          "low": 9.123451238462193,
+          "high": 9.641548761537807,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "basePv": {
+          "mean": 8.26375,
+          "low": 7.991389923919247,
+          "high": 8.536110076080753,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "pvChange": {
+          "mean": 1.11875,
+          "low": 0.7980192394056078,
+          "high": 1.439480760594392,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "best": {
+          "mean": 14.422291666666665,
+          "low": 14.240053611045845,
+          "high": 14.604529722287484,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "falls": {
+          "mean": 0.20739583333333336,
+          "low": 0.19876868002526787,
+          "high": 0.21602298664139885,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "usage": {
+          "uses": 3715,
+          "modules": 4800,
+          "perGame": 4.64375,
+          "rate": 0.7739583333333333,
+          "eligibleModules": 4591,
+          "activationWhenEligible": 0.8091918971901546,
+          "bankedTarget": 3259,
+          "immediateMatches": 2747,
+          "byRound": [
+            0.77,
+            0.81,
+            0.76625,
+            0.73375,
+            0.76,
+            0.80375
+          ]
+        },
+        "ablation": {
+          "win": {
+            "mean": 0.12041666666666666,
+            "low": 0.052276042056804,
+            "high": 0.18855729127652932,
+            "blocks": 50,
+            "appearances": 200
+          },
+          "pv": {
+            "mean": 1.265,
+            "low": 0.6252122539466702,
+            "high": 1.9047877460533296,
+            "blocks": 50,
+            "appearances": 200
+          },
+          "best": {
+            "mean": 1.889166666666666,
+            "low": 1.402077479077097,
+            "high": 2.376255854256235,
+            "blocks": 50,
+            "appearances": 200
+          },
+          "byRound": [
+            {
+              "mean": 0.03,
+              "low": -0.07811771362732382,
+              "high": 0.13811771362732383,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.205,
+              "low": 0.08646207357980318,
+              "high": 0.3235379264201968,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.305,
+              "low": 0.11136932061266733,
+              "high": 0.49863067938733263,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.055,
+              "low": -0.14898245022550355,
+              "high": 0.25898245022550354,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.36,
+              "low": 0.0593550931746889,
+              "high": 0.6606449068253111,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.31,
+              "low": 0.010203802559138497,
+              "high": 0.6097961974408614,
+              "blocks": 50,
+              "appearances": 200
+            }
+          ]
+        },
+        "seats": [
+          {
+            "seat": 0,
+            "appearances": 200,
+            "win": 0.3583333333333333
+          },
+          {
+            "seat": 1,
+            "appearances": 200,
+            "win": 0.3425
+          },
+          {
+            "seat": 2,
+            "appearances": 200,
+            "win": 0.3216666666666667
+          },
+          {
+            "seat": 3,
+            "appearances": 200,
+            "win": 0.3591666666666667
+          }
+        ]
+      },
+      "after": {
+        "id": "sol",
+        "name": "Sol",
+        "power": "Réserve renforcée",
+        "appearances": 800,
+        "win": {
+          "mean": 0.20739583333333333,
+          "low": 0.18243120711884944,
+          "high": 0.23236045954781723,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "baseWin": {
+          "mean": 0.27125000000000005,
+          "low": 0.24011192519310057,
+          "high": 0.30238807480689955,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "winChange": {
+          "mean": -0.06385416666666668,
+          "low": -0.09786425189819808,
+          "high": -0.02984408143513529,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "pv": {
+          "mean": 7.8775,
+          "low": 7.62579598831666,
+          "high": 8.129204011683342,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "basePv": {
+          "mean": 8.26375,
+          "low": 7.991389923919247,
+          "high": 8.536110076080753,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "pvChange": {
+          "mean": -0.38625,
+          "low": -0.6682003395232685,
+          "high": -0.1042996604767315,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "best": {
+          "mean": 12.583749999999995,
+          "low": 12.374638973148684,
+          "high": 12.792861026851305,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "falls": {
+          "mean": 0.3375000000000002,
+          "low": 0.3265386796238498,
+          "high": 0.3484613203761506,
+          "blocks": 200,
+          "appearances": 800
+        },
+        "usage": {
+          "uses": 0,
+          "modules": 4800,
+          "perGame": 0,
+          "rate": 0,
+          "eligibleModules": 0,
+          "activationWhenEligible": 0,
+          "bankedTarget": 0,
+          "immediateMatches": 0,
+          "byRound": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "ablation": {
+          "win": {
+            "mean": 0.0025,
+            "low": -0.029186116833717562,
+            "high": 0.03418611683371756,
+            "blocks": 50,
+            "appearances": 200
+          },
+          "pv": {
+            "mean": -0.035,
+            "low": -0.27708667869174464,
+            "high": 0.20708667869174466,
+            "blocks": 50,
+            "appearances": 200
+          },
+          "best": {
+            "mean": 0.1191666666666666,
+            "low": -0.060333407613726533,
+            "high": 0.29866674094705975,
+            "blocks": 50,
+            "appearances": 200
+          },
+          "byRound": [
+            {
+              "mean": 0,
+              "low": 0,
+              "high": 0,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.005,
+              "low": -0.004799999999999994,
+              "high": 0.014799999999999994,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": -0.04,
+              "low": -0.09662649556523871,
+              "high": 0.016626495565238708,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.01,
+              "low": -0.05409492959665375,
+              "high": 0.07409492959665374,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": -0.035,
+              "low": -0.15625163916417786,
+              "high": 0.08625163916417786,
+              "blocks": 50,
+              "appearances": 200
+            },
+            {
+              "mean": 0.025,
+              "low": -0.1353901493234544,
+              "high": 0.18539014932345438,
+              "blocks": 50,
+              "appearances": 200
+            }
+          ]
+        },
+        "seats": [
+          {
+            "seat": 0,
+            "appearances": 200,
+            "win": 0.24
+          },
+          {
+            "seat": 1,
+            "appearances": 200,
+            "win": 0.19041666666666668
+          },
+          {
+            "seat": 2,
+            "appearances": 200,
+            "win": 0.1975
+          },
+          {
+            "seat": 3,
+            "appearances": 200,
+            "win": 0.20166666666666663
+          }
+        ]
+      },
+      "pairedPv": {
+        "mean": -1.505,
+        "low": -1.8113587656104058,
+        "high": -1.198641234389594,
+        "blocks": 200
+      },
+      "pairedWin": {
+        "mean": -0.13802083333333331,
+        "low": -0.17067395127058196,
+        "high": -0.10536771539608467,
+        "blocks": 200
+      },
+      "fourthGains": {
+        "mean": 0.3675,
+        "low": 0.32013899415793773,
+        "high": 0.41486100584206226,
+        "blocks": 200
+      },
+      "gamesReachingFour": {
+        "mean": 0.26125,
+        "low": 0.23090936291384154,
+        "high": 0.2915906370861584,
+        "blocks": 200
+      },
+      "appearances": 800
+    },
+    "expert": {
+      "before": {
+        "id": "sol",
+        "name": "Sol",
+        "power": "Réglage précis",
+        "appearances": 400,
+        "win": {
+          "mean": 0.4204166666666667,
+          "low": 0.3733938011121227,
+          "high": 0.4674395322212107,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "baseWin": {
+          "mean": 0.2554166666666666,
+          "low": 0.21241127291547857,
+          "high": 0.2984220604178547,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "winChange": {
+          "mean": 0.165,
+          "low": 0.10420766835380538,
+          "high": 0.22579233164619464,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "pv": {
+          "mean": 10.3325,
+          "low": 9.985244728861701,
+          "high": 10.679755271138298,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "basePv": {
+          "mean": 8.82,
+          "low": 8.47393230416433,
+          "high": 9.16606769583567,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "pvChange": {
+          "mean": 1.5125,
+          "low": 1.033898873926536,
+          "high": 1.991101126073464,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "best": {
+          "mean": 18.116249999999997,
+          "low": 17.878021844809716,
+          "high": 18.35447815519028,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "falls": {
+          "mean": 0.1729166666666667,
+          "low": 0.15845950200727457,
+          "high": 0.1873738313260588,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "usage": {
+          "uses": 2009,
+          "modules": 2400,
+          "perGame": 5.0225,
+          "rate": 0.8370833333333333,
+          "eligibleModules": 2342,
+          "activationWhenEligible": 0.8578138343296328,
+          "bankedTarget": 1855,
+          "immediateMatches": 1483,
+          "byRound": [
+            0.87,
+            0.845,
+            0.82,
+            0.815,
+            0.835,
+            0.8375
+          ]
+        },
+        "ablation": {
+          "win": {
+            "mean": 0.18541666666666667,
+            "low": 0.13132758016208507,
+            "high": 0.23950575317124828,
+            "blocks": 100,
+            "appearances": 400
+          },
+          "pv": {
+            "mean": 2.145,
+            "low": 1.7489266933477792,
+            "high": 2.541073306652221,
+            "blocks": 100,
+            "appearances": 400
+          },
+          "best": {
+            "mean": 2.9725,
+            "low": 2.5807781296730035,
+            "high": 3.364221870326997,
+            "blocks": 100,
+            "appearances": 400
+          },
+          "byRound": [
+            {
+              "mean": 0.2,
+              "low": 0.12762220330415242,
+              "high": 0.2723777966958476,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.3325,
+              "low": 0.25492878085008563,
+              "high": 0.4100712191499144,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.3775,
+              "low": 0.23468497553786155,
+              "high": 0.5203150244621384,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.4375,
+              "low": 0.3000712765088607,
+              "high": 0.5749287234911393,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.49,
+              "low": 0.29725408361568784,
+              "high": 0.6827459163843121,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.3075,
+              "low": 0.08639808305496832,
+              "high": 0.5286019169450317,
+              "blocks": 100,
+              "appearances": 400
+            }
+          ]
+        },
+        "seats": [
+          {
+            "seat": 0,
+            "appearances": 100,
+            "win": 0.385
+          },
+          {
+            "seat": 1,
+            "appearances": 100,
+            "win": 0.475
+          },
+          {
+            "seat": 2,
+            "appearances": 100,
+            "win": 0.4383333333333333
+          },
+          {
+            "seat": 3,
+            "appearances": 100,
+            "win": 0.38333333333333336
+          }
+        ]
+      },
+      "after": {
+        "id": "sol",
+        "name": "Sol",
+        "power": "Réserve renforcée",
+        "appearances": 400,
+        "win": {
+          "mean": 0.23499999999999996,
+          "low": 0.19972513318301213,
+          "high": 0.27027486681698776,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "baseWin": {
+          "mean": 0.2554166666666666,
+          "low": 0.21241127291547857,
+          "high": 0.2984220604178547,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "winChange": {
+          "mean": -0.02041666666666667,
+          "low": -0.06826889603772128,
+          "high": 0.027435562704387944,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "pv": {
+          "mean": 8.2375,
+          "low": 7.881668057628154,
+          "high": 8.593331942371847,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "basePv": {
+          "mean": 8.82,
+          "low": 8.47393230416433,
+          "high": 9.16606769583567,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "pvChange": {
+          "mean": -0.5825,
+          "low": -0.9434532288736914,
+          "high": -0.22154677112630855,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "best": {
+          "mean": 15.263749999999993,
+          "low": 14.887665629126712,
+          "high": 15.639834370873274,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "falls": {
+          "mean": 0.3058333333333333,
+          "low": 0.28670825812606937,
+          "high": 0.3249584085405972,
+          "blocks": 100,
+          "appearances": 400
+        },
+        "usage": {
+          "uses": 0,
+          "modules": 2400,
+          "perGame": 0,
+          "rate": 0,
+          "eligibleModules": 0,
+          "activationWhenEligible": 0,
+          "bankedTarget": 0,
+          "immediateMatches": 0,
+          "byRound": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "ablation": {
+          "win": {
+            "mean": 0,
+            "low": -0.014774055884310416,
+            "high": 0.014774055884310416,
+            "blocks": 100,
+            "appearances": 400
+          },
+          "pv": {
+            "mean": 0.05,
+            "low": -0.044471843916212964,
+            "high": 0.14447184391621298,
+            "blocks": 100,
+            "appearances": 400
+          },
+          "best": {
+            "mean": 0.11999999999999993,
+            "low": 0.029913698691190038,
+            "high": 0.21008630130880981,
+            "blocks": 100,
+            "appearances": 400
+          },
+          "byRound": [
+            {
+              "mean": 0,
+              "low": 0,
+              "high": 0,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.0025,
+              "low": -0.002399999999999997,
+              "high": 0.007399999999999997,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": -0.005,
+              "low": -0.020542044637535683,
+              "high": 0.010542044637535684,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.01,
+              "low": -0.0150336823604769,
+              "high": 0.0350336823604769,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": -0.01,
+              "low": -0.05770594270839818,
+              "high": 0.03770594270839817,
+              "blocks": 100,
+              "appearances": 400
+            },
+            {
+              "mean": 0.0525,
+              "low": -0.015843206234298295,
+              "high": 0.12084320623429828,
+              "blocks": 100,
+              "appearances": 400
+            }
+          ]
+        },
+        "seats": [
+          {
+            "seat": 0,
+            "appearances": 100,
+            "win": 0.19333333333333333
+          },
+          {
+            "seat": 1,
+            "appearances": 100,
+            "win": 0.31
+          },
+          {
+            "seat": 2,
+            "appearances": 100,
+            "win": 0.2333333333333333
+          },
+          {
+            "seat": 3,
+            "appearances": 100,
+            "win": 0.2033333333333333
+          }
+        ]
+      },
+      "pairedPv": {
+        "mean": -2.095,
+        "low": -2.4955546603893106,
+        "high": -1.6944453396106895,
+        "blocks": 100
+      },
+      "pairedWin": {
+        "mean": -0.18541666666666667,
+        "low": -0.23935608572853423,
+        "high": -0.13147724760479912,
+        "blocks": 100
+      },
+      "fourthGains": {
+        "mean": 0.3575,
+        "low": 0.282407026650527,
+        "high": 0.43259297334947294,
+        "blocks": 100
+      },
+      "gamesReachingFour": {
+        "mean": 0.225,
+        "low": 0.18178606191927835,
+        "high": 0.2682139380807217,
+        "blocks": 100
+      },
+      "appearances": 400
+    }
+  }
+}

@@ -14,7 +14,7 @@ function claim(g){while(g.sequenceReward?.pending)assert(E.claimSequenceReward(g
 test('all twelve effects match the approved grid, including the Coping Bleu / Double Quai swap',()=>{
  const kinds=['base','favored','favored','signature','favored','stars','amplitude','recovery','three-score','three-score','three-tokens','amplitude'];
  const needs=[['kick'],['slide'],['air'],[],['slide','kick'],['air','kick'],['air','slide'],['slide'],[],['kick','slide'],[],['air']];
- assert.equal(MODULES.length,12);for(const [i,m]of MODULES.entries()){assert.equal(m.bonus.kind,kinds[i]);assert.deepEqual(m.needs,needs[i]);assert.equal(m.pv,[2,3,4][m.stage]);assert.deepEqual(m.rounds,[[1,2],[3,4,5],[6]][m.stage]);assert(!('minimumTricks' in m.bonus));assert(!('target'in m));assert(moduleGoalPresentation(m).title);}
+ assert.equal(MODULES.length,12);for(const [i,m]of MODULES.entries()){assert.equal(m.bonus.kind,kinds[i]);assert.deepEqual(m.needs,needs[i]);assert.equal(m.pv,[2,3,4][m.stage]);assert.deepEqual(m.rounds,[[1,2],[3,4],[5,6]][m.stage]);assert(!('minimumTricks' in m.bonus));assert(!('target'in m));assert(moduleGoalPresentation(m).title);}
  assert.deepEqual([1,2,4].map(i=>MODULES[i].bonus.type),['kick','slide','air']);
 });
 test('Base pays per physical card, including a single trick; Advanced and Epic do not count',()=>{

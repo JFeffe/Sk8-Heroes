@@ -5,6 +5,7 @@ import {chanceBeforeRoll,rollProbability} from './roll-probability.js';
 import {closestMatch} from './npc-dice.js';
 import {newModuleTrace,projectedBonus} from './module-trace.js';
 import {npcGameView} from './npc-view.js';
+import {specialtyReady,specialtyActions,applySpecialty} from './specialties.js';
 
 // Bounded three-trick planning. Future roll probabilities and token consumption
 // are estimates; actual faces are used only after a roll or for frozen dice.
@@ -80,6 +81,8 @@ export function sequencePlanner(g,{leader=0,parScore=7,caution=1,searchDepth=3,r
  leader=Math.max(leader,...(opposition||[]).map(o=>o.best));
  const goal=g.attempt===0?Math.max(leader+1,parScore):Math.max(1,leader+1,ownBest+1);
  const award=module.pv*8,resources={adjust:g.bank.adjust||0,reroll:g.bank.reroll||0};
+ const signature=g.skaterId==='jade'&&specialtyReady(g);
+ const previouslyRewarded=new Set(g.skaterId==='jade'&&g.mode==='advanced'?g.sequences.flatMap(s=>s.entries.map(e=>e.card)):[]);
  const free=E.freeDice(g),own=!!free.find(d=>d.color===E.wildColor(g)&&E.wildColor(g));
  const horizon=upcoming(g).length>0;
  const spent=E.BONUS_TYPES.reduce((n,type)=>n+(g.used?.[type]||0),0);
@@ -111,7 +114,7 @@ export function sequencePlanner(g,{leader=0,parScore=7,caution=1,searchDepth=3,r
   let reward=0,count=0,remainingSlots=totalSlots;
   if(horizon)for(const type of E.BONUS_TYPES){
    const pending=Math.min(slots[type],g.earned?.[type]||0);
-   const tokens=Math.min(slots[type]-pending,cards.filter(c=>c.comboBonus?.kind==='reward'&&c.comboBonus.type===type).length);
+   const tokens=Math.min(slots[type]-pending,cards.filter(c=>!previouslyRewarded.has(c.uid)&&c.comboBonus?.kind==='reward'&&c.comboBonus.type===type).length);
    remainingSlots-=pending+tokens;reward+=tokens*tokenValue(type,g);count+=tokens;
   }
   if(horizon||g.attempt===0){const tokens=Math.min(remainingSlots,E.sequenceScore(cards,module,g).rewardTokens);reward+=tokens*tokenUnit;count+=tokens;}
@@ -128,7 +131,11 @@ export function sequencePlanner(g,{leader=0,parScore=7,caution=1,searchDepth=3,r
   if(g.attempt===0){
    opportunity=cards.reduce((sum,c)=>sum+probability(c,6,!!g.skaterId)*c.points*.08,0);
    const remaining=g.hand.filter(c=>!g.secured.includes(c.uid)&&!cards.some(p=>p.uid===c.uid));
-   if(module.needs.some(t=>!remaining.some(c=>c.type===t)))opportunity+=1.2;
+   // Jade can recover ONE physical card next attempt. Do not reserve every
+   // first-attempt card, or assume that two missing types can both be recovered.
+   if(signature)opportunity-=Math.max(0,...cards.map(c=>probability(c,6,true)*c.points*.08));
+   const missing=module.needs.filter(t=>!remaining.some(c=>c.type===t));
+   if(missing.length&&!(signature&&missing.length===1&&cards.some(c=>c.type===missing[0])))opportunity+=1.2;
   }
   return standing(score)+scoreGain+reward-opportunity;
  }
@@ -185,6 +192,21 @@ export function sequencePlanner(g,{leader=0,parScore=7,caution=1,searchDepth=3,r
   if(!plan||candidate.utility>plan.utility+1e-8||Math.abs(candidate.utility-plan.utility)<1e-8&&candidate.points>plan.points)plan={...candidate,tokenBudget:budget};
  }
  return {...plan,stopUtility:canBank(module,landed)?value(landed):-Infinity,fallUtility:fallValue,goal};
+}
+
+// Compare legal signature returns against keeping the power. The current
+// module, remaining dice, partner types and protected best score all matter.
+// Only select/decision can benefit now: later rolls may change the best choice.
+export function signatureChoice(g,context){
+ if(g.skaterId!=='jade'||!['select','decision'].includes(g.phase))return null;
+ const actions=specialtyActions(g);if(!actions.length)return null;
+ let best=sequencePlanner(g,context),choice=null;
+ for(const action of actions){
+  const trial=npcGameView(g);applySpecialty(trial,action);
+  const plan=sequencePlanner(trial,context);
+  if(plan.path.some(c=>c.uid===action.cardId)&&plan.utility>best.utility+1e-8){best=plan;choice=action;}
+ }
+ return choice;
 }
 
 // Evaluate the proposed spend before issuing it. Trial copies contain only

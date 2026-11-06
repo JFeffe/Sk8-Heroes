@@ -66,9 +66,9 @@
     "type": "reroll"
   },
   "layers": {
-    "illustration": "assets/tricks/stalefish/01-illustration.webp?v=ea88b1391dc3",
-    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
-    "information": "assets/tricks/stalefish/03-textes-symboles.webp?v=8a33092074b1"
+    "illustration": "assets/tricks/stalefish/01-illustration.webp?v=18d1e2d00432",
+    "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
+    "information": "assets/tricks/stalefish/03-textes-symboles.webp?v=6351004d41c9"
   },
   "printedPoints": 8,
   "p": 0.7407407407407407,
@@ -95,8 +95,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

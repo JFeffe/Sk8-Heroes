@@ -19,18 +19,26 @@
   ],
   "image": "assets/modules/lagoon/ilot.webp",
   "layers": {
-    "illustration": "assets/modules/lagoon/layers/ilot/01-illustration.webp?v=044b4f85e7ca",
-    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
-    "information": "assets/modules/lagoon/layers/ilot/03-textes-symboles.webp?v=a1af8c75f7f4"
+    "illustration": "assets/modules/lagoon/layers/ilot/01-illustration.webp?v=d755016369d3",
+    "graphics": "assets/modules/lagoon/layers/frames/module-0.svg?v=48e7b0ebcdf5",
+    "information": "assets/modules/lagoon/layers/ilot/03-textes-symboles.webp?v=23d7b08bc75d"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/ilot.png",
   "canvas": [
     900,
     1300
   ],
+  "trimMm": [
+    63,
+    88
+  ],
+  "rasterSize": [
+    1008,
+    1408
+  ],
   "textResolution": [
-    1800,
-    2600
+    2016,
+    2816
   ],
   "layerOrder": [
     "01-illustration",

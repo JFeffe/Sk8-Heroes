@@ -1,0 +1,58 @@
+{
+  "trimMm": {
+    "skater": [
+      63,
+      88
+    ],
+    "park": [
+      88,
+      63
+    ]
+  },
+  "rasterSize": {
+    "skater": [
+      1008,
+      1408
+    ],
+    "park": [
+      1408,
+      1008
+    ]
+  },
+  "trophyToken": {
+    "value": 1,
+    "suggestedDiameterMm": 18
+  },
+  "cards": [
+    "skater-neo",
+    "skater-ruby",
+    "skater-jade",
+    "skater-sol",
+    "skater-milo",
+    "skater-iris",
+    "park-le-lagon"
+  ],
+  "markersPerPlayer": 2,
+  "scoreTrack": {
+    "tens": [
+      30,
+      20,
+      10,
+      0
+    ],
+    "units": [
+      8,
+      9,
+      6,
+      7,
+      4,
+      5,
+      2,
+      3,
+      0,
+      1
+    ],
+    "readingOrder": "top-to-bottom, left-to-right"
+  },
+  "note": "Trim artwork only; no bleed or imposed print sheets."
+}

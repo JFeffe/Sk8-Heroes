@@ -22,9 +22,9 @@
   "rule": "Trois dés ≥ 5",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/bluntslide/01-illustration.webp?v=d79eca7e98c6",
-    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-    "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=e71dd327eab3"
+    "illustration": "assets/tricks/bluntslide/01-illustration.webp?v=165f5d5273a0",
+    "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+    "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=b1b606c0029a"
   },
   "printedPoints": 11,
   "p": 0.3196159122085048,
@@ -51,8 +51,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

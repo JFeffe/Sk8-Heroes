@@ -41,7 +41,7 @@ test('approved 85-card combinations and difficulty points remain fixed; three an
  const fixture=JSON.parse(readFileSync(new URL('./fixtures/theory85-catalog.json',import.meta.url),'utf8'));
  assert.equal(TRICKS.length,fixture.cards.length);
  for(const c of TRICKS){const approved=fixture.cards[c.id];assert.equal(c.name,approved.name);assert.equal(c.copies,approved.copies);assert.equal(c.tier,approved.tier);assert.equal(c.points,approved.difficultyPoints+(c.cost>=3?2:0));near(c.p6,approved.p);for(const key of ['pattern','cost','values','choices','threshold'])assert.deepEqual(c[key],approved.requirement[key],c.name+': '+key);}
- assert.deepEqual([0,1,2].map(stage=>MODULES.filter(m=>m.stage===stage).length),[4,6,2]);assert(MODULES.every(m=>!('target'in m)&&m.bonus?.kind&&!('minimumTricks'in m.bonus)));
+ assert.deepEqual([0,1,2].map(stage=>MODULES.filter(m=>m.stage===stage).length),[4,4,4]);assert(MODULES.every(m=>!('target'in m)&&m.bonus?.kind&&!('minimumTricks'in m.bonus)));
 });
 
 test('all displayed and bonus probabilities are generated from current combinations',()=>{

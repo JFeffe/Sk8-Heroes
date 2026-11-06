@@ -18,5 +18,5 @@ export function sequenceTokenCount(module,cards){if(cards.length===3)return modu
 export function moduleEffect(module,cards,state=null){return {points:moduleBonusPoints(module,cards,state)+Math.max(0,sequenceBonusPoints(module,cards)-(cards.length===3?1:0)),tokens:Math.max(0,sequenceTokenCount(module,cards)-(cards.length===3?1:0))};}
 export function moduleBonusEarned(module,cards,state=null){const effect=moduleEffect(module,cards,state);return effect.points>0||effect.tokens>0;}
 export const appearanceLabel=m=>m.rounds.length===1?'MANCHE '+m.rounds[0]:'MANCHES '+m.rounds[0]+'–'+m.rounds.at(-1);
-export function routeStages(length=6){return length===4?[0,1,1,2]:[0,0,1,1,1,2];}
+export function routeStages(length=6){return length===4?[0,1,1,2]:[0,0,1,1,2,2];}
 export function validModuleRoute(route,modules){return Array.isArray(route)&&[4,6].includes(route.length)&&new Set(route).size===route.length&&route.every((id,i)=>Number.isInteger(id)&&modules[id]?.stage===routeStages(route.length)[i]);}

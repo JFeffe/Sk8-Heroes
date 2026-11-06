@@ -12,7 +12,7 @@ const command=(m,type,extra={})=>M.dispatch(m,{playerId:M.currentPlayer(m).id,ty
 function fixture(){
  const m=M.newMatch({seed:19,npcCount:1});
  while(m.phase==='initial')assert(command(m,'draft',{cardId:M.currentPlayer(m).game.offer[0]}));
- m.route=[3,0,4,5,7,8];for(const p of m.players)p.game.route=[...m.route];m.order=[0,1];assert(M.startModule(m));
+ m.route=[3,0,4,5,9,8];for(const p of m.players)p.game.route=[...m.route];m.order=[0,1];assert(M.startModule(m));
  m.players[0].game.hand=[16,1,18,6].map((id,i)=>({...TRICKS[id],uid:`stats-${i}`}));return m;
 }
 function roll(m,faces){

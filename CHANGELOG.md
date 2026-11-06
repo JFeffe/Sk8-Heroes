@@ -1,3 +1,21 @@
+# Version 0.6.3 — 6 novembre 2026
+
+- Livraison des évolutions depuis la version publiée 0.5.5 : cartes au format poker, probabilités fixes imprimées, carte du parc pour les meilleurs essais, jetons trophée et piles/défausses visibles.
+- Parcours à deux modules par niveau, quatre modules à quatre trophées et drafts Épiques avant les modules 5 et 6 ; couleurs distinctes pour les trois niveaux de modules.
+- Choix Base/Avancé en local et en ligne, spécialités des six skaters et stratégie de Jade améliorée. Les pouvoirs actifs se réinitialisent à chaque module ; Sol possède un pouvoir passif.
+- Sol : Réserve renforcée remplace le ±1 gratuit. Capacité permanente de quatre jetons ±1 en Avancé, trois relances et trois gels ; chaque correction coûte un jeton.
+- Capacité prise en compte dans les récompenses, le draft, les choix NPC, les compteurs et les reprises de sauvegarde. Carte et repère passif imprimables mis à jour.
+- Règles v22, sauvegardes v17 : nouvelle partie nécessaire. 295 tests réussis et contrôle navigateur sur ordinateur et mobile.
+- 7 200 simulations : Sol revient à 20,7 % des victoires en Normal et 23,5 % en Expert. Le gain propre de la quatrième place reste faible et incertain (+0,05 trophée par partie en Expert). Rapport : `public/reports/specialty-balance-063.html`.
+
+# Version 0.6.2 — 6 novembre 2026
+
+- Sol : Réglage précis remplace Double réglage. Un ±1 gratuit sur un dé disponible après le lancer, une fois par module parmi les deux essais, sans dépense de jeton ordinaire.
+- Jade : les NPC comparent les cartes récupérables selon le module, les dés restants et le meilleur score, anticipent une reprise au premier essai et évitent de prévoir deux fois la récompense d’une même carte.
+- Sol : les NPC intègrent la correction gratuite à leur plan et peuvent la combiner aux jetons ordinaires.
+- Carte avancée et jeton de Sol mis à jour. Règles v21 et sauvegardes v16 : nouvelle partie nécessaire. 296 tests réussis et vérification navigateur des six spécialités.
+- 8 400 simulations : Sol atteint 34,5 % des victoires en Normal et 42,0 % en Expert, signal d’un pouvoir trop fort. À adversaires identiques, la stratégie de Jade gagne environ +0,38 trophée par partie en Normal ; le gain Expert de +0,20 reste incertain. Rapport comparatif `public/reports/specialty-balance-062.html`.
+
 # Version 0.5.5 — 4 novembre 2026
 
 - Réserve de trois jetons par type, avec compteur sur la table et pendant le draft.

@@ -26,9 +26,9 @@
   "rule": "Un 3 et deux 6",
   "comboBonus": null,
   "layers": {
-    "illustration": "assets/tricks/nosebluntslide/01-illustration.webp?v=dfc4127c72e0",
-    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
-    "information": "assets/tricks/nosebluntslide/03-textes-symboles.webp?v=c179d6455c1b"
+    "illustration": "assets/tricks/nosebluntslide/01-illustration.webp?v=68acc655c333",
+    "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
+    "information": "assets/tricks/nosebluntslide/03-textes-symboles.webp?v=8dacdc62d98d"
   },
   "printedPoints": 15,
   "p": 0.14780521262002744,
@@ -55,8 +55,12 @@
     }
   ],
   "layerSize": [
-    900,
-    1300
+    1008,
+    1408
+  ],
+  "trimMm": [
+    63,
+    88
   ],
   "layerOrder": [
     "01-illustration",

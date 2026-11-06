@@ -13,23 +13,30 @@
   "park": "Le Lagon",
   "rounds": [
     3,
-    4,
-    5
+    4
   ],
   "image": "assets/modules/lagoon/embruns.webp",
   "layers": {
-    "illustration": "assets/modules/lagoon/layers/embruns/01-illustration.webp?v=8c7d368c8348",
-    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
-    "information": "assets/modules/lagoon/layers/embruns/03-textes-symboles.webp?v=400951881c7c"
+    "illustration": "assets/modules/lagoon/layers/embruns/01-illustration.webp?v=5ec49f8377fc",
+    "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
+    "information": "assets/modules/lagoon/layers/embruns/03-textes-symboles.webp?v=a4858926c517"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/embruns.png",
   "canvas": [
     900,
     1300
   ],
+  "trimMm": [
+    63,
+    88
+  ],
+  "rasterSize": [
+    1008,
+    1408
+  ],
   "textResolution": [
-    1800,
-    2600
+    2016,
+    2816
   ],
   "layerOrder": [
     "01-illustration",

@@ -1,5 +1,6 @@
+import {specialtyActions} from './specialties.js';
 import * as E from './engine.js';
-import {sequencePlanner,draftValue,chooseToken,tokenValue,bestPlacement,bonusPlan} from './npc-strategy.js';
+import {sequencePlanner,draftValue,chooseToken,tokenValue,bestPlacement,bonusPlan,signatureChoice} from './npc-strategy.js';
 import {chanceBeforeRoll,rollProbability} from './roll-probability.js';
 // A controller chooses commands from the visible state. It never changes a die,
 // awards points, reads the random stream, or bypasses the rules engine.
@@ -9,9 +10,18 @@ import {chooseNearBest} from './npc-choice.js';
 export {closestMatch,freezeChoice} from './npc-dice.js';
 export function decide(g,context={}){
  const policy=npcDifficulty(context.difficulty);
+ const power=specialtyActions(g);
+ if(power.length){
+  if(['milo','iris'].includes(g.skaterId)){const type=chooseToken(power.map(a=>a.choice),g);return power.find(a=>a.choice===type);}
+  if(g.skaterId==='neo'){const trades=power.filter(a=>g.bank[a.bonusType]>1&&tokenValue(a.choice,g)>tokenValue(a.bonusType,g)*1.25);if(trades.length)return trades[0];}
+  if(g.phase==='rolled'&&!E.findMatch(E.activeCard(g),E.freeDice(g),E.wildColor(g))){
+   if(g.skaterId==='ruby')return power[0];
+  }
+ }
  const openingPair=!g.landed.length&&E.currentModule(g).needs.length===2;
  const protectedScore=Math.max(context.leader||0,...(context.opposition||[]).map(o=>o.best),...g.attempts.map(a=>a.points));
  context={...context,caution:(context.caution||1)*policy.caution,searchDepth:Math.max(policy.searchDepth,openingPair?2:1),rewardSearchDepth:Math.max(policy.searchDepth,openingPair?2:1,protectedScore>0?3:1),maxBonusSpend:policy.maxBonusSpend??Infinity,parScore:Math.min(context.parScore??7,policy.parScoreCap),chaseFirst:policy.chaseFirst};
+ if(power.length){const action=signatureChoice(g,context);if(action)return action;}
  if(['initial','draft'].includes(g.phase)){
   const cards=g.competitive&&g.phase==='draft'?[...g.draftCards]:g.offer.map(id=>g.deck.find(c=>c.uid===id)).filter(Boolean);
   const ranked=cards.map(card=>({card,value:draftValue(card,g,policy)})).sort((a,b)=>b.value-a.value||a.card.id-b.card.id);
@@ -27,7 +37,7 @@ export function decide(g,context={}){
  if(g.phase==='reward')return {type:'claim',choice:chooseToken(E.BONUS_TYPES,g)};
  if(g.phase==='select'){
   const plan=sequencePlanner(g,context);if(!plan.card)return {type:E.options(g).length&&!g.landed.length&&!g.reuseRoll?'pass':'fall'};
-  if(!policy.variety)return {type:'choose',cardId:plan.card.uid};
+  if(!policy.variety||g.skaterId==='jade'&&g.specialty?.returnedCard&&plan.path.some(c=>c.uid===g.specialty.returnedCard))return {type:'choose',cardId:plan.card.uid};
   const floor=Math.max(plan.fallUtility,plan.stopUtility);
   const ranked=[...new Map(E.options(g).map(c=>[c.id,c])).values()].map(card=>({card,value:sequencePlanner(g,context,{forcedCard:card}).utility})).filter(c=>c.value>floor).sort((a,b)=>b.value-a.value);
   const chosen=chooseNearBest(g,ranked,policy);

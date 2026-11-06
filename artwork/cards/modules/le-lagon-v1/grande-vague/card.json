@@ -15,22 +15,31 @@
   "condition": "Chaque trick utilisant 3 ou 4 dés rapporte +2 points.",
   "park": "Le Lagon",
   "rounds": [
+    5,
     6
   ],
   "image": "assets/modules/lagoon/grande-vague.webp",
   "layers": {
-    "illustration": "assets/modules/lagoon/layers/grande-vague/01-illustration.webp?v=4acc4e1e1107",
-    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
-    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=4bd9c7a6106c"
+    "illustration": "assets/modules/lagoon/layers/grande-vague/01-illustration.webp?v=63254c8998c4",
+    "graphics": "assets/modules/lagoon/layers/frames/module-2.svg?v=e4fb8d790cb1",
+    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=4c9207b3c272"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/grande-vague.png",
   "canvas": [
     900,
     1300
   ],
+  "trimMm": [
+    63,
+    88
+  ],
+  "rasterSize": [
+    1008,
+    1408
+  ],
   "textResolution": [
-    1800,
-    2600
+    2016,
+    2816
   ],
   "layerOrder": [
     "01-illustration",
