@@ -1,0 +1,10 @@
+{
+  "mode": "built-in image generation",
+  "intent": "new illustrated park image with spatial and style references",
+  "image": "park-illustration-v7.png",
+  "prompt": "park-illustration-v7.prompt.txt",
+  "layoutReference": "park-organic-plan-v7.png",
+  "styleReference": "../../../public/assets/tricks-1.webp",
+  "source": "C:/Users/jeanf/.codex/generated_images/01a17526-8894-7e62-af4a-1d48fa05beb0/exec-0f940443-cf2a-4dbb-b155-068c453f3ffc.png",
+  "status": "illustrated concept preview, not integrated in game"
+}

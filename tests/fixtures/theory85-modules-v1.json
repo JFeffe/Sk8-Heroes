@@ -1,0 +1,305 @@
+{
+  "theoretical": true,
+  "version": 1,
+  "park": "Le Lagon",
+  "moduleBonus": 2,
+  "drawPattern": {
+    "early": 2,
+    "middle": 3,
+    "final": 1
+  },
+  "modules": [
+    {
+      "id": 0,
+      "key": "ilot",
+      "name": "L’Îlot",
+      "stage": 0,
+      "needs": [
+        "kick"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "count-type",
+        "type": "kick",
+        "count": 2
+      },
+      "condition": "Réussir 2 Kicks.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/ilot.webp"
+    },
+    {
+      "id": 1,
+      "key": "quai-bas",
+      "name": "Le Quai bas",
+      "stage": 0,
+      "needs": [
+        "slide"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "slide",
+          "kick"
+        ]
+      },
+      "condition": "Réussir Slide → Kick.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/quai-bas.webp"
+    },
+    {
+      "id": 2,
+      "key": "petite-vague",
+      "name": "La Petite Vague",
+      "stage": 0,
+      "needs": [
+        "air"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "count-type",
+        "type": "air",
+        "count": 2
+      },
+      "condition": "Réussir 2 Airs.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/petite-vague.webp"
+    },
+    {
+      "id": 3,
+      "key": "rail-palmiers",
+      "name": "Le Rail des Palmiers",
+      "stage": 0,
+      "needs": [],
+      "pv": 2,
+      "bonus": {
+        "kind": "variety",
+        "count": 2
+      },
+      "condition": "Réussir des tricks de 2 types différents.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/rail-palmiers.webp"
+    },
+    {
+      "id": 4,
+      "key": "retour-rail",
+      "name": "Le Retour du Rail",
+      "stage": 1,
+      "needs": [
+        "slide",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "slide",
+          "kick"
+        ]
+      },
+      "condition": "Réussir un Slide immédiatement suivi d’un Kick.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/retour-rail.webp"
+    },
+    {
+      "id": 5,
+      "key": "tour-ilot",
+      "name": "Le Tour de l’Îlot",
+      "stage": 1,
+      "needs": [
+        "air",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "kick",
+          "air"
+        ]
+      },
+      "condition": "Réussir Kick → Air.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/tour-ilot.webp"
+    },
+    {
+      "id": 6,
+      "key": "coping-bleu",
+      "name": "Le Coping Bleu",
+      "stage": 1,
+      "needs": [
+        "air",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "air",
+          "slide"
+        ]
+      },
+      "condition": "Réussir un Air immédiatement suivi d’un Slide.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/coping-bleu.webp"
+    },
+    {
+      "id": 7,
+      "key": "double-quai",
+      "name": "Le Double Quai",
+      "stage": 1,
+      "needs": [
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "dice-pair",
+        "costs": [
+          2,
+          3
+        ]
+      },
+      "condition": "Réussir 2 tricks utilisant 5 dés au total : un à 2 dés et un à 3 dés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/double-quai.webp"
+    },
+    {
+      "id": 8,
+      "key": "boucle-lagon",
+      "name": "La Boucle du Lagon",
+      "stage": 2,
+      "needs": [
+        "kick",
+        "slide",
+        "air"
+      ],
+      "pv": 4,
+      "bonus": {
+        "kind": "all-types"
+      },
+      "condition": "Réussir un Kick, un Slide et un Air, dans n’importe quel ordre.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/boucle-lagon.webp"
+    },
+    {
+      "id": 9,
+      "key": "marches-palmiers",
+      "name": "Les Marches des Palmiers",
+      "stage": 1,
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "kick",
+          "slide",
+          "kick"
+        ]
+      },
+      "condition": "Réussir Kick → Slide → Kick, dans cet ordre.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/marches-palmiers.webp"
+    },
+    {
+      "id": 10,
+      "key": "embruns",
+      "name": "Les Embruns",
+      "stage": 1,
+      "needs": [],
+      "pv": 3,
+      "bonus": {
+        "kind": "dice-pair",
+        "costs": [
+          3,
+          3
+        ]
+      },
+      "condition": "Réussir deux tricks à trois dés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/embruns.webp"
+    },
+    {
+      "id": 11,
+      "key": "grande-vague",
+      "name": "La Grande Vague",
+      "stage": 2,
+      "needs": [
+        "air"
+      ],
+      "pv": 4,
+      "bonus": {
+        "kind": "all-dice"
+      },
+      "condition": "Poser les six dés sur une séquence conservée.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/grande-vague.webp"
+    }
+  ]
+}

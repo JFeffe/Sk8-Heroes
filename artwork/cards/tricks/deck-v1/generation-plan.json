@@ -1,0 +1,321 @@
+{
+  "date": "2026-11-01",
+  "tool": "built-in image_gen",
+  "uniqueTricks": 41,
+  "physicalCards": 85,
+  "reused": [
+    "heelflip",
+    "smith-grind",
+    "900"
+  ],
+  "poseSources": [
+    "https://nollieskateboarding.com/en/news/15672",
+    "https://skateboarddeutschland.de/wp-content/uploads/2020/07/Judge-Manual-SKD-05-07-2020-lowres.pdf"
+  ],
+  "jobs": [
+    {
+      "key": "ollie",
+      "name": "Ollie",
+      "type": "kick",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A clean level ollie over the flat, both feet above one horizontal skateboard, no flip, no hand grab."
+    },
+    {
+      "key": "nollie",
+      "name": "Nollie",
+      "type": "kick",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A nose-popped nollie, front foot snapping the nose while the back foot levels the board; no grab, no flip."
+    },
+    {
+      "key": "pop-shuvit",
+      "name": "Pop Shuvit",
+      "type": "kick",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-1.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (Pop Shuvit) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A pop shove-it: one board rotates flat horizontally under the skater, grip tape stays upwards, no longitudinal flip."
+    },
+    {
+      "key": "frontside-180",
+      "name": "Frontside 180",
+      "type": "kick",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Frontside 180 ollie: rider and board turn together, board remains under both shoes, level and griptape up; front shoulder leads the turn."
+    },
+    {
+      "key": "kickflip",
+      "name": "Kickflip",
+      "type": "kick",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-1.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER LEFT illustration (Kickflip) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Kickflip: the board flips around its long axis independently below airborne feet, clearly show underside and two trucks, one board only."
+    },
+    {
+      "key": "varial-kickflip",
+      "name": "Varial Kickflip",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Varial kickflip: one airborne board doing a backside shove-it and a longitudinal kickflip under a tucked skater."
+    },
+    {
+      "key": "frontside-flip",
+      "name": "Frontside Flip",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-1.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER RIGHT illustration (Frontside Flip) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Frontside 180 kickflip: rider turns frontside with a flipped board underneath, open front shoulder and naturally spread arms."
+    },
+    {
+      "key": "backside-flip",
+      "name": "Backside Flip",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Backside 180 kickflip: rider turns backside, back and trailing shoulder visible, one flipped board underneath bent legs."
+    },
+    {
+      "key": "varial-heelflip",
+      "name": "Varial Heelflip",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Varial heelflip: frontside shove-it plus heelflip, front heel flicks outward while board turns flat and flips under the feet."
+    },
+    {
+      "key": "bigspin",
+      "name": "Bigspin",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Bigspin: rider turns 180 while the board turns a 360 shove-it; show one griptape-up deck rotating flat below the rider, no flip."
+    },
+    {
+      "key": "inward-heelflip",
+      "name": "Inward Heelflip",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-3.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER LEFT illustration (Inward Heelflip) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Inward heelflip: backside pop shove-it with an outward heel flip, board tilted diagonally under the skater."
+    },
+    {
+      "key": "hardflip",
+      "name": "Hardflip",
+      "type": "kick",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-2.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER LEFT illustration (Hardflip) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Hardflip: one board passes between raised knees in a steep tilted frontside shove-it/kickflip motion; retain a believable single deck."
+    },
+    {
+      "key": "360-flip",
+      "name": "360 Flip",
+      "type": "kick",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-2.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER LEFT illustration (360 Flip) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: 360 flip/tre flip: one deck rotates in a 360 backside shove-it plus kickflip, underside angled visibly below the airborne shoes."
+    },
+    {
+      "key": "laser-flip",
+      "name": "Laser Flip",
+      "type": "kick",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-2.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (Laser Flip) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Laser flip: frontside 360 shove-it plus heelflip, outward heel flick, one patterned board rotating below the rider."
+    },
+    {
+      "key": "impossible",
+      "name": "Impossible",
+      "type": "kick",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-2.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER RIGHT illustration (Impossible) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Impossible: a single board wraps vertically around the rear foot, rear foot stays close to the deck, the front foot lifted away; not multiple ghost boards."
+    },
+    {
+      "key": "50-50-grind",
+      "name": "50-50 Grind",
+      "type": "slide",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-3.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (50-50 Grind) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: 50-50 grind: both trucks locked onto one low rail, board parallel to the rail, both shoes over the bolts, the deck is not doing a boardslide."
+    },
+    {
+      "key": "boardslide",
+      "name": "Boardslide",
+      "type": "slide",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-3.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER LEFT illustration (Boardslide) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Boardslide: one board perpendicular across a single low rail, the middle underside of the deck slides on top of the rail, trucks clear on either side."
+    },
+    {
+      "key": "lipslide",
+      "name": "Lipslide",
+      "type": "slide",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-4.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (Lipslide) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Lipslide: rider and rear truck pass across a low rail before landing in a slide; one deck now perpendicular with its middle sliding on the rail. Two trucks and four wheels only."
+    },
+    {
+      "key": "tailslide",
+      "name": "Tailslide",
+      "type": "slide",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Tailslide: the tail of one skateboard slides along the top of a low concrete ledge, front/nose points out from the ledge, rear foot presses the tail, trucks do not grind."
+    },
+    {
+      "key": "noseslide",
+      "name": "Noseslide",
+      "type": "slide",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-4.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER LEFT illustration (Noseslide) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Noseslide: nose of one deck slides on a concrete ledge, board roughly perpendicular to it, front foot weights the nose, rear foot and tail lifted outside the ledge."
+    },
+    {
+      "key": "nosegrind",
+      "name": "Nosegrind",
+      "type": "slide",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Nosegrind: only the front truck grinds a low ledge; board parallel to the edge, front foot weighted, rear truck and tail clearly lifted."
+    },
+    {
+      "key": "5-0-grind",
+      "name": "5-0 Grind",
+      "type": "slide",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: 5-0 grind: only the rear truck grinds the ledge, deck parallel with nose raised, front truck floating above the edge."
+    },
+    {
+      "key": "crooked-grind",
+      "name": "Crooked Grind",
+      "type": "slide",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-5.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (Crooked Grind) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Crooked grind: front truck locks diagonally across a low ledge, nose pressed down, tail raised and angled off the side; a clear single board."
+    },
+    {
+      "key": "feeble-grind",
+      "name": "Feeble Grind",
+      "type": "slide",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-5.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER LEFT illustration (Feeble Grind) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Feeble grind: rear truck grinds one rail, front truck crosses to the far side, nose dips below the rail; rear shoe weights the back truck."
+    },
+    {
+      "key": "suski-grind",
+      "name": "Suski Grind",
+      "type": "slide",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Backside Suski grind: rear truck on a low concrete ledge like a 5-0, nose raised and tweaked diagonally AWAY from the ledge, toward the opposite side of the box."
+    },
+    {
+      "key": "salad-grind",
+      "name": "Salad Grind",
+      "type": "slide",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Salad grind: rear truck locked onto a low ledge, nose raised and tweaked diagonally TOWARD the ledge, contrasting the outward nose of a Suski."
+    },
+    {
+      "key": "overcrook",
+      "name": "Overcrook",
+      "type": "slide",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Overcrook grind: front truck grinds diagonally across a rail with the board over the far side of the rail; nose pressed down, tail raised."
+    },
+    {
+      "key": "bluntslide",
+      "name": "Bluntslide",
+      "type": "slide",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-4.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER RIGHT illustration (Bluntslide) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Bluntslide: tail and rear wheel area slide along a concrete ledge, board steeply pitched almost vertical, rear wheels beyond the edge; rider stands above the tail, not riding along the deck normally."
+    },
+    {
+      "key": "nosebluntslide",
+      "name": "Nosebluntslide",
+      "type": "slide",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Nosebluntslide: nose and front wheel area locked steeply over a concrete ledge in a near vertical noseblunt position, tail raised high, weight over the front foot."
+    },
+    {
+      "key": "hurricane",
+      "name": "Hurricane",
+      "type": "slide",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Hurricane grind: rider rotates 180 into a fakie Smith-like position on a low rail, rear truck engaged and front truck dipped across the other side; show a stable single board and the turned shoulders."
+    },
+    {
+      "key": "180",
+      "name": "180°",
+      "type": "air",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-5.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER LEFT illustration (180°) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A 180-degree aerial above a smooth quarterpipe, rider and griptape-up board turning together, both shoes on the deck, arms open."
+    },
+    {
+      "key": "indy-grab",
+      "name": "Indy Grab",
+      "type": "air",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Indy grab aerial above the halfpipe: rear hand grabs the toe-side edge between the feet, front hand free, knees tucked, both shoes firmly on one deck."
+    },
+    {
+      "key": "360",
+      "name": "360°",
+      "type": "air",
+      "tier": "base",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-5.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER RIGHT illustration (360°) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A 360-degree aerial above a concave halfpipe, rider viewed from the back mid-rotation, board with both shoes planted, one continuous deck."
+    },
+    {
+      "key": "melon-grab",
+      "name": "Melon Grab",
+      "type": "air",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Melon grab aerial: front hand reaches to the heel-side edge between the feet, knees tucked, back hand free, board under both shoes."
+    },
+    {
+      "key": "stalefish",
+      "name": "Stalefish",
+      "type": "air",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+      "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Stalefish aerial: rear hand reaches BEHIND the back leg to grip the heel-side edge between the feet, front hand free, believable bent-knee posture."
+    },
+    {
+      "key": "540",
+      "name": "540°",
+      "type": "air",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-6.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER LEFT illustration (540°) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A high 540-degree aerial above the halfpipe with knees tucked and a compact grab, rotated torso, entire rider and one board visible."
+    },
+    {
+      "key": "720",
+      "name": "720°",
+      "type": "air",
+      "tier": "advanced",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-6.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (720°) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A high 720-degree aerial above a continuous halfpipe, compact tucked body, both feet on one deck and a natural grab; different pose/camera from 540 and 900."
+    },
+    {
+      "key": "1080",
+      "name": "1080°",
+      "type": "air",
+      "tier": "epic",
+      "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-6.webp",
+      "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the LOWER RIGHT illustration (1080°) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A very high 1080-degree aerial above the large halfpipe, highly compact rotating tuck, one natural grab, all limbs and the single board legible."
+    }
+  ]
+}

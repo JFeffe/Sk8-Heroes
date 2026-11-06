@@ -1,0 +1,25 @@
+{
+  "rulesVersion": 14,
+  "matchVersion": 9,
+  "roomVersion": 1,
+  "automatedTests": {"passed": 108, "failed": 0, "networkTests": 11},
+  "networkCoverage": ["atomic NPC takeover", "host-only administration", "authenticated seat commands", "stale revision rejection", "idempotent retries", "hidden deck and random source", "disk restore", "rollback after disk write failure", "full six-module four-player competition", "HTTP authorization and origin checks", "compact unchanged-state polling"],
+  "browserValidation": {
+    "hostOnLocalhost": true,
+    "guestViaPublicHttpsTunnel": true,
+    "skaterChoiceAndNpcReplacement": true,
+    "sharedInitialDraftCompleted": true,
+    "guestDiceRolledPlacedAndValidated": true,
+    "sameDiceAndScoreInBothBrowsers": true,
+    "guestAttemptBankedPoints": 2,
+    "hostServerRestarted": true,
+    "newPublicHostnameCreated": true,
+    "guestRecoveredSameSeatWithPrivateCode": true,
+    "guestHandAndPointsPreserved": true,
+    "newInvitationCopiedCorrectly": true,
+    "consoleErrorsInRecoveredGuest": 0
+  },
+  "hosting": {"authority": "host Node server", "storage": ".local-games/", "internet": "temporary Cloudflare Quick Tunnel", "cloudflaredVersion": "2026.10.6", "windowsSignature": "Valid, Cloudflare Inc."},
+  "screenshots": ["tests/screenshots/multiplayer-table-verified.jpg", "tests/screenshots/multiplayer-lobby-verified.jpg"],
+  "note": "Two browsers on the test computer were used, one routed through the real public HTTPS address. This is a functional prototype test, not a production uptime guarantee. No seat access codes are included in this report."
+}

@@ -1,0 +1,22 @@
+{
+  "build": "0.5.2",
+  "purpose": "Frozen NPC decisions as a reproducible reference, using the same live game rules and dice.",
+  "files": {
+    "npc.js": {
+      "originalSha256": "a87fc7b276a0213058d6d977297ff03136a7e328bd7f0358866df8f287737b0b",
+      "fixtureSha256": "4548a66d29b735d0ed299ec4fa3cd7a57dacde99bb02a741899f90cea16cdd98"
+    },
+    "npc-strategy.js": {
+      "originalSha256": "b0fd08240f7d8f1c587ffb67f265c5159cadb2f1ce3d55f55ec55eeaf6aa6dd5",
+      "fixtureSha256": "82e3ddaa4b0c4dd91fb457faa8f84e76a3fc2223633de45c3703ca48914aeffb"
+    },
+    "npc-difficulty.js": {
+      "originalSha256": "f79cfeddcb86bacbb08619bd0e787a929b329357e80498c61795579a2e6c50b9",
+      "fixtureSha256": "f79cfeddcb86bacbb08619bd0e787a929b329357e80498c61795579a2e6c50b9"
+    },
+    "npc-choice.js": {
+      "originalSha256": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14",
+      "fixtureSha256": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14"
+    }
+  }
+}

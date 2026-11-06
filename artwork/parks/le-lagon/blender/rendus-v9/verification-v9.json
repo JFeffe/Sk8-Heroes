@@ -1,0 +1,12 @@
+{
+  "blender": "4.5.9 LTS",
+  "passed": true,
+  "checks": [
+    "Tabletop centered at world XY=(0,0); footprint 7.2 x 3.6 m and height 0.95 m preserved",
+    "North ledge matches Palm terrace boundary and Anse deck; rises monotonically 1.10 to 1.80 m, slope below 12%",
+    "Anse levels 1.80/0.90 m, horizontal landings, five 18 cm risers, continuous handrail and six supports",
+    "North link, new landings and staircase all remain inside original park boundary",
+    "West drop, Dunes and southern wave heights preserved",
+    "Main camera includes every park mesh; rendered PNG has transparent background"
+  ]
+}

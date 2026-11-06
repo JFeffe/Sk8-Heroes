@@ -1,0 +1,41 @@
+{
+  "id": 1,
+  "key": "quai-bas",
+  "name": "Le Quai bas",
+  "stage": 0,
+  "needs": [
+    "slide"
+  ],
+  "pv": 2,
+  "bonus": {
+    "kind": "favored",
+    "type": "kick",
+    "points": 1
+  },
+  "condition": "Chaque Kick rapporte +1 point.",
+  "park": "Le Lagon",
+  "rounds": [
+    1,
+    2
+  ],
+  "image": "assets/modules/lagoon/quai-bas.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/quai-bas/01-illustration.webp?v=a6d5e0c9b84e",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/quai-bas/03-textes-symboles.webp?v=eb4c3925cdd0"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/quai-bas.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

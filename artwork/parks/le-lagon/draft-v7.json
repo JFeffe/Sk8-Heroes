@@ -1,0 +1,701 @@
+{
+  "version": 7,
+  "name": "Le Lagon",
+  "status": "Étude de forme et de lignes pour un jeu de cartes",
+  "outline": "M7 3 C15 -.5 24 2.2 32 2.4 C39 2.4 45 .5 52 1.7 C59 2.6 63 8 62.5 16 C62.5 20 61 22 62 27 C64 35 59 40.5 52 42.3 C44 44.4 38 42.8 32 44 C24 46 13 44 7 40 C1.2 36 .6 30 2 24 C3 20 1 17 2 11 C2.8 7.4 4.4 4.5 7 3 Z",
+  "pockets": [
+    {
+      "id": "QA",
+      "center": [
+        15,
+        30
+      ],
+      "angles": [
+        90,
+        180
+      ],
+      "character": "Coin bas relié au bank des Dunes",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2,
+      "sx": 1,
+      "sy": 1
+    },
+    {
+      "id": "QB",
+      "center": [
+        15,
+        14
+      ],
+      "angles": [
+        180,
+        270
+      ],
+      "character": "Quarter des Palmiers et terrasse courbe vers les marches",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2,
+      "sx": 1,
+      "sy": 1
+    },
+    {
+      "id": "QC",
+      "center": [
+        49,
+        14
+      ],
+      "angles": [
+        230,
+        400
+      ],
+      "character": "Anse du Large, petit bowl ouvert sur le centre",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2,
+      "sx": 1.03,
+      "sy": 0.96
+    },
+    {
+      "id": "QD",
+      "center": [
+        49,
+        30
+      ],
+      "angles": [
+        0,
+        90
+      ],
+      "character": "Coin du Soleil prolongé par un retour en vague",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2,
+      "sx": 1,
+      "sy": 1
+    }
+  ],
+  "extensions": [
+    {
+      "pocket": "QB",
+      "kind": "Prolongement droit aux bords ondulés, raccordé au deck des marches"
+    },
+    {
+      "pocket": "QD",
+      "kind": "Long retour courbe orienté vers le ledge et le centre"
+    }
+  ],
+  "starts": [
+    {
+      "id": "A",
+      "name": "Les Dunes",
+      "point": [
+        19,
+        39.5
+      ],
+      "exit": [
+        19,
+        34.7
+      ],
+      "kind": "Plateforme du coin QA + bank droit"
+    },
+    {
+      "id": "B",
+      "name": "Les Palmiers",
+      "point": [
+        8.28,
+        7.28
+      ],
+      "exit": [
+        11.68,
+        10.68
+      ],
+      "kind": "Plateforme haute du quarter QB"
+    },
+    {
+      "id": "C",
+      "name": "Le Large",
+      "point": [
+        55.72,
+        7.28
+      ],
+      "exit": [
+        52.32,
+        10.68
+      ],
+      "kind": "Plateforme haute du quarter QC"
+    },
+    {
+      "id": "D",
+      "name": "Le Soleil",
+      "point": [
+        55.72,
+        36.72
+      ],
+      "exit": [
+        52.32,
+        33.32
+      ],
+      "kind": "Plateforme haute du quarter QD"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "name": "Le Quai bas",
+      "level": "1–2",
+      "start": "A",
+      "path": "M19 39.5 L19 34.7 C19 31 20.5 29.6 23 29.6 L29.5 29.6 L36 29.6 C39 29.6 40 31.5 43 32 C47 32 52 35 54.5 34 C56 33 54 30.5 50.5 30.5",
+      "events": [
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            43,
+            32
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            54.5,
+            34
+          ],
+          "type": "Air",
+          "place": "Quarter QD"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Le Rail des Palmiers",
+      "level": "1–2",
+      "start": "B",
+      "path": "M8.28 7.28 L11.68 10.68 C16 15 18 17 24 17 L31 17 L38 17 C42 17 45 17.5 47 18.5 C50 17 56 14 54.6 10.3 C53 7.8 50.5 11.2 49.5 13.5",
+      "events": [
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            47,
+            18.5
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            54.6,
+            10.3
+          ],
+          "type": "Air",
+          "place": "Quarter QC"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "La Petite Vague",
+      "level": "1–2",
+      "start": "C",
+      "path": "M55.72 7.28 L52.32 10.68 C49 14 52 24 48 24 L45.5 24 L44.25 24 L43 24 L36 24 L34.75 24 L33.5 24 C31 24 28.5 23 26 23 C21 23 19.5 29.6 23 29.6 L29.5 29.6 L36 29.6",
+      "events": [
+        {
+          "point": [
+            44.25,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank du tabletop P"
+        },
+        {
+          "point": [
+            26,
+            23
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "L’Îlot",
+      "level": "1–2",
+      "start": "D",
+      "path": "M55.72 36.72 L52.32 33.32 C50 31 53 24 48 24 L45.5 24 L44.25 24 L43 24 L36 24 L34.75 24 L33.5 24 C31 24 29 22 26 22 C22 22 20 25 23 29.6 L29.5 29.6 L36 29.6",
+      "events": [
+        {
+          "point": [
+            44.25,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank du tabletop P"
+        },
+        {
+          "point": [
+            26,
+            22
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Le Double Quai",
+      "level": "3–5",
+      "start": "A",
+      "path": "M19 39.5 L19 34.7 C19 31 20.5 29.6 23 29.6 L29.5 29.6 L36 29.6 C40 29.6 51 24 48 24 L45.5 24 L44.25 24 L43 24 L36 24 L33.5 24 C30 24 28 23 26 23",
+      "events": [
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            44.25,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank du tabletop P"
+        },
+        {
+          "point": [
+            26,
+            23
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Le Retour du Rail",
+      "level": "3–5",
+      "start": "A",
+      "path": "M19 39.5 L19 34.7 C19 29 17 25 18 22 C19 18 21 17 24 17 L31 17 L38 17 C42 17 47 13 53.2 8.4 C55 6 49 6.4 46 11",
+      "events": [
+        {
+          "point": [
+            18,
+            22
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            53.2,
+            8.4
+          ],
+          "type": "Air",
+          "place": "Quarter QC"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Les Marches des Palmiers",
+      "level": "3–5",
+      "start": "B",
+      "path": "M8.28 7.28 C10.1 5.45 12.3 4.5 15 4.5 L22 4.5 L27 4.5 L27 7 L27 8.8 L27 10.6 C27 14 21 17 24 17 L31 17 L38 17 C44 17 52 24 48 24 L45.5 24 L44.25 24 L43 24 L36 24 L33.5 24",
+      "events": [
+        {
+          "point": [
+            27,
+            8.8
+          ],
+          "type": "Kick",
+          "place": "Escalier M"
+        },
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            44.25,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank du tabletop P"
+        }
+      ],
+      "via": "Deck B, puis marches"
+    },
+    {
+      "id": 8,
+      "name": "Le Tour de l’Îlot",
+      "level": "3–5",
+      "start": "B",
+      "path": "M8.28 7.28 L11.68 10.68 C17 16 25 24 30 24 L33.5 24 L34.75 24 L36 24 L43 24 L45.5 24 L48 24 C52 24 55.8 27 55.8 30 C55.8 33.76 52.76 36.8 49 36.8 C45 36.8 43.4 35.7 40.6 35 C37 34 39.5 29.6 36 29.6 L29.5 29.6 L23 29.6 C20 29.6 20 25 21 23",
+      "events": [
+        {
+          "point": [
+            34.75,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank du tabletop P"
+        },
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            21,
+            23
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        }
+      ],
+      "carve": {
+        "point": [
+          53.81,
+          34.81
+        ],
+        "place": "QD"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Le Coping Bleu",
+      "level": "3–5",
+      "start": "C",
+      "path": "M55.72 7.28 L52.32 10.68 C49 14 46 16 43 16 C41 16 40 17 38 17 L31 17 L24 17 C19 17 16 12 10.2 9.2 C7 7.1 7.8 12.5 12 14.5",
+      "events": [
+        {
+          "point": [
+            43,
+            16
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            10.2,
+            9.2
+          ],
+          "type": "Air",
+          "place": "Quarter QB"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Les Embruns",
+      "level": "3–5",
+      "start": "D",
+      "path": "M55.72 36.72 L52.32 33.32 C50 31 53 21.2 48 21.2 L45.5 21.2 L39.5 21.2 L33.5 21.2 C30 21.2 28 21 26 21 C21 21 16 12 10.2 9.2 C7 7.1 7.8 12.5 12 14.5",
+      "events": [
+        {
+          "point": [
+            39.5,
+            21.2
+          ],
+          "type": "Slide",
+          "place": "Bord du tabletop P"
+        },
+        {
+          "point": [
+            26,
+            21
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            10.2,
+            9.2
+          ],
+          "type": "Air",
+          "place": "Quarter QB"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "La Grande Vague",
+      "level": "6",
+      "start": "C",
+      "path": "M55.72 7.28 L52.32 10.68 C48 15 43 17 38 17 L31 17 L24 17 C18 17 8.2 19 8.2 14 C8.2 10.24 11.24 7.2 15 7.2 C21 7.2 23 10 25 12 C28 15 22 24 25.5 24 L33.5 24 L36 24 L39.5 24 L43 24 L45.5 24 L56 24",
+      "events": [
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            25.5,
+            24
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            39.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Grand saut P"
+        }
+      ],
+      "carve": {
+        "point": [
+          10.19,
+          9.19
+        ],
+        "place": "QB"
+      },
+      "jumpDirection": "ouest → est"
+    },
+    {
+      "id": 12,
+      "name": "La Boucle du Lagon",
+      "level": "6",
+      "start": "D",
+      "path": "M55.72 36.72 L52.32 33.32 C52 29 53 22 51 19 C49 17 44 17 38 17 L31 17 L24 17 C17 17 8.2 19 8.2 14 C8.2 10.24 11.24 7.2 15 7.2 C19 7.2 22 12 24 12 L30 12 C37 12 43 18 49 19 C53 20.5 55 21.2 57 21.2 C62 21.2 62 24 57 24 L45.5 24 L43 24 L39.5 24 L36 24 L33.5 24 L22 24",
+      "events": [
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            30,
+            12
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            39.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Grand saut P"
+        }
+      ],
+      "carve": {
+        "point": [
+          10.19,
+          9.19
+        ],
+        "place": "QB"
+      },
+      "jumpDirection": "est → ouest"
+    }
+  ],
+  "sources": [
+    {
+      "name": "South Padre Island · Spohn Ranch",
+      "url": "https://www.spohnranch.com/spohn-ranch-completes-construction-of-south-padre-island-skatepark-2021-05-24/",
+      "principle": "Transitions et bowl débutant autour d’un centre avec manual pads et rail bas."
+    },
+    {
+      "name": "Crowley Lake · Spohn Ranch",
+      "url": "https://www.spohnranch.com/crowley-lake-skatepark-charges-ahead-2017-10-16/",
+      "principle": "Quarterpipes et parois arrondies en périphérie pour conserver le mouvement."
+    },
+    {
+      "name": "Queensborough · New Line",
+      "url": "https://www.newlineskateparks.com/project/queensborough-skatepark/",
+      "principle": "Terrain organique mêlant plans inclinés, quarterpipes et sections de bowl."
+    }
+  ],
+  "sharedElements": [
+    {
+      "id": "R",
+      "name": "Rail bas",
+      "box": [
+        24,
+        17,
+        14,
+        0
+      ]
+    },
+    {
+      "id": "L",
+      "name": "Ledge long",
+      "box": [
+        23,
+        29,
+        13,
+        1.2
+      ]
+    },
+    {
+      "id": "P",
+      "name": "La Grande Vague · grand tabletop",
+      "box": [
+        33.5,
+        21,
+        12,
+        6
+      ],
+      "launch": [
+        33.5,
+        21,
+        2.5,
+        6
+      ],
+      "table": [
+        36,
+        21,
+        7,
+        6
+      ],
+      "landing": [
+        43,
+        21,
+        2.5,
+        6
+      ],
+      "detail": "Plateau plein entre décollage et réception. On peut rouler dessus, jouer les banks latéraux ou traverser le plateau en sautant."
+    },
+    {
+      "id": "M",
+      "name": "Les Marches des Palmiers",
+      "box": [
+        25,
+        7,
+        4,
+        3.6
+      ],
+      "detail": "Quatre marches avec hubba, main courante et un bank adjacent."
+    }
+  ],
+  "distribution": {
+    "6": 2,
+    "1–2": 4,
+    "3–5": 6
+  },
+  "routeMeaning": "Lignes alternatives, pas des pistes simultanées. La descente initiale donne de l’élan. Les points 1–3 montrent trois possibilités de tricks ; V désigne un virage pompé, sans trick supplémentaire. Les exemples ne changent pas les règles.",
+  "designMeaning": "Même équipement que le draft 06. Quatre zones distinctes : coin bas et bank A ; terrasse courbe avec marches B ; anse en bowl ouvert C ; retour étiré en vague D. Tabletop recentré de trois unités pour dégager son axe dans les deux sens. Les courbes et les dégagements sont une étude graphique, sans calcul de vitesse ni échelle de construction.",
+  "stairs": {
+    "id": "M",
+    "name": "Les Marches des Palmiers",
+    "deck": [
+      22,
+      3.8,
+      11,
+      3.2
+    ],
+    "steps": [
+      25,
+      7,
+      4,
+      3.6
+    ],
+    "count": 4,
+    "bank": [
+      30.5,
+      7,
+      2.5,
+      3.6
+    ],
+    "hubba": [
+      24.4,
+      7,
+      0.45,
+      3.6
+    ],
+    "handrail": [
+      29.6,
+      7,
+      0,
+      3.6
+    ],
+    "connection": "Même plateforme haute que B ; accès par le deck, descente vers le centre."
+  },
+  "jumpAxis": {
+    "from": [
+      22,
+      24
+    ],
+    "to": [
+      57,
+      24
+    ],
+    "tabletop": [
+      33.5,
+      21,
+      12,
+      6
+    ],
+    "purpose": "Approche et sortie rectilignes des deux côtés du grand saut"
+  }
+}

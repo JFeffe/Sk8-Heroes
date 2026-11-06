@@ -1,0 +1,42 @@
+{
+  "id": 5,
+  "key": "tour-ilot",
+  "name": "Le Tour de l’Îlot",
+  "stage": 1,
+  "needs": [
+    "air",
+    "kick"
+  ],
+  "pv": 3,
+  "bonus": {
+    "kind": "stars",
+    "points": 1
+  },
+  "condition": "Chaque étoile physique utilisée rapporte +1 point.",
+  "park": "Le Lagon",
+  "rounds": [
+    3,
+    4,
+    5
+  ],
+  "image": "assets/modules/lagoon/tour-ilot.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/tour-ilot/01-illustration.webp?v=9c2b3c4e72dc",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/tour-ilot/03-textes-symboles.webp?v=b796f9f4f8a2"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/tour-ilot.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

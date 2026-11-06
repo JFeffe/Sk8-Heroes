@@ -1,0 +1,425 @@
+{
+  "status": "draft — proposition avec zones de trois tricks, non intégrée au jeu",
+  "version": 2,
+  "parkId": "lagoon",
+  "name": "Le Lagon",
+  "theme": "Un skatepark côtier débutant, avec plage, mer turquoise, ciel bleu, palmiers et béton crème peint de vagues turquoise et orange.",
+  "designPrinciple": "Chaque carte représente une microzone de roulage pouvant accueillir jusqu’à trois tricks. Elle conserve une dominante et donne accès aux trois familles Kick / Slide / Air.",
+  "cardFraming": "Montrer l’élément principal, les petits compléments et la trajectoire de roulage dans une même illustration. Les compléments peuvent être partagés entre deux zones voisines.",
+  "geometry": "Projection cohérente pour tous les objets. Mini-rampe : deux transitions courbes opposées, tangentes à un fond plat, même largeur, decks à même hauteur et copings droits parallèles. Quarter : une seule extrusion courbe. Référence SVG/PNG calculée fournie.",
+  "progression": {
+    "discovery": {
+      "levels": [
+        1,
+        2
+      ],
+      "draw": 2,
+      "pool": 4
+    },
+    "linking": {
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "draw": 3,
+      "pool": 4
+    },
+    "finale": {
+      "levels": [
+        6
+      ],
+      "draw": 1,
+      "pool": 4
+    }
+  },
+  "spots": [
+    {
+      "id": 1,
+      "name": "Le Parvis",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Le Flat",
+      "feature": "Grande aire de flat près de l’entrée",
+      "types": [
+        "kick"
+      ],
+      "bonus": "2 Kicks réussis",
+      "baseModuleId": 0,
+      "affordances": {
+        "kick": "Aire de flat dégagée",
+        "slide": "Petit ledge bas sur le côté",
+        "air": "Petit plan incliné en bout de ligne",
+        "line": [
+          "Kick sur le flat",
+          "Slide sur le ledge",
+          "Air sur le plan incliné"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "2 Kicks réussis",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Le Rail des Dunes",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Rail bas",
+      "feature": "Petit rail droit au ras du sol, côté plage",
+      "types": [
+        "slide"
+      ],
+      "bonus": "2 Slides réussis",
+      "baseModuleId": 1,
+      "affordances": {
+        "kick": "Flat d’approche et de sortie",
+        "slide": "Rail bas principal",
+        "air": "Petite rampe après la sortie",
+        "line": [
+          "Slide sur le rail",
+          "Kick sur le flat",
+          "Air sur la petite rampe"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "2 Slides réussis",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 3,
+      "name": "La Petite Vague",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Petite rampe",
+      "feature": "Plan incliné large à pente douce",
+      "types": [
+        "air"
+      ],
+      "bonus": "2 Airs réussis",
+      "baseModuleId": 2,
+      "affordances": {
+        "kick": "Flat au pied et à la sortie",
+        "slide": "Ledge bas sur le côté",
+        "air": "Plan incliné doux principal",
+        "line": [
+          "Air sur le plan incliné",
+          "Slide sur le ledge",
+          "Kick sur le flat"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "2 Airs réussis",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 4,
+      "name": "L’Îlot",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Place du bord de mer",
+      "feature": "Plateforme basse et large, avec bords et accès inclinés",
+      "types": [],
+      "bonus": "2 types différents réussis",
+      "baseModuleId": 3,
+      "affordances": {
+        "kick": "Flat autour de la plateforme",
+        "slide": "Bords du pad utilisables en slide",
+        "air": "Accès inclinés et petite sortie du pad",
+        "line": [
+          "Kick sur le flat",
+          "Slide sur le bord",
+          "Air sur la sortie inclinée"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "2 types différents réussis",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Le Rail des Embruns",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Rail et sortie",
+      "feature": "Rail plus long avec une grande sortie en flat",
+      "types": [
+        "slide",
+        "kick"
+      ],
+      "bonus": "Slide immédiatement suivi d’un Kick",
+      "baseModuleId": 4,
+      "affordances": {
+        "kick": "Longue sortie en flat",
+        "slide": "Rail plus long principal",
+        "air": "Petit bank décalé après la sortie",
+        "line": [
+          "Slide sur le rail",
+          "Kick dans la sortie",
+          "Air sur le petit bank"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "Slide immédiatement suivi d’un Kick",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Le Hip du Soleil",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Rampe et réception",
+      "feature": "Deux plans inclinés bas qui se rejoignent en angle",
+      "types": [
+        "air",
+        "kick"
+      ],
+      "bonus": "Air immédiatement suivi d’un Kick",
+      "baseModuleId": 5,
+      "affordances": {
+        "kick": "Flat d’approche et de réception",
+        "slide": "Petit ledge en sortie",
+        "air": "Hip bas principal",
+        "line": [
+          "Air sur le hip",
+          "Kick sur la réception",
+          "Slide sur le ledge"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "Air immédiatement suivi d’un Kick",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Le Coping Bleu",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Rampe et coping",
+      "feature": "Quarter bas, courbe douce et longue bordure métallique",
+      "types": [
+        "air",
+        "slide"
+      ],
+      "bonus": "Air immédiatement suivi d’un Slide",
+      "baseModuleId": 6,
+      "affordances": {
+        "kick": "Grand apron en flat",
+        "slide": "Coping du quarter et petit ledge voisin",
+        "air": "Quarter bas principal",
+        "line": [
+          "Air sur le quarter",
+          "Slide sur le ledge",
+          "Kick sur le flat"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "Air immédiatement suivi d’un Slide",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Le Double Quai",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Double ledge",
+      "feature": "Deux ledges larges et décalés, à deux hauteurs modestes",
+      "types": [
+        "slide"
+      ],
+      "bonus": "2 tricks utilisant 5 dés au total",
+      "baseModuleId": 7,
+      "affordances": {
+        "kick": "Flat entre et autour des deux ledges",
+        "slide": "Deux ledges principaux décalés",
+        "air": "Petit plan incliné voisin",
+        "line": [
+          "Slide sur un quai",
+          "Kick entre les éléments",
+          "Air sur le plan incliné"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "2 tricks utilisant 5 dés au total",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 9,
+      "name": "La Traverse",
+      "levels": [
+        6
+      ],
+      "old": "La grande ligne",
+      "feature": "Funbox basse combinant plans inclinés, plateforme et ledge",
+      "types": [
+        "kick",
+        "slide",
+        "air"
+      ],
+      "bonus": "Kick, Slide et Air réussis",
+      "baseModuleId": 8,
+      "affordances": {
+        "kick": "Plateau et approches en flat",
+        "slide": "Ledge intégré à la funbox",
+        "air": "Plans inclinés de la funbox",
+        "line": [
+          "Kick sur l’approche",
+          "Slide sur le ledge",
+          "Air sur la sortie de funbox"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "Kick, Slide et Air réussis",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Les Trois Marches",
+      "levels": [
+        6
+      ],
+      "old": "La ligne street",
+      "feature": "Petit escalier de trois marches avec rail et zones de flat",
+      "types": [
+        "kick",
+        "slide"
+      ],
+      "bonus": "Kick → Slide → Kick",
+      "baseModuleId": 9,
+      "affordances": {
+        "kick": "Flat avant et après l’escalier",
+        "slide": "Petit rail de l’escalier",
+        "air": "Bank bas parallèle aux trois marches",
+        "line": [
+          "Kick sur l’approche",
+          "Slide sur le rail",
+          "Kick sur la sortie"
+        ],
+        "alternative": "Le bank permet aussi un Air."
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "Kick → Slide → Kick",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 11,
+      "name": "L’Archipel",
+      "levels": [
+        6
+      ],
+      "old": "Le parcours libre",
+      "feature": "Trois petites plateformes espacées, propices à plusieurs lignes",
+      "types": [],
+      "bonus": "3 tricks de noms différents",
+      "baseModuleId": 10,
+      "affordances": {
+        "kick": "Flat entre les îlots",
+        "slide": "Bord grindable de l’un des trois pads",
+        "air": "Extrémité inclinée d’un autre pad",
+        "line": [
+          "Air sur le pad incliné",
+          "Kick entre les îlots",
+          "Slide sur un autre bord"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "3 tricks de noms différents",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    },
+    {
+      "id": 12,
+      "name": "La Mini du Large",
+      "levels": [
+        6
+      ],
+      "old": "La grande rampe",
+      "feature": "Mini-rampe large à deux courbes douces face à la mer",
+      "types": [
+        "air"
+      ],
+      "bonus": "Un Air utilisant 4 dés",
+      "baseModuleId": 11,
+      "affordances": {
+        "kick": "Apron à côté du fond plat, à même niveau",
+        "slide": "Coping et petit ledge sur l’apron",
+        "air": "Deux courbes opposées de la mini-rampe",
+        "line": [
+          "Air dans la mini",
+          "Kick sur le flat latéral",
+          "Slide sur le ledge"
+        ]
+      },
+      "signature": {
+        "status": "proposée, non appliquée",
+        "points": 2,
+        "rule": "Un Air utilisant 4 dés",
+        "scope": "Une fois par essai conservé du module actif"
+      }
+    }
+  ],
+  "planImage": "park-plan-v2.png",
+  "referenceGeometry": {
+    "svg": "mini-ramp-reference.svg",
+    "png": "mini-ramp-reference.png",
+    "generator": "draw-mini-reference.mjs"
+  },
+  "generation": {
+    "mode": "built-in image_gen",
+    "promptFile": "park-plan-v2.prompt.txt",
+    "editTarget": "park-plan-v1.png"
+  }
+}
+

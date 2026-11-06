@@ -1,0 +1,52 @@
+{
+  "status": "Visual card examples only; three viewpoint studies, no game engine changes",
+  "mode": "built-in image generation",
+  "cards": [
+    {
+      "key": "manche-1-quai-bas",
+      "roundExample": 1,
+      "canAppear": [
+        1,
+        2
+      ],
+      "name": "Le Quai bas",
+      "needs": [
+        "slide"
+      ],
+      "pv": 2,
+      "prompt": "manche-1-quai-bas.prompt.txt",
+      "image": "manche-1-quai-bas.png"
+    },
+    {
+      "key": "manche-4-marches-palmiers",
+      "roundExample": 4,
+      "canAppear": [
+        3,
+        4,
+        5
+      ],
+      "name": "Les Marches des Palmiers",
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "pv": 3,
+      "prompt": "manche-4-marches-palmiers.prompt.txt",
+      "image": "manche-4-marches-palmiers.png"
+    },
+    {
+      "key": "manche-6-grande-vague",
+      "roundExample": 6,
+      "canAppear": [
+        6
+      ],
+      "name": "La Grande Vague",
+      "needs": [
+        "air"
+      ],
+      "pv": 4,
+      "prompt": "manche-6-grande-vague.prompt.txt",
+      "image": "manche-6-grande-vague.png"
+    }
+  ]
+}

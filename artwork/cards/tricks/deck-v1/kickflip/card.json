@@ -1,0 +1,55 @@
+{
+  "id": 5,
+  "key": "kickflip",
+  "name": "Kickflip",
+  "type": "kick",
+  "tier": "base",
+  "copies": 2,
+  "points": 4,
+  "difficultyPoints": 4,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.890625,
+  "requirementCode": "high4",
+  "cost": 2,
+  "pattern": "at-least",
+  "threshold": 4,
+  "symbols": [
+    "≥4",
+    "≥4"
+  ],
+  "rule": "Deux dés ≥ 4",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/kickflip/01-illustration.webp?v=0cda534e7a7c",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/kickflip/03-textes-symboles.webp?v=c2621e2bc4dc"
+  },
+  "printedPoints": 4,
+  "p": 0.890625,
+  "effect": "",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

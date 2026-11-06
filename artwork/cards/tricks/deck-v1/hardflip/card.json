@@ -1,0 +1,58 @@
+{
+  "id": 12,
+  "key": "hardflip",
+  "name": "Hardflip",
+  "type": "kick",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 8,
+  "difficultyPoints": 8,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.4179955418381344,
+  "requirementCode": "exact36",
+  "cost": 2,
+  "pattern": "exact",
+  "values": [
+    3,
+    6
+  ],
+  "symbols": [
+    "3",
+    "6"
+  ],
+  "rule": "Un 3 et un 6",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/hardflip/01-illustration.webp?v=651a3f9bd9b5",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=42d823e263a7"
+  },
+  "printedPoints": 8,
+  "p": 0.4179955418381344,
+  "effect": "",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

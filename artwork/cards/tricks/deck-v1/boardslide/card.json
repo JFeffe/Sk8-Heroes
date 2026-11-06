@@ -1,0 +1,96 @@
+{
+  "id": 17,
+  "key": "boardslide",
+  "name": "Boardslide",
+  "type": "slide",
+  "tier": "base",
+  "copies": 2,
+  "points": 2,
+  "difficultyPoints": 2,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.96875,
+  "requirementCode": "mixed",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "symbols": [
+    "P",
+    "I"
+  ],
+  "rule": "Un pair et un impair",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "slide",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/boardslide/01-illustration.webp?v=e41130500178",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/boardslide/03-textes-symboles.webp?v=0336f12cf46b"
+  },
+  "printedPoints": 2,
+  "p": 0.96875,
+  "effect": "point:slide",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

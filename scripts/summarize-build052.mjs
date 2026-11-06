@@ -1,0 +1,19 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+const read=p=>JSON.parse(readFileSync(p,'utf8')),sum=o=>Object.values(o).reduce((a,b)=>a+b,0),directory='tests/build-052-balance';
+function summarize(r){const n=r.total.attempts,players=r.tokens.players;return {games:r.completed,attempts:n,score:r.total.points/n,bestScore:r.modules.reduce((n,m)=>n+m.bestSum,0)/(r.completed*24),falls:r.total.falls/n,passes:r.total.passes/n,three:r.total.three/n,tokens:{gained:sum(r.tokens.gained)/players,spent:sum(r.tokens.spent)/players,remaining:sum(r.tokens.remaining)/players},order:r.moduleOrder.map(m=>m.winCredit/m.appearances),attemptRounds:r.attemptRounds.map(a=>({score:a.points/a.attempts,falls:a.falls/a.attempts,passes:a.passes/a.attempts})),objectiveSpends:r.objectiveSpends};}
+const report={build:'0.5.2',date:'2026-11-02',games:0,attempts:0,checks:0,tests:255,bonusSpendsAudited:0,bonusViolations:0,scenarios:{},normalComparison:{},sourceChanges:[]};
+const normal=read(directory+'/normal.json'),before=read('tests/build-051-balance/normal.json');
+report.sourceChanges=Object.keys(normal.sourceHashes).filter(k=>normal.sourceHashes[k]!==before.sourceHashes[k]);
+assert.deepEqual([...report.sourceChanges].sort(),['package.json','public/npc.js','public/npc-strategy.js','public/release-notes.js'].sort());
+assert.deepEqual(normal.configuration.modules,before.configuration.modules);assert.equal(normal.rulesVersion,before.rulesVersion);assert.equal(normal.saveVersion,before.saveVersion);
+for(const [name,path] of [['normal',directory+'/normal.json'],['mixed',directory+'/mixed.json'],['expert',directory+'/expert.json'],['easy',directory+'/easy.json'],['holdout','tests/build-052-holdout/normal.json']]){
+ const r=read(path);assert(r.sourceUnchanged);assert.deepEqual(r.sourceHashes,normal.sourceHashes);assert.equal(r.completed,r.plannedGames);assert.equal(r.total.attempts,r.completed*48);assert.equal(r.objectiveSpends.checked,sum(r.tokens.spent));
+ report.games+=r.completed;report.attempts+=r.total.attempts;report.checks+=r.invariantChecks;report.bonusSpendsAudited+=r.objectiveSpends.checked;report.scenarios[name]=summarize(r);
+}
+assert.equal(report.games,1000);assert.equal(report.attempts,48000);
+report.normalComparison={before:summarize(before),after:summarize(normal)};
+for(let i=0;i<normal.games.length;i++){assert.equal(normal.games[i].seed,before.games[i].seed);assert.equal(normal.games[i].rotation,before.games[i].rotation);assert.deepEqual(normal.games[i].route,before.games[i].route);}
+const log=readFileSync('.local-games/build052-tests-final.log','utf8');assert.match(log,/pass 255/);assert.match(log,/fail 0/);
+report.method={sample:'400 Normal, 200 mixtes, 100 Détente, 100 Expert, 200 Normal sur de nouvelles graines (indices 200–249).',excluded:'80 parties exploratoires, suite fonctionnelle et éventuelles répétitions exclues du total.',audit:'Chaque dépense doit conserver au moins un objectif légal possible : améliorer le score connu, ou obtenir plus de jetons que les dépenses de l’essai. Contrôle indépendant du planificateur, avec bornes supérieures pour les points dépendant des dés inconnus ; il ne prouve ni la rentabilité réelle après les jets ni l’optimalité du choix.',balance:'Les tentatives gratuites de collecte peuvent chuter sans perte de jetons. Les passes valent zéro. Ces changements affectent donc la moyenne par essai et le taux de chutes ; le meilleur essai par module reste le critère de classement.',limits:'Stratégies NPC, pas des joueurs humains. Les flux aléatoires divergent après des choix différents. Le gain en jetons reste soumis aux jets ; un objectif rentable prévu peut échouer.'};
+writeFileSync(directory+'/summary.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

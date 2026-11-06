@@ -1,0 +1,13 @@
+{
+  "build": "0.5.3",
+  "date": "2026-11-02",
+  "functionalTests": {"passed": 261, "failed": 0, "newCalibrationTests": 6, "log": ".local-games/build053-tests.log"},
+  "simulations": {"completedGames": 1400, "attempts": 67200, "freshSeedNormalGames": 200, "exploratoryGamesExcluded": 120, "gameChecks": 210136, "independentBonusSpendsChecked": 62487},
+  "reference": {"frozenBuild": "0.5.2", "fixtureDirectory": "tests/fixtures/npc-052", "manifestHashesVerified": true, "confrontationGames": 400},
+  "expert": {"identicalRecordedGames": 100, "identicalDecisionCounts": true, "additionalPerDecisionTestGames": 3},
+  "sourceChanges": ["package.json", "public/npc.js", "public/npc-strategy.js", "public/npc-difficulty.js", "public/release-notes.js"],
+  "rulesVersion": 17,
+  "saveVersion": 12,
+  "browser": {"gameVersion": "0.5.3", "defaultDifficulty": "Normal", "gameConsoleErrors": 0, "reportConsoleErrors": 0, "serverReloaded": true, "screenshot": "tests/screenshots/build053-difficulty-report.png", "report": "http://127.0.0.1:8000/reports/build-053-difficulty.html"},
+  "limitations": ["NPC confrontations do not measure human win rates.", "Falls remain frequent and the later-player advantage persists; this calibration does not prove global balance."]
+}

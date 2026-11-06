@@ -1,0 +1,40 @@
+{
+  "id": 11,
+  "key": "grande-vague",
+  "name": "La Grande Vague",
+  "stage": 2,
+  "needs": [
+    "air"
+  ],
+  "pv": 4,
+  "bonus": {
+    "kind": "amplitude",
+    "minimumDice": 3,
+    "points": 2
+  },
+  "condition": "Chaque trick utilisant 3 ou 4 dés rapporte +2 points.",
+  "park": "Le Lagon",
+  "rounds": [
+    6
+  ],
+  "image": "assets/modules/lagoon/grande-vague.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/grande-vague/01-illustration.webp?v=4acc4e1e1107",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=4bd9c7a6106c"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/grande-vague.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

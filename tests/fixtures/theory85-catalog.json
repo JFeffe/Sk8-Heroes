@@ -1,0 +1,1487 @@
+{
+  "theoretical": true,
+  "inventory": {
+    "base": {
+      "kick": 14,
+      "slide": 13,
+      "air": 9
+    },
+    "advanced": {
+      "kick": 14,
+      "slide": 14,
+      "air": 12
+    },
+    "epic": {
+      "kick": 3,
+      "slide": 3,
+      "air": 3
+    }
+  },
+  "total": 85,
+  "differentTricks": 41,
+  "probabilityConvention": "6 fair dice, no bonus, star is 1; exact count over 46656 ordered rolls",
+  "scorePremiumByDice": {
+    "2": 0,
+    "3": 2,
+    "4": 4
+  },
+  "cardTokenRewards": {
+    "timing": "end of module",
+    "perPhysicalCardInConservedAttempt": 1,
+    "capByTokenType": null,
+    "accumulateAcrossBothAttempts": true
+  },
+  "cards": [
+    {
+      "type": "kick",
+      "tier": "base",
+      "name": "Ollie",
+      "copies": 3,
+      "rule": "high2",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 46625,
+      "total": 46656,
+      "p": 0.9993355624142661,
+      "requirement": {
+        "cost": 2,
+        "pattern": "at-least",
+        "threshold": 2
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "base",
+      "name": "Nollie",
+      "copies": 3,
+      "rule": "double",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "token:adjust",
+      "cost": 2,
+      "successes": 45936,
+      "total": 46656,
+      "p": 0.9845679012345679,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "base",
+      "name": "Pop Shuvit",
+      "copies": 2,
+      "rule": "mixed",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "point:kick",
+      "cost": 2,
+      "successes": 45198,
+      "total": 46656,
+      "p": 0.96875,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "base",
+      "name": "Frontside 180",
+      "copies": 2,
+      "rule": "oddGap",
+      "points": 3,
+      "difficultyPoints": 3,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 44534,
+      "total": 46656,
+      "p": 0.9545181755829903,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "base",
+      "name": "Heelflip",
+      "copies": 2,
+      "rule": "straight2",
+      "points": 3,
+      "difficultyPoints": 3,
+      "scorePremium": 0,
+      "effect": "token:freeze",
+      "cost": 2,
+      "successes": 43870,
+      "total": 46656,
+      "p": 0.9402863511659808,
+      "requirement": {
+        "cost": 2,
+        "pattern": "straight"
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "base",
+      "name": "Kickflip",
+      "copies": 2,
+      "rule": "high4",
+      "points": 4,
+      "difficultyPoints": 4,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 41553,
+      "total": 46656,
+      "p": 0.890625,
+      "requirement": {
+        "cost": 2,
+        "pattern": "at-least",
+        "threshold": 4
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Varial Kickflip",
+      "copies": 2,
+      "rule": "extremes",
+      "points": 5,
+      "difficultyPoints": 5,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 38528,
+      "total": 46656,
+      "p": 0.8257887517146777,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Frontside Flip",
+      "copies": 2,
+      "rule": "oddDistinct",
+      "points": 5,
+      "difficultyPoints": 5,
+      "scorePremium": 0,
+      "effect": "point:slide",
+      "cost": 2,
+      "successes": 35826,
+      "total": 46656,
+      "p": 0.7678755144032922,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Backside Flip",
+      "copies": 2,
+      "rule": "bands3",
+      "points": 8,
+      "difficultyPoints": 6,
+      "scorePremium": 2,
+      "effect": "token:adjust",
+      "cost": 3,
+      "successes": 34560,
+      "total": 46656,
+      "p": 0.7407407407407407,
+      "requirement": {
+        "cost": 3,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Varial Heelflip",
+      "copies": 2,
+      "rule": "even3",
+      "points": 8,
+      "difficultyPoints": 6,
+      "scorePremium": 2,
+      "effect": "point:kick",
+      "cost": 3,
+      "successes": 30618,
+      "total": 46656,
+      "p": 0.65625,
+      "requirement": {
+        "cost": 3,
+        "pattern": "choices",
+        "choices": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            2,
+            6
+          ],
+          [
+            2,
+            4,
+            4
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            4,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            6
+          ],
+          [
+            4,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Bigspin",
+      "copies": 2,
+      "rule": "high5",
+      "points": 7,
+      "difficultyPoints": 7,
+      "scorePremium": 0,
+      "effect": "token:reroll",
+      "cost": 2,
+      "successes": 30272,
+      "total": 46656,
+      "p": 0.6488340192043895,
+      "requirement": {
+        "cost": 2,
+        "pattern": "at-least",
+        "threshold": 5
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Inward Heelflip",
+      "copies": 2,
+      "rule": "straight3",
+      "points": 9,
+      "difficultyPoints": 7,
+      "scorePremium": 2,
+      "effect": "point:air",
+      "cost": 3,
+      "successes": 27720,
+      "total": 46656,
+      "p": 0.5941358024691358,
+      "requirement": {
+        "cost": 3,
+        "pattern": "straight"
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "advanced",
+      "name": "Hardflip",
+      "copies": 2,
+      "rule": "exact36",
+      "points": 8,
+      "difficultyPoints": 8,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 19502,
+      "total": 46656,
+      "p": 0.4179955418381344,
+      "requirement": {
+        "cost": 2,
+        "pattern": "exact",
+        "values": [
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "epic",
+      "name": "360 Flip",
+      "copies": 1,
+      "rule": "double4",
+      "points": 10,
+      "difficultyPoints": 10,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 12281,
+      "total": 46656,
+      "p": 0.263224451303155,
+      "requirement": {
+        "cost": 2,
+        "pattern": "exact",
+        "values": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "epic",
+      "name": "Laser Flip",
+      "copies": 1,
+      "rule": "exact446",
+      "points": 15,
+      "difficultyPoints": 13,
+      "scorePremium": 2,
+      "effect": "",
+      "cost": 3,
+      "successes": 6896,
+      "total": 46656,
+      "p": 0.14780521262002744,
+      "requirement": {
+        "cost": 3,
+        "pattern": "exact",
+        "values": [
+          4,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "type": "kick",
+      "tier": "epic",
+      "name": "Impossible",
+      "copies": 1,
+      "rule": "exact666",
+      "points": 17,
+      "difficultyPoints": 15,
+      "scorePremium": 2,
+      "effect": "",
+      "cost": 3,
+      "successes": 2906,
+      "total": 46656,
+      "p": 0.062285665294924554,
+      "requirement": {
+        "cost": 3,
+        "pattern": "exact",
+        "values": [
+          6,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "base",
+      "name": "50-50 Grind",
+      "copies": 3,
+      "rule": "low5",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 46625,
+      "total": 46656,
+      "p": 0.9993355624142661,
+      "requirement": {
+        "cost": 2,
+        "pattern": "at-most",
+        "threshold": 5
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "base",
+      "name": "Boardslide",
+      "copies": 2,
+      "rule": "mixed",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "point:slide",
+      "cost": 2,
+      "successes": 45198,
+      "total": 46656,
+      "p": 0.96875,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "base",
+      "name": "Lipslide",
+      "copies": 2,
+      "rule": "straight2",
+      "points": 3,
+      "difficultyPoints": 3,
+      "scorePremium": 0,
+      "effect": "token:reroll",
+      "cost": 2,
+      "successes": 43870,
+      "total": 46656,
+      "p": 0.9402863511659808,
+      "requirement": {
+        "cost": 2,
+        "pattern": "straight"
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "base",
+      "name": "Tailslide",
+      "copies": 2,
+      "rule": "largeGap",
+      "points": 3,
+      "difficultyPoints": 3,
+      "scorePremium": 0,
+      "effect": "token:freeze",
+      "cost": 2,
+      "successes": 43932,
+      "total": 46656,
+      "p": 0.9416152263374485,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "base",
+      "name": "Noseslide",
+      "copies": 2,
+      "rule": "doubleLow",
+      "points": 3,
+      "difficultyPoints": 3,
+      "scorePremium": 0,
+      "effect": "point:air",
+      "cost": 2,
+      "successes": 42605,
+      "total": 46656,
+      "p": 0.9131730109739369,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "base",
+      "name": "Nosegrind",
+      "copies": 2,
+      "rule": "gap2",
+      "points": 4,
+      "difficultyPoints": 4,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 41168,
+      "total": 46656,
+      "p": 0.8823731138545954,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "5-0 Grind",
+      "copies": 2,
+      "rule": "extremes",
+      "points": 5,
+      "difficultyPoints": 5,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 38528,
+      "total": 46656,
+      "p": 0.8257887517146777,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "Crooked Grind",
+      "copies": 2,
+      "rule": "evenDistinct",
+      "points": 5,
+      "difficultyPoints": 5,
+      "scorePremium": 0,
+      "effect": "point:kick",
+      "cost": 2,
+      "successes": 35826,
+      "total": 46656,
+      "p": 0.7678755144032922,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "Feeble Grind",
+      "copies": 2,
+      "rule": "bands3",
+      "points": 8,
+      "difficultyPoints": 6,
+      "scorePremium": 2,
+      "effect": "token:reroll",
+      "cost": 3,
+      "successes": 34560,
+      "total": 46656,
+      "p": 0.7407407407407407,
+      "requirement": {
+        "cost": 3,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "Smith Grind",
+      "copies": 2,
+      "rule": "odd3",
+      "points": 8,
+      "difficultyPoints": 6,
+      "scorePremium": 2,
+      "effect": "point:slide",
+      "cost": 3,
+      "successes": 30618,
+      "total": 46656,
+      "p": 0.65625,
+      "requirement": {
+        "cost": 3,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            5,
+            5
+          ],
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            5
+          ],
+          [
+            3,
+            5,
+            5
+          ],
+          [
+            5,
+            5,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "Suski Grind",
+      "copies": 2,
+      "rule": "low2",
+      "points": 7,
+      "difficultyPoints": 7,
+      "scorePremium": 0,
+      "effect": "token:adjust",
+      "cost": 2,
+      "successes": 30272,
+      "total": 46656,
+      "p": 0.6488340192043895,
+      "requirement": {
+        "cost": 2,
+        "pattern": "at-most",
+        "threshold": 2
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "Salad Grind",
+      "copies": 2,
+      "rule": "straight3",
+      "points": 9,
+      "difficultyPoints": 7,
+      "scorePremium": 2,
+      "effect": "point:air",
+      "cost": 3,
+      "successes": 27720,
+      "total": 46656,
+      "p": 0.5941358024691358,
+      "requirement": {
+        "cost": 3,
+        "pattern": "straight"
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "advanced",
+      "name": "Overcrook",
+      "copies": 2,
+      "rule": "exact25",
+      "points": 8,
+      "difficultyPoints": 8,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 19502,
+      "total": 46656,
+      "p": 0.4179955418381344,
+      "requirement": {
+        "cost": 2,
+        "pattern": "exact",
+        "values": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "epic",
+      "name": "Bluntslide",
+      "copies": 1,
+      "rule": "high5three",
+      "points": 11,
+      "difficultyPoints": 9,
+      "scorePremium": 2,
+      "effect": "",
+      "cost": 3,
+      "successes": 14912,
+      "total": 46656,
+      "p": 0.3196159122085048,
+      "requirement": {
+        "cost": 3,
+        "pattern": "at-least",
+        "threshold": 5
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "epic",
+      "name": "Nosebluntslide",
+      "copies": 1,
+      "rule": "exact366",
+      "points": 15,
+      "difficultyPoints": 13,
+      "scorePremium": 2,
+      "effect": "",
+      "cost": 3,
+      "successes": 6896,
+      "total": 46656,
+      "p": 0.14780521262002744,
+      "requirement": {
+        "cost": 3,
+        "pattern": "exact",
+        "values": [
+          3,
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "type": "slide",
+      "tier": "epic",
+      "name": "Hurricane",
+      "copies": 1,
+      "rule": "exact2345",
+      "points": 18,
+      "difficultyPoints": 14,
+      "scorePremium": 4,
+      "effect": "",
+      "cost": 4,
+      "successes": 5880,
+      "total": 46656,
+      "p": 0.12602880658436214,
+      "requirement": {
+        "cost": 4,
+        "pattern": "exact",
+        "values": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "base",
+      "name": "180°",
+      "copies": 3,
+      "rule": "low4",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 45824,
+      "total": 46656,
+      "p": 0.9821673525377229,
+      "requirement": {
+        "cost": 2,
+        "pattern": "at-most",
+        "threshold": 4
+      }
+    },
+    {
+      "type": "air",
+      "tier": "base",
+      "name": "Indy Grab",
+      "copies": 3,
+      "rule": "mixed",
+      "points": 2,
+      "difficultyPoints": 2,
+      "scorePremium": 0,
+      "effect": "point:air",
+      "cost": 2,
+      "successes": 45198,
+      "total": 46656,
+      "p": 0.96875,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "base",
+      "name": "360°",
+      "copies": 3,
+      "rule": "gap3",
+      "points": 4,
+      "difficultyPoints": 4,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 41586,
+      "total": 46656,
+      "p": 0.8913323045267489,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "advanced",
+      "name": "Melon Grab",
+      "copies": 3,
+      "rule": "extremes",
+      "points": 5,
+      "difficultyPoints": 5,
+      "scorePremium": 0,
+      "effect": "",
+      "cost": 2,
+      "successes": 38528,
+      "total": 46656,
+      "p": 0.8257887517146777,
+      "requirement": {
+        "cost": 2,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "advanced",
+      "name": "Stalefish",
+      "copies": 3,
+      "rule": "bands3",
+      "points": 8,
+      "difficultyPoints": 6,
+      "scorePremium": 2,
+      "effect": "token:reroll",
+      "cost": 3,
+      "successes": 34560,
+      "total": 46656,
+      "p": 0.7407407407407407,
+      "requirement": {
+        "cost": 3,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "advanced",
+      "name": "540°",
+      "copies": 3,
+      "rule": "straight3",
+      "points": 9,
+      "difficultyPoints": 7,
+      "scorePremium": 2,
+      "effect": "point:kick",
+      "cost": 3,
+      "successes": 27720,
+      "total": 46656,
+      "p": 0.5941358024691358,
+      "requirement": {
+        "cost": 3,
+        "pattern": "straight"
+      }
+    },
+    {
+      "type": "air",
+      "tier": "advanced",
+      "name": "720°",
+      "copies": 3,
+      "rule": "parityRun3",
+      "points": 10,
+      "difficultyPoints": 8,
+      "scorePremium": 2,
+      "effect": "",
+      "cost": 3,
+      "successes": 21960,
+      "total": 46656,
+      "p": 0.470679012345679,
+      "requirement": {
+        "cost": 3,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "epic",
+      "name": "900°",
+      "copies": 2,
+      "rule": "highPairs4",
+      "points": 18,
+      "difficultyPoints": 14,
+      "scorePremium": 4,
+      "effect": "",
+      "cost": 4,
+      "successes": 5730,
+      "total": 46656,
+      "p": 0.12281378600823045,
+      "requirement": {
+        "cost": 4,
+        "pattern": "choices",
+        "choices": [
+          [
+            4,
+            4,
+            5,
+            5
+          ],
+          [
+            4,
+            4,
+            6,
+            6
+          ],
+          [
+            5,
+            5,
+            6,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "type": "air",
+      "tier": "epic",
+      "name": "1080°",
+      "copies": 1,
+      "rule": "fourKind",
+      "points": 20,
+      "difficultyPoints": 16,
+      "scorePremium": 4,
+      "effect": "",
+      "cost": 4,
+      "successes": 2436,
+      "total": 46656,
+      "p": 0.0522119341563786,
+      "requirement": {
+        "cost": 4,
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            4,
+            4,
+            4,
+            4
+          ],
+          [
+            5,
+            5,
+            5,
+            5
+          ],
+          [
+            6,
+            6,
+            6,
+            6
+          ]
+        ]
+      }
+    }
+  ]
+}

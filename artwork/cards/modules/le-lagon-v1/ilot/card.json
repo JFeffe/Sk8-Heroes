@@ -1,0 +1,40 @@
+{
+  "id": 0,
+  "key": "ilot",
+  "name": "L’Îlot",
+  "stage": 0,
+  "needs": [
+    "kick"
+  ],
+  "pv": 2,
+  "bonus": {
+    "kind": "base",
+    "points": 1
+  },
+  "condition": "Chaque carte Base rapporte +1 point.",
+  "park": "Le Lagon",
+  "rounds": [
+    1,
+    2
+  ],
+  "image": "assets/modules/lagoon/ilot.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/ilot/01-illustration.webp?v=044b4f85e7ca",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/ilot/03-textes-symboles.webp?v=a1af8c75f7f4"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/ilot.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

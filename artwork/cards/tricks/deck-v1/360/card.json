@@ -1,0 +1,68 @@
+{
+  "id": 34,
+  "key": "360",
+  "name": "360°",
+  "type": "air",
+  "tier": "base",
+  "copies": 3,
+  "points": 4,
+  "difficultyPoints": 4,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.8913323045267489,
+  "requirementCode": "gap3",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "symbols": [
+    "x",
+    "x+3"
+  ],
+  "rule": "Deux valeurs d’écart 3",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/360/01-illustration.webp?v=209fe43e3586",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/360/03-textes-symboles.webp?v=2e8fcc35951b"
+  },
+  "printedPoints": 4,
+  "p": 0.8913323045267489,
+  "effect": "",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

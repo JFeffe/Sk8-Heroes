@@ -1,0 +1,57 @@
+{
+  "id": 18,
+  "key": "lipslide",
+  "name": "Lipslide",
+  "type": "slide",
+  "tier": "base",
+  "copies": 2,
+  "points": 3,
+  "difficultyPoints": 3,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9402863511659808,
+  "requirementCode": "straight2",
+  "cost": 2,
+  "pattern": "straight",
+  "symbols": [
+    "x",
+    "x+1"
+  ],
+  "rule": "Deux valeurs consécutives",
+  "comboBonus": {
+    "kind": "reward",
+    "type": "reroll"
+  },
+  "layers": {
+    "illustration": "assets/tricks/lipslide/01-illustration.webp?v=c15f0d0055a5",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/lipslide/03-textes-symboles.webp?v=385a20453a89"
+  },
+  "printedPoints": 3,
+  "p": 0.9402863511659808,
+  "effect": "token:reroll",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

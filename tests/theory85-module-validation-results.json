@@ -1,0 +1,12 @@
+{
+  "theoretical": true,
+  "passed": true,
+  "checks": 5,
+  "details": [
+    "Four early, six middle and two final modules; PV 2/3/4 and optional sequence bonus +2 preserved.",
+    "Grande Vague grants +2 for 2+2+2, 3+3, 4+2 and 2+4 dice; never for one 4-die Air or only five dice.",
+    "Embruns requires two separate 3-die cards; Quai bas and Tour de l’Îlot require their printed order for the optional bonus.",
+    "Real-engine Grande Vague: 900° alone gets no module bonus; 900°+Ollie gets +2; three 2-die cards get module +2 and their separate third-trick point/token.",
+    "Two-type mandatory opening remains enforced: missing type cannot be skipped or banked; third card stays free when dice permit."
+  ]
+}

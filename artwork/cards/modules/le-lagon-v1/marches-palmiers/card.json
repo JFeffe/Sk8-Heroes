@@ -1,0 +1,42 @@
+{
+  "id": 9,
+  "key": "marches-palmiers",
+  "name": "Les Marches des Palmiers",
+  "stage": 1,
+  "needs": [
+    "kick",
+    "slide"
+  ],
+  "pv": 3,
+  "bonus": {
+    "kind": "three-score",
+    "points": 2
+  },
+  "condition": "Le bonus de trois tricks réussis vaut +2 points au lieu de +1 ; le jeton habituel est conservé.",
+  "park": "Le Lagon",
+  "rounds": [
+    3,
+    4,
+    5
+  ],
+  "image": "assets/modules/lagoon/marches-palmiers.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/marches-palmiers/01-illustration.webp?v=d33734144cfd",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/marches-palmiers/03-textes-symboles.webp?v=800e31de5270"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/marches-palmiers.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

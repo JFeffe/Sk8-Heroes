@@ -1,0 +1,30 @@
+{
+  "version": "0.2.1",
+  "date": "2026-10-31",
+  "tests": {
+    "total": 167,
+    "passed": 167,
+    "failed": 0,
+    "completeCompetitions": 100
+  },
+  "browser": {
+    "notes": "Contour absent après consultation, fermeture et rechargement ; toujours présent dans la session invitée distincte.",
+    "lobby": "Création sans rider, six choix disponibles, réservations visibles et désactivées dans l’autre client, lancement après choix de tous.",
+    "placement": "Joker gelé placé puis repris ; carte 14-0 conservée, placement vidé, gel conservé.",
+    "archives": {
+      "desktop": {
+        "cards": 3,
+        "dicePerCard": 2,
+        "clientWidth": 282,
+        "scrollWidth": 282,
+        "clientHeight": 161,
+        "scrollHeight": 161
+      },
+      "mobile": "Trois cartes alignées avec leurs dés, sans défilement et contrôles au-dessus de la main."
+    }
+  },
+  "screenshots": [
+    "tests/screenshots/rider-lobby-021.png",
+    "tests/screenshots/attempt-row-021.png"
+  ]
+}

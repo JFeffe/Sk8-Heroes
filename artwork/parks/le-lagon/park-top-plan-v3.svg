@@ -1,0 +1,434 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1420" viewBox="0 0 1800 1420"><defs>
+ <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" fill="none" stroke="#dfe6e4" stroke-width=".6"/></pattern>
+ <pattern id="bank-hatch" width=".3" height=".3" patternUnits="userSpaceOnUse"><rect width=".3" height=".3" fill="#f1f5f3"/><path d="M0 .3 .3 0" stroke="#a6b6b5" stroke-width=".025"/></pattern>
+ <pattern id="curve-hatch" width=".32" height=".32" patternUnits="userSpaceOnUse"><rect width=".32" height=".32" fill="#edf3f4"/><path d="M0 .08H.32 M0 .24H.32" stroke="#a0b4b8" stroke-width=".025"/></pattern>
+ <marker id="rise" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#6d8c92" stroke-width="1"/></marker>
+ <marker id="travel" viewBox="0 0 7 7" refX="6" refY="3.5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 7 3.5 0 7Z" fill="#2c8b9b"/></marker>
+ </defs><rect width="1800" height="1420" fill="#fcfcf8"/>
+<text x="70" y="58" font-family="Arial,sans-serif" font-size="38" fill="#183c49" font-weight="bold">LE LAGON</text>
+<text x="70" y="89" font-family="Arial,sans-serif" font-size="19" fill="#647a80" letter-spacing="1.2">PLAN D’IMPLANTATION — DRAFT 03</text>
+<text x="1210" y="58" font-family="Arial,sans-serif" font-size="16" fill="#183c49" font-weight="bold">VUE STRICTEMENT DE DESSUS</text>
+<text x="1210" y="87" font-family="Arial,sans-serif" font-size="14" fill="#647a80" >12 zones · 4 découverte / 6 enchaînement / 2 finales</text>
+<rect x="112" y="119" width="1080" height="57" fill="#e8f5f8" stroke="none" stroke-width="0" />
+<path d="M112 133 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0" stroke="#b8dce4" stroke-width="1" fill="none"/>
+<path d="M112 148 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0" stroke="#b8dce4" stroke-width="1" fill="none"/>
+<path d="M112 163 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0 q15 -4 30 0t30 0" stroke="#b8dce4" stroke-width="1" fill="none"/>
+<text x="652" y="155" font-family="Arial,sans-serif" font-size="14" fill="#3e7988" text-anchor="middle" letter-spacing="2">PLAGE / MER</text>
+<rect x="112" y="184" width="1080" height="28" fill="#f2f1e9" stroke="#aab8b4" stroke-width="0.8" />
+<text x="652" y="203" font-family="Arial,sans-serif" font-size="11" fill="#647a80" text-anchor="middle" letter-spacing="1">PROMENADE PIÉTONNE — PALMIERS ET BANCS</text>
+<circle cx="150" cy="198" r="10" fill="#fcfcf8" stroke="#7d9d8a" stroke-width="1"/>
+<line x1="150" y1="198" x2="158" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="155.657" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="150" y2="206" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="144.343" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="142" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="144.343" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="150" y2="190" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="150" y1="198" x2="155.657" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<circle cx="300" cy="198" r="10" fill="#fcfcf8" stroke="#7d9d8a" stroke-width="1"/>
+<line x1="300" y1="198" x2="308" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="305.657" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="300" y2="206" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="294.343" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="292" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="294.343" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="300" y2="190" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="300" y1="198" x2="305.657" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<circle cx="1050" cy="198" r="10" fill="#fcfcf8" stroke="#7d9d8a" stroke-width="1"/>
+<line x1="1050" y1="198" x2="1058" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1055.657" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1050" y2="206" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1044.343" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1042" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1044.343" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1050" y2="190" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1050" y1="198" x2="1055.657" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<circle cx="1160" cy="198" r="10" fill="#fcfcf8" stroke="#7d9d8a" stroke-width="1"/>
+<line x1="1160" y1="198" x2="1168" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1165.657" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1160" y2="206" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1154.343" y2="203.657" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1152" y2="198" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1154.343" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1160" y2="190" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="1160" y1="198" x2="1165.657" y2="192.343" stroke="#7d9d8a" stroke-width="0.6" />
+<line x1="112" y1="232" x2="1192" y2="232" stroke="#647a80" stroke-width="1" />
+<line x1="112" y1="223" x2="112" y2="241" stroke="#647a80" stroke-width="1" />
+<line x1="112" y1="243" x2="112" y2="252" stroke="#b7c4c4" stroke-width="0.7" />
+<line x1="1192" y1="223" x2="1192" y2="241" stroke="#647a80" stroke-width="1" />
+<line x1="1192" y1="243" x2="1192" y2="252" stroke="#b7c4c4" stroke-width="0.7" />
+<rect x="576" y="220" width="152" height="21" fill="#fcfcf8" stroke="none" stroke-width="0" />
+<text x="652" y="235" font-family="Arial,sans-serif" font-size="12" fill="#647a80" text-anchor="middle">60 m — PROVISOIRE</text>
+<line x1="83" y1="258" x2="83" y2="1122" stroke="#647a80" stroke-width="1" />
+<line x1="75" y1="258" x2="91" y2="258" stroke="#647a80" stroke-width="1" />
+<line x1="75" y1="1122" x2="91" y2="1122" stroke="#647a80" stroke-width="1" />
+<text x="61" y="690" font-family="Arial,sans-serif" font-size="12" fill="#647a80" text-anchor="middle" transform="rotate(-90 61 690)">48 m</text>
+<path d="M1217 192v-55m-8 15 8-15 8 15" stroke="#183c49" stroke-width="1.7" fill="none"/>
+<text x="1217" y="126" font-family="Arial,sans-serif" font-size="17" fill="#183c49" text-anchor="middle" font-weight="bold">N</text>
+<g id="park-plan" transform="translate(112 258) scale(18)">
+<rect x="0" y="0" width="60" height="48" fill="#fff" stroke="#183c49" stroke-width="0.12" />
+<line x1="0" y1="0" x2="0" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="2" y1="0" x2="2" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="4" y1="0" x2="4" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="6" y1="0" x2="6" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="8" y1="0" x2="8" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="10" y1="0" x2="10" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="12" y1="0" x2="12" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="14" y1="0" x2="14" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="16" y1="0" x2="16" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="18" y1="0" x2="18" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="20" y1="0" x2="20" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="22" y1="0" x2="22" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="24" y1="0" x2="24" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="26" y1="0" x2="26" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="28" y1="0" x2="28" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="30" y1="0" x2="30" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="32" y1="0" x2="32" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="34" y1="0" x2="34" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="36" y1="0" x2="36" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="38" y1="0" x2="38" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="40" y1="0" x2="40" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="42" y1="0" x2="42" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="44" y1="0" x2="44" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="46" y1="0" x2="46" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="48" y1="0" x2="48" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="50" y1="0" x2="50" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="52" y1="0" x2="52" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="54" y1="0" x2="54" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="56" y1="0" x2="56" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="58" y1="0" x2="58" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="60" y1="0" x2="60" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="0" x2="60" y2="0" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="2" x2="60" y2="2" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="4" x2="60" y2="4" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="6" x2="60" y2="6" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="8" x2="60" y2="8" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="10" x2="60" y2="10" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="12" x2="60" y2="12" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="14" x2="60" y2="14" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="16" x2="60" y2="16" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="18" x2="60" y2="18" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="20" x2="60" y2="20" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="22" x2="60" y2="22" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="24" x2="60" y2="24" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="26" x2="60" y2="26" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="28" x2="60" y2="28" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="30" x2="60" y2="30" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="32" x2="60" y2="32" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="34" x2="60" y2="34" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="36" x2="60" y2="36" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="38" x2="60" y2="38" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="40" x2="60" y2="40" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="42" x2="60" y2="42" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="44" x2="60" y2="44" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="46" x2="60" y2="46" stroke="#edf0ee" stroke-width="0.025" />
+<line x1="0" y1="48" x2="60" y2="48" stroke="#edf0ee" stroke-width="0.025" />
+<g id="zone-01"><title>Le Parvis — niveaux 1–2</title>
+<rect x="2" y="35" width="12.5" height="11" fill="#f2fafa" stroke="#148a93" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="2.7800000000000002" cy="35.8" r=".58" fill="#148a93"/>
+<text x="2.78" y="36" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">01</text>
+<text x="3.66" y="36" font-family="Arial,sans-serif" font-size="0.61" fill="#148a93" font-weight="bold">Le Parvis</text>
+</g>
+<g id="zone-02"><title>Le Rail des Dunes — niveaux 1–2</title>
+<rect x="16.5" y="35" width="12.5" height="11" fill="#f2fafa" stroke="#148a93" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="17.28" cy="35.8" r=".58" fill="#148a93"/>
+<text x="17.28" y="36" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">02</text>
+<text x="18.16" y="36" font-family="Arial,sans-serif" font-size="0.61" fill="#148a93" font-weight="bold">Le Rail des Dunes</text>
+</g>
+<g id="zone-03"><title>La Petite Vague — niveaux 1–2</title>
+<rect x="31" y="35" width="12.5" height="11" fill="#f2fafa" stroke="#148a93" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="31.78" cy="35.8" r=".58" fill="#148a93"/>
+<text x="31.78" y="36" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">03</text>
+<text x="32.66" y="36" font-family="Arial,sans-serif" font-size="0.61" fill="#148a93" font-weight="bold">La Petite Vague</text>
+</g>
+<g id="zone-04"><title>L’Îlot — niveaux 1–2</title>
+<rect x="45.5" y="35" width="12.5" height="11" fill="#f2fafa" stroke="#148a93" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="46.28" cy="35.8" r=".58" fill="#148a93"/>
+<text x="46.28" y="36" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">04</text>
+<text x="47.16" y="36" font-family="Arial,sans-serif" font-size="0.61" fill="#148a93" font-weight="bold">L’Îlot</text>
+</g>
+<g id="zone-05"><title>Le Rail des Embruns — niveaux 3–5</title>
+<rect x="2" y="25" width="17.333" height="8" fill="#fcf8f2" stroke="#b67536" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="2.7800000000000002" cy="25.8" r=".58" fill="#b67536"/>
+<text x="2.78" y="26" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">05</text>
+<text x="3.66" y="26" font-family="Arial,sans-serif" font-size="0.61" fill="#b67536" font-weight="bold">Le Rail des Embruns</text>
+</g>
+<g id="zone-06"><title>Le Hip du Soleil — niveaux 3–5</title>
+<rect x="21.333" y="25" width="17.333" height="8" fill="#fcf8f2" stroke="#b67536" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="22.113333333333333" cy="25.8" r=".58" fill="#b67536"/>
+<text x="22.113" y="26" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">06</text>
+<text x="22.993" y="26" font-family="Arial,sans-serif" font-size="0.61" fill="#b67536" font-weight="bold">Le Hip du Soleil</text>
+</g>
+<g id="zone-07"><title>Le Coping Bleu — niveaux 3–5</title>
+<rect x="40.667" y="25" width="17.333" height="8" fill="#fcf8f2" stroke="#b67536" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="41.446666666666665" cy="25.8" r=".58" fill="#b67536"/>
+<text x="41.447" y="26" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">07</text>
+<text x="42.327" y="26" font-family="Arial,sans-serif" font-size="0.61" fill="#b67536" font-weight="bold">Le Coping Bleu</text>
+</g>
+<g id="zone-08"><title>Le Double Quai — niveaux 3–5</title>
+<rect x="2" y="15" width="17.333" height="8" fill="#fcf8f2" stroke="#b67536" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="2.7800000000000002" cy="15.8" r=".58" fill="#b67536"/>
+<text x="2.78" y="16" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">08</text>
+<text x="3.66" y="16" font-family="Arial,sans-serif" font-size="0.61" fill="#b67536" font-weight="bold">Le Double Quai</text>
+</g>
+<g id="zone-09"><title>Les Trois Marches — niveaux 3–5</title>
+<rect x="21.333" y="15" width="17.333" height="8" fill="#fcf8f2" stroke="#b67536" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="22.113333333333333" cy="15.8" r=".58" fill="#b67536"/>
+<text x="22.113" y="16" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">09</text>
+<text x="22.993" y="16" font-family="Arial,sans-serif" font-size="0.61" fill="#b67536" font-weight="bold">Les Trois Marches</text>
+</g>
+<g id="zone-10"><title>L’Archipel — niveaux 3–5</title>
+<rect x="40.667" y="15" width="17.333" height="8" fill="#fcf8f2" stroke="#b67536" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="41.446666666666665" cy="15.8" r=".58" fill="#b67536"/>
+<text x="41.447" y="16" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">10</text>
+<text x="42.327" y="16" font-family="Arial,sans-serif" font-size="0.61" fill="#b67536" font-weight="bold">L’Archipel</text>
+</g>
+<g id="zone-11"><title>La Traverse — niveaux 6</title>
+<rect x="2" y="2" width="27" height="11" fill="#f3f6fb" stroke="#3c5887" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="2.7800000000000002" cy="2.8" r=".58" fill="#3c5887"/>
+<text x="2.78" y="3" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">11</text>
+<text x="3.66" y="3" font-family="Arial,sans-serif" font-size="0.61" fill="#3c5887" font-weight="bold">La Traverse</text>
+</g>
+<g id="zone-12"><title>La Mini du Large — niveaux 6</title>
+<rect x="31" y="2" width="27" height="11" fill="#f3f6fb" stroke="#3c5887" stroke-width="0.065" stroke-dasharray=".32 .24" rx=".3"/>
+<circle cx="31.78" cy="2.8" r=".58" fill="#3c5887"/>
+<text x="31.78" y="3" font-family="Arial,sans-serif" font-size="0.52" fill="white" text-anchor="middle" font-weight="bold">12</text>
+<text x="32.66" y="3" font-family="Arial,sans-serif" font-size="0.61" fill="#3c5887" font-weight="bold">La Mini du Large</text>
+</g>
+<rect x="3.5" y="37.1" width="3.2" height="2.4" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="3.5" y1="37.1" x2="6.7" y2="37.1" stroke="#183c49" stroke-width="0.12" />
+<line x1="5.1" y1="39.068" x2="5.1" y2="37.532" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<rect x="11" y="38.1" width="0.75" height="4.7" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="11.13" y="38.23" width="0.49" height="4.44" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<text x="7.8" y="43.4" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="5.3,44.6 9.6,42.7 10.3,40 7.6,40 5.1,39.1" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<line x1="18.6" y1="39.1" x2="25.5" y2="39.1" stroke="#183c49" stroke-width="0.16" />
+<circle cx="18.6" cy="39.1" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="20.900000000000002" cy="39.1" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="23.2" cy="39.1" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="25.5" cy="39.1" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<rect x="24.1" y="42" width="3" height="2.2" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="24.1" y1="42" x2="27.1" y2="42" stroke="#183c49" stroke-width="0.12" />
+<line x1="25.6" y1="43.804" x2="25.6" y2="42.396" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="20.4" y="44.5" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="18,38.2 24.5,38.2 26.8,40.6 25.6,43.7" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="32.7" y="37.2" width="5.4" height="2.8" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="32.7" y1="37.2" x2="38.1" y2="37.2" stroke="#183c49" stroke-width="0.12" />
+<line x1="35.4" y1="39.496" x2="35.4" y2="37.704" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<rect x="40.4" y="40.6" width="0.7" height="3.6" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="40.53" y="40.73" width="0.44" height="3.34" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<text x="35.5" y="43.5" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="35.5,38.7 35.5,42.1 39.8,42.1 39.8,44.6" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="48.7" y="39.1" width="4.4" height="2.8" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="48.83" y="39.23" width="4.14" height="2.54" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<rect x="47.1" y="39.1" width="1.6" height="2.8" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="48.7" y1="39.1" x2="48.7" y2="41.9" stroke="#183c49" stroke-width="0.12" />
+<line x1="47.388" y1="40.5" x2="48.412" y2="40.5" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<rect x="53.1" y="39.1" width="1.6" height="2.8" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="53.1" y1="39.1" x2="53.1" y2="41.9" stroke="#183c49" stroke-width="0.12" />
+<line x1="54.412" y1="40.5" x2="53.388" y2="40.5" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="51.1" y="44.1" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="47.6,43.8 48,40.7 52.4,40.7 54.5,42.5 55.6,44.6" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<line x1="4.1" y1="28" x2="12.5" y2="28" stroke="#183c49" stroke-width="0.16" />
+<circle cx="4.1" cy="28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="6.8999999999999995" cy="28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="9.7" cy="28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="12.5" cy="28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<rect x="14.8" y="29.4" width="2.7" height="2.1" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="14.8" y1="29.4" x2="17.5" y2="29.4" stroke="#183c49" stroke-width="0.12" />
+<line x1="16.15" y1="31.122" x2="16.15" y2="29.778" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="8.2" y="31.6" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="3.4,27.1 11.7,27.1 13.7,30.4 16.1,31.2" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<polygon points="23.8,26.9 28.6,26.9 28.6,30.1" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<polygon points="23.8,26.9 28.6,30.1 23.8,30.1" fill="#e9eeee" stroke="#183c49" stroke-width="0.065" />
+<line x1="23.8" y1="26.9" x2="28.6" y2="30.1" stroke="#183c49" stroke-width="0.13" />
+<line x1="27.352" y1="27.7" x2="25.816" y2="28.244" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<line x1="25" y1="29.268" x2="25.912" y2="28.436" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="26.2" y="30.8" font-family="Arial,sans-serif" font-size="0.45" fill="#647a80" text-anchor="middle">HIP</text>
+<rect x="31.1" y="30.2" width="5" height="0.7" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="31.23" y="30.33" width="4.74" height="0.44" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<text x="33.2" y="28.6" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="23.1,31.3 26.2,28.7 30.3,28.7 31.6,29.7 35.7,29.7" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="42.8" y="26.8" width="7.2" height="2.8" fill="url(#curve-hatch)" stroke="#183c49" stroke-width="0.065" />
+<rect x="42.8" y="26.15" width="7.2" height="0.65" fill="#e9ece8" stroke="#183c49" stroke-width="0.065" />
+<line x1="42.8" y1="26.8" x2="50" y2="26.8" stroke="#183c49" stroke-width="0.16" />
+<line x1="44.6" y1="29.152" x2="44.6" y2="27.248" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<line x1="48.2" y1="29.152" x2="48.2" y2="27.248" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="46.4" y="28.424" font-family="Arial,sans-serif" font-size="0.44" fill="#647a80" text-anchor="middle">COURBE</text>
+<rect x="52.1" y="30.6" width="4.3" height="0.7" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="52.23" y="30.73" width="4.04" height="0.44" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<text x="47.6" y="31.7" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="45.4,28.8 45.4,30.7 50.8,30.7 52.6,30 56.3,30" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="4.3" y="17.8" width="5" height="0.8" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="4.43" y="17.93" width="4.74" height="0.54" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<rect x="11.5" y="20.1" width="5" height="0.8" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="11.63" y="20.23" width="4.74" height="0.54" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<rect x="12.6" y="16.5" width="3" height="1.8" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="12.6" y1="16.5" x2="15.6" y2="16.5" stroke="#183c49" stroke-width="0.12" />
+<line x1="14.1" y1="17.976" x2="14.1" y2="16.824" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="7.6" y="21.8" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="3.7,17.1 9.7,17.1 10.4,19.4 14.1,19.4 14.1,17.3" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="24.4" y="16.6" width="5" height="0.8" fill="#eceee9" stroke="#183c49" stroke-width="0.065" />
+<rect x="24.4" y="17.4" width="5" height="2.8" fill="#f6f5ed" stroke="#183c49" stroke-width="0.065" />
+<line x1="24.4" y1="18.333" x2="29.4" y2="18.333" stroke="#183c49" stroke-width="0.11" />
+<line x1="24.4" y1="19.267" x2="29.4" y2="19.267" stroke="#183c49" stroke-width="0.11" />
+<line x1="24.4" y1="20.2" x2="29.4" y2="20.2" stroke="#183c49" stroke-width="0.11" />
+<line x1="27.2" y1="16.8" x2="27.2" y2="20.85" stroke="#183c49" stroke-width="0.16" />
+<circle cx="27.2" cy="16.799999999999997" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="27.2" cy="18.15" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="27.2" cy="19.499999999999996" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="27.2" cy="20.849999999999998" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<line x1="28.65" y1="17.75" x2="28.65" y2="19.95" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="24" y="18.94" font-family="Arial,sans-serif" font-size="0.54" fill="#183c49" text-anchor="end">3</text>
+<rect x="32.5" y="17.6" width="3.5" height="2.6" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="32.5" y1="17.6" x2="36" y2="17.6" stroke="#183c49" stroke-width="0.12" />
+<line x1="34.25" y1="19.732" x2="34.25" y2="18.068" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="27" y="22" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="25.1,16.8 25.1,20.9 30.7,21.7 34.2,19.4" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="42.7" y="17.1" width="3.2" height="1.8" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="42.83" y="17.23" width="2.94" height="1.54" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<rect x="48.2" y="19.8" width="3.6" height="1.8" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="48.33" y="19.93" width="3.34" height="1.54" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<rect x="53.5" y="16.6" width="2.9" height="2.5" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="53.63" y="16.73" width="2.64" height="2.24" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<rect x="53.5" y="19.1" width="2.9" height="1.6" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="53.5" y1="20.7" x2="56.4" y2="20.7" stroke="#183c49" stroke-width="0.12" />
+<line x1="54.95" y1="19.388" x2="54.95" y2="20.412" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="46.6" y="22" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="43.3,20.8 44,18.2 47.2,19.2 49.3,21 54.8,21.4 54.8,18.2" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="6.5" y="5.4" width="10.6" height="4.8" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<polygon points="6.5,5.4 8.9,6.8 14.7,6.8 17.1,5.4" fill="#f0f3ed" stroke="#183c49" stroke-width="0.065" />
+<polygon points="6.5,10.2 8.9,8.8 14.7,8.8 17.1,10.2" fill="#f0f3ed" stroke="#183c49" stroke-width="0.065" />
+<rect x="8.9" y="6.8" width="5.8" height="2" fill="#fff" stroke="#183c49" stroke-width="0.065" />
+<line x1="6.5" y1="5.4" x2="8.9" y2="6.8" stroke="#8e9f9f" stroke-width="0.045" />
+<line x1="17.1" y1="5.4" x2="14.7" y2="6.8" stroke="#8e9f9f" stroke-width="0.045" />
+<line x1="6.5" y1="10.2" x2="8.9" y2="8.8" stroke="#8e9f9f" stroke-width="0.045" />
+<line x1="17.1" y1="10.2" x2="14.7" y2="8.8" stroke="#8e9f9f" stroke-width="0.045" />
+<line x1="8.9" y1="6.8" x2="14.7" y2="6.8" stroke="#183c49" stroke-width="0.16" />
+<line x1="6.95" y1="7.8" x2="8.6" y2="7.8" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<line x1="16.65" y1="7.8" x2="15" y2="7.8" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="11.8" y="8.1" font-family="Arial,sans-serif" font-size="0.48" fill="#647a80" text-anchor="middle">PLATEAU</text>
+<rect x="21.6" y="5.2" width="0.8" height="5.7" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="21.73" y="5.33" width="0.54" height="5.44" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<text x="24.7" y="9.4" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="4.3,8.9 8.2,7.8 14.5,7.8 19.7,9.6 21,7.2 24.9,6.4" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<rect x="34.2" y="4.2" width="18" height="6.4" fill="#fff" stroke="#183c49" stroke-width="0.065" />
+<rect x="34.2" y="4.2" width="1.3" height="6.4" fill="#e9ece8" stroke="#183c49" stroke-width="0.065" />
+<rect x="50.9" y="4.2" width="1.3" height="6.4" fill="#e9ece8" stroke="#183c49" stroke-width="0.065" />
+<rect x="35.5" y="4.2" width="4" height="6.4" fill="url(#curve-hatch)" stroke="#183c49" stroke-width="0.065" />
+<rect x="46.9" y="4.2" width="4" height="6.4" fill="url(#curve-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="35.5" y1="4.2" x2="35.5" y2="10.6" stroke="#183c49" stroke-width="0.16" />
+<line x1="50.9" y1="4.2" x2="50.9" y2="10.6" stroke="#183c49" stroke-width="0.16" />
+<line x1="39.5" y1="4.2" x2="39.5" y2="10.6" stroke="#b2bfbf" stroke-width="0.045" />
+<line x1="46.9" y1="4.2" x2="46.9" y2="10.6" stroke="#b2bfbf" stroke-width="0.045" />
+<line x1="38.78" y1="5.928" x2="36.3" y2="5.928" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<line x1="47.62" y1="5.928" x2="50.1" y2="5.928" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<line x1="38.78" y1="8.872" x2="36.3" y2="8.872" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<line x1="47.62" y1="8.872" x2="50.1" y2="8.872" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<text x="43.2" y="7.3" font-family="Arial,sans-serif" font-size="0.61" fill="#183c49" text-anchor="middle">FOND PLAT</text>
+<text x="43.2" y="8.1" font-family="Arial,sans-serif" font-size="0.43" fill="#647a80" text-anchor="middle">sortie latérale</text>
+<rect x="46" y="11.7" width="6.1" height="0.65" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="46.13" y="11.83" width="5.84" height="0.39" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<text x="40.2" y="12" font-family="Arial,sans-serif" font-size="0.47" fill="#789195" text-anchor="middle" letter-spacing=".08">FLAT</text>
+<polyline points="43.2,5.4 43.2,9.4 43.2,11.7 45.2,11 51.9,11" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+<line x1="28.3" y1="48" x2="31.7" y2="48" stroke="#fff" stroke-width="0.28" />
+<line x1="30" y1="49.6" x2="30" y2="47.7" stroke="#2c8b9b" stroke-width="0.12" marker-end="url(#travel)"/>
+</g>
+<text x="652" y="1172" font-family="Arial,sans-serif" font-size="13" fill="#183c49" text-anchor="middle" font-weight="bold">ACCÈS PRINCIPAL — CÔTÉ VILLE</text>
+<text x="112" y="1220" font-family="Arial,sans-serif" font-size="16" fill="#183c49" font-weight="bold">LÉGENDE DU PLAN</text>
+<g transform="translate(112 1243) scale(18)">
+<rect x="0" y="0" width="2" height="0.55" fill="#e1e7e4" stroke="#183c49" stroke-width="0.065" />
+<rect x="0.13" y="0.13" width="1.74" height="0.29" fill="#f9faf6" stroke="#859697" stroke-width="0.035" />
+<line x1="5" y1="0.28" x2="7.2" y2="0.28" stroke="#183c49" stroke-width="0.16" />
+<circle cx="5" cy="0.28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="5.733333333333333" cy="0.28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="6.466666666666667" cy="0.28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<circle cx="7.2" cy="0.28" r=".13" fill="white" stroke="#183c49" stroke-width=".06"/>
+<rect x="11.1" y="-0.35" width="2.2" height="1.2" fill="url(#bank-hatch)" stroke="#183c49" stroke-width="0.065" />
+<line x1="11.1" y1="-0.35" x2="13.3" y2="-0.35" stroke="#183c49" stroke-width="0.12" />
+<line x1="12.2" y1="0.634" x2="12.2" y2="-0.134" stroke="#6d8c92" stroke-width="0.045" marker-end="url(#rise)"/>
+<rect x="18.2" y="-0.35" width="2.2" height="1.2" fill="url(#curve-hatch)" stroke="#183c49" stroke-width="0.065" />
+<rect x="25.4" y="-0.35" width="2.5" height="1.2" fill="none" stroke="#148a93" stroke-width="0.07" stroke-dasharray=".25 .2"/>
+<polyline points="33,-0.2 35.3,0.6" fill="none" stroke="#2c8b9b" stroke-width=".075" stroke-dasharray=".28 .23" stroke-linecap="round" marker-end="url(#travel)"/>
+</g>
+<text x="112" y="1290" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Pad / ledge</text>
+<text x="202" y="1290" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Rail</text>
+<text x="312" y="1290" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Plan incliné</text>
+<text x="440" y="1290" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Transition courbe</text>
+<text x="570" y="1290" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Zone de carte</text>
+<text x="706" y="1290" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Ligne possible</text>
+<text x="112" y="1335" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Les pointillés délimitent les cartes, pas des cloisons. Les lignes de roulage sont des exemples.</text>
+<rect x="920" y="1310" width="90" height="10" fill="#183c49" stroke="#183c49" stroke-width="1" />
+<rect x="1010" y="1310" width="90" height="10" fill="white" stroke="#183c49" stroke-width="1" />
+<line x1="920" y1="1307" x2="920" y2="1326" stroke="#183c49" stroke-width="1" />
+<text x="920" y="1342" font-family="Arial,sans-serif" font-size="11" fill="#647a80" text-anchor="middle">0 m</text>
+<line x1="1010" y1="1307" x2="1010" y2="1326" stroke="#183c49" stroke-width="1" />
+<text x="1010" y="1342" font-family="Arial,sans-serif" font-size="11" fill="#647a80" text-anchor="middle">5 m</text>
+<line x1="1100" y1="1307" x2="1100" y2="1326" stroke="#183c49" stroke-width="1" />
+<text x="1100" y="1342" font-family="Arial,sans-serif" font-size="11" fill="#647a80" text-anchor="middle">10 m</text>
+<text x="920" y="1370" font-family="Arial,sans-serif" font-size="11" fill="#647a80" >Échelle graphique — dimensions de travail</text>
+<line x1="1243" y1="112" x2="1243" y2="1370" stroke="#cbd6d3" stroke-width="1" />
+<text x="1280" y="146" font-family="Arial,sans-serif" font-size="17" fill="#148a93" font-weight="bold">DÉCOUVERTE · NIVEAUX 1–2</text>
+<text x="1280" y="169" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >4 cartes dans le paquet</text>
+<circle cx="1294" cy="202" r="14" fill="#148a93"/>
+<text x="1294" y="207" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">01</text>
+<text x="1321" y="206" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Le Parvis</text>
+<text x="1321" y="229" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Flat · ledge · petit plan incliné</text>
+<circle cx="1294" cy="262" r="14" fill="#148a93"/>
+<text x="1294" y="267" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">02</text>
+<text x="1321" y="266" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Le Rail des Dunes</text>
+<text x="1321" y="289" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Rail bas · flat · petite rampe</text>
+<circle cx="1294" cy="322" r="14" fill="#148a93"/>
+<text x="1294" y="327" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">03</text>
+<text x="1321" y="326" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">La Petite Vague</text>
+<text x="1321" y="349" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Plan incliné · ledge latéral · flat</text>
+<circle cx="1294" cy="382" r="14" fill="#148a93"/>
+<text x="1294" y="387" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">04</text>
+<text x="1321" y="386" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">L’Îlot</text>
+<text x="1321" y="409" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Pad · bords grindables · accès inclinés</text>
+<text x="1280" y="463" font-family="Arial,sans-serif" font-size="17" fill="#b67536" font-weight="bold">ENCHAÎNEMENT · NIVEAUX 3–5</text>
+<text x="1280" y="486" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >6 cartes dans le paquet</text>
+<circle cx="1294" cy="519" r="14" fill="#b67536"/>
+<text x="1294" y="524" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">05</text>
+<text x="1321" y="523" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Le Rail des Embruns</text>
+<text x="1321" y="546" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Rail long · sortie en flat · bank</text>
+<circle cx="1294" cy="579" r="14" fill="#b67536"/>
+<text x="1294" y="584" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">06</text>
+<text x="1321" y="583" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Le Hip du Soleil</text>
+<text x="1321" y="606" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Hip bas · réception · ledge</text>
+<circle cx="1294" cy="639" r="14" fill="#b67536"/>
+<text x="1294" y="644" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">07</text>
+<text x="1321" y="643" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Le Coping Bleu</text>
+<text x="1321" y="666" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Quarter · coping · flat · petit ledge</text>
+<circle cx="1294" cy="699" r="14" fill="#b67536"/>
+<text x="1294" y="704" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">08</text>
+<text x="1321" y="703" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Le Double Quai</text>
+<text x="1321" y="726" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Deux ledges · flat · plan incliné</text>
+<circle cx="1294" cy="759" r="14" fill="#b67536"/>
+<text x="1294" y="764" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">09</text>
+<text x="1321" y="763" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">Les Trois Marches</text>
+<text x="1321" y="786" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Trois marches · rail · bank · réception</text>
+<circle cx="1294" cy="819" r="14" fill="#b67536"/>
+<text x="1294" y="824" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">10</text>
+<text x="1321" y="823" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">L’Archipel</text>
+<text x="1321" y="846" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Trois pads · bord grindable · accès incliné</text>
+<text x="1280" y="900" font-family="Arial,sans-serif" font-size="17" fill="#3c5887" font-weight="bold">FINALE · NIVEAUX 6</text>
+<text x="1280" y="923" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >2 cartes dans le paquet</text>
+<circle cx="1294" cy="956" r="14" fill="#3c5887"/>
+<text x="1294" y="961" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">11</text>
+<text x="1321" y="960" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">La Traverse</text>
+<text x="1321" y="983" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Funbox · plans inclinés · ledge · flat</text>
+<circle cx="1294" cy="1016" r="14" fill="#3c5887"/>
+<text x="1294" y="1021" font-family="Arial,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">12</text>
+<text x="1321" y="1020" font-family="Arial,sans-serif" font-size="17" fill="#183c49" font-weight="bold">La Mini du Large</text>
+<text x="1321" y="1043" font-family="Arial,sans-serif" font-size="12" fill="#647a80" >Demi-lune · flat latéral · ledge de sortie</text>
+<rect x="1279" y="1125" width="449" height="224" fill="#f6f7f1" stroke="#aebeba" stroke-width="1" />
+<text x="1300" y="1154" font-family="Arial,sans-serif" font-size="19" fill="#183c49" font-weight="bold">LE LAGON / SK8 HEROES</text>
+<line x1="1300" y1="1171" x2="1705" y2="1171" stroke="#c2cfcb" stroke-width="1" />
+<text x="1300" y="1197" font-family="Arial,sans-serif" font-size="14" fill="#183c49" >Document : plan d’implantation</text>
+<text x="1300" y="1225" font-family="Arial,sans-serif" font-size="14" fill="#183c49" >Révision : D03 — proposition</text>
+<text x="1300" y="1253" font-family="Arial,sans-serif" font-size="14" fill="#183c49" >Emprise de travail : 60 × 48 m</text>
+<text x="1300" y="1281" font-family="Arial,sans-serif" font-size="14" fill="#647a80" >Cotes et équipements : à ajuster</text>
+<text x="1300" y="1315" font-family="Arial,sans-serif" font-size="13" fill="#183c49" font-weight="bold">Chaque zone offre Kick, Slide et Air.</text>
+<text x="70" y="1394" font-family="Arial,sans-serif" font-size="11" fill="#647a80" letter-spacing="1">PLAN VECTORIEL MODIFIABLE · IMPLANTATION PROPOSÉE</text>
+</svg>

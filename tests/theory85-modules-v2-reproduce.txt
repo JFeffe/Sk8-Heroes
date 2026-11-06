@@ -1,0 +1,48 @@
+Sk8 Heroes — tests isolés des conditions de modules V2
+1 novembre 2026
+
+Ne reconstruire aucune copie du moteur pendant une simulation.
+Exécuter chaque commande après la fin de la précédente.
+Ces commandes n’écrivent pas dans public/ et ne modifient aucune partie sauvegardée.
+
+Le catalogue est figé dans tests/fixtures/theory85-catalog.json.
+Les douze modules sont figés dans tests/fixtures/theory85-modules-v2.json.
+La copie de travail est .local-games/theory85-modules-v2-runtime/.
+La construction réutilise aussi .local-games/theory85-runtime/.
+
+Pour reproduire les deux séries complètes :
+
+node scripts/experiments/theory85-modules-v2.mjs --simple-pairs
+node scripts/experiments/simulate-theory85.mjs matches 400 --modules-v2 --probe-four --sequence-draft
+
+Copier le fichier tests/theory85-module-v2-results.json vers
+tests/theory85-module-v2-baseline-results.json avant la série suivante.
+
+node scripts/experiments/theory85-modules-v2.mjs
+node scripts/experiments/validate-module-conditions-v2.mjs
+node scripts/experiments/simulate-theory85.mjs matches 400 --modules-v2 --probe-four --sequence-draft
+node scripts/experiments/probe-module-conditions-v2.mjs 500
+node scripts/experiments/analyze-module-conditions-v2.mjs
+
+Chaque série de parties comprend :
+- 400 parties avec quatre styles de contrôleurs et prime +2 aux cartes à quatre dés ;
+- les mêmes 400 graines avec prime +4 aux cartes à quatre dés ;
+- 400 autres parties avec contrôleurs identiques et prime +2 aux cartes à quatre dés.
+La prime des cartes à trois dés reste +2 dans tous les cas.
+Le profil quatre dés prépare explicitement une carte utilisable avec des ressources.
+Sur Boucle du Lagon, ce profil commence par un petit trick pour finir par son Épique.
+La première série utilise une estimation générique des paires futures ;
+la seconde tient compte des faces normales compatibles avec chaque combinaison.
+
+Les tests préparés comprennent 16 séquences visant les bonus et une séquence
+témoin Hurricane puis Ollie, trois stocks (0, 1, 3 jetons de chaque sorte),
+500 répétitions : 25 500 essais. Ce sont des mains fournies,
+pas des probabilités de succès dans une partie avec draft.
+
+Les graines et décisions sont déterministes ; les durées ne le sont pas.
+Les contrôleurs voient leurs cartes/dés/jetons et les informations publiques,
+jamais les dés à venir, le générateur aléatoire ni la pioche cachée.
+Les estimations du planificateur n’attribuent jamais de points réels.
+
+Le jeu de production reste inchangé. Le rapport ne valide pas un équilibre
+humain définitif ni l’optimalité des contrôleurs.

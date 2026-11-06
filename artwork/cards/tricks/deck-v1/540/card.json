@@ -1,0 +1,65 @@
+{
+  "id": 37,
+  "key": "540",
+  "name": "540°",
+  "type": "air",
+  "tier": "advanced",
+  "copies": 3,
+  "points": 9,
+  "difficultyPoints": 7,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.5941358024691358,
+  "requirementCode": "straight3",
+  "cost": 3,
+  "pattern": "straight",
+  "symbols": [
+    "x",
+    "x+1",
+    "x+2"
+  ],
+  "rule": "Trois valeurs consécutives",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "kick",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/540/01-illustration.webp?v=b4e50e93c05d",
+    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
+    "information": "assets/tricks/540/03-textes-symboles.webp?v=802602238726"
+  },
+  "printedPoints": 9,
+  "p": 0.5941358024691358,
+  "effect": "point:kick",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

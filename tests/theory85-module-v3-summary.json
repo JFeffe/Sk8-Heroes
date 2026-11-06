@@ -1,0 +1,526 @@
+{
+  "theoretical": true,
+  "version": 3,
+  "date": "2026-11-01",
+  "integration": false,
+  "productionUnchanged": true,
+  "sourceHashes": {
+    "public/app.js": "68359ea36947a1035733efa414d52c5f1cc6d87bbc5210c8cc4bb502db02c156",
+    "public/card-library.js": "af7ce0c2e786e7449b9b13ee353913e7586b7f823e545bbc3618c2ab237a4fcd",
+    "public/combinations.js": "8d42382a600e43220278f3b6ba85257d7b4a358eebed165e11af203d3b70f5fb",
+    "public/data.js": "b619447fec1c4f783e75eaf144a3e571d96e60c1452ec77d5c4aec103fc989c0",
+    "public/dice-feedback.js": "4e61e0a0d5cacfec547ce758a23fa5236a0449e9dff9e0e970d91fdac66f13aa",
+    "public/drag.js": "44f9bb979c881f88e235861b3988832ce8e1839edbda9e569ce82fa4c30db31b",
+    "public/engine.js": "5053c5df77cbf84a2bc71c7b651965c4cd18a50d81623d4837954e055f67c281",
+    "public/icons.js": "7438c41b2fc0a9199cc8b4d65b0963782155401773eb11070c0895f3ca79c84b",
+    "public/initial-draft.js": "0294cc3a52914b02cdc72649844908c3a26571bdb607369d3aced8913771980c",
+    "public/match-statistics.js": "9a66f292db66d306348755e21b90162fca7a4727b824e99be029282b380696be",
+    "public/match-ui.js": "22534e2c6d567a0da31b13a5c55689004075bcfefee8096de93e6707b178e0e7",
+    "public/match.js": "26bcca8c5907f85fa9b6b1493762ab737f7c964247c5468d341b82ef80c8ca9e",
+    "public/module-cards.js": "66d9c3742b9d77fee101ee2223a83f6b84f260a5f6421e233fca40be4b7c5fb4",
+    "public/module-rules.js": "00c717cbcfd5ecf3a9d8134e4b67b5de35f521bf68dd96c742ad267a86c99c45",
+    "public/npc-choice.js": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14",
+    "public/npc-dice.js": "9dde7279cc2abdcb543e8ca8761fbe8c13f59ca7453d24ff21b770d6a565f2e9",
+    "public/npc-difficulty.js": "f79cfeddcb86bacbb08619bd0e787a929b329357e80498c61795579a2e6c50b9",
+    "public/npc-strategy.js": "b6165f991d3eaa24b0926470091f18793e3eb222ef121c1791a9634b0f673839",
+    "public/npc-view.js": "ee9afb101b3c78ac88d3bb3c285102aea235f5750842a15b9b6647efcdcdf318",
+    "public/npc.js": "b4c2609a05068fb29f175d36768c6034312e0626684f43fc2d735926a023e0f2",
+    "public/odds.js": "b1fb1a59daf1e5dc5451f762ac6346a1930ee151b12bb6fe12a1421d36d85bcb",
+    "public/online-client.js": "457aacfbda0a41ce3c4a964dd22ddced34b494f86066b7055fedaceb722bec2d",
+    "public/online-ui.js": "50e0c2bc9c4763b6f9e13457c854d82772c6c84e4283d997a1cf8062e7c5d3bd",
+    "public/patch-notes-state.js": "d694a3e2515610101fc870d99db4ec7b60b2dbbc41ac9d1d7096ebd852c71bb8",
+    "public/played-card.js": "3937ab1379e6238eb660f1d7ed140563378d9251c732e00ef8778ddeb9fa1271",
+    "public/release-notes.js": "c550696a409ef5d8e33a69a3e0b07269b86c4ddb46ebd13d9cb3813dd15d7317",
+    "public/roll-probability.js": "47c89055a093c01bf12c4c962deccc9b0eaf2d4917a66a0b3a26c47cb6dea31d",
+    "public/skaters.js": "819c596a2a4e71d6d925d24f5dfd7d5341480917f98ee3acb68400d7ea2b756d",
+    "public/table-view.js": "8fcd94ee50d41b8d9eb9c30404e418c8cdc8cec377026a73a1e77bb74945e673",
+    "public/turn.js": "7ed0252cc2df1fe25d5fdeb6917d1b2150befdf1c742e5a70e59b03cdeb4c73a",
+    "public/ui-feedback.js": "99e841ae7205fcde614ce0f19a0ea8c5e02fb93b4f6d8a673f3b55cdeb140d61"
+  },
+  "games": 1200,
+  "attempts": 57600,
+  "validationGroups": 27,
+  "floor": 0.25,
+  "allPointPass": true,
+  "allLowerBoundPass": true,
+  "allCohortPass": true,
+  "belowFloor": [],
+  "borderline": [],
+  "secondAttemptBelowFloor": [
+    {
+      "name": "Le Rail des Palmiers",
+      "rate": 0.24142367066895368
+    },
+    {
+      "name": "Les Marches des Palmiers",
+      "rate": 0.1812816188870152
+    }
+  ],
+  "methodology": {
+    "players": 4,
+    "modules": 6,
+    "attemptsPerPlayerPerModule": 2,
+    "cohorts": "600 full matches with mixed cost preferences and 600 with all players using no cost preference; existing per-seat caution parameters retained in both. Four-die preparation probe only affects the mixed four-die profile.",
+    "scorePremiums": "Three-die +2 and four-die +2; 85 physical cards; approved mixed initial draft and tiered shared markets.",
+    "frequency": "Actual +2 awarded divided by all attempts on that module, including falls and single-trick banking. No cross-attempt accumulation or once-per-module cap.",
+    "confidence": "Approximate 95% normal intervals with module appearance in a match as the independent cluster (eight attempts share one match/module); these are descriptive model intervals, not human guarantees.",
+    "controller": "Public information only, bounded planning and marginal sequence-aware drafting. Unknown future face distributions and action goals are estimates; actual traces alone award points.",
+    "limits": "Simulated NPC behavior, not proven optimal or a human playtest. Passing the activation floor does not prove full match balance."
+  },
+  "conditions": [
+    {
+      "id": 0,
+      "key": "ilot",
+      "name": "L’Îlot",
+      "stage": 0,
+      "needs": [
+        "kick"
+      ],
+      "pv": 2,
+      "bonus": 2724,
+      "condition": "Conserver la séquence sans utiliser de relance ; ±1 et gel permis.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/ilot.webp",
+      "previousRate": 0.1570048309178744,
+      "attempts": 4824,
+      "banked": 3855,
+      "rate": 0.5646766169154229,
+      "ci95": [
+        0.5521130653026671,
+        0.5772401685281787
+      ],
+      "mixedRate": 0.5635521885521886,
+      "sameRate": 0.5657679738562091,
+      "firstRate": 0.7023217247097844,
+      "secondRate": 0.42703150912106136,
+      "bothAttempts": 698,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 1,
+      "key": "quai-bas",
+      "name": "Le Quai bas",
+      "stage": 0,
+      "needs": [
+        "slide"
+      ],
+      "pv": 2,
+      "bonus": 2783,
+      "condition": "Une même face physique sur deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/quai-bas.webp",
+      "previousRate": 0.583756345177665,
+      "attempts": 4768,
+      "banked": 3819,
+      "rate": 0.5836828859060402,
+      "ci95": [
+        0.5705568476945418,
+        0.5968089241175386
+      ],
+      "mixedRate": 0.6040969899665551,
+      "sameRate": 0.5631313131313131,
+      "firstRate": 0.7516778523489933,
+      "secondRate": 0.41568791946308725,
+      "bothAttempts": 741,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 2,
+      "key": "petite-vague",
+      "name": "La Petite Vague",
+      "stage": 0,
+      "needs": [
+        "air"
+      ],
+      "pv": 2,
+      "bonus": 2312,
+      "condition": "Réussir une Base et une Avancée dans le même essai, dans n’importe quel ordre.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/petite-vague.webp",
+      "previousRate": 0.19306930693069307,
+      "attempts": 4944,
+      "banked": 4008,
+      "rate": 0.46763754045307443,
+      "ci95": [
+        0.45433227081373884,
+        0.48094281009241
+      ],
+      "mixedRate": 0.4383116883116883,
+      "sameRate": 0.4967741935483871,
+      "firstRate": 0.6630258899676376,
+      "secondRate": 0.27224919093851135,
+      "bothAttempts": 469,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 3,
+      "key": "rail-palmiers",
+      "name": "Le Rail des Palmiers",
+      "stage": 0,
+      "needs": [],
+      "pv": 2,
+      "bonus": 1763,
+      "condition": "Points imprimés strictement croissants.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/rail-palmiers.webp",
+      "previousRate": 0.38112113402061853,
+      "attempts": 4664,
+      "banked": 3968,
+      "rate": 0.37800171526586623,
+      "ci95": [
+        0.36639386026524845,
+        0.389609570266484
+      ],
+      "mixedRate": 0.35050675675675674,
+      "sameRate": 0.4063588850174216,
+      "firstRate": 0.5145797598627787,
+      "secondRate": 0.24142367066895368,
+      "bothAttempts": 248,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 4,
+      "key": "retour-rail",
+      "name": "Le Retour du Rail",
+      "stage": 1,
+      "needs": [
+        "slide",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": 2565,
+      "condition": "Utiliser le dé de sa couleur sur le dernier trick.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/retour-rail.webp",
+      "previousRate": 0.5225563909774437,
+      "attempts": 4944,
+      "banked": 4362,
+      "rate": 0.5188106796116505,
+      "ci95": [
+        0.5053968340381019,
+        0.5322245251851991
+      ],
+      "mixedRate": 0.5274086378737541,
+      "sameRate": 0.5106466876971609,
+      "firstRate": 0.5457119741100324,
+      "secondRate": 0.4919093851132686,
+      "bothAttempts": 661,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 5,
+      "key": "tour-ilot",
+      "name": "Le Tour de l’Îlot",
+      "stage": 1,
+      "needs": [
+        "air",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": 2293,
+      "condition": "Utiliser un dé gelé ayant été conservé lors d’un jet entre deux tricks.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/tour-ilot.webp",
+      "previousRate": 0.4791147132169576,
+      "attempts": 4760,
+      "banked": 4168,
+      "rate": 0.48172268907563026,
+      "ci95": [
+        0.4696352572483697,
+        0.49381012090289084
+      ],
+      "mixedRate": 0.4903523489932886,
+      "sameRate": 0.4730639730639731,
+      "firstRate": 0.657563025210084,
+      "secondRate": 0.3058823529411765,
+      "bothAttempts": 488,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 6,
+      "key": "coping-bleu",
+      "name": "Le Coping Bleu",
+      "stage": 1,
+      "needs": [
+        "air",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": 2309,
+      "condition": "Réussir un trick initialement impossible après un ±1 utilisé sur la carte ou une relance.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/coping-bleu.webp",
+      "previousRate": 0.2159367396593674,
+      "attempts": 4712,
+      "banked": 4105,
+      "rate": 0.49002546689303905,
+      "ci95": [
+        0.4755724580786909,
+        0.5044784757073871
+      ],
+      "mixedRate": 0.4840764331210191,
+      "sameRate": 0.4968181818181818,
+      "firstRate": 0.5377758913412564,
+      "secondRate": 0.44227504244482174,
+      "bothAttempts": 563,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 7,
+      "key": "double-quai",
+      "name": "Le Double Quai",
+      "stage": 1,
+      "needs": [
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": 1870,
+      "condition": "Utiliser au moins une paire physique sur une carte de la séquence.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/double-quai.webp",
+      "previousRate": 0.0389093137254902,
+      "attempts": 4936,
+      "banked": 4419,
+      "rate": 0.3788492706645057,
+      "ci95": [
+        0.3665720021562415,
+        0.39112653917276985
+      ],
+      "mixedRate": 0.37131147540983606,
+      "sameRate": 0.38621794871794873,
+      "firstRate": 0.5032414910858996,
+      "secondRate": 0.2544570502431118,
+      "bothAttempts": 296,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 8,
+      "key": "boucle-lagon",
+      "name": "La Boucle du Lagon",
+      "stage": 2,
+      "needs": [],
+      "pv": 4,
+      "bonus": 3092,
+      "condition": "Utiliser au moins quatre valeurs physiques différentes dans la séquence.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/boucle-lagon.webp",
+      "previousRate": 0.0419921875,
+      "attempts": 4824,
+      "banked": 4322,
+      "rate": 0.6409618573797679,
+      "ci95": [
+        0.6291541356212577,
+        0.652769579138278
+      ],
+      "mixedRate": 0.6434748427672956,
+      "sameRate": 0.6381578947368421,
+      "firstRate": 0.7939469320066335,
+      "secondRate": 0.4879767827529022,
+      "bothAttempts": 881,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 9,
+      "key": "marches-palmiers",
+      "name": "Les Marches des Palmiers",
+      "stage": 1,
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": 2145,
+      "condition": "Activer le bonus de points d’au moins une carte.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/marches-palmiers.webp",
+      "previousRate": 0.13959390862944163,
+      "attempts": 4744,
+      "banked": 4264,
+      "rate": 0.452150084317032,
+      "ci95": [
+        0.4424516751178575,
+        0.46184849351620655
+      ],
+      "mixedRate": 0.4387931034482759,
+      "sameRate": 0.46493399339933994,
+      "firstRate": 0.7230185497470489,
+      "secondRate": 0.1812816188870152,
+      "bothAttempts": 232,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 10,
+      "key": "embruns",
+      "name": "Les Embruns",
+      "stage": 1,
+      "needs": [],
+      "pv": 3,
+      "bonus": 2525,
+      "condition": "Conserver exactement deux tricks, quel que soit le nombre de dés utilisés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/embruns.webp",
+      "previousRate": 0.08785529715762273,
+      "attempts": 4704,
+      "banked": 4183,
+      "rate": 0.5367772108843537,
+      "ci95": [
+        0.524675680596745,
+        0.5488787411719624
+      ],
+      "mixedRate": 0.4931506849315068,
+      "sameRate": 0.5798141891891891,
+      "firstRate": 0.5637755102040817,
+      "secondRate": 0.5097789115646258,
+      "bothAttempts": 663,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    },
+    {
+      "id": 11,
+      "key": "grande-vague",
+      "name": "La Grande Vague",
+      "stage": 2,
+      "needs": [
+        "air"
+      ],
+      "pv": 4,
+      "bonus": 3566,
+      "condition": "Poser les six dés sur les cartes réussies.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/grande-vague.webp",
+      "previousRate": 0.7475961538461539,
+      "attempts": 4776,
+      "banked": 4267,
+      "rate": 0.7466499162479062,
+      "ci95": [
+        0.7350649356028484,
+        0.7582348968929641
+      ],
+      "mixedRate": 0.6990248226950354,
+      "sameRate": 0.7892857142857143,
+      "firstRate": 0.864321608040201,
+      "secondRate": 0.6289782244556114,
+      "bothAttempts": 1333,
+      "pointPass": true,
+      "lowerBoundPass": true,
+      "cohortPass": true
+    }
+  ],
+  "winRates": {
+    "balanced": {
+      "games": 600,
+      "matchWins": 0.2683333333333333,
+      "finalWins": 0.24486111111111108,
+      "pv": 5.898333333333333
+    },
+    "two": {
+      "games": 600,
+      "matchWins": 0.1863888888888889,
+      "finalWins": 0.23430555555555557,
+      "pv": 4.708333333333333
+    },
+    "three": {
+      "games": 600,
+      "matchWins": 0.2397222222222222,
+      "finalWins": 0.17763888888888887,
+      "pv": 5.703333333333333
+    },
+    "four": {
+      "games": 600,
+      "matchWins": 0.3055555555555555,
+      "finalWins": 0.3431944444444444,
+      "pv": 6.026666666666666
+    }
+  },
+  "stats": {
+    "fallRate": 0.13645833333333332,
+    "threeRate": 0.4015798611111111,
+    "meanScore": 12.883993055555555,
+    "bothAttempts": 7273
+  }
+}

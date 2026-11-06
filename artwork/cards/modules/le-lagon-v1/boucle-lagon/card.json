@@ -1,0 +1,37 @@
+{
+  "id": 8,
+  "key": "boucle-lagon",
+  "name": "La Boucle du Lagon",
+  "stage": 2,
+  "needs": [],
+  "pv": 4,
+  "bonus": {
+    "kind": "three-score",
+    "points": 2
+  },
+  "condition": "Le bonus de trois tricks réussis vaut +2 points au lieu de +1 ; le jeton habituel est conservé.",
+  "park": "Le Lagon",
+  "rounds": [
+    6
+  ],
+  "image": "assets/modules/lagoon/boucle-lagon.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/boucle-lagon/01-illustration.webp?v=8f63fb394658",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/boucle-lagon/03-textes-symboles.webp?v=72da754bf39c"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/boucle-lagon.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

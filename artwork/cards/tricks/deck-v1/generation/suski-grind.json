@@ -1,0 +1,12 @@
+{
+  "key": "suski-grind",
+  "name": "Suski Grind",
+  "type": "slide",
+  "tier": "advanced",
+  "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+  "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Backside Suski grind: rear truck on a low concrete ledge like a 5-0, nose raised and tweaked diagonally AWAY from the ledge, toward the opposite side of the box.",
+  "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-0d58f803-8c17-4256-a453-f25a49bdb7aa.png",
+  "asset": "artwork/cards/tricks/deck-v1/illustrations/suski-grind.png",
+  "tool": "built-in image_gen",
+  "status": "generated"
+}

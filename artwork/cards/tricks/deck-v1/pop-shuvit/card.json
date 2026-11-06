@@ -1,0 +1,96 @@
+{
+  "id": 2,
+  "key": "pop-shuvit",
+  "name": "Pop Shuvit",
+  "type": "kick",
+  "tier": "base",
+  "copies": 2,
+  "points": 2,
+  "difficultyPoints": 2,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.96875,
+  "requirementCode": "mixed",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "symbols": [
+    "P",
+    "I"
+  ],
+  "rule": "Un pair et un impair",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "kick",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/pop-shuvit/01-illustration.webp?v=1da47ac4f47e",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=d0fae62269e3"
+  },
+  "printedPoints": 2,
+  "p": 0.96875,
+  "effect": "point:kick",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

@@ -1,0 +1,28 @@
+Étude isolée de la proposition à 85 cartes — 1er novembre 2026
+
+Les sources du jeu jouable dans public/ ne sont pas modifiées.
+La copie du moteur est générée dans .local-games/theory85-runtime/.
+Le catalogue figé est tests/fixtures/theory85-catalog.json.
+
+Depuis le dossier du projet, exécuter les commandes dans cet ordre :
+
+node scripts/experiments/theory85-runtime.mjs
+node scripts/experiments/validate-theory85.mjs
+node scripts/experiments/simulate-theory85.mjs matches 800
+node scripts/experiments/simulate-theory85.mjs matches 80 --sequence-draft
+node scripts/experiments/simulate-theory85.mjs matches 600 --focused
+node scripts/experiments/simulate-theory85.mjs forced 1000
+node scripts/experiments/simulate-theory85.mjs forced 1000 --mature-hands
+node scripts/experiments/analyze-theory85.mjs
+
+Ne pas reconstruire la copie du moteur pendant les simulations.
+Les primes alternatives sont appliquées en mémoire dans chaque worker.
+Les jeux et graines sont déterministes ; aucune lecture des jets futurs
+n'est transmise aux contrôleurs. Les durées ne sont pas déterministes.
+
+Le rapport HTML expose les biais des contrôleurs et les limites des tests.
+Les probabilités à six dés du catalogue ne comprennent pas le joker ;
+les simulations de parties et les essais contrôlés comprennent le joker.
+
+La recommandation de prime +2 aux quatre dés est un réglage pour un prochain
+test, pas une modification du catalogue ou du jeu ni un optimum démontré.

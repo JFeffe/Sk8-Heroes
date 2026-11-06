@@ -1,0 +1,76 @@
+{
+  "type": "air",
+  "tier": "epic",
+  "name": "900°",
+  "copies": 2,
+  "rule": "Deux paires distinctes · 4, 5 ou 6",
+  "points": 18,
+  "difficultyPoints": 14,
+  "scorePremium": 4,
+  "effect": "",
+  "cost": 4,
+  "successes": 5730,
+  "total": 46656,
+  "p": 0.12281378600823045,
+  "requirement": {
+    "cost": 4,
+    "pattern": "choices",
+    "choices": [
+      [
+        4,
+        4,
+        5,
+        5
+      ],
+      [
+        4,
+        4,
+        6,
+        6
+      ],
+      [
+        5,
+        5,
+        6,
+        6
+      ]
+    ]
+  },
+  "key": "900",
+  "tierLabel": "ÉPIQUE",
+  "symbols": [
+    "A",
+    "A",
+    "B",
+    "B"
+  ],
+  "printedPoints": 16,
+  "probabilityConvention": "6 fair dice, no bonus, star is 1; exact count over 46656 ordered rolls",
+  "scorePremiumApplied": 2,
+  "sourceIllustration": "../illustrations/900.png",
+  "status": "template-approved-alignment-corrected",
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ],
+  "files": {
+    "01-illustration": {
+      "svg": "01-illustration.svg",
+      "png": "01-illustration.png"
+    },
+    "02-graphisme": {
+      "svg": "02-graphisme.svg",
+      "png": "02-graphisme.png"
+    },
+    "03-textes-symboles": {
+      "svg": "03-textes-symboles.svg",
+      "png": "03-textes-symboles.png"
+    }
+  },
+  "assembled": "carte-assemblee.png"
+}

@@ -1,0 +1,14 @@
+{
+  "blender": "4.5.9 LTS",
+  "passed": true,
+  "checks": [
+    "Drop 3.80 m, Anse 1.80 m, Dunes and connected quarter/deck 1.50 m",
+    "New drop exceeds twice both old maximum and revised Anse",
+    "Every Anse mesh vertex has a mirrored counterpart across plan y=14",
+    "Drop profile rises monotonically without overhang; upper slope 75 degrees",
+    "Drop footprint lies in west opening: plan x=3.5..10.5, y=15..29",
+    "Other obstacle heights unchanged",
+    "All park meshes fit main camera frame",
+    "Rendered PNG has transparent corners and opaque park"
+  ]
+}

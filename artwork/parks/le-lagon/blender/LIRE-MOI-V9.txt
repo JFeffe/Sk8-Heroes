@@ -1,0 +1,59 @@
+LE LAGON V9 — LEDGE MONTANT, TABLETOP AU CENTRE, ANSE À DEUX NIVEAUX
+
+MODIFICATIONS
+1. Liaison entre la terrasse des Palmiers et le quarter de l'Anse :
+   ledge continu montant de 1,10 m à 1,80 m sur environ 10 m,
+   extrémités adoucies et arêtes métalliques pour le grind.
+   Le début épouse la rive arrondie des Palmiers ; l'arrivée rejoint
+   exactement le bord du deck de l'Anse.
+
+2. Tabletop à deux banks recentré : déplacement de 4,50 m vers la gauche
+   du plan et de 0,60 m vers l'arrière. Son nouveau centre est (32,23)
+   dans le plan, soit l'origine XY du modèle. Hauteur et dimensions conservées.
+
+3. Partie droite de l'Anse abaissée à 0,90 m, partie haute conservée à 1,80 m.
+   Palier bas horizontal élargi à environ 2,34 m, dans le contour du parc.
+   Escalier extérieur de cinq contremarches de 18 cm, avec main courante,
+   reliant le palier haut au palier bas. Giron central : environ 47 cm.
+   La surface courbe intérieure raccorde progressivement les deux hauteurs ;
+   elle reste continue, sans coupure verticale sur la zone de roulage.
+   Le demi-cercle conserve son emprise intérieure. La symétrie du plan reste
+   conservée pour le quarter, mais ses deux côtés n'ont plus la même hauteur.
+
+Le grand drop ouest à 3,80 m et les Dunes à 1,50 m sont conservés.
+Les V7 et V8 restent dans leurs fichiers d'origine.
+
+OUVRIR
+Ouvrir rendus-v9/le-lagon-v9.blend dans Blender 4.5 LTS.
+La scène active « LE LAGON | V9 » possède ses matériaux et caméras.
+F12 pour le rendu principal, en PNG RGBA sur fond transparent.
+
+SCRIPT AUTONOME
+Scripting > Open > le_lagon_v9.py > Run Script.
+Le script crée une nouvelle scène sans supprimer les scènes présentes.
+Il reconstruit cette version ; il ne reprend pas d'éventuelles retouches
+manuelles faites dans une autre scène. Aucun addon ni texture externe requis.
+
+PARAMÈTRES
+TABLETOP_CENTER : centre du module à deux banks dans le plan.
+ANSE_LOW_HEIGHT : hauteur basse de l'Anse.
+ANSE_STAIR_COUNT : nombre de marches.
+ANSE_STAIR_ANGLES : zone angulaire occupée par la liaison haut/bas.
+ANSE_LANDING_RADIUS : largeur extérieure des paliers et de l'escalier.
+HEIGHTS['QB'] / HEIGHTS['QC'] : niveaux de départ et d'arrivée du ledge nord.
+
+CAMÉRAS SUPPLÉMENTAIRES
+Camera | Anse et escalier
+Camera | liaison nord
+Les vues principales, de dessus et du grand drop sont également disponibles.
+
+COMMANDE
+blender --background --python le_lagon_v9.py -- --save --render --validate
+Sorties dans rendus-v9, à côté du script. --output permet un autre dossier.
+--preview : aperçu rapide. --top : vue de dessus.
+
+VALIDATION
+Exécuté dans Blender 4.5.9 LTS, avec inspection des rendus.
+Rapports validation.json et verification-v9.json dans rendus-v9 : volumes,
+hauteurs, raccords du ledge, recentrage, marches, emprise et transparence.
+Modèle artistique composé de pièces distinctes, adapté à l'édition.

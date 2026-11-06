@@ -1,0 +1,16 @@
+{
+  "layers": {
+    "01-illustration": "e76538f1500971357b61c2bd773a5799bd46ad80c434d3bd51dcf55719365ca9",
+    "02-graphisme": "8ef2e5da7eeb9253ab59c075bf507dfca81424fe59a7074fc6e946124a816ddf",
+    "03-textes-symboles": "5cdf66027876d678199154cf014a09db337b88c2f21b5802d3fc0d1c9b0c9fe5"
+  },
+  "order": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ],
+  "size": [
+    900,
+    1300
+  ]
+}

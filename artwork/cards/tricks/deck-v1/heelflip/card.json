@@ -1,0 +1,57 @@
+{
+  "id": 4,
+  "key": "heelflip",
+  "name": "Heelflip",
+  "type": "kick",
+  "tier": "base",
+  "copies": 2,
+  "points": 3,
+  "difficultyPoints": 3,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9402863511659808,
+  "requirementCode": "straight2",
+  "cost": 2,
+  "pattern": "straight",
+  "symbols": [
+    "x",
+    "x+1"
+  ],
+  "rule": "Deux valeurs consécutives",
+  "comboBonus": {
+    "kind": "reward",
+    "type": "freeze"
+  },
+  "layers": {
+    "illustration": "assets/tricks/heelflip/01-illustration.webp?v=5acb3db8b329",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/heelflip/03-textes-symboles.webp?v=b86eef16943e"
+  },
+  "printedPoints": 3,
+  "p": 0.9402863511659808,
+  "effect": "token:freeze",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

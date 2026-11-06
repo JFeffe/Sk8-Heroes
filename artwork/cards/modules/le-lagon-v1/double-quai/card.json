@@ -1,0 +1,41 @@
+{
+  "id": 7,
+  "key": "double-quai",
+  "name": "Le Double Quai",
+  "stage": 1,
+  "needs": [
+    "slide"
+  ],
+  "pv": 3,
+  "bonus": {
+    "kind": "recovery",
+    "tokens": 1
+  },
+  "condition": "Encaisser exactement deux tricks donne un jeton au choix.",
+  "park": "Le Lagon",
+  "rounds": [
+    3,
+    4,
+    5
+  ],
+  "image": "assets/modules/lagoon/double-quai.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/double-quai/01-illustration.webp?v=e68ac954009b",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/double-quai/03-textes-symboles.webp?v=7f4759148b17"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/double-quai.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

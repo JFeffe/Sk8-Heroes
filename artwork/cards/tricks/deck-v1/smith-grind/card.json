@@ -1,0 +1,117 @@
+{
+  "id": 25,
+  "key": "smith-grind",
+  "name": "Smith Grind",
+  "type": "slide",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 8,
+  "difficultyPoints": 6,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.65625,
+  "requirementCode": "odd3",
+  "cost": 3,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      1,
+      1,
+      5
+    ],
+    [
+      1,
+      3,
+      3
+    ],
+    [
+      1,
+      3,
+      5
+    ],
+    [
+      1,
+      5,
+      5
+    ],
+    [
+      3,
+      3,
+      3
+    ],
+    [
+      3,
+      3,
+      5
+    ],
+    [
+      3,
+      5,
+      5
+    ],
+    [
+      5,
+      5,
+      5
+    ]
+  ],
+  "symbols": [
+    "1·3·5",
+    "1·3·5",
+    "1·3·5"
+  ],
+  "rule": "Trois impairs · doublons permis",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "slide",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/smith-grind/01-illustration.webp?v=0b0efa7e807d",
+    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
+    "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=f0bb9dd24360"
+  },
+  "printedPoints": 8,
+  "p": 0.65625,
+  "effect": "point:slide",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

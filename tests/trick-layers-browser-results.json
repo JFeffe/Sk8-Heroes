@@ -1,0 +1,638 @@
+{
+  "version": "0.3.0",
+  "date": "2026-11-01",
+  "illustrations": 41,
+  "physicalCards": 85,
+  "viewports": [
+    {
+      "cards": [
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00002908854453220755,
+          "size": [
+            95.33333587646484,
+            137.6979217529297
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00002908854453220755,
+          "size": [
+            95.33333587646484,
+            137.6979217529297
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00003795546558704732,
+          "size": [
+            131.53125,
+            190
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00003795546558704732,
+          "size": [
+            131.53125,
+            190
+          ]
+        }
+      ],
+      "pageOverflow": [
+        false,
+        false
+      ],
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cards": [
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00002908854453220755,
+          "size": [
+            95.33333587646484,
+            137.6979217529297
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00002908854453220755,
+          "size": [
+            95.33333587646484,
+            137.6979217529297
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00000443743844313893,
+          "size": [
+            124.61458587646484,
+            180
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00000443743844313893,
+          "size": [
+            124.61458587646484,
+            180
+          ]
+        }
+      ],
+      "pageOverflow": [
+        false,
+        false
+      ],
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "cards": [
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00004246500656146512,
+          "size": [
+            65.33333587646484,
+            94.36458587646484
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00004246500656146512,
+          "size": [
+            65.33333587646484,
+            94.36458587646484
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00000443743844313893,
+          "size": [
+            124.61458587646484,
+            180
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00000443743844313893,
+          "size": [
+            124.61458587646484,
+            180
+          ]
+        }
+      ],
+      "pageOverflow": [
+        false,
+        false
+      ],
+      "viewport": [
+        1024,
+        768
+      ]
+    },
+    {
+      "cards": [
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00004246500656146512,
+          "size": [
+            65.33333587646484,
+            94.36458587646484
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00004246500656146512,
+          "size": [
+            65.33333587646484,
+            94.36458587646484
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00003795546558704732,
+          "size": [
+            131.53125,
+            190
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00003795546558704732,
+          "size": [
+            131.53125,
+            190
+          ]
+        }
+      ],
+      "pageOverflow": [
+        false,
+        false
+      ],
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "cards": [
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00005201019399803109,
+          "size": [
+            64,
+            92.4375
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00005201019399803109,
+          "size": [
+            64,
+            92.4375
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00007282070346648073,
+          "size": [
+            76.14583587646484,
+            110
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0.00007282070346648073,
+          "size": [
+            76.14583587646484,
+            110
+          ]
+        }
+      ],
+      "pageOverflow": [
+        false,
+        false
+      ],
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "cards": [
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00001050350557874058,
+          "size": [
+            52.66666793823242,
+            76.07292175292969
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "archive",
+          "layers": 3,
+          "ratioError": 0.00001050350557874058,
+          "size": [
+            52.66666793823242,
+            76.07292175292969
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 2,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0,
+          "size": [
+            54,
+            78
+          ]
+        },
+        {
+          "aligned": true,
+          "diceInside": true,
+          "filledSockets": 3,
+          "inside": true,
+          "kind": "table",
+          "layers": 3,
+          "ratioError": 0,
+          "size": [
+            54,
+            78
+          ]
+        }
+      ],
+      "pageOverflow": [
+        false,
+        false
+      ],
+      "viewport": [
+        844,
+        390
+      ]
+    }
+  ],
+  "interactions": [
+    "Card drag from hand to table",
+    "Physical die drag to printed socket",
+    "Auto placement",
+    "Landing and banking",
+    "Archive with original dice and personal star",
+    "Manual opponent inspection and return to follow"
+  ],
+  "initialDraft": [
+    {
+      "handBottom": 850.8854217529297,
+      "handTop": 619,
+      "offers": [
+        {
+          "inside": true,
+          "ratio": 0
+        },
+        {
+          "inside": true,
+          "ratio": 0
+        },
+        {
+          "inside": true,
+          "ratio": 0
+        }
+      ],
+      "overflow": false,
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "handBottom": 708.1770935058594,
+      "handTop": 538.625,
+      "offers": [
+        {
+          "inside": true,
+          "ratio": 0.000009760876405473518
+        },
+        {
+          "inside": true,
+          "ratio": 0.000009760876405473518
+        },
+        {
+          "inside": true,
+          "ratio": 0.000009760876405473518
+        }
+      ],
+      "overflow": false,
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "handBottom": 708.1770935058594,
+      "handTop": 538.625,
+      "offers": [
+        {
+          "inside": true,
+          "ratio": 0.000009760876405473518
+        },
+        {
+          "inside": true,
+          "ratio": 0.000009760876405473518
+        },
+        {
+          "inside": true,
+          "ratio": 0.000009760876405473518
+        }
+      ],
+      "overflow": false,
+      "viewport": [
+        1024,
+        768
+      ]
+    },
+    {
+      "handBottom": 791.0521087646484,
+      "handTop": 592.4791870117188,
+      "offers": [
+        {
+          "inside": true,
+          "ratio": 0
+        },
+        {
+          "inside": true,
+          "ratio": 0
+        },
+        {
+          "inside": true,
+          "ratio": 0
+        }
+      ],
+      "overflow": false,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "handBottom": 844.0833435058594,
+      "handTop": 487.0208435058594,
+      "offers": [
+        {
+          "inside": true,
+          "ratio": 6.517079187418062e-8
+        },
+        {
+          "inside": true,
+          "ratio": 0
+        },
+        {
+          "inside": true,
+          "ratio": 0
+        }
+      ],
+      "overflow": false,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "playedCardPopups": [
+    {
+      "filledSlots": 3,
+      "inside": true,
+      "layers": 3,
+      "size": [
+        330,
+        476.6666870117187
+      ],
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "filledSlots": 3,
+      "inside": true,
+      "layers": 3,
+      "size": [
+        304.66668701171875,
+        440.0729370117187
+      ],
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "filledSlots": 3,
+      "inside": true,
+      "layers": 3,
+      "size": [
+        186.9166717529297,
+        269.9895935058594
+      ],
+      "viewport": [
+        844,
+        390
+      ]
+    }
+  ],
+  "shortDraftCardPopup": {
+    "cardInsideModal": true,
+    "cardSize": [
+      193.84375,
+      279.9895935058594
+    ],
+    "layers": 3,
+    "modalScroll": false,
+    "viewport": [
+      844,
+      390
+    ]
+  },
+  "pairedDraft": [
+    {
+      "allLayers": true,
+      "confirmationEnabled": true,
+      "handCards": 6,
+      "handVisible": true,
+      "offers": 8,
+      "overflow": false,
+      "selectedCard": "Choisir Nollie, 2 points",
+      "selectedToken": "Choisir le jeton 1 : ↻ Relance, 1 en réserve",
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "confirmationEnabled": true,
+      "handCards": 6,
+      "handVisible": true,
+      "overflow": false,
+      "tokenVisible": true,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "zoomEquivalent": {
+    "cardsInside": true,
+    "pageOverflow": [
+      false,
+      false
+    ],
+    "viewport": [
+      1093,
+      614
+    ]
+  },
+  "zoomNote": "Embedded browser did not change its browser zoom with keyboard shortcuts; the smaller CSS viewport was tested as an equivalent layout constraint.",
+  "outsideClickCloses": true,
+  "tests": {
+    "command": "npm test",
+    "passed": 192,
+    "failed": 0,
+    "durationMs": 37916.4506,
+    "completeCompetitiveSimulations": 100
+  },
+  "assets": {
+    "illustrations": 41,
+    "physicalCards": 85,
+    "referencedWebAssets": 87,
+    "bytes": 14410050,
+    "allHttp200": true,
+    "cache": "Content-versioned URLs, public immutable; API and unversioned files no-store"
+  },
+  "finalServer": {
+    "url": "http://127.0.0.1:8000/",
+    "version": "0.3.0",
+    "libraryCards": 41,
+    "allUseThreeLayers": true,
+    "consoleErrors": 0,
+    "epicFourSocketPopup": {
+      "card": "Hurricane",
+      "imageWidths": [900, 900, 1800],
+      "modalScroll": false
+    }
+  }
+}

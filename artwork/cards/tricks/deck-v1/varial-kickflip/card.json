@@ -1,0 +1,72 @@
+{
+  "id": 6,
+  "key": "varial-kickflip",
+  "name": "Varial Kickflip",
+  "type": "kick",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 5,
+  "difficultyPoints": 5,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.8257887517146777,
+  "requirementCode": "extremes",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "symbols": [
+    "≤2",
+    "≥5"
+  ],
+  "rule": "Un dé ≤ 2 et un dé ≥ 5",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/varial-kickflip/01-illustration.webp?v=0daea3056c48",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/varial-kickflip/03-textes-symboles.webp?v=68f0fa284a14"
+  },
+  "printedPoints": 5,
+  "p": 0.8257887517146777,
+  "effect": "",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

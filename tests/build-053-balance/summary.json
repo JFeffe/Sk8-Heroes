@@ -1,0 +1,324 @@
+{
+  "build": "0.5.3",
+  "date": "2026-11-02",
+  "games": 1400,
+  "attempts": 67200,
+  "checks": 210136,
+  "tests": 261,
+  "bonusSpendsAudited": 62487,
+  "sourceChanges": [
+    "package.json",
+    "public/npc-difficulty.js",
+    "public/npc-strategy.js",
+    "public/npc.js",
+    "public/release-notes.js"
+  ],
+  "normal": {
+    "before": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 9.264114583333333,
+      "best": 14.478333333333333,
+      "high18": 0.19864583333333333,
+      "high20": 0.10723958333333333,
+      "falls": 0.31135416666666665,
+      "passes": 0.07140625,
+      "three": 0.27598958333333334,
+      "tokens": {
+        "gained": 15.69125,
+        "spent": 13.775,
+        "remaining": 4.91625
+      },
+      "order": [
+        0.175347222222222,
+        0.22326388888888862,
+        0.27354166666666707,
+        0.32784722222222296
+      ],
+      "epicPick": 0.555625,
+      "policies": {
+        "normal": {
+          "appearances": 1600,
+          "victories": 0.24999999999999997,
+          "score": 9.264114583333333
+        }
+      }
+    },
+    "after": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 7.996354166666666,
+      "best": 12.616666666666667,
+      "high18": 0.08895833333333333,
+      "high20": 0.046197916666666665,
+      "falls": 0.3467708333333333,
+      "passes": 0.063125,
+      "three": 0.2933854166666667,
+      "tokens": {
+        "gained": 14.416875,
+        "spent": 11.53375,
+        "remaining": 5.883125
+      },
+      "order": [
+        0.18631944444444404,
+        0.22069444444444405,
+        0.27104166666666674,
+        0.321944444444445
+      ],
+      "epicPick": 0.244375,
+      "policies": {
+        "normal": {
+          "appearances": 1600,
+          "victories": 0.25,
+          "score": 7.996354166666666
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "normal": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 7.996354166666666,
+      "best": 12.616666666666667,
+      "high18": 0.08895833333333333,
+      "high20": 0.046197916666666665,
+      "falls": 0.3467708333333333,
+      "passes": 0.063125,
+      "three": 0.2933854166666667,
+      "tokens": {
+        "gained": 14.416875,
+        "spent": 11.53375,
+        "remaining": 5.883125
+      },
+      "order": [
+        0.18631944444444404,
+        0.22069444444444405,
+        0.27104166666666674,
+        0.321944444444445
+      ],
+      "epicPick": 0.244375,
+      "policies": {
+        "normal": {
+          "appearances": 1600,
+          "victories": 0.25,
+          "score": 7.996354166666666
+        }
+      }
+    },
+    "reference": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 8.310104166666667,
+      "best": 13.0334375,
+      "high18": 0.12041666666666667,
+      "high20": 0.06348958333333334,
+      "falls": 0.338125,
+      "passes": 0.06473958333333334,
+      "three": 0.29119791666666667,
+      "tokens": {
+        "gained": 14.78875,
+        "spent": 11.8025,
+        "remaining": 5.98625
+      },
+      "order": [
+        0.20243055555555528,
+        0.22624999999999962,
+        0.2573611111111112,
+        0.3139583333333336
+      ],
+      "epicPick": 0.329375,
+      "policies": {
+        "reference": {
+          "appearances": 400,
+          "victories": 0.5483333333333333,
+          "score": 9.896041666666667
+        },
+        "normal": {
+          "appearances": 1200,
+          "victories": 0.15055555555555555,
+          "score": 7.781458333333333
+        }
+      }
+    },
+    "easy": {
+      "games": 100,
+      "attempts": 4800,
+      "score": 6.779375,
+      "best": 10.743333333333334,
+      "high18": 0.026875,
+      "high20": 0.010208333333333333,
+      "falls": 0.34541666666666665,
+      "passes": 0.094375,
+      "three": 0.27270833333333333,
+      "tokens": {
+        "gained": 13.6325,
+        "spent": 5.5275,
+        "remaining": 11.105
+      },
+      "order": [
+        0.19333333333333327,
+        0.2030555555555555,
+        0.25638888888888894,
+        0.3472222222222224
+      ],
+      "epicPick": 0,
+      "policies": {
+        "easy": {
+          "appearances": 400,
+          "victories": 0.25,
+          "score": 6.779375
+        }
+      }
+    },
+    "expert": {
+      "games": 100,
+      "attempts": 4800,
+      "score": 9.891875,
+      "best": 15.514166666666666,
+      "high18": 0.279375,
+      "high20": 0.18104166666666666,
+      "falls": 0.3047916666666667,
+      "passes": 0.08333333333333333,
+      "three": 0.24729166666666666,
+      "tokens": {
+        "gained": 15.615,
+        "spent": 13.785,
+        "remaining": 4.83
+      },
+      "order": [
+        0.20249999999999996,
+        0.20138888888888884,
+        0.2783333333333334,
+        0.3177777777777779
+      ],
+      "epicPick": 0.735,
+      "policies": {
+        "expert": {
+          "appearances": 400,
+          "victories": 0.25,
+          "score": 9.891875
+        }
+      }
+    },
+    "mixed": {
+      "games": 200,
+      "attempts": 9600,
+      "score": 8.052604166666667,
+      "best": 12.394791666666666,
+      "high18": 0.11760416666666666,
+      "high20": 0.0625,
+      "falls": 0.3389583333333333,
+      "passes": 0.07208333333333333,
+      "three": 0.2659375,
+      "tokens": {
+        "gained": 14.8125,
+        "spent": 10.16375,
+        "remaining": 7.64875
+      },
+      "order": [
+        0.2102083333333334,
+        0.23284722222222234,
+        0.26034722222222223,
+        0.29659722222222207
+      ],
+      "epicPick": 0.32875,
+      "policies": {
+        "normal": {
+          "appearances": 400,
+          "victories": 0.09125,
+          "score": 7.279791666666667
+        },
+        "expert": {
+          "appearances": 200,
+          "victories": 0.8175,
+          "score": 11.59375
+        },
+        "easy": {
+          "appearances": 200,
+          "victories": 0,
+          "score": 6.057083333333333
+        }
+      }
+    },
+    "holdout": {
+      "games": 200,
+      "attempts": 9600,
+      "score": 7.872708333333334,
+      "best": 12.357916666666666,
+      "high18": 0.08583333333333333,
+      "high20": 0.03729166666666667,
+      "falls": 0.35291666666666666,
+      "passes": 0.0621875,
+      "three": 0.29302083333333334,
+      "tokens": {
+        "gained": 14.46625,
+        "spent": 11.61625,
+        "remaining": 5.85
+      },
+      "order": [
+        0.18569444444444458,
+        0.230277777777778,
+        0.2533333333333334,
+        0.3306944444444443
+      ],
+      "epicPick": 0.2275,
+      "policies": {
+        "normal": {
+          "appearances": 800,
+          "victories": 0.25,
+          "score": 7.872708333333334
+        }
+      }
+    }
+  },
+  "paired": {
+    "best": {
+      "mean": -1.8616666666666668,
+      "low": -2.074291929279637,
+      "high": -1.6490414040536965,
+      "seeds": 100
+    },
+    "high20": {
+      "mean": -0.06104166666666666,
+      "low": -0.06690565227994431,
+      "high": -0.05517768105338901,
+      "seeds": 100
+    }
+  },
+  "reference": {
+    "before": {
+      "mean": 0.21458333333333332,
+      "low": 0.17448980631099578,
+      "high": 0.2546768603556709,
+      "seeds": 100
+    },
+    "after": {
+      "mean": 0.5483333333333333,
+      "low": 0.5015593780491232,
+      "high": 0.5951072886175435,
+      "seeds": 100
+    },
+    "difference": {
+      "mean": 0.33375,
+      "low": 0.27671242039000465,
+      "high": 0.39078757960999533,
+      "seeds": 100
+    },
+    "note": "One frozen Normal 0.5.2 controller faces three new Normals. The reference seat cycles by seed and every seed uses all four first-player rotations. These are NPC confrontations, not measured human win rates."
+  },
+  "expertUnchangedGames": 100,
+  "method": {
+    "samples": "400 Normal, 400 confrontations with the frozen previous Normal, 100 Détente, 100 Expert, 200 mixed, 200 Normal on fresh seed blocks 250–299.",
+    "excluded": "120 exploratory games and the functional test suite are excluded.",
+    "confidence": "Approximate paired 95% intervals, with the four rotations clustered by independent seed.",
+    "policy": "Normal: two-card scoring search, two future modules in draft, two bonus uses per attempt as an NPC strategy; Détente: one, one, one. Mandatory pairs and profitable three-trick collections remain searchable. Expert unchanged.",
+    "limits": [
+      "No dice, card points, module bonuses, human resources or legal engine actions were weakened.",
+      "The independent bonus audit checks necessary objective feasibility, not optimality or actual gains after the roll.",
+      "Same seeds and routes; decisions and later random draws diverge.",
+      "The measured reference is an automated former Normal, not a human player.",
+      "The later-player advantage remains; this is difficulty calibration, not a claim of global balance."
+    ]
+  }
+}

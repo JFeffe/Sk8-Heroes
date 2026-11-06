@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "revision": 2,
+  "status": "template-approved-alignment-corrected",
+  "size": {
+    "width": 900,
+    "height": 1300
+  },
+  "palette": {
+    "cream": "#fff7df",
+    "navy": "#063e50",
+    "aqua": "#31c4c3",
+    "pale": "#a6e2da",
+    "orange": "#ff742b"
+  },
+  "alignment": {
+    "badge": {
+      "transform": "rotate(-1.3 250 217)",
+      "labelX": 169,
+      "chanceX": 358,
+      "centerY": 217,
+      "fontSize": 40
+    },
+    "requirement": {
+      "centerX": 321,
+      "headingY": 994.5,
+      "socketY": 1073
+    },
+    "score": {
+      "centerX": 733,
+      "headingY": 994.5,
+      "bodyTop": 1019,
+      "bodyBottom": 1166,
+      "numberSize": 118,
+      "unitSize": 25,
+      "gap": 10
+    }
+  },
+  "layers": [
+    {
+      "order": 1,
+      "name": "Illustration",
+      "contents": "Skater, skateboard, trick, coastal environment; no card wording, numbers or UI graphics.",
+      "format": "Clean PNG master and SVG layout; exported PNG at the shared canvas size"
+    },
+    {
+      "order": 2,
+      "name": "Graphisme",
+      "contents": "Cream border, navy title band, turquoise waves, orange panels, blank score area and blank dice sockets; no semantic text or icons.",
+      "format": "Editable SVG and transparent PNG"
+    },
+    {
+      "order": 3,
+      "name": "Textes et symboles",
+      "contents": "Name, type glyph, tier, six-dice probability, dice requirements, printed points and card bonus.",
+      "format": "Editable SVG generated from catalog fields recorded in card.json, with transparent PNG export"
+    }
+  ],
+  "anchors": {
+    "title": {
+      "x": 59,
+      "y": 141
+    },
+    "typeBadge": {
+      "x": 780,
+      "y": 119
+    },
+    "requirementPanel": {
+      "x": 45,
+      "y": 970,
+      "width": 552,
+      "height": 196
+    },
+    "scorePanel": {
+      "x": 612,
+      "y": 970,
+      "width": 242,
+      "height": 196
+    },
+    "bonus": {
+      "x": 150,
+      "y": 1186,
+      "width": 600,
+      "height": 61
+    }
+  },
+  "rulesSource": "tests/fixtures/theory85-catalog.json with the tested +2 premium for three- and four-die cards",
+  "font": "Impact with Arial Narrow/sans-serif fallback; PNG exports preserve the rendered font",
+  "workflow": [
+    "Validate illustration framing and trick anatomy separately.",
+    "Validate the shared graphic frame once, including its 2/3/4-die variants.",
+    "Validate card.json requirements, score and effect against the approved catalog.",
+    "Generate the information layer from data and assemble the three layers.",
+    "Inspect the full-size card and a small in-game-size preview."
+  ],
+  "notes": [
+    "These examples are not inserted into the playable game.",
+    "PNG layers share one origin, dimensions and alpha; assembly is exactly their ordered composition.",
+    "Rule changes never require regenerating illustration artwork; changing dice cost also selects the appropriate blank-socket frame.",
+    "Displayed percentages use six ordinary dice without tokens or the personal wildcard.",
+    "The source illustration is a draft; visual approval of the template does not approve every trick depiction."
+  ]
+}

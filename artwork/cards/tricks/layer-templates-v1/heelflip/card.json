@@ -1,0 +1,54 @@
+{
+  "type": "kick",
+  "tier": "base",
+  "name": "Heelflip",
+  "copies": 2,
+  "rule": "Deux valeurs consécutives",
+  "points": 3,
+  "difficultyPoints": 3,
+  "scorePremium": 0,
+  "effect": "token:freeze",
+  "cost": 2,
+  "successes": 43870,
+  "total": 46656,
+  "p": 0.9402863511659808,
+  "requirement": {
+    "cost": 2,
+    "pattern": "straight"
+  },
+  "key": "heelflip",
+  "tierLabel": "BASE",
+  "symbols": [
+    "x",
+    "x+1"
+  ],
+  "printedPoints": 3,
+  "probabilityConvention": "6 fair dice, no bonus, star is 1; exact count over 46656 ordered rolls",
+  "scorePremiumApplied": 0,
+  "sourceIllustration": "../illustrations/heelflip.png",
+  "status": "template-approved-alignment-corrected",
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ],
+  "files": {
+    "01-illustration": {
+      "svg": "01-illustration.svg",
+      "png": "01-illustration.png"
+    },
+    "02-graphisme": {
+      "svg": "02-graphisme.svg",
+      "png": "02-graphisme.png"
+    },
+    "03-textes-symboles": {
+      "svg": "03-textes-symboles.svg",
+      "png": "03-textes-symboles.png"
+    }
+  },
+  "assembled": "carte-assemblee.png"
+}

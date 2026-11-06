@@ -1,0 +1,65 @@
+{
+  "id": 27,
+  "key": "salad-grind",
+  "name": "Salad Grind",
+  "type": "slide",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 9,
+  "difficultyPoints": 7,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.5941358024691358,
+  "requirementCode": "straight3",
+  "cost": 3,
+  "pattern": "straight",
+  "symbols": [
+    "x",
+    "x+1",
+    "x+2"
+  ],
+  "rule": "Trois valeurs consécutives",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "air",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/salad-grind/01-illustration.webp?v=cdcd506255e6",
+    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
+    "information": "assets/tricks/salad-grind/03-textes-symboles.webp?v=a145214fb691"
+  },
+  "printedPoints": 9,
+  "p": 0.5941358024691358,
+  "effect": "point:air",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

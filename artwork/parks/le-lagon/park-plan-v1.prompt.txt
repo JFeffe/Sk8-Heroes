@@ -1,0 +1,33 @@
+Use case: infographic-diagram.
+Asset type: illustrated concept map for the French skateboarding tabletop/video game SK8 HEROES.
+Primary request: Create a beautiful, clear, geographically coherent bird's-eye isometric plan of ONE coastal beginner-friendly skatepark named "LE LAGON". It contains exactly TWELVE numbered skate spots, all belonging to this one park. This is a concept draft, not an engineering construction drawing. A single contiguous cream concrete skatepark with generous flat rolling areas linking the elements, low accessible obstacles and modest smooth transitions, right beside a sandy tropical beach and turquoise bay.
+
+Style/medium: richly illustrated screenprint-inspired game-card artwork with crisp, realistic skate architecture, warm textured cream concrete, navy outlines and shadows, saturated azure sky, clear aqua sea, turquoise and orange painted waves along obstacles, lush palms. Hand-painted vintage surf/skate travel-poster finish, subtle grain and edge wear. Retain the existing SK8 HEROES visual language: cream, deep petrol navy, turquoise, bright orange, white. Not a 3D videogame screenshot, not glossy plastic, not cartoon clipart.
+
+Composition: wide landscape 3:2 concept board. The map is the hero, around 70% of the page, seen from a high oblique angle so all 12 individual spots are unmistakable and readable. Sea, a small blue-sky horizon and distant coastal skyline across the bay occupy a restrained top strip. Beach and a palm-lined pedestrian promenade run along the northern edge of the park. Entrance from the town side at the lower left. A low perimeter rail and palms make a recognizable boundary. Benches and a shaded rest nook stay on the outer edge. Keep rolling paths open. Warm sunlight and a welcoming relaxed seaside atmosphere. Do not add skaters, crowds, cars or dice; clear architecture matters.
+
+Spatial layout and exactly ONE visible circular number badge per map spot (01 through 12), placed next to its corresponding feature. Do not hide any feature behind another:
+Near the entrance on the lower-left part, the four discovery spots:
+01 = a broad completely FLAT practice plaza, with a painted turquoise floor wave and room to roll.
+02 = one SHORT LOW STRAIGHT FLAT BAR on small supports, set on clear flat concrete.
+03 = a WIDE GENTLE BANK, one plain inclined flat ramp, open run-up, not a halfpipe.
+04 = ONE LOW WIDE MANUAL PAD, rectangular raised island with flat top, grindable edges and gentle sloped end access.
+In the spacious middle, the four linking spots:
+05 = a LONGER LOW STRAIGHT RAIL with a particularly long unobstructed flat run-out.
+06 = one LOW HIP formed by two gentle bank faces meeting diagonally at an angle.
+07 = one LOW QUARTER PIPE with a broad smooth concave transition, metal coping at the top, and small safe-looking deck; this is NOT the halfpipe at 12.
+08 = TWO OFFSET BROAD RECTANGULAR LEDGES at slightly different modest heights, visibly separate, one after the other like two quay blocks; no rail on these.
+Further to the right and towards the bay, the four session-finale spots, still beginner-scale architecture:
+09 = one LOW FUNBOX combining sloped banks, a flat top and a grind ledge, so flip/grind/air lines can connect.
+10 = EXACTLY THREE shallow broad stair steps with one LOW handrail and flat approach/landing.
+11 = THREE distinct small LOW MANUAL PAD ISLANDS spaced in a loose zigzag, with broad concrete riding gaps between them; these are three pads within ONE numbered spot.
+12 = a WIDE LOW MINI RAMP, exactly two opposed mellow curved transitions joined by a flat bottom and coping/decks. Clearly the park's broad seaside flow feature, with no huge vertical walls.
+
+Gently distinguish three neighbourhoods by thin colored ground accents, not barriers: spots 01–04 are "DÉCOUVERTE · 1–2"; 05–08 are "ENCHAÎNEMENT · 3–5"; 09–12 are "FINALE · 6". The labels refer to possible positions in a six-module game, not obstacle height, and the map is not a race track. No giant numbered route arrows.
+
+Typography: cream rounded poster border with navy and turquoise wave framing, bold compact condensed navy headline "LE LAGON" and small "SK8 HEROES" above. At the bottom, reserve a neat cream legend panel, with three rows of four short entries, each corresponding exactly to the map numbers:
+"01  Le Parvis"   "02  Le Rail des Dunes"   "03  La Petite Vague"   "04  L’Îlot"
+"05  Le Rail des Embruns"   "06  Le Hip du Soleil"   "07  Le Coping Bleu"   "08  Le Double Quai"
+"09  La Traverse"   "10  Les Trois Marches"   "11  L’Archipel"   "12  La Mini du Large"
+Keep all text large and crisp enough to read, exact French spelling, no long paragraphs, point values, dice conditions or card faces. The architecture and twelve correctly numbered places are more important than decoration. No additional map markers or extra skate obstacles.
+

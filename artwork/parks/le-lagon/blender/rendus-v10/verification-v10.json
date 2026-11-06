@@ -1,0 +1,9 @@
+{
+  "blender": "4.5.9 LTS",
+  "checks": [
+    "Traversée libre de 5,70 m sur environ 23 m dans la maquette.",
+    "Les approches du bank des Palmiers et de la Vague depuis les Dunes restent dégagées.",
+    "Les paliers des îlots sont à 0,28 m et 0,46 m. Le bank rejoint le ledge nord.",
+    "Transparence RGBA vérifiée sur le rendu."
+  ]
+}

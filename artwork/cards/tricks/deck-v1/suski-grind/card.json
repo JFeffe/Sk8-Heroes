@@ -1,0 +1,58 @@
+{
+  "id": 26,
+  "key": "suski-grind",
+  "name": "Suski Grind",
+  "type": "slide",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 7,
+  "difficultyPoints": 7,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.6488340192043895,
+  "requirementCode": "low2",
+  "cost": 2,
+  "pattern": "at-most",
+  "threshold": 2,
+  "symbols": [
+    "≤2",
+    "≤2"
+  ],
+  "rule": "Deux dés ≤ 2",
+  "comboBonus": {
+    "kind": "reward",
+    "type": "adjust"
+  },
+  "layers": {
+    "illustration": "assets/tricks/suski-grind/01-illustration.webp?v=b68568c95848",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=88ae17c49c63"
+  },
+  "printedPoints": 7,
+  "p": 0.6488340192043895,
+  "effect": "token:adjust",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

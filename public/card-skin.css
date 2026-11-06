@@ -1,0 +1,80 @@
+/* The original validation sheets are the card faces. Only live rule fields
+   cover their printed values; the full scene, lettering and wave frame stay. */
+.trick-card { container-type:inline-size;background:#fff8e4;border:2px solid #fff8e4;border-radius:8px; }
+.trick-card .card-illustration { inset:0;z-index:-1;background:none; }
+.trick-card .card-heading { position:absolute;inset:0 0 auto;height:20%;min-height:0;background:none;border:0;padding:0; }
+.trick-card .card-heading>strong { position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
+.trick-card .type-badge { position:absolute;right:2%;top:5%;width:20%;height:auto;aspect-ratio:1;border:1cqw solid #fff8e4;border-radius:50%;background:#063f50;color:#fff8e4;box-shadow:0 0 0 .5cqw #32bcb9; }
+.trick-card .type-badge .type-icon { width:13cqw;height:13cqw; }
+.trick-card .card-chance { position:absolute;left:5%;top:14%;width:38%;height:7%;display:flex;align-items:center;justify-content:center;background:#ff7628;border:1cqw solid #fff8e4;border-radius:3cqw 1cqw 5cqw 2cqw;color:#073f4e;font:800 5.4cqw/1 var(--display);transform:rotate(-3deg);white-space:nowrap; }
+.trick-card .card-stats { position:absolute;left:3%;right:3%;top:68%;height:19%;display:grid;grid-template-columns:65% 35%;padding:1.2cqw;gap:1cqw;border-radius:4cqw;background:#fff8e4; }
+.trick-card .card-requirement { position:relative;display:flex;flex-direction:column;justify-content:space-between;min-width:0;margin:0;padding:0 1.5cqw 1cqw;background:#ff752b;border-radius:3cqw 2cqw 2cqw 3cqw;backdrop-filter:none;color:#073f4e; }
+.trick-card .stat-label { display:block;font:800 5.6cqw/1.2 var(--display);text-align:center;padding-top:.6cqw; }
+.trick-card .card-sockets { display:grid;grid-template-columns:repeat(var(--sockets),minmax(0,1fr));gap:1.4cqw; }
+.trick-card .die-socket { height:11cqw;min-width:0;border:.6cqw solid #fff4db;border-radius:2cqw;background:#fff8e4;color:#073f4e; }
+.trick-card .socket-symbol { font-size:7cqw;line-height:1; }
+.trick-card .card-sockets[style*="--sockets:3"] .socket-symbol { font-size:5.2cqw; }
+.trick-card .card-sockets[style*="--sockets:4"] .socket-symbol { font-size:4.3cqw; }
+.trick-card .die-socket .table-die { height:9cqw;width:9cqw;border:0;border-radius:1cqw;box-shadow:none; }
+.trick-card .die-socket .table-die>span { font-size:9cqw;line-height:1; }
+.trick-card .die-socket>small { font-size:3cqw;line-height:1;padding:0 .3cqw;bottom:-.5cqw; }
+.trick-card .card-requirement p { display:block;font:700 3.5cqw/1 var(--body);text-align:center;margin:0;white-space:nowrap; }
+.trick-card .card-foot { display:flex;flex-direction:column;justify-content:start;gap:0;min-width:0;padding:0;background:#fff8e4;border:.6cqw solid #073f4e;border-radius:2cqw;overflow:hidden;backdrop-filter:none; }
+.trick-card .card-foot .stat-label { width:100%;padding:.4cqw 0;background:#073f4e;color:#fff8e4; }
+.trick-card .card-foot>strong { display:block;color:#073f4e;font:800 17cqw/1 var(--display);white-space:nowrap; }
+.trick-card .card-foot strong small { font:700 4cqw var(--display); }
+.trick-card .card-foot>.effort-note { font:700 3.2cqw/1 var(--body);text-align:center;white-space:nowrap; }
+.trick-card .card-foot>strong em { font-size:.5em; }
+.trick-card .card-effect { position:absolute;left:4%;right:4%;top:87%;height:9%;min-height:0;display:flex;align-items:center;justify-content:center;gap:1cqw;padding:1cqw 2cqw;border-radius:0 0 7cqw 7cqw;background:linear-gradient(100deg,#91ddd6,#b3e6df 50%,#82d7d2);color:#073f4e;font:700 5.3cqw/1.1 var(--display);text-align:center;backdrop-filter:none; }
+.trick-card .card-effect .type-icon { width:6.5cqw;height:6.5cqw; }
+.trick-card .card-effect.triggered { background:#b2e4c5; }
+.trick-card .landed-seal { top:24%;right:4%;width:12cqw;height:12cqw;font-size:8cqw;border-width:.7cqw; }
+.hand-card.unavailable { filter:saturate(.8); }
+.archived-card { border-width:1px; }.archive-face { border-radius:4px; }
+.archived-card .card-chance { font-size:5cqw; }
+.archived-card .landed-seal { display:none; }
+/* Modules share the printed frame, with live names, entry symbols and goals. */
+.module-area .module-card { container-type:inline-size;border:2px solid #fff8e4;background:#fff8e4;display:block; }
+.module-area .module-picture { inset:0; }
+.module-card .module-caption { position:absolute;left:3%;right:3%;top:1%;height:19%;margin:0;padding:2cqw 22% 1cqw 2cqw;background:#063f50;color:#fff8e4;border-bottom:1cqw solid #60cfca;border-radius:4cqw 4cqw 8cqw 2cqw;backdrop-filter:none; }
+.module-area .module-card .module-caption h1 { font:800 12cqw/.94 var(--display);text-transform:uppercase;letter-spacing:-.3cqw; }
+.module-card .module-types { position:absolute;right:0;top:0;width:23%;height:100%;margin:0;gap:0;display:flex;align-content:center;justify-content:center;border:1cqw solid #fff8e4;border-radius:50%;background:#063f50; }
+.module-card .module-types .module-type { border:0;background:none;padding:0; }
+.module-card .module-types .type-icon { width:9cqw;height:9cqw; }
+.module-card .module-types i,.module-card .module-caption p { display:none; }
+.module-card .module-types>span { color:#fff8e4;font-size:4.5cqw; }
+.module-area .module-card .module-stage { position:absolute;z-index:2;top:14.5%;left:5%;max-width:70%;padding:1cqw 2cqw;border:1cqw solid #fff8e4;border-radius:2cqw 1cqw 5cqw 2cqw;transform:rotate(-3deg);background:#ff752b;color:#073f4e;font:800 5.5cqw/1 var(--display);letter-spacing:0; }
+.module-card .module-target { position:absolute;left:3%;right:3%;top:68%;height:19%;padding:1.2cqw;display:grid;grid-template-columns:1fr 1fr;gap:1cqw;border-radius:4cqw;background:#fff8e4; }
+.module-target>div { display:flex;flex-direction:column;align-items:center;justify-content:start;overflow:hidden;border-radius:2cqw;background:#ff752b; }
+.module-target>div>small { width:100%;font:800 6cqw/1.15 var(--display);text-align:center; }
+.module-target>div+div { background:#fff8e4;border:.7cqw solid #073f4e; }
+.module-target>div+div>small { background:#073f4e;color:#fff8e4; }
+.module-area .module-card .module-target strong { font:800 20cqw/.95 var(--display);color:#fff8e4; }
+.module-area .module-card .module-target>div+div strong { color:#073f4e; }
+.module-card .module-target strong small { font:700 6cqw var(--display); }
+.module-area .module-card .attempt-note { position:absolute;left:4%;top:87%;bottom:auto;width:92%;height:9%;border:0;border-radius:0 0 6cqw 6cqw;background:#9cddd8;color:#073f4e;display:flex;align-items:center;justify-content:center;padding:1cqw;font:700 5cqw/1 var(--display); }
+@media(max-width:650px) {
+ .module-area .module-card { height:65px; }
+ .module-area .module-card .module-caption { left:1%;top:2%;width:57%;height:60%;padding:1cqw 12% 1cqw 2cqw;border-radius:2cqw; }
+ .module-area .module-card .module-caption h1 { font-size:5.5cqw; }
+ .module-area .module-card .module-stage { top:60%;left:2%;font-size:2.5cqw;border-width:.4cqw;padding:.6cqw 1cqw; }
+ .module-card .module-types .type-icon { width:4cqw;height:4cqw; }
+ .module-card .module-types { border-width:.5cqw; }
+ .module-card .module-target { left:60%;right:1%;top:3%;height:72%;padding:.5cqw;gap:.5cqw;border-radius:2cqw; }
+ .module-target>div>small { font-size:2.8cqw; }
+ .module-area .module-card .module-target strong { font-size:8cqw; }
+ .module-card .module-target strong small { font-size:2.5cqw; }
+ .module-area .module-card .attempt-note { left:60%;top:75%;width:39%;height:22%;font-size:2cqw;padding:0; }
+ .module-area .module-picture { opacity:.45; }
+}
+@media(min-width:651px) {
+ .module-area .module-card { height:var(--table-card-h);width:calc(var(--table-card-h)*.69);max-width:100%;align-self:center; }
+ .module-area.has-archive .module-card { height:calc(var(--table-card-h)*.8);width:calc(var(--table-card-h)*.552);min-height:0; }
+ .module-area .module-card .module-caption h1 { font-size:9cqw; }
+}
+.module-picture .module-scene { display:none; }
+@media(max-width:650px) {
+ .module-picture>.art-image:not(.module-scene) { display:none; }
+ .module-picture .module-scene { display:block; }
+ .module-area .module-picture { opacity:1; }
+}

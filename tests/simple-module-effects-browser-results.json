@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-02",
+  "version": "0.5.0",
+  "rulesVersion": 17,
+  "saveVersion": 12,
+  "tests": {
+    "passed": 222,
+    "failed": 0
+  },
+  "simulation": {
+    "sessions": 100,
+    "completed": 100,
+    "modules": 600,
+    "attempts": 4800,
+    "file": "tests/match-simulation-results.json",
+    "balanceClaim": false
+  },
+  "catalog": {
+    "cards": 12,
+    "coping": "Le Coping Bleu, MANCHES 3–5, 3 PV. Deux premiers tricks : Air et Slide. Chaque trick utilisant 3 ou 4 dés rapporte +2 points. Effet conservé si l’essai est encaissé.",
+    "doubleQuai": "Le Double Quai, MANCHES 3–5, 3 PV. Premier trick : Slide. Encaisser exactement deux tricks donne un jeton au choix. Effet conservé si l’essai est encaissé.",
+    "horizontalOverflow": false,
+    "layers": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "responsive": [
+    {
+      "aligned": true,
+      "cardFits": true,
+      "imagesLoaded": true,
+      "layers": 3,
+      "modalFits": true,
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "imagesLoaded": true,
+      "layers": 3,
+      "modalFits": true,
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "imagesLoaded": true,
+      "layers": 3,
+      "modalFits": true,
+      "viewport": [
+        1024,
+        768
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "imagesLoaded": true,
+      "layers": 3,
+      "modalFits": true,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "imagesLoaded": true,
+      "layers": 3,
+      "modalFits": true,
+      "viewport": [
+        844,
+        390
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "imagesLoaded": true,
+      "layers": 3,
+      "modalFits": true,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "interface": {
+    "doubleChoice": {
+      "firstChoicePreservedOnReload": true,
+      "heldOnPlayerUntilSecondChoice": true,
+      "advancedAfterSecondChoice": true,
+      "bothChoicesRecorded": true
+    },
+    "recovery": {
+      "choicesBeforeBank": 0,
+      "offeredAfterBank": true,
+      "advancedAfterClaim": true
+    },
+    "tableViewport": [
+      1280,
+      720
+    ]
+  },
+  "screenshots": [
+    "tests/screenshots/simple-effects-recovery-token.png",
+    "tests/screenshots/simple-effects-double-quai.png",
+    "tests/screenshots/simple-effects-double-quai-mobile.png",
+    "tests/screenshots/simple-effects-coping-bleu.png"
+  ]
+}

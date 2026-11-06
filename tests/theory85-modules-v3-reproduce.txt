@@ -1,0 +1,43 @@
+Sk8 Heroes — simulation du plancher de 25 %, grille V3
+1 novembre 2026
+
+Exécuter chaque commande après la fin de la précédente.
+Ne reconstruire aucune copie du moteur pendant une simulation.
+
+node scripts/experiments/theory85-modules-v3.mjs
+node scripts/experiments/validate-module-conditions-v3.mjs
+node scripts/experiments/simulate-theory85.mjs matches 600 --modules-v3 --probe-four --sequence-draft
+node scripts/experiments/analyze-module-conditions-v3.mjs
+
+Les sources jouables public/ et les sauvegardes de parties sont inchangées.
+La construction génère des copies dans .local-games/theory85-runtime/,
+.local-games/theory85-modules-v2-runtime/ et .local-games/theory85-modules-v3-runtime/.
+Les anciennes données de simulation V2 ne sont pas écrasées.
+
+Entrées : catalogue figé tests/fixtures/theory85-catalog.json ;
+modules tests/fixtures/theory85-modules-v3.json.
+Le profil de test à quatre dés utilise la calibration existante dans
+tests/theory85-forced-results.json. Aucun résultat de dé futur n’est lu.
+
+600 parties à quatre styles différents et 600 sans préférence de coût,
+quatre joueurs, six modules, deux essais par joueur : 57 600 essais au total.
+Les cartes à trois et quatre dés ont toutes une prime +2 sur leurs points
+de difficulté. Les jetons des cartes sont différés à la fin du module,
+sans plafond par type. Le draft est celui de la proposition à 85 cartes.
+
+Tous les bonus de module restent +2, sur au moins deux tricks conservés,
+indépendamment pour chaque essai. Les étoiles valent 1 pour les objectifs
+de faces physiques. Les modules à deux types imposent toujours les deux.
+
+La fréquence d’activation inclut les chutes et les essais encaissés avec
+une seule carte. Le plancher est 25 % ; les données exposent aussi les
+deux cohortes et les deux tentatives séparément. Les paramètres de prudence
+propres aux places restent ceux du jeu dans les deux groupes.
+Les intervalles approximatifs à 95 % regroupent les huit essais d’une
+même apparition de module dans une partie, pour tenir compte de leur
+dépendance. Ils ne sont pas une garantie de fréquence chez les humains.
+
+Sorties : tests/theory85-module-v3-results.json,
+tests/theory85-module-v3-validation-results.json,
+tests/theory85-module-v3-summary.json,
+tests/theory85-module-v3-report.html.

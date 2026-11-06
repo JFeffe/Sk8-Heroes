@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-31",
+  "command": "npm test",
+  "tests": {
+    "total": 161,
+    "passed": 161,
+    "failed": 0,
+    "completeLocalCompetitions": 100
+  },
+  "browserChecks": {
+    "desktop": "1280 × 720 : table sans défilement, contrôles sous les tricks",
+    "mobile": "390 × 844 : pas de débordement horizontal, accès à l’essai complet",
+    "draft": "Six choix simultanés en local, puis choix et passage en ligne via le serveur local",
+    "profiles": "Portraits, trois stocks de jetons et PV cumulés distincts du dernier module",
+    "dice": "Lancer, relance, gel immobile, combinaison et validation pulsante",
+    "inspection": "Focus épinglé jusqu’au retour au suivi auto, trois cartes et dés d’origine, clic extérieur",
+    "menu": "Version 0.2.0 et notes de mise à jour"
+  },
+  "screenshots": [
+    "tests/screenshots/ux-02-table.png",
+    "tests/screenshots/ux-02-history.png",
+    "tests/screenshots/ux-02-draft-online.png"
+  ]
+}

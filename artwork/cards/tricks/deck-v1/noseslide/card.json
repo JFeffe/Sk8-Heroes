@@ -1,0 +1,80 @@
+{
+  "id": 20,
+  "key": "noseslide",
+  "name": "Noseslide",
+  "type": "slide",
+  "tier": "base",
+  "copies": 2,
+  "points": 3,
+  "difficultyPoints": 3,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9131730109739369,
+  "requirementCode": "doubleLow",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "symbols": [
+    "x",
+    "x"
+  ],
+  "rule": "Une paire de 1 à 5",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "air",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/noseslide/01-illustration.webp?v=e67bbbbb7043",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/noseslide/03-textes-symboles.webp?v=a39d183e0538"
+  },
+  "printedPoints": 3,
+  "p": 0.9131730109739369,
+  "effect": "point:air",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

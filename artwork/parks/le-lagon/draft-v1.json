@@ -1,0 +1,317 @@
+{
+  "status": "draft — proposition à valider avant intégration au jeu",
+  "parkId": "lagoon",
+  "name": "Le Lagon",
+  "game": "Sk8 Heroes",
+  "version": 1,
+  "concept": "Un seul skatepark côtier accueillant, douze spots reconnaissables, douze cartes d’un même paquet.",
+  "visualIdentity": {
+    "palette": {
+      "cream": "#fff6df",
+      "navy": "#073f4e",
+      "turquoise": "#3cc9c4",
+      "orange": "#ff752b",
+      "sky": "#168fe5"
+    },
+    "setting": "Baie turquoise, plage, ciel bleu, promenade plantée de palmiers, béton clair et vagues peintes.",
+    "entry": "Côté ville, au sud-ouest.",
+    "shore": "Au nord du plan.",
+    "scale": "Modules bas, larges et progressifs ; les finales proposent des lignes plus riches."
+  },
+  "packStructure": [
+    {
+      "phase": "Découverte",
+      "possibleLevels": [
+        1,
+        2
+      ],
+      "cardsInPack": 4,
+      "cardsDrawn": 2
+    },
+    {
+      "phase": "Enchaînement",
+      "possibleLevels": [
+        3,
+        4,
+        5
+      ],
+      "cardsInPack": 4,
+      "cardsDrawn": 3
+    },
+    {
+      "phase": "Finale",
+      "possibleLevels": [
+        6
+      ],
+      "cardsInPack": 4,
+      "cardsDrawn": 1
+    }
+  ],
+  "futureParks": "Un nouveau skatepark serait un autre paquet cohérent de douze spots avec son propre plan, ses noms, son décor et ses signatures. Une partie choisit un skatepark.",
+  "spots": [
+    {
+      "id": 1,
+      "name": "Le Parvis",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Le Flat",
+      "feature": "Grande aire de flat près de l’entrée",
+      "types": [
+        "kick"
+      ],
+      "bonus": "2 Kicks réussis",
+      "baseModuleId": 0,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "2 Kicks réussis",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Le Rail des Dunes",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Rail bas",
+      "feature": "Petit rail droit au ras du sol, côté plage",
+      "types": [
+        "slide"
+      ],
+      "bonus": "2 Slides réussis",
+      "baseModuleId": 1,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "2 Slides réussis",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 3,
+      "name": "La Petite Vague",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Petite rampe",
+      "feature": "Plan incliné large à pente douce",
+      "types": [
+        "air"
+      ],
+      "bonus": "2 Airs réussis",
+      "baseModuleId": 2,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "2 Airs réussis",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 4,
+      "name": "L’Îlot",
+      "levels": [
+        1,
+        2
+      ],
+      "old": "Place du bord de mer",
+      "feature": "Plateforme basse et large, avec bords et accès inclinés",
+      "types": [],
+      "bonus": "2 types différents réussis",
+      "baseModuleId": 3,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "2 types différents réussis",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Le Rail des Embruns",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Rail et sortie",
+      "feature": "Rail plus long avec une grande sortie en flat",
+      "types": [
+        "slide",
+        "kick"
+      ],
+      "bonus": "Slide immédiatement suivi d’un Kick",
+      "baseModuleId": 4,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "Slide immédiatement suivi d’un Kick",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Le Hip du Soleil",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Rampe et réception",
+      "feature": "Deux plans inclinés bas qui se rejoignent en angle",
+      "types": [
+        "air",
+        "kick"
+      ],
+      "bonus": "Air immédiatement suivi d’un Kick",
+      "baseModuleId": 5,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "Air immédiatement suivi d’un Kick",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Le Coping Bleu",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Rampe et coping",
+      "feature": "Quarter bas, courbe douce et longue bordure métallique",
+      "types": [
+        "air",
+        "slide"
+      ],
+      "bonus": "Air immédiatement suivi d’un Slide",
+      "baseModuleId": 6,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "Air immédiatement suivi d’un Slide",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Le Double Quai",
+      "levels": [
+        3,
+        4,
+        5
+      ],
+      "old": "Double ledge",
+      "feature": "Deux ledges larges et décalés, à deux hauteurs modestes",
+      "types": [
+        "slide"
+      ],
+      "bonus": "2 tricks utilisant 5 dés au total",
+      "baseModuleId": 7,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "2 tricks utilisant 5 dés au total",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 9,
+      "name": "La Traverse",
+      "levels": [
+        6
+      ],
+      "old": "La grande ligne",
+      "feature": "Funbox basse combinant plans inclinés, plateforme et ledge",
+      "types": [
+        "kick",
+        "slide",
+        "air"
+      ],
+      "bonus": "Kick, Slide et Air réussis",
+      "baseModuleId": 8,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "Kick, Slide et Air réussis",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Les Trois Marches",
+      "levels": [
+        6
+      ],
+      "old": "La ligne street",
+      "feature": "Petit escalier de trois marches avec rail et zones de flat",
+      "types": [
+        "kick",
+        "slide"
+      ],
+      "bonus": "Kick → Slide → Kick",
+      "baseModuleId": 9,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "Kick → Slide → Kick",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 11,
+      "name": "L’Archipel",
+      "levels": [
+        6
+      ],
+      "old": "Le parcours libre",
+      "feature": "Trois petites plateformes espacées, propices à plusieurs lignes",
+      "types": [],
+      "bonus": "3 tricks de noms différents",
+      "baseModuleId": 10,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "3 tricks de noms différents",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    },
+    {
+      "id": 12,
+      "name": "La Mini du Large",
+      "levels": [
+        6
+      ],
+      "old": "La grande rampe",
+      "feature": "Mini-rampe large à deux courbes douces face à la mer",
+      "types": [
+        "air"
+      ],
+      "bonus": "Un Air utilisant 4 dés",
+      "baseModuleId": 11,
+      "signature": {
+        "status": "proposée, non appliquée au moteur",
+        "points": 2,
+        "rule": "Un Air utilisant 4 dés",
+        "per": "une fois par essai conservé dans le module actif"
+      }
+    }
+  ],
+  "planImage": "park-plan-v1.png",
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt": "park-plan-v1.prompt.txt",
+    "styleReferences": [
+      "public/assets/modules.webp",
+      "public/assets/tricks-1.webp"
+    ]
+  }
+}
+
