@@ -1,0 +1,83 @@
+{
+  "id": 1,
+  "key": "nollie",
+  "name": "Nollie",
+  "type": "kick",
+  "tier": "base",
+  "copies": 3,
+  "points": 2,
+  "difficultyPoints": 2,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9845679012345679,
+  "requirementCode": "double",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      6
+    ]
+  ],
+  "symbols": [
+    "x",
+    "x"
+  ],
+  "rule": "Deux dés identiques",
+  "comboBonus": {
+    "kind": "reward",
+    "type": "adjust"
+  },
+  "layers": {
+    "illustration": "assets/tricks/nollie/01-illustration.webp?v=38109aa8f042",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/nollie/03-textes-symboles.webp?v=edd470042023"
+  },
+  "printedPoints": 2,
+  "p": 0.9845679012345679,
+  "effect": "token:adjust",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

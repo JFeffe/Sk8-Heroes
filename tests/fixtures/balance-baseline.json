@@ -1,0 +1,671 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name": "Kickflip",
+      "type": "kick",
+      "copies": 5,
+      "points": 5,
+      "sheet": 1,
+      "cell": 0,
+      "comboBonus": null,
+      "cost": 2,
+      "pattern": "at-least",
+      "threshold": 4,
+      "rule": "Deux dés ≥ 4",
+      "symbols": [
+        "≥4",
+        "≥4"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Pop Shuvit",
+      "type": "kick",
+      "copies": 4,
+      "points": 2,
+      "sheet": 1,
+      "cell": 1,
+      "comboBonus": {
+        "kind": "companion",
+        "type": "kick",
+        "points": 1
+      },
+      "cost": 2,
+      "pattern": "at-least",
+      "threshold": 2,
+      "rule": "Deux dés ≥ 2",
+      "symbols": [
+        "≥2",
+        "≥2"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Heelflip",
+      "type": "kick",
+      "copies": 3,
+      "points": 5,
+      "sheet": 1,
+      "cell": 2,
+      "comboBonus": null,
+      "cost": 2,
+      "pattern": "at-most",
+      "threshold": 3,
+      "rule": "Deux dés ≤ 3",
+      "symbols": [
+        "≤3",
+        "≤3"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Frontside Flip",
+      "type": "kick",
+      "copies": 3,
+      "points": 7,
+      "sheet": 1,
+      "cell": 3,
+      "comboBonus": {
+        "kind": "companion",
+        "type": "air",
+        "points": 2
+      },
+      "cost": 2,
+      "pattern": "odd-distinct",
+      "rule": "Deux impairs différents",
+      "symbols": [
+        "I",
+        "≠I"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "360 Flip",
+      "type": "kick",
+      "copies": 3,
+      "points": 12,
+      "sheet": 2,
+      "cell": 0,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1
+      ],
+      "cost": 2,
+      "rule": "Dés : 1 · 1",
+      "symbols": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Laser Flip",
+      "type": "kick",
+      "copies": 2,
+      "points": 12,
+      "sheet": 2,
+      "cell": 1,
+      "comboBonus": {
+        "kind": "variety",
+        "points": 2
+      },
+      "pattern": "exact",
+      "values": [
+        4,
+        4
+      ],
+      "cost": 2,
+      "rule": "Dés : 4 · 4",
+      "symbols": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Hardflip",
+      "type": "kick",
+      "copies": 2,
+      "points": 16,
+      "sheet": 2,
+      "cell": 2,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        3
+      ],
+      "cost": 3,
+      "rule": "Dés : 1 · 1 · 3",
+      "symbols": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Impossible",
+      "type": "kick",
+      "copies": 2,
+      "points": 24,
+      "sheet": 2,
+      "cell": 3,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        1
+      ],
+      "cost": 3,
+      "rule": "Dés : 1 · 1 · 1",
+      "symbols": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Inward Heelflip",
+      "type": "kick",
+      "copies": 2,
+      "points": 10,
+      "sheet": 3,
+      "cell": 0,
+      "comboBonus": {
+        "kind": "reward",
+        "type": "adjust"
+      },
+      "pattern": "exact",
+      "values": [
+        2,
+        3
+      ],
+      "cost": 2,
+      "rule": "Dés : 2 · 3",
+      "symbols": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 9,
+      "name": "50-50 Grind",
+      "type": "slide",
+      "copies": 5,
+      "points": 2,
+      "sheet": 3,
+      "cell": 1,
+      "comboBonus": null,
+      "cost": 2,
+      "pattern": "at-most",
+      "threshold": 5,
+      "rule": "Deux dés ≤ 5",
+      "symbols": [
+        "≤5",
+        "≤5"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Boardslide",
+      "type": "slide",
+      "copies": 4,
+      "points": 3,
+      "sheet": 3,
+      "cell": 2,
+      "comboBonus": {
+        "kind": "companion",
+        "type": "kick",
+        "points": 1
+      },
+      "cost": 2,
+      "pattern": "at-least",
+      "threshold": 3,
+      "rule": "Deux dés ≥ 3",
+      "symbols": [
+        "≥3",
+        "≥3"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "FS Boardslide",
+      "type": "slide",
+      "copies": 3,
+      "points": 4,
+      "sheet": 3,
+      "cell": 3,
+      "comboBonus": null,
+      "cost": 2,
+      "pattern": "straight",
+      "rule": "Deux valeurs consécutives",
+      "symbols": [
+        "x",
+        "x+1"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Noseslide",
+      "type": "slide",
+      "copies": 3,
+      "points": 7,
+      "sheet": 4,
+      "cell": 0,
+      "comboBonus": {
+        "kind": "companion",
+        "type": "air",
+        "points": 2
+      },
+      "cost": 2,
+      "pattern": "even-distinct",
+      "rule": "Deux pairs différents",
+      "symbols": [
+        "P",
+        "≠P"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Lipslide",
+      "type": "slide",
+      "copies": 3,
+      "points": 8,
+      "sheet": 4,
+      "cell": 1,
+      "comboBonus": null,
+      "cost": 2,
+      "pattern": "at-least",
+      "threshold": 5,
+      "rule": "Deux dés ≥ 5",
+      "symbols": [
+        "≥5",
+        "≥5"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Smith Grind",
+      "type": "slide",
+      "copies": 2,
+      "points": 8,
+      "sheet": 4,
+      "cell": 2,
+      "comboBonus": {
+        "kind": "companion",
+        "type": "slide",
+        "points": 2
+      },
+      "cost": 2,
+      "pattern": "at-most",
+      "threshold": 2,
+      "rule": "Deux dés ≤ 2",
+      "symbols": [
+        "≤2",
+        "≤2"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Bluntslide",
+      "type": "slide",
+      "copies": 2,
+      "points": 16,
+      "sheet": 4,
+      "cell": 3,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        5,
+        6,
+        6
+      ],
+      "cost": 3,
+      "rule": "Dés : 5 · 6 · 6",
+      "symbols": [
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Feeble Grind",
+      "type": "slide",
+      "copies": 2,
+      "points": 10,
+      "sheet": 5,
+      "cell": 0,
+      "comboBonus": {
+        "kind": "reward",
+        "type": "reroll"
+      },
+      "pattern": "exact",
+      "values": [
+        5,
+        6
+      ],
+      "cost": 2,
+      "rule": "Dés : 5 · 6",
+      "symbols": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Crooked Grind",
+      "type": "slide",
+      "copies": 2,
+      "points": 12,
+      "sheet": 5,
+      "cell": 1,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        2,
+        2
+      ],
+      "cost": 2,
+      "rule": "Dés : 2 · 2",
+      "symbols": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 18,
+      "name": "180°",
+      "type": "air",
+      "copies": 8,
+      "points": 3,
+      "sheet": 5,
+      "cell": 2,
+      "comboBonus": null,
+      "cost": 2,
+      "pattern": "at-most",
+      "threshold": 4,
+      "rule": "Deux dés ≤ 4",
+      "symbols": [
+        "≤4",
+        "≤4"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "360°",
+      "type": "air",
+      "copies": 6,
+      "points": 16,
+      "sheet": 5,
+      "cell": 3,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        2
+      ],
+      "cost": 3,
+      "rule": "Dés : 1 · 1 · 2",
+      "symbols": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": 20,
+      "name": "540°",
+      "type": "air",
+      "copies": 2,
+      "points": 24,
+      "sheet": 6,
+      "cell": 0,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        1
+      ],
+      "cost": 3,
+      "rule": "Dés : 1 · 1 · 1",
+      "symbols": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": 21,
+      "name": "720°",
+      "type": "air",
+      "copies": 2,
+      "points": 32,
+      "sheet": 6,
+      "cell": 1,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "cost": 4,
+      "rule": "Dés : 1 · 1 · 2 · 2",
+      "symbols": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "id": 22,
+      "name": "900°",
+      "type": "air",
+      "copies": 1,
+      "points": 38,
+      "sheet": 6,
+      "cell": 2,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "cost": 4,
+      "rule": "Dés : 1 · 1 · 1 · 2",
+      "symbols": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "id": 23,
+      "name": "1080°",
+      "type": "air",
+      "copies": 1,
+      "points": 50,
+      "sheet": 6,
+      "cell": 3,
+      "comboBonus": null,
+      "pattern": "exact",
+      "values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "cost": 4,
+      "rule": "Dés : 1 · 1 · 1 · 1",
+      "symbols": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "name": "Le Flat",
+      "stage": 0,
+      "needs": [
+        "kick"
+      ],
+      "target": 2,
+      "pv": 2,
+      "reward": "reroll",
+      "art": 1
+    },
+    {
+      "id": 1,
+      "name": "Rail bas",
+      "stage": 0,
+      "needs": [
+        "slide"
+      ],
+      "target": 2,
+      "pv": 2,
+      "reward": "adjust",
+      "art": 0
+    },
+    {
+      "id": 2,
+      "name": "Petite rampe",
+      "stage": 0,
+      "needs": [
+        "air"
+      ],
+      "target": 3,
+      "pv": 2,
+      "reward": "reroll",
+      "art": 3
+    },
+    {
+      "id": 3,
+      "name": "Place du bord de mer",
+      "stage": 0,
+      "needs": [],
+      "target": 3,
+      "pv": 2,
+      "reward": "choice",
+      "art": 2
+    },
+    {
+      "id": 4,
+      "name": "Rail et sortie",
+      "stage": 1,
+      "needs": [
+        "slide",
+        "kick"
+      ],
+      "target": 8,
+      "pv": 3,
+      "reward": "choice",
+      "art": 1
+    },
+    {
+      "id": 5,
+      "name": "Rampe et réception",
+      "stage": 1,
+      "needs": [
+        "air",
+        "kick"
+      ],
+      "target": 8,
+      "pv": 3,
+      "reward": "adjust",
+      "art": 2
+    },
+    {
+      "id": 6,
+      "name": "Rampe et coping",
+      "stage": 1,
+      "needs": [
+        "air",
+        "slide"
+      ],
+      "target": 8,
+      "pv": 3,
+      "reward": "reroll",
+      "art": 2
+    },
+    {
+      "id": 7,
+      "name": "Double ledge",
+      "stage": 1,
+      "needs": [
+        "slide"
+      ],
+      "target": 8,
+      "pv": 3,
+      "reward": "choice",
+      "art": 0
+    },
+    {
+      "id": 8,
+      "name": "La grande ligne",
+      "stage": 2,
+      "needs": [
+        "kick",
+        "slide",
+        "air"
+      ],
+      "target": 14,
+      "pv": 4,
+      "reward": null,
+      "art": 2
+    },
+    {
+      "id": 9,
+      "name": "La ligne street",
+      "stage": 2,
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "target": 14,
+      "pv": 4,
+      "reward": null,
+      "art": 2
+    },
+    {
+      "id": 10,
+      "name": "Le parcours libre",
+      "stage": 2,
+      "needs": [],
+      "target": 16,
+      "pv": 4,
+      "reward": null,
+      "art": 2
+    },
+    {
+      "id": 11,
+      "name": "La grande rampe",
+      "stage": 2,
+      "needs": [
+        "air"
+      ],
+      "target": 18,
+      "pv": 4,
+      "reward": null,
+      "art": 3
+    }
+  ]
+}

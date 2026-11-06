@@ -1,0 +1,38 @@
+{
+  "id": 3,
+  "key": "rail-palmiers",
+  "name": "Le Rail des Palmiers",
+  "stage": 0,
+  "needs": [],
+  "pv": 2,
+  "bonus": {
+    "kind": "signature",
+    "points": 2
+  },
+  "condition": "Utiliser son dé personnel rapporte +2 points, une fois par essai.",
+  "park": "Le Lagon",
+  "rounds": [
+    1,
+    2
+  ],
+  "image": "assets/modules/lagoon/rail-palmiers.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/rail-palmiers/01-illustration.webp?v=2b72276f5f09",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/rail-palmiers/03-textes-symboles.webp?v=9d4b505c483e"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/rail-palmiers.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

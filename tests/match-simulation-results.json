@@ -1,0 +1,172 @@
+{
+  "rulesVersion": 17,
+  "moduleEffectsVersion": 1,
+  "draftCardsPerPlayer": 1,
+  "sessions": 100,
+  "completed": 100,
+  "modules": 600,
+  "attempts": 4800,
+  "commands": 66600,
+  "tiedModules": 140,
+  "unawardedModules": 0,
+  "maxTokenStock": 27,
+  "effects": [
+    {
+      "id": 0,
+      "name": "L’Îlot",
+      "kind": "base",
+      "attempts": 376,
+      "awarded": 243,
+      "extraPoints": 453,
+      "extraTokens": 0,
+      "byAttempt": [
+        162,
+        81
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Le Quai bas",
+      "kind": "favored",
+      "attempts": 168,
+      "awarded": 84,
+      "extraPoints": 99,
+      "extraTokens": 0,
+      "byAttempt": [
+        56,
+        28
+      ]
+    },
+    {
+      "id": 2,
+      "name": "La Petite Vague",
+      "kind": "favored",
+      "attempts": 528,
+      "awarded": 242,
+      "extraPoints": 266,
+      "extraTokens": 0,
+      "byAttempt": [
+        152,
+        90
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Le Rail des Palmiers",
+      "kind": "signature",
+      "attempts": 528,
+      "awarded": 389,
+      "extraPoints": 778,
+      "extraTokens": 0,
+      "byAttempt": [
+        227,
+        162
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Le Retour du Rail",
+      "kind": "favored",
+      "attempts": 344,
+      "awarded": 55,
+      "extraPoints": 55,
+      "extraTokens": 0,
+      "byAttempt": [
+        20,
+        35
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Le Tour de l’Îlot",
+      "kind": "stars",
+      "attempts": 320,
+      "awarded": 191,
+      "extraPoints": 269,
+      "extraTokens": 0,
+      "byAttempt": [
+        109,
+        82
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Le Coping Bleu",
+      "kind": "amplitude",
+      "attempts": 504,
+      "awarded": 218,
+      "extraPoints": 490,
+      "extraTokens": 0,
+      "byAttempt": [
+        114,
+        104
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Le Double Quai",
+      "kind": "recovery",
+      "attempts": 360,
+      "awarded": 223,
+      "extraPoints": 0,
+      "extraTokens": 223,
+      "byAttempt": [
+        109,
+        114
+      ]
+    },
+    {
+      "id": 8,
+      "name": "La Boucle du Lagon",
+      "kind": "three-score",
+      "attempts": 400,
+      "awarded": 135,
+      "extraPoints": 135,
+      "extraTokens": 0,
+      "byAttempt": [
+        68,
+        67
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Les Marches des Palmiers",
+      "kind": "three-score",
+      "attempts": 480,
+      "awarded": 234,
+      "extraPoints": 234,
+      "extraTokens": 0,
+      "byAttempt": [
+        114,
+        120
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Les Embruns",
+      "kind": "three-tokens",
+      "attempts": 392,
+      "awarded": 163,
+      "extraPoints": 0,
+      "extraTokens": 163,
+      "byAttempt": [
+        84,
+        79
+      ]
+    },
+    {
+      "id": 11,
+      "name": "La Grande Vague",
+      "kind": "amplitude",
+      "attempts": 400,
+      "awarded": 243,
+      "extraPoints": 578,
+      "extraTokens": 0,
+      "byAttempt": [
+        117,
+        126
+      ]
+    }
+  ],
+  "note": "Functional simulation: all seats use the public NPC controller; seeded dice, shared deck, save/restore after every transition. Not a balance or optimal-strategy claim."
+}

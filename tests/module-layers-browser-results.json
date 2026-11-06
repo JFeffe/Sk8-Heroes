@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-01",
+  "version": "0.3.1",
+  "draft": {
+    "confirmationVisible": true,
+    "freshCards": 4,
+    "horizontalOverflow": false,
+    "ownCards": 6,
+    "tokens": 4,
+    "verticalOverflow": false,
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "draftCompleted": {
+    "choices": [
+      "Indy Grab + jeton ❄ Gel",
+      "Indy Grab + jeton ↻ Relance",
+      "Ollie + jeton ±1",
+      "Noseslide + jeton ↻ Relance"
+    ],
+    "handCards": 7
+  },
+  "modules": [
+    {
+      "aligned": true,
+      "broken": 0,
+      "cardWithinModal": true,
+      "layers": 3,
+      "modalOverflow": false,
+      "modalWithinViewport": true,
+      "ratio": 0.6923124332704271,
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "aligned": true,
+      "broken": 0,
+      "cardWithinModal": true,
+      "layers": 3,
+      "modalOverflow": false,
+      "modalWithinViewport": true,
+      "ratio": 0.6923124332704271,
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "aligned": true,
+      "broken": 0,
+      "cardWithinModal": true,
+      "layers": 3,
+      "modalOverflow": false,
+      "modalWithinViewport": true,
+      "ratio": 0.6923124332704271,
+      "viewport": [
+        1024,
+        768
+      ]
+    },
+    {
+      "aligned": true,
+      "broken": 0,
+      "cardWithinModal": true,
+      "layers": 3,
+      "modalOverflow": false,
+      "modalWithinViewport": true,
+      "ratio": 0.6923124332704271,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "aligned": true,
+      "broken": 0,
+      "cardWithinModal": true,
+      "layers": 3,
+      "modalOverflow": false,
+      "modalWithinViewport": true,
+      "ratio": 0.6923237024252428,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "aligned": true,
+      "broken": 0,
+      "cardWithinModal": true,
+      "layers": 3,
+      "modalOverflow": false,
+      "modalWithinViewport": true,
+      "ratio": 0.6923248381227548,
+      "viewport": [
+        844,
+        390
+      ]
+    }
+  ],
+  "table": {
+    "broken": 0,
+    "current": "La Petite Vague, MANCHES 1–2, 2 PV. Premier trick : Air. Bonus +2 points : Réussir 2 Airs.",
+    "layerCount": 3,
+    "page": [
+      1280,
+      720
+    ],
+    "tableCard": {
+      "bottom": 454.7176513671875,
+      "height": 141.560302734375,
+      "left": 106.73533630371094,
+      "right": 208.46259307861328,
+      "top": 313.1573486328125,
+      "width": 101.72725677490234,
+      "x": 106.73533630371094,
+      "y": 313.1573486328125
+    },
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "catalog": {
+    "cards": 12,
+    "layersPerCard": 3,
+    "brokenVisible": 0,
+    "horizontalOverflow": false
+  },
+  "tests": {
+    "passed": 199,
+    "failed": 0,
+    "fullSimulatedMatches": 100
+  },
+  "screenshots": [
+    "draft-four-cards-four-tokens-1280.png",
+    "module-layers-collection-1280.png",
+    "module-layers-table-1280.png",
+    "module-layers-390x844.png",
+    "module-layers-844x390.png"
+  ]
+}

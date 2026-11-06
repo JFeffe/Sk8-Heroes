@@ -1,0 +1,100 @@
+LE LAGON — SCRIPT BLENDER, PLAN V7
+
+UTILISATION
+1. Ouvrir Blender 4.5 LTS.
+2. Aller dans l'espace Scripting.
+3. Dans l'éditeur de texte : Open, puis sélectionner le_lagon.py.
+4. Cliquer sur Run Script (Alt+P quand le pointeur est dans l'éditeur).
+5. Revenir dans Layout et appuyer sur le pavé numérique 0 : vue caméra.
+6. F12 lance le rendu. Image > Save As permet de l'enregistrer en PNG RGBA.
+7. File > Save As enregistre la scène en .blend.
+
+Le script crée une nouvelle scène nommée « LE LAGON | V7 ». Il conserve les
+scènes existantes. Le relancer produit une nouvelle scène ; les précédentes
+restent accessibles dans le sélecteur de scène de Blender.
+
+Le fichier le_lagon.py est autonome : pas d'addon, pas de téléchargement,
+pas d'image de texture à retrouver, pas de dépendance Python externe.
+Les textures procédurales sont visibles en Material Preview ou Rendered.
+Le mode Solid montre seulement une représentation simplifiée des objets.
+
+Le dossier rendus contient aussi une scène le-lagon-v7.blend prête à ouvrir,
+un rendu de face, une vue de dessus et un détail des marches. Le .blend
+est enregistré avec les réglages finaux Cycles, 2200 × 1400, 128 échantillons.
+
+VALIDATION EFFECTUÉE
+Script exécuté avec Blender 4.5.9 LTS ; rendus Cycles inspectés visuellement.
+25 volumes maillés fermés, sans arête non manifold ni face dégénérée.
+Comparaison des extrémités des arcs, rayons, étirement de l'anse, ledge et
+plateau avec les données de draft-v7.json. Canal alpha du PNG contrôlé.
+Les rapports validation.json et verification-plan.json sont dans rendus.
+
+CONTENU
+- Socle découpé suivant les dix courbes de Bézier du contour V7.
+- Quatre transitions : Dunes, Palmiers, Anse du Large, Retour du Soleil.
+- Anse légèrement ovale, ouverture et rayons du plan conservés.
+- Prolongement ondulé des Palmiers vers la terrasse des marches.
+- Retour allongé en vague au sud-est.
+- Bank des Dunes et sa terrasse aux bords arrondis.
+- Quatre contremarches, hubba, main courante et bank adjacent.
+- Rail bas à cinq supports, platines et fixations.
+- Ledge long et arêtes métalliques.
+- Tabletop plein, deux banks opposés, axe est-ouest.
+- Béton sable, béton bleu pâle, couronnements ivoire, acier bleu nuit.
+- Micrograin, variations de coulage, joints fins et fresques turquoise/ocre.
+- Quatre caméras et éclairage de studio ; fond transparent.
+
+CAMÉRAS
+Camera | face fidèle au dessin : caméra active par défaut.
+Camera | vue illustrée : angle de trois quarts plus marqué.
+Camera | plan de dessus : contrôle de l'implantation.
+Camera | détail marches : vue rapprochée de la zone B.
+Pour changer de caméra active : sélectionner la caméra dans l'Outliner,
+puis Ctrl+pavé numérique 0 dans la vue 3D.
+
+FIDÉLITÉ AU PLAN ET CHOIX DE VOLUME
+Source : draft-v7.json et draw-organic-park-v7.mjs, fournis avec le projet.
+Le plan est prioritaire sur les petites différences de l'illustration générée.
+Les coordonnées XY sont reprises directement, sans réagencer les obstacles.
+Transformation : X = (x_plan - 32) × 0,60 ; Y = (23 - y_plan) × 0,60.
+Le nord du dessin correspond à +Y dans Blender.
+
+Le plan original n'étant pas coté en hauteur, les valeurs suivantes sont
+des choix artistiques, réglables en tête du script :
+  Échelle : 0,60 m par unité du plan, parc d'environ 37 × 27 m.
+  Quarter A : 0,90 m ; B : 1,10 m ; C : 1,35 m ; D : 1,15 m.
+  Tabletop : 0,95 m ; ledge : 0,38 m ; dalle : 0,24 m.
+  Quatre contremarches sur 1,10 m de dénivelé.
+Les transitions ont un profil circulaire tangent au sol, adapté à leur largeur.
+Les pièces restent séparées pour faciliter l'édition. Le modèle n'est pas
+fusionné en un seul volume pour impression 3D. C'est une scène artistique,
+pas un dossier de construction.
+
+Le trait d'approche du saut et les flèches du plan ne sont pas modélisés :
+ils représentent des indications de parcours, pas des obstacles physiques.
+Il n'y a ni mer, ni plage, ni végétation, ni ciel visible, ni sol extérieur.
+L'éclairage ambiant existe mais n'apparaît pas dans le fond transparent.
+
+RÉGLAGES
+PLAN_SCALE : échelle horizontale du dessin.
+HEIGHTS : hauteur de chaque quarter, en mètres.
+TABLETOP_HEIGHT / LEDGE_HEIGHT : hauteur des obstacles centraux.
+TRANSITION_STEPS / ARC_STEP_DEGREES : finesse des courbes.
+RENDER_SIZE / RENDER_SAMPLES : résolution et qualité du rendu Cycles.
+make_materials() : palettes et paramètres des matériaux.
+mural() : vagues et disques ocre des façades.
+
+COMMANDE AUTOMATISÉE
+Adapter le chemin de Blender selon son installation :
+blender --background --python le_lagon.py -- --save --render --validate --output ./rendus
+
+--save      : écrit le-lagon-v7.blend dans le dossier de sortie.
+--render    : écrit le-lagon-perspective.png avec canal alpha.
+--top       : utilise la vue de dessus et écrit le-lagon-plan.png.
+--preview   : 1100 × 700 pixels (850 en vue de dessus), 24 échantillons.
+--validate  : écrit validation.json et vérifie les volumes séparés.
+--output    : dossier de sortie. Sans ce réglage : dossier rendus voisin du script.
+
+Sans options, l'exécution dans Blender ne sauvegarde aucun fichier.
+Les options de sauvegarde écrasent les sorties portant les mêmes noms :
+utiliser un autre dossier --output pour conserver plusieurs variantes.

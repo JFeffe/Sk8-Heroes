@@ -1,0 +1,40 @@
+{
+  "sessions": 100,
+  "completed": 100,
+  "modules": 600,
+  "ties": 0,
+  "current": {
+    "wins": 100,
+    "pv": 1601,
+    "attempts": 1200,
+    "falls": 44,
+    "threeTricks": 494,
+    "moduleBonusAttempts": 439,
+    "cardTokens": 915,
+    "secondAttempts": 600,
+    "secondBeatsLeader": 248,
+    "commands": 17990,
+    "maxDecisionMs": 142.42,
+    "averagePV": 16.01,
+    "fallRate": 0.0367,
+    "averageDecisionMs": 0.119
+  },
+  "previous": {
+    "wins": 0,
+    "pv": 185,
+    "attempts": 1200,
+    "falls": 191,
+    "threeTricks": 100,
+    "moduleBonusAttempts": 392,
+    "cardTokens": 597,
+    "secondAttempts": 600,
+    "secondBeatsLeader": 43,
+    "commands": 13702,
+    "maxDecisionMs": 42.01,
+    "averagePV": 1.85,
+    "fallRate": 0.1592,
+    "averageDecisionMs": 0.016
+  },
+  "note": "Head-to-head heuristic comparison, two six-module games per seed with controller seats exchanged. Same engine, fair seeded dice and shared physical deck. Streams diverge after different choices; this is not proof of optimal play or human balance.",
+  "elapsedSeconds": 2.66
+}

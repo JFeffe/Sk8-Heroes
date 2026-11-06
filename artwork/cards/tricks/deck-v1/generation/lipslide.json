@@ -1,0 +1,12 @@
+{
+  "key": "lipslide",
+  "name": "Lipslide",
+  "type": "slide",
+  "tier": "base",
+  "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-4.webp",
+  "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (Lipslide) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Lipslide: rider and rear truck pass across a low rail before landing in a slide; one deck now perpendicular with its middle sliding on the rail. Two trucks and four wheels only.",
+  "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-802966ec-b983-4a3f-8649-268793dca38e.png",
+  "asset": "artwork/cards/tricks/deck-v1/illustrations/lipslide.png",
+  "tool": "built-in image_gen",
+  "status": "generated"
+}

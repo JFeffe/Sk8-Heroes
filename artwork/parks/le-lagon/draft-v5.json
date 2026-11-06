@@ -1,0 +1,681 @@
+{
+  "version": 5,
+  "name": "Le Lagon",
+  "status": "Étude de forme et de lignes pour un jeu de cartes",
+  "outline": "M8 2 C18 0 24 2 32 2 C42 0 53 0 59 5 C64 10 64 19 62 23 C64 30 62 39 56 42 C46 46 37 44 32 44 C22 46 9 44 4 37 C0 30 1 22 2 18 C0 11 2 5 8 2 Z",
+  "pockets": [
+    {
+      "id": "QA",
+      "center": [
+        15,
+        30
+      ],
+      "angles": [
+        90,
+        180
+      ],
+      "character": "Coin bas relié au bank de départ",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2
+    },
+    {
+      "id": "QB",
+      "center": [
+        15,
+        14
+      ],
+      "angles": [
+        180,
+        270
+      ],
+      "character": "Quarter bas et large, côté palmiers",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2
+    },
+    {
+      "id": "QC",
+      "center": [
+        49,
+        14
+      ],
+      "angles": [
+        270,
+        360
+      ],
+      "character": "Quarter arrondi, retour côté mer",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2
+    },
+    {
+      "id": "QD",
+      "center": [
+        49,
+        30
+      ],
+      "angles": [
+        0,
+        90
+      ],
+      "character": "Quarter un peu plus haut, côté soleil",
+      "toeRadius": 5.5,
+      "copingRadius": 8.5,
+      "deckRadius": 10.2
+    }
+  ],
+  "extensions": [
+    {
+      "pocket": "QB",
+      "deck": [
+        15,
+        3.8,
+        7,
+        1.7
+      ],
+      "ramp": [
+        15,
+        5.5,
+        7,
+        3
+      ],
+      "axis": "y",
+      "coping": 5.5,
+      "toe": 8.5,
+      "contours": [
+        6,
+        6.5,
+        7.2,
+        7.9
+      ],
+      "label": "Quarter droit bas après le coin des palmiers"
+    },
+    {
+      "pocket": "QC",
+      "deck": [
+        57.5,
+        14,
+        1.7,
+        5
+      ],
+      "ramp": [
+        54.5,
+        14,
+        3,
+        5
+      ],
+      "axis": "x",
+      "coping": 57.5,
+      "toe": 54.5,
+      "contours": [
+        55.1,
+        55.8,
+        56.5,
+        57
+      ],
+      "label": "Retour latéral côté mer"
+    },
+    {
+      "pocket": "QD",
+      "deck": [
+        42,
+        38.5,
+        7,
+        1.7
+      ],
+      "ramp": [
+        42,
+        35.5,
+        7,
+        3
+      ],
+      "axis": "y",
+      "coping": 38.5,
+      "toe": 35.5,
+      "contours": [
+        36.1,
+        36.8,
+        37.5,
+        38
+      ],
+      "label": "Coping droit relié au grand coin du soleil"
+    }
+  ],
+  "starts": [
+    {
+      "id": "A",
+      "name": "Les Dunes",
+      "point": [
+        19,
+        39.5
+      ],
+      "exit": [
+        19,
+        34.7
+      ],
+      "kind": "Plateforme du coin QA + bank droit"
+    },
+    {
+      "id": "B",
+      "name": "Les Palmiers",
+      "point": [
+        8.28,
+        7.28
+      ],
+      "exit": [
+        11.68,
+        10.68
+      ],
+      "kind": "Plateforme haute du quarter QB"
+    },
+    {
+      "id": "C",
+      "name": "Le Large",
+      "point": [
+        55.72,
+        7.28
+      ],
+      "exit": [
+        52.32,
+        10.68
+      ],
+      "kind": "Plateforme haute du quarter QC"
+    },
+    {
+      "id": "D",
+      "name": "Le Soleil",
+      "point": [
+        55.72,
+        36.72
+      ],
+      "exit": [
+        52.32,
+        33.32
+      ],
+      "kind": "Plateforme haute du quarter QD"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "name": "Le Quai bas",
+      "level": "1–2",
+      "start": "A",
+      "path": "M19 39.5 L19 34.7 C19 31 20.5 29.6 23 29.6 L29.5 29.6 L36 29.6 C39 29.6 40 31.5 43 32 C47 32 52 35 54.5 34 C56 33 54 30.5 50.5 30.5",
+      "events": [
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            43,
+            32
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            54.5,
+            34
+          ],
+          "type": "Air",
+          "place": "Quarter QD"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Le Rail des Palmiers",
+      "level": "1–2",
+      "start": "B",
+      "path": "M8.28 7.28 L11.68 10.68 C16 15 18 17 24 17 L31 17 L38 17 C42 17 45 17.5 47 18.5 C50 17 56 14 54.6 10.3 C53 7.8 50.5 11.2 49.5 13.5",
+      "events": [
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            47,
+            18.5
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            54.6,
+            10.3
+          ],
+          "type": "Air",
+          "place": "Quarter QC"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "La Petite Vague",
+      "level": "1–2",
+      "start": "C",
+      "path": "M55.72 7.28 L52.32 10.68 C49 14 45.5 19 46 24 L44.5 24 L39.5 24 L38 24 C33 24 30 23 27 23 C22 23 19.5 29.6 23 29.6 L29.5 29.6 L36 29.6",
+      "events": [
+        {
+          "point": [
+            44.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank de P"
+        },
+        {
+          "point": [
+            27,
+            23
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "L’Îlot",
+      "level": "1–2",
+      "start": "D",
+      "path": "M55.72 36.72 L52.32 33.32 C49 30 49 24 46 24 L44.5 24 L39.5 24 L38 24 C34 24 32 22 29 22 C25 22 20 25 23 29.6 L29.5 29.6 L36 29.6",
+      "events": [
+        {
+          "point": [
+            44.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank de P"
+        },
+        {
+          "point": [
+            29,
+            22
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Le Double Quai",
+      "level": "3–5",
+      "start": "A",
+      "path": "M19 39.5 L19 34.7 C19 31 20.5 29.6 23 29.6 L29.5 29.6 L36 29.6 C41 29.6 51 24 46 24 L44.5 24 L39.5 24 L38 24 C34 24 31 23 28 23",
+      "events": [
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            44.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank de P"
+        },
+        {
+          "point": [
+            28,
+            23
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Le Retour du Rail",
+      "level": "3–5",
+      "start": "A",
+      "path": "M19 39.5 L19 34.7 C19 29 17 25 18 22 C19 18 21 17 24 17 L31 17 L38 17 C42 17 47 13 53.2 8.4 C55 6 49 6.4 46 11",
+      "events": [
+        {
+          "point": [
+            18,
+            22
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            53.2,
+            8.4
+          ],
+          "type": "Air",
+          "place": "Quarter QC"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Le Virage des Dunes",
+      "level": "3–5",
+      "start": "B",
+      "path": "M8.28 7.28 L11.68 10.68 C9 15 8.2 23 8.2 30 C8.2 33.76 11.24 36.8 15 36.8 C21 36.8 20 29.6 23 29.6 L29.5 29.6 L36 29.6 C42 29.6 51 24 46 24 L44.5 24 L39.5 24 L38 24 C33 24 30 22 27 22",
+      "events": [
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            44.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank de P"
+        },
+        {
+          "point": [
+            27,
+            22
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        }
+      ],
+      "carve": {
+        "point": [
+          10.19,
+          34.81
+        ],
+        "place": "QA"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Le Tour de l’Îlot",
+      "level": "3–5",
+      "start": "B",
+      "path": "M8.28 7.28 L11.68 10.68 C17 16 28 24 38 24 L39.5 24 L44.5 24 L46 24 C51 24 55.8 27 55.8 30 C55.8 33.76 52.76 36.8 49 36.8 C43 36.8 40 29.6 36 29.6 L29.5 29.6 L23 29.6 C20 29.6 20 25 21 23",
+      "events": [
+        {
+          "point": [
+            39.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank de P"
+        },
+        {
+          "point": [
+            29.5,
+            29.6
+          ],
+          "type": "Slide",
+          "place": "Ledge L"
+        },
+        {
+          "point": [
+            21,
+            23
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        }
+      ],
+      "carve": {
+        "point": [
+          53.81,
+          34.81
+        ],
+        "place": "QD"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Le Coping Bleu",
+      "level": "3–5",
+      "start": "C",
+      "path": "M55.72 7.28 L52.32 10.68 C49 14 46 16 43 16 C41 16 40 17 38 17 L31 17 L24 17 C19 17 16 12 10.2 9.2 C7 7.1 7.8 12.5 12 14.5",
+      "events": [
+        {
+          "point": [
+            43,
+            16
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            10.2,
+            9.2
+          ],
+          "type": "Air",
+          "place": "Quarter QB"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Les Embruns",
+      "level": "3–5",
+      "start": "D",
+      "path": "M55.72 36.72 L52.32 33.32 C49 30 49 22.2 46 22.2 L42 22.2 L38 22.2 C34 22.2 32 21 29 21 C23 21 16 12 10.2 9.2 C7 7.1 7.8 12.5 12 14.5",
+      "events": [
+        {
+          "point": [
+            42,
+            22.2
+          ],
+          "type": "Slide",
+          "place": "Bord de P"
+        },
+        {
+          "point": [
+            29,
+            21
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            10.2,
+            9.2
+          ],
+          "type": "Air",
+          "place": "Quarter QB"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "La Grande Traverse",
+      "level": "6",
+      "start": "C",
+      "path": "M55.72 7.28 L52.32 10.68 C48 15 43 17 38 17 L31 17 L24 17 C18 17 8.2 19 8.2 14 C8.2 10.24 11.24 7.2 15 7.2 C21 7.2 23 10 25 12 C29 15 27 22 30 24 C33 24 35 24 38 24 L39.5 24 L46 24",
+      "events": [
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            30,
+            24
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            39.5,
+            24
+          ],
+          "type": "Air",
+          "place": "Bank de P"
+        }
+      ],
+      "carve": {
+        "point": [
+          10.19,
+          9.19
+        ],
+        "place": "QB"
+      }
+    },
+    {
+      "id": 12,
+      "name": "La Boucle du Lagon",
+      "level": "6",
+      "start": "D",
+      "path": "M55.72 36.72 L52.32 33.32 C48 29 46 17 38 17 L31 17 L24 17 C17 17 8.2 19 8.2 14 C8.2 10.24 11.24 7.2 15 7.2 C21 7.2 23 10 25 12 C29 15 28 22 29 24 C30 26 36 27 42 30 C45 32 51 35 54 34 C56 33 54 30.5 50.5 30.5",
+      "events": [
+        {
+          "point": [
+            31,
+            17
+          ],
+          "type": "Slide",
+          "place": "Rail R"
+        },
+        {
+          "point": [
+            29,
+            24
+          ],
+          "type": "Kick",
+          "place": "Flat"
+        },
+        {
+          "point": [
+            54,
+            34
+          ],
+          "type": "Air",
+          "place": "Quarter QD"
+        }
+      ],
+      "carve": {
+        "point": [
+          10.19,
+          9.19
+        ],
+        "place": "QB"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "South Padre Island · Spohn Ranch",
+      "url": "https://www.spohnranch.com/spohn-ranch-completes-construction-of-south-padre-island-skatepark-2021-05-24/",
+      "principle": "Transitions et bowl débutant autour d’un centre avec manual pads et rail bas."
+    },
+    {
+      "name": "Crowley Lake · Spohn Ranch",
+      "url": "https://www.spohnranch.com/crowley-lake-skatepark-charges-ahead-2017-10-16/",
+      "principle": "Quarterpipes et parois arrondies en périphérie pour conserver le mouvement."
+    },
+    {
+      "name": "Queensborough · New Line",
+      "url": "https://www.newlineskateparks.com/project/queensborough-skatepark/",
+      "principle": "Terrain organique mêlant plans inclinés, quarterpipes et sections de bowl."
+    }
+  ],
+  "sharedElements": [
+    {
+      "id": "R",
+      "name": "Rail bas",
+      "box": [
+        24,
+        17,
+        14,
+        0
+      ]
+    },
+    {
+      "id": "L",
+      "name": "Ledge long",
+      "box": [
+        23,
+        29,
+        13,
+        1.2
+      ]
+    },
+    {
+      "id": "P",
+      "name": "Îlot bank-to-bank",
+      "box": [
+        38,
+        22,
+        8,
+        4
+      ]
+    }
+  ],
+  "distribution": {
+    "6": 2,
+    "1–2": 4,
+    "3–5": 6
+  },
+  "routeMeaning": "Lignes alternatives, pas des pistes simultanées. La descente initiale donne de l’élan. Les points 1–3 montrent trois possibilités de tricks ; V désigne un virage pompé, sans trick supplémentaire. Les exemples ne changent pas les règles.",
+  "designMeaning": "Quatre quarterpipes de coin concaves vers le centre et prolongés différemment : bank en A, quarter droit en B, retour latéral en C, coping long en D. Trois équipements centraux. Les hauteurs sont qualitatives ; dessin schématique sans échelle de construction."
+}

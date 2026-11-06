@@ -1,0 +1,1468 @@
+{
+  "build": "0.5.1",
+  "date": "2026-11-02",
+  "games": 1600,
+  "attempts": 76800,
+  "modules": 9600,
+  "checks": 248336,
+  "replayGames": 400,
+  "tests": 228,
+  "scenarios": {
+    "normal": {
+      "before": {
+        "build": "0.5.0",
+        "games": 400,
+        "checks": 65591,
+        "attempts": 19200,
+        "score": 10.6903125,
+        "falls": 0.14432291666666666,
+        "three": 0.3465625,
+        "scoreCI": {
+          "mean": 10.6903125,
+          "low": 10.557984002720055,
+          "high": 10.822640997279944,
+          "seeds": 100
+        },
+        "tokens": {
+          "gained": 18.168125,
+          "spent": 14.91125,
+          "remaining": 6.256875,
+          "byType": {
+            "adjust": {
+              "gained": 5.315625,
+              "spent": 5.186875,
+              "remaining": 1.12875
+            },
+            "reroll": {
+              "gained": 6.145625,
+              "spent": 3.6525,
+              "remaining": 3.493125
+            },
+            "freeze": {
+              "gained": 6.706875,
+              "spent": 6.071875,
+              "remaining": 1.635
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 1600,
+          "epics": 0,
+          "rate": 0
+        },
+        "fourDice": {
+          "rolled": 0,
+          "landed": 0,
+          "banked": 0,
+          "printedBanked": 0,
+          "pointsBanked": 0,
+          "drafted": 0
+        },
+        "openingFour": {
+          "attempts": 0,
+          "score": null,
+          "falls": null,
+          "three": null
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.16732638888888873
+          },
+          {
+            "position": 2,
+            "credit": 0.21503472222222206
+          },
+          {
+            "position": 3,
+            "credit": 0.28309027777777773
+          },
+          {
+            "position": 4,
+            "credit": 0.3345486111111114
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 9600,
+            "score": 11.086770833333333,
+            "falls": 0.03135416666666667,
+            "three": 0.39729166666666665
+          },
+          {
+            "attempts": 9600,
+            "score": 10.293854166666666,
+            "falls": 0.25729166666666664,
+            "three": 0.29583333333333334
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 3200,
+            "score": 9.4571875,
+            "falls": 0.219375,
+            "three": 0.294375
+          },
+          {
+            "round": 2,
+            "attempts": 3200,
+            "score": 10.150625,
+            "falls": 0.1703125,
+            "three": 0.38625
+          },
+          {
+            "round": 3,
+            "attempts": 3200,
+            "score": 10.0390625,
+            "falls": 0.15125,
+            "three": 0.35125
+          },
+          {
+            "round": 4,
+            "attempts": 3200,
+            "score": 10.71,
+            "falls": 0.1278125,
+            "three": 0.3946875
+          },
+          {
+            "round": 5,
+            "attempts": 3200,
+            "score": 11.2334375,
+            "falls": 0.1028125,
+            "three": 0.4009375
+          },
+          {
+            "round": 6,
+            "attempts": 3200,
+            "score": 12.5515625,
+            "falls": 0.094375,
+            "three": 0.251875
+          }
+        ],
+        "policies": {
+          "normal": {
+            "appearances": 1600,
+            "credit": 0.24999999999999992,
+            "attempts": 19200,
+            "score": 10.6903125,
+            "falls": 0.14432291666666666,
+            "three": 0.3465625
+          }
+        }
+      },
+      "after": {
+        "build": "0.5.1",
+        "games": 400,
+        "checks": 62303,
+        "attempts": 19200,
+        "score": 10.84765625,
+        "falls": 0.20984375,
+        "three": 0.27828125,
+        "scoreCI": {
+          "mean": 10.847656249999998,
+          "low": 10.709810353644773,
+          "high": 10.985502146355223,
+          "seeds": 100
+        },
+        "tokens": {
+          "gained": 16.753125,
+          "spent": 15.838125,
+          "remaining": 3.915,
+          "byType": {
+            "adjust": {
+              "gained": 4.921875,
+              "spent": 5.289375,
+              "remaining": 0.6325
+            },
+            "reroll": {
+              "gained": 5.88375,
+              "spent": 4.643125,
+              "remaining": 2.240625
+            },
+            "freeze": {
+              "gained": 5.9475,
+              "spent": 5.905625,
+              "remaining": 1.041875
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 1600,
+          "epics": 819,
+          "rate": 0.511875
+        },
+        "fourDice": {
+          "rolled": 292,
+          "landed": 239,
+          "banked": 214,
+          "printedBanked": 3538,
+          "pointsBanked": 3738,
+          "drafted": 415
+        },
+        "openingFour": {
+          "attempts": 267,
+          "score": 16.40074906367041,
+          "falls": 0.250936329588015,
+          "three": 0,
+          "scoreCI": {
+            "mean": 16.40074906367041,
+            "low": 14.963674030780286,
+            "high": 17.837824096560535,
+            "seeds": 95
+          }
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.21201388888888845
+          },
+          {
+            "position": 2,
+            "credit": 0.22965277777777762
+          },
+          {
+            "position": 3,
+            "credit": 0.25520833333333326
+          },
+          {
+            "position": 4,
+            "credit": 0.3031250000000003
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 9600,
+            "score": 13.58625,
+            "falls": 0.093125,
+            "three": 0.3046875
+          },
+          {
+            "attempts": 9600,
+            "score": 8.1090625,
+            "falls": 0.3265625,
+            "three": 0.251875
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 3200,
+            "score": 9.6753125,
+            "falls": 0.2625,
+            "three": 0.25625
+          },
+          {
+            "round": 2,
+            "attempts": 3200,
+            "score": 10.2040625,
+            "falls": 0.2278125,
+            "three": 0.3365625
+          },
+          {
+            "round": 3,
+            "attempts": 3200,
+            "score": 10.359375,
+            "falls": 0.2115625,
+            "three": 0.305625
+          },
+          {
+            "round": 4,
+            "attempts": 3200,
+            "score": 11.1203125,
+            "falls": 0.193125,
+            "three": 0.3396875
+          },
+          {
+            "round": 5,
+            "attempts": 3200,
+            "score": 11.5940625,
+            "falls": 0.1778125,
+            "three": 0.336875
+          },
+          {
+            "round": 6,
+            "attempts": 3200,
+            "score": 12.1328125,
+            "falls": 0.18625,
+            "three": 0.0946875
+          }
+        ],
+        "policies": {
+          "normal": {
+            "appearances": 1600,
+            "credit": 0.24999999999999992,
+            "attempts": 19200,
+            "score": 10.84765625,
+            "falls": 0.20984375,
+            "three": 0.27828125
+          }
+        }
+      }
+    },
+    "easy": {
+      "before": {
+        "build": "0.5.0",
+        "games": 200,
+        "checks": 31244,
+        "attempts": 9600,
+        "score": 9.711979166666667,
+        "falls": 0.10322916666666666,
+        "three": 0.26989583333333333,
+        "scoreCI": {
+          "mean": 9.71197916666667,
+          "low": 9.552739161610841,
+          "high": 9.871219171722498,
+          "seeds": 50
+        },
+        "tokens": {
+          "gained": 16.5725,
+          "spent": 11.41125,
+          "remaining": 8.16125,
+          "byType": {
+            "adjust": {
+              "gained": 5.6175,
+              "spent": 4.9825,
+              "remaining": 1.635
+            },
+            "reroll": {
+              "gained": 5.4225,
+              "spent": 2.43,
+              "remaining": 3.9925
+            },
+            "freeze": {
+              "gained": 5.5325,
+              "spent": 3.99875,
+              "remaining": 2.53375
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 800,
+          "epics": 0,
+          "rate": 0
+        },
+        "fourDice": {
+          "rolled": 0,
+          "landed": 0,
+          "banked": 0,
+          "printedBanked": 0,
+          "pointsBanked": 0,
+          "drafted": 0
+        },
+        "openingFour": {
+          "attempts": 0,
+          "score": null,
+          "falls": null,
+          "three": null
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.22437500000000019
+          },
+          {
+            "position": 2,
+            "credit": 0.25534722222222217
+          },
+          {
+            "position": 3,
+            "credit": 0.23423611111111123
+          },
+          {
+            "position": 4,
+            "credit": 0.2860416666666664
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 4800,
+            "score": 11.401875,
+            "falls": 0.024166666666666666,
+            "three": 0.326875
+          },
+          {
+            "attempts": 4800,
+            "score": 8.022083333333333,
+            "falls": 0.18229166666666666,
+            "three": 0.21291666666666667
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 1600,
+            "score": 8.4175,
+            "falls": 0.16625,
+            "three": 0.18625
+          },
+          {
+            "round": 2,
+            "attempts": 1600,
+            "score": 8.925625,
+            "falls": 0.1325,
+            "three": 0.25125
+          },
+          {
+            "round": 3,
+            "attempts": 1600,
+            "score": 9.57125,
+            "falls": 0.118125,
+            "three": 0.3
+          },
+          {
+            "round": 4,
+            "attempts": 1600,
+            "score": 10.5925,
+            "falls": 0.09125,
+            "three": 0.403125
+          },
+          {
+            "round": 5,
+            "attempts": 1600,
+            "score": 11.01625,
+            "falls": 0.073125,
+            "three": 0.380625
+          },
+          {
+            "round": 6,
+            "attempts": 1600,
+            "score": 9.74875,
+            "falls": 0.038125,
+            "three": 0.098125
+          }
+        ],
+        "policies": {
+          "easy": {
+            "appearances": 800,
+            "credit": 0.25,
+            "attempts": 9600,
+            "score": 9.711979166666667,
+            "falls": 0.10322916666666666,
+            "three": 0.26989583333333333
+          }
+        }
+      },
+      "after": {
+        "build": "0.5.1",
+        "games": 200,
+        "checks": 31101,
+        "attempts": 9600,
+        "score": 10.019375,
+        "falls": 0.13177083333333334,
+        "three": 0.2746875,
+        "scoreCI": {
+          "mean": 10.019374999999998,
+          "low": 9.86716412705148,
+          "high": 10.171585872948517,
+          "seeds": 50
+        },
+        "tokens": {
+          "gained": 16.555,
+          "spent": 13.2475,
+          "remaining": 6.3075,
+          "byType": {
+            "adjust": {
+              "gained": 5.49875,
+              "spent": 5.42625,
+              "remaining": 1.0725
+            },
+            "reroll": {
+              "gained": 5.47375,
+              "spent": 3.11,
+              "remaining": 3.36375
+            },
+            "freeze": {
+              "gained": 5.5825,
+              "spent": 4.71125,
+              "remaining": 1.87125
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 800,
+          "epics": 379,
+          "rate": 0.47375
+        },
+        "fourDice": {
+          "rolled": 122,
+          "landed": 112,
+          "banked": 107,
+          "printedBanked": 1754,
+          "pointsBanked": 1870,
+          "drafted": 193
+        },
+        "openingFour": {
+          "attempts": 117,
+          "score": 18.22222222222222,
+          "falls": 0.10256410256410256,
+          "three": 0
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.2450000000000001
+          },
+          {
+            "position": 2,
+            "credit": 0.22347222222222232
+          },
+          {
+            "position": 3,
+            "credit": 0.24263888888888896
+          },
+          {
+            "position": 4,
+            "credit": 0.28888888888888875
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 4800,
+            "score": 12.66125,
+            "falls": 0.05291666666666667,
+            "three": 0.3329166666666667
+          },
+          {
+            "attempts": 4800,
+            "score": 7.3775,
+            "falls": 0.210625,
+            "three": 0.21645833333333334
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 1600,
+            "score": 8.705,
+            "falls": 0.186875,
+            "three": 0.21625
+          },
+          {
+            "round": 2,
+            "attempts": 1600,
+            "score": 9.029375,
+            "falls": 0.160625,
+            "three": 0.299375
+          },
+          {
+            "round": 3,
+            "attempts": 1600,
+            "score": 9.57,
+            "falls": 0.150625,
+            "three": 0.305
+          },
+          {
+            "round": 4,
+            "attempts": 1600,
+            "score": 10.55,
+            "falls": 0.11875,
+            "three": 0.383125
+          },
+          {
+            "round": 5,
+            "attempts": 1600,
+            "score": 11.235,
+            "falls": 0.1,
+            "three": 0.36125
+          },
+          {
+            "round": 6,
+            "attempts": 1600,
+            "score": 11.026875,
+            "falls": 0.07375,
+            "three": 0.083125
+          }
+        ],
+        "policies": {
+          "easy": {
+            "appearances": 800,
+            "credit": 0.25,
+            "attempts": 9600,
+            "score": 10.019375,
+            "falls": 0.13177083333333334,
+            "three": 0.2746875
+          }
+        }
+      }
+    },
+    "expert": {
+      "before": {
+        "build": "0.5.0",
+        "games": 200,
+        "checks": 32555,
+        "attempts": 9600,
+        "score": 12.357916666666666,
+        "falls": 0.13239583333333332,
+        "three": 0.3278125,
+        "scoreCI": {
+          "mean": 12.357916666666664,
+          "low": 12.151030493751396,
+          "high": 12.564802839581933,
+          "seeds": 50
+        },
+        "tokens": {
+          "gained": 21.4375,
+          "spent": 16.58625,
+          "remaining": 7.85125,
+          "byType": {
+            "adjust": {
+              "gained": 6.4075,
+              "spent": 5.95625,
+              "remaining": 1.45125
+            },
+            "reroll": {
+              "gained": 7.585,
+              "spent": 4.16125,
+              "remaining": 4.42375
+            },
+            "freeze": {
+              "gained": 7.445,
+              "spent": 6.46875,
+              "remaining": 1.97625
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 800,
+          "epics": 0,
+          "rate": 0
+        },
+        "fourDice": {
+          "rolled": 0,
+          "landed": 0,
+          "banked": 0,
+          "printedBanked": 0,
+          "pointsBanked": 0,
+          "drafted": 0
+        },
+        "openingFour": {
+          "attempts": 0,
+          "score": null,
+          "falls": null,
+          "three": null
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.2117361111111112
+          },
+          {
+            "position": 2,
+            "credit": 0.1878472222222223
+          },
+          {
+            "position": 3,
+            "credit": 0.26076388888888896
+          },
+          {
+            "position": 4,
+            "credit": 0.3396527777777775
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 4800,
+            "score": 13.686458333333333,
+            "falls": 0.06354166666666666,
+            "three": 0.37083333333333335
+          },
+          {
+            "attempts": 4800,
+            "score": 11.029375,
+            "falls": 0.20125,
+            "three": 0.28479166666666667
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 1600,
+            "score": 10.759375,
+            "falls": 0.2225,
+            "three": 0.190625
+          },
+          {
+            "round": 2,
+            "attempts": 1600,
+            "score": 11.53,
+            "falls": 0.175,
+            "three": 0.319375
+          },
+          {
+            "round": 3,
+            "attempts": 1600,
+            "score": 11.703125,
+            "falls": 0.125625,
+            "three": 0.315
+          },
+          {
+            "round": 4,
+            "attempts": 1600,
+            "score": 12.578125,
+            "falls": 0.101875,
+            "three": 0.431875
+          },
+          {
+            "round": 5,
+            "attempts": 1600,
+            "score": 13.1075,
+            "falls": 0.083125,
+            "three": 0.455
+          },
+          {
+            "round": 6,
+            "attempts": 1600,
+            "score": 14.469375,
+            "falls": 0.08625,
+            "three": 0.255
+          }
+        ],
+        "policies": {
+          "expert": {
+            "appearances": 800,
+            "credit": 0.25,
+            "attempts": 9600,
+            "score": 12.357916666666666,
+            "falls": 0.13239583333333332,
+            "three": 0.3278125
+          }
+        }
+      },
+      "after": {
+        "build": "0.5.1",
+        "games": 200,
+        "checks": 30691,
+        "attempts": 9600,
+        "score": 11.895416666666666,
+        "falls": 0.2015625,
+        "three": 0.2632291666666667,
+        "scoreCI": {
+          "mean": 11.895416666666662,
+          "low": 11.639248757390062,
+          "high": 12.151584575943263,
+          "seeds": 50
+        },
+        "tokens": {
+          "gained": 17.03625,
+          "spent": 15.97625,
+          "remaining": 4.06,
+          "byType": {
+            "adjust": {
+              "gained": 5.505,
+              "spent": 5.7125,
+              "remaining": 0.7925
+            },
+            "reroll": {
+              "gained": 6.12625,
+              "spent": 4.71125,
+              "remaining": 2.415
+            },
+            "freeze": {
+              "gained": 5.405,
+              "spent": 5.5525,
+              "remaining": 0.8525
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 800,
+          "epics": 526,
+          "rate": 0.6575
+        },
+        "fourDice": {
+          "rolled": 167,
+          "landed": 131,
+          "banked": 103,
+          "printedBanked": 1704,
+          "pointsBanked": 1828,
+          "drafted": 281
+        },
+        "openingFour": {
+          "attempts": 163,
+          "score": 14.717791411042946,
+          "falls": 0.37423312883435583,
+          "three": 0
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.23583333333333356
+          },
+          {
+            "position": 2,
+            "credit": 0.23569444444444468
+          },
+          {
+            "position": 3,
+            "credit": 0.26888888888888873
+          },
+          {
+            "position": 4,
+            "credit": 0.2595833333333333
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 4800,
+            "score": 15.021041666666667,
+            "falls": 0.0925,
+            "three": 0.35333333333333333
+          },
+          {
+            "attempts": 4800,
+            "score": 8.769791666666666,
+            "falls": 0.310625,
+            "three": 0.173125
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 1600,
+            "score": 10.779375,
+            "falls": 0.236875,
+            "three": 0.175625
+          },
+          {
+            "round": 2,
+            "attempts": 1600,
+            "score": 10.848125,
+            "falls": 0.2325,
+            "three": 0.273125
+          },
+          {
+            "round": 3,
+            "attempts": 1600,
+            "score": 11.25,
+            "falls": 0.21,
+            "three": 0.255625
+          },
+          {
+            "round": 4,
+            "attempts": 1600,
+            "score": 12.33125,
+            "falls": 0.179375,
+            "three": 0.3575
+          },
+          {
+            "round": 5,
+            "attempts": 1600,
+            "score": 12.76625,
+            "falls": 0.166875,
+            "three": 0.3675
+          },
+          {
+            "round": 6,
+            "attempts": 1600,
+            "score": 13.3975,
+            "falls": 0.18375,
+            "three": 0.15
+          }
+        ],
+        "policies": {
+          "expert": {
+            "appearances": 800,
+            "credit": 0.25,
+            "attempts": 9600,
+            "score": 11.895416666666666,
+            "falls": 0.2015625,
+            "three": 0.2632291666666667
+          }
+        }
+      }
+    },
+    "mixed": {
+      "before": {
+        "build": "0.5.0",
+        "games": 400,
+        "checks": 64749,
+        "attempts": 19200,
+        "score": 10.89421875,
+        "falls": 0.12489583333333333,
+        "three": 0.3215625,
+        "scoreCI": {
+          "mean": 10.89421875,
+          "low": 10.774420515310668,
+          "high": 11.014016984689333,
+          "seeds": 100
+        },
+        "tokens": {
+          "gained": 18.72,
+          "spent": 14.5575,
+          "remaining": 7.1625,
+          "byType": {
+            "adjust": {
+              "gained": 5.778125,
+              "spent": 5.44625,
+              "remaining": 1.331875
+            },
+            "reroll": {
+              "gained": 6.486875,
+              "spent": 3.561875,
+              "remaining": 3.925
+            },
+            "freeze": {
+              "gained": 6.455,
+              "spent": 5.549375,
+              "remaining": 1.905625
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 1600,
+          "epics": 0,
+          "rate": 0
+        },
+        "fourDice": {
+          "rolled": 0,
+          "landed": 0,
+          "banked": 0,
+          "printedBanked": 0,
+          "pointsBanked": 0,
+          "drafted": 0
+        },
+        "openingFour": {
+          "attempts": 0,
+          "score": null,
+          "falls": null,
+          "three": null
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.17805555555555538
+          },
+          {
+            "position": 2,
+            "credit": 0.21194444444444424
+          },
+          {
+            "position": 3,
+            "credit": 0.28937500000000005
+          },
+          {
+            "position": 4,
+            "credit": 0.32062500000000027
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 9600,
+            "score": 11.7434375,
+            "falls": 0.0334375,
+            "three": 0.3678125
+          },
+          {
+            "attempts": 9600,
+            "score": 10.045,
+            "falls": 0.21635416666666665,
+            "three": 0.2753125
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 3200,
+            "score": 9.5434375,
+            "falls": 0.1934375,
+            "three": 0.2396875
+          },
+          {
+            "round": 2,
+            "attempts": 3200,
+            "score": 10.140625,
+            "falls": 0.1528125,
+            "three": 0.3390625
+          },
+          {
+            "round": 3,
+            "attempts": 3200,
+            "score": 10.3240625,
+            "falls": 0.1371875,
+            "three": 0.3325
+          },
+          {
+            "round": 4,
+            "attempts": 3200,
+            "score": 11.1215625,
+            "falls": 0.1090625,
+            "three": 0.39125
+          },
+          {
+            "round": 5,
+            "attempts": 3200,
+            "score": 11.7840625,
+            "falls": 0.083125,
+            "three": 0.4109375
+          },
+          {
+            "round": 6,
+            "attempts": 3200,
+            "score": 12.4515625,
+            "falls": 0.07375,
+            "three": 0.2159375
+          }
+        ],
+        "policies": {
+          "normal": {
+            "appearances": 800,
+            "credit": 0.168125,
+            "attempts": 9600,
+            "score": 10.635520833333333,
+            "falls": 0.14708333333333334,
+            "three": 0.36614583333333334
+          },
+          "expert": {
+            "appearances": 400,
+            "credit": 0.6425,
+            "attempts": 4800,
+            "score": 12.776666666666667,
+            "falls": 0.10729166666666666,
+            "three": 0.27208333333333334
+          },
+          "easy": {
+            "appearances": 400,
+            "credit": 0.02125,
+            "attempts": 4800,
+            "score": 9.529166666666667,
+            "falls": 0.098125,
+            "three": 0.281875
+          }
+        }
+      },
+      "after": {
+        "build": "0.5.1",
+        "games": 400,
+        "checks": 61965,
+        "attempts": 19200,
+        "score": 10.861510416666667,
+        "falls": 0.18776041666666668,
+        "three": 0.2722395833333333,
+        "scoreCI": {
+          "mean": 10.861510416666668,
+          "low": 10.70434605766072,
+          "high": 11.018674775672617,
+          "seeds": 100
+        },
+        "tokens": {
+          "gained": 16.65,
+          "spent": 15.18125,
+          "remaining": 4.46875,
+          "byType": {
+            "adjust": {
+              "gained": 5.13,
+              "spent": 5.381875,
+              "remaining": 0.748125
+            },
+            "reroll": {
+              "gained": 5.900625,
+              "spent": 4.344375,
+              "remaining": 2.55625
+            },
+            "freeze": {
+              "gained": 5.619375,
+              "spent": 5.455,
+              "remaining": 1.164375
+            }
+          }
+        },
+        "epicDraft": {
+          "picks": 1600,
+          "epics": 902,
+          "rate": 0.56375
+        },
+        "fourDice": {
+          "rolled": 297,
+          "landed": 257,
+          "banked": 225,
+          "printedBanked": 3694,
+          "pointsBanked": 3930,
+          "drafted": 464
+        },
+        "openingFour": {
+          "attempts": 277,
+          "score": 16.548736462093864,
+          "falls": 0.23826714801444043,
+          "three": 0
+        },
+        "order": [
+          {
+            "position": 1,
+            "credit": 0.22895833333333324
+          },
+          {
+            "position": 2,
+            "credit": 0.23902777777777762
+          },
+          {
+            "position": 3,
+            "credit": 0.24826388888888887
+          },
+          {
+            "position": 4,
+            "credit": 0.28375000000000017
+          }
+        ],
+        "attemptRounds": [
+          {
+            "attempts": 9600,
+            "score": 13.638854166666667,
+            "falls": 0.07760416666666667,
+            "three": 0.3246875
+          },
+          {
+            "attempts": 9600,
+            "score": 8.084166666666667,
+            "falls": 0.29791666666666666,
+            "three": 0.21979166666666666
+          }
+        ],
+        "rounds": [
+          {
+            "round": 1,
+            "attempts": 3200,
+            "score": 9.726875,
+            "falls": 0.231875,
+            "three": 0.231875
+          },
+          {
+            "round": 2,
+            "attempts": 3200,
+            "score": 10.14375,
+            "falls": 0.1965625,
+            "three": 0.31
+          },
+          {
+            "round": 3,
+            "attempts": 3200,
+            "score": 10.2465625,
+            "falls": 0.2040625,
+            "three": 0.3046875
+          },
+          {
+            "round": 4,
+            "attempts": 3200,
+            "score": 11.140625,
+            "falls": 0.1721875,
+            "three": 0.3384375
+          },
+          {
+            "round": 5,
+            "attempts": 3200,
+            "score": 11.708125,
+            "falls": 0.15625,
+            "three": 0.344375
+          },
+          {
+            "round": 6,
+            "attempts": 3200,
+            "score": 12.203125,
+            "falls": 0.165625,
+            "three": 0.1040625
+          }
+        ],
+        "policies": {
+          "normal": {
+            "appearances": 800,
+            "credit": 0.1833333333333333,
+            "attempts": 9600,
+            "score": 10.823125,
+            "falls": 0.20833333333333334,
+            "three": 0.27541666666666664
+          },
+          "expert": {
+            "appearances": 400,
+            "credit": 0.6062500000000001,
+            "attempts": 4800,
+            "score": 11.781666666666666,
+            "falls": 0.23208333333333334,
+            "three": 0.22229166666666667
+          },
+          "easy": {
+            "appearances": 400,
+            "credit": 0.027083333333333334,
+            "attempts": 4800,
+            "score": 10.018125,
+            "falls": 0.10229166666666667,
+            "three": 0.31583333333333335
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "normal": {
+      "score": {
+        "mean": 0.15734374999999998,
+        "low": 0.010768883833994297,
+        "high": 0.3039186161660057,
+        "seeds": 100
+      },
+      "falls": {
+        "mean": 0.06552083333333332,
+        "low": 0.05581709855300937,
+        "high": 0.07522456811365727,
+        "seeds": 100
+      },
+      "three": {
+        "mean": -0.06828124999999999,
+        "low": -0.08246626057949169,
+        "high": -0.05409623942050828,
+        "seeds": 100
+      },
+      "remaining": {
+        "mean": -2.341875,
+        "low": -2.619441098445146,
+        "high": -2.064308901554854,
+        "seeds": 100
+      }
+    },
+    "easy": {
+      "score": {
+        "mean": 0.3073958333333334,
+        "low": 0.12259735835199362,
+        "high": 0.49219430831467326,
+        "seeds": 50
+      },
+      "falls": {
+        "mean": 0.028541666666666653,
+        "low": 0.016035410770381495,
+        "high": 0.04104792256295181,
+        "seeds": 50
+      },
+      "three": {
+        "mean": 0.004791666666666665,
+        "low": -0.011417732893095254,
+        "high": 0.021001066226428586,
+        "seeds": 50
+      },
+      "remaining": {
+        "mean": -1.85375,
+        "low": -2.2482876098386164,
+        "high": -1.4592123901613836,
+        "seeds": 50
+      }
+    },
+    "expert": {
+      "score": {
+        "mean": -0.4624999999999998,
+        "low": -0.7176986980731799,
+        "high": -0.20730130192681967,
+        "seeds": 50
+      },
+      "falls": {
+        "mean": 0.06916666666666664,
+        "low": 0.0525506254877965,
+        "high": 0.08578270784553678,
+        "seeds": 50
+      },
+      "three": {
+        "mean": -0.06458333333333333,
+        "low": -0.08741953197215419,
+        "high": -0.04174713469451247,
+        "seeds": 50
+      },
+      "remaining": {
+        "mean": -3.79125,
+        "low": -4.295229811486374,
+        "high": -3.287270188513625,
+        "seeds": 50
+      }
+    },
+    "mixed": {
+      "score": {
+        "mean": -0.032708333333333305,
+        "low": -0.1838415752421753,
+        "high": 0.11842490857550866,
+        "seeds": 100
+      },
+      "falls": {
+        "mean": 0.06286458333333335,
+        "low": 0.053953391546751765,
+        "high": 0.07177577511991493,
+        "seeds": 100
+      },
+      "three": {
+        "mean": -0.04932291666666667,
+        "low": -0.06097905935151582,
+        "high": -0.03766677398181752,
+        "seeds": 100
+      },
+      "remaining": {
+        "mean": -2.69375,
+        "low": -2.926231002590871,
+        "high": -2.461268997409129,
+        "seeds": 100
+      }
+    }
+  },
+  "unchangedRules": true,
+  "holdout": {
+    "build": "0.5.1",
+    "games": 400,
+    "checks": 62276,
+    "attempts": 19200,
+    "score": 10.787083333333333,
+    "falls": 0.21322916666666666,
+    "three": 0.28010416666666665,
+    "scoreCI": {
+      "mean": 10.78708333333333,
+      "low": 10.624017929361136,
+      "high": 10.950148737305524,
+      "seeds": 100
+    },
+    "tokens": {
+      "gained": 16.574375,
+      "spent": 15.64625,
+      "remaining": 3.928125,
+      "byType": {
+        "adjust": {
+          "gained": 4.758125,
+          "spent": 5.153125,
+          "remaining": 0.605
+        },
+        "reroll": {
+          "gained": 5.9925,
+          "spent": 4.691875,
+          "remaining": 2.300625
+        },
+        "freeze": {
+          "gained": 5.82375,
+          "spent": 5.80125,
+          "remaining": 1.0225
+        }
+      }
+    },
+    "epicDraft": {
+      "picks": 1600,
+      "epics": 851,
+      "rate": 0.531875
+    },
+    "fourDice": {
+      "rolled": 325,
+      "landed": 284,
+      "banked": 241,
+      "printedBanked": 3986,
+      "pointsBanked": 4168,
+      "drafted": 437
+    },
+    "openingFour": {
+      "attempts": 304,
+      "score": 16.17105263157895,
+      "falls": 0.24342105263157895,
+      "three": 0,
+      "scoreCI": {
+        "mean": 16.17105263157895,
+        "low": 14.965995953621748,
+        "high": 17.376109309536147,
+        "seeds": 97
+      }
+    },
+    "order": [
+      {
+        "position": 1,
+        "credit": 0.22249999999999975
+      },
+      {
+        "position": 2,
+        "credit": 0.21451388888888853
+      },
+      {
+        "position": 3,
+        "credit": 0.2609722222222222
+      },
+      {
+        "position": 4,
+        "credit": 0.3020138888888891
+      }
+    ],
+    "attemptRounds": [
+      {
+        "attempts": 9600,
+        "score": 13.473333333333333,
+        "falls": 0.09770833333333333,
+        "three": 0.3071875
+      },
+      {
+        "attempts": 9600,
+        "score": 8.100833333333334,
+        "falls": 0.32875,
+        "three": 0.2530208333333333
+      }
+    ],
+    "rounds": [
+      {
+        "round": 1,
+        "attempts": 3200,
+        "score": 9.7590625,
+        "falls": 0.25875,
+        "three": 0.25
+      },
+      {
+        "round": 2,
+        "attempts": 3200,
+        "score": 10.12625,
+        "falls": 0.235625,
+        "three": 0.346875
+      },
+      {
+        "round": 3,
+        "attempts": 3200,
+        "score": 10.2953125,
+        "falls": 0.2271875,
+        "three": 0.3215625
+      },
+      {
+        "round": 4,
+        "attempts": 3200,
+        "score": 10.9990625,
+        "falls": 0.198125,
+        "three": 0.3140625
+      },
+      {
+        "round": 5,
+        "attempts": 3200,
+        "score": 11.5246875,
+        "falls": 0.178125,
+        "three": 0.3415625
+      },
+      {
+        "round": 6,
+        "attempts": 3200,
+        "score": 12.018125,
+        "falls": 0.1815625,
+        "three": 0.1065625
+      }
+    ],
+    "policies": {
+      "normal": {
+        "appearances": 1600,
+        "credit": 0.25,
+        "attempts": 19200,
+        "score": 10.787083333333333,
+        "falls": 0.21322916666666666,
+        "three": 0.28010416666666665
+      }
+    }
+  },
+  "method": {
+    "pairedGames": 1200,
+    "freshNormalGames": 400,
+    "pilotGamesExcluded": 200,
+    "seedScheme": "mix32(580500 + baseIndex), four cyclic first-player rotations; matched seeds 0–99 (50 for easy/expert), holdout 100–199",
+    "replay": "400 Normal games repeated: all recorded game statistics, decision counts and totals identical. Replays excluded from sample size.",
+    "confidence": "Approximate 95% paired confidence intervals, four rotations clustered by independent seed.",
+    "limits": [
+      "Public opponent-strength estimates are heuristic, not exact probabilities of winning.",
+      "Same seed, route, roles and initial order; later decisions and random draws diverge.",
+      "Card selection and dice-cost comparisons remain conditional on the policy.",
+      "Results describe NPCs, not win rates against humans."
+    ],
+    "sourceChanges": [
+      "package.json",
+      "public/npc-strategy.js",
+      "public/release-notes.js"
+    ]
+  }
+}

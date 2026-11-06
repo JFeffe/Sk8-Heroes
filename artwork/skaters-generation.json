@@ -1,0 +1,59 @@
+{
+  "mode": "built-in image_gen",
+  "specs": [
+    {
+      "id": "neo",
+      "name": "Néo",
+      "look": "young adult man with warm olive skin, wavy dark hair under a COBALT BLUE beanie, cobalt blue lightweight varsity jacket over cream tee, loose dark denim, blue skate sneakers, relaxed confident smile",
+      "color": "cobalt blue",
+      "prompt": "Use case: illustration-story. Asset type: selectable skater portrait for the board game Sk8 Heroes, Lagoon Park. One single portrait of young adult man with warm olive skin, wavy dark hair under a COBALT BLUE beanie, cobalt blue lightweight varsity jacket over cream tee, loose dark denim, blue skate sneakers, relaxed confident smile. Dominant identity color: cobalt blue, unmistakably visible on clothes and accessories. Clean polished hand-painted comic illustration, bold navy contours, subtle paper grain, saturated sunny colors, same tropical skatepark board-game aesthetic as cream/navy/turquoise/orange illustrated skate trick cards. Three-quarter standing view from knees upward, centered with the head in the upper third, holding one skateboard vertically at the side, two trucks and exactly four wheels. Tropical skatepark, palms, turquoise ocean and distant mountains behind, softly detailed so the character remains focal. Portrait 2:3 composition, fully visible face and hat with generous safe margins, friendly individual personality. No card frame, no typography, no letters, no logos, no watermark. No extra people, no dice, no duplicate limbs or wheels.",
+      "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-91e9ca31-df89-4a63-8d23-bc9103bbd200.png",
+      "output": "public/assets/skaters/neo.webp"
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "look": "young adult Black woman with a short natural afro and a red hairband, vivid RED bomber jacket and red graphic-free tee, charcoal wide-leg trousers and red skate sneakers, playful confident smile",
+      "color": "red",
+      "prompt": "Use case: illustration-story. Asset type: selectable skater portrait for the board game Sk8 Heroes, Lagoon Park. One single portrait of young adult Black woman with a short natural afro and a red hairband, vivid RED bomber jacket and red graphic-free tee, charcoal wide-leg trousers and red skate sneakers, playful confident smile. Dominant identity color: red, unmistakably visible on clothes and accessories. Clean polished hand-painted comic illustration, bold navy contours, subtle paper grain, saturated sunny colors, same tropical skatepark board-game aesthetic as cream/navy/turquoise/orange illustrated skate trick cards. Three-quarter standing view from knees upward, centered with the head in the upper third, holding one skateboard vertically at the side, two trucks and exactly four wheels. Tropical skatepark, palms, turquoise ocean and distant mountains behind, softly detailed so the character remains focal. Portrait 2:3 composition, fully visible face and hat with generous safe margins, friendly individual personality. No card frame, no typography, no letters, no logos, no watermark. No extra people, no dice, no duplicate limbs or wheels.",
+      "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-6931bef0-7864-492d-a8e7-8ad8a77e0390.png",
+      "output": "public/assets/skaters/ruby.webp"
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "look": "young adult East Asian woman with a long black braid under a GREEN five-panel cap, forest GREEN utility vest over a pale green tee, sage cargo pants and green skate shoes, calm assured expression",
+      "color": "green",
+      "prompt": "Use case: illustration-story. Asset type: selectable skater portrait for the board game Sk8 Heroes, Lagoon Park. One single portrait of young adult East Asian woman with a long black braid under a GREEN five-panel cap, forest GREEN utility vest over a pale green tee, sage cargo pants and green skate shoes, calm assured expression. Dominant identity color: green, unmistakably visible on clothes and accessories. Clean polished hand-painted comic illustration, bold navy contours, subtle paper grain, saturated sunny colors, same tropical skatepark board-game aesthetic as cream/navy/turquoise/orange illustrated skate trick cards. Three-quarter standing view from knees upward, centered with the head in the upper third, holding one skateboard vertically at the side, two trucks and exactly four wheels. Tropical skatepark, palms, turquoise ocean and distant mountains behind, softly detailed so the character remains focal. Portrait 2:3 composition, fully visible face and hat with generous safe margins, friendly individual personality. No card frame, no typography, no letters, no logos, no watermark. No extra people, no dice, no duplicate limbs or wheels.",
+      "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-115329dd-33dc-4700-afd7-2ae52f7fd51d.png",
+      "output": "public/assets/skaters/jade.webp"
+    },
+    {
+      "id": "sol",
+      "name": "Sol",
+      "look": "young adult brown-skinned androgynous skater with short dark curls, sunflower YELLOW bucket hat and oversized YELLOW hoodie, indigo baggy trousers and yellow sneakers, cheerful grin",
+      "color": "yellow",
+      "prompt": "Use case: illustration-story. Asset type: selectable skater portrait for the board game Sk8 Heroes, Lagoon Park. One single portrait of young adult brown-skinned androgynous skater with short dark curls, sunflower YELLOW bucket hat and oversized YELLOW hoodie, indigo baggy trousers and yellow sneakers, cheerful grin. Dominant identity color: yellow, unmistakably visible on clothes and accessories. Clean polished hand-painted comic illustration, bold navy contours, subtle paper grain, saturated sunny colors, same tropical skatepark board-game aesthetic as cream/navy/turquoise/orange illustrated skate trick cards. Three-quarter standing view from knees upward, centered with the head in the upper third, holding one skateboard vertically at the side, two trucks and exactly four wheels. Tropical skatepark, palms, turquoise ocean and distant mountains behind, softly detailed so the character remains focal. Portrait 2:3 composition, fully visible face and hat with generous safe margins, friendly individual personality. No card frame, no typography, no letters, no logos, no watermark. No extra people, no dice, no duplicate limbs or wheels.",
+      "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-fdf1c47b-292e-43f6-99f2-6c3f2bcbfd96.png",
+      "output": "public/assets/skaters/sol.webp"
+    },
+    {
+      "id": "milo",
+      "name": "Milo",
+      "look": "young adult Black man with close-cropped hair and an ORANGE headband, bold ORANGE basketball-style skate jersey over cream tee, black loose cargo shorts and orange high-top skate sneakers, energetic grin",
+      "color": "orange",
+      "prompt": "Use case: illustration-story. Asset type: selectable skater portrait for the board game Sk8 Heroes, Lagoon Park. One single portrait of young adult Black man with close-cropped hair and an ORANGE headband, bold ORANGE basketball-style skate jersey over cream tee, black loose cargo shorts and orange high-top skate sneakers, energetic grin. Dominant identity color: orange, unmistakably visible on clothes and accessories. Clean polished hand-painted comic illustration, bold navy contours, subtle paper grain, saturated sunny colors, same tropical skatepark board-game aesthetic as cream/navy/turquoise/orange illustrated skate trick cards. Three-quarter standing view from knees upward, centered with the head in the upper third, holding one skateboard vertically at the side, two trucks and exactly four wheels. Tropical skatepark, palms, turquoise ocean and distant mountains behind, softly detailed so the character remains focal. Portrait 2:3 composition, fully visible face and hat with generous safe margins, friendly individual personality. No card frame, no typography, no letters, no logos, no watermark. No extra people, no dice, no duplicate limbs or wheels.",
+      "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-29a3ea6c-4d91-440f-9a90-60cb421d1e9e.png",
+      "output": "public/assets/skaters/milo.webp"
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "look": "young adult pale-skinned woman with a choppy dark bob, PURPLE oversized overshirt over a lavender tee, dark plum baggy trousers and purple skate sneakers, independent relaxed expression",
+      "color": "purple",
+      "prompt": "Use case: illustration-story. Asset type: selectable skater portrait for the board game Sk8 Heroes, Lagoon Park. One single portrait of young adult pale-skinned woman with a choppy dark bob, PURPLE oversized overshirt over a lavender tee, dark plum baggy trousers and purple skate sneakers, independent relaxed expression. Dominant identity color: purple, unmistakably visible on clothes and accessories. Clean polished hand-painted comic illustration, bold navy contours, subtle paper grain, saturated sunny colors, same tropical skatepark board-game aesthetic as cream/navy/turquoise/orange illustrated skate trick cards. Three-quarter standing view from knees upward, centered with the head in the upper third, holding one skateboard vertically at the side, two trucks and exactly four wheels. Tropical skatepark, palms, turquoise ocean and distant mountains behind, softly detailed so the character remains focal. Portrait 2:3 composition, fully visible face and hat with generous safe margins, friendly individual personality. No card frame, no typography, no letters, no logos, no watermark. No extra people, no dice, no duplicate limbs or wheels.",
+      "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-1e0d9fc5-b8ba-43d7-bb1f-b9dfa9f56af7.png",
+      "output": "public/assets/skaters/iris.webp"
+    }
+  ]
+}

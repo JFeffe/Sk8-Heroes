@@ -1,0 +1,43 @@
+{
+  "id": 6,
+  "key": "coping-bleu",
+  "name": "Le Coping Bleu",
+  "stage": 1,
+  "needs": [
+    "air",
+    "slide"
+  ],
+  "pv": 3,
+  "bonus": {
+    "kind": "amplitude",
+    "minimumDice": 3,
+    "points": 2
+  },
+  "condition": "Chaque trick utilisant 3 ou 4 dés rapporte +2 points.",
+  "park": "Le Lagon",
+  "rounds": [
+    3,
+    4,
+    5
+  ],
+  "image": "assets/modules/lagoon/coping-bleu.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/coping-bleu/01-illustration.webp?v=1b4cc3011aa3",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/coping-bleu/03-textes-symboles.webp?v=06a1941e7f57"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/coping-bleu.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

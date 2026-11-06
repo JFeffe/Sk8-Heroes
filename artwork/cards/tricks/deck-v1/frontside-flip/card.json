@@ -1,0 +1,72 @@
+{
+  "id": 7,
+  "key": "frontside-flip",
+  "name": "Frontside Flip",
+  "type": "kick",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 5,
+  "difficultyPoints": 5,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.7678755144032922,
+  "requirementCode": "oddDistinct",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "symbols": [
+    "I",
+    "≠I"
+  ],
+  "rule": "Deux impairs différents",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "slide",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/frontside-flip/01-illustration.webp?v=0a9026d088ce",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/frontside-flip/03-textes-symboles.webp?v=101e748e98df"
+  },
+  "printedPoints": 5,
+  "p": 0.7678755144032922,
+  "effect": "point:slide",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

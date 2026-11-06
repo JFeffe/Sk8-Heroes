@@ -1,0 +1,24 @@
+{
+  "build": "0.5.1",
+  "date": "2026-11-02",
+  "functionalTests": {"passed": 228, "failed": 0, "log": ".local-games/build051-tests.log"},
+  "measuredGames": 1600,
+  "measuredAttempts": 76800,
+  "independentAuditChecksPassed": 248336,
+  "pairedGamesAgainstPreviousBuild": 1200,
+  "freshSeedNormalGames": 400,
+  "repeatedNormalGamesExcludedFromSamples": 400,
+  "repeatedGameStatisticsAndDecisionCountIdentical": true,
+  "unchangedGameplay": ["card points", "combinations", "module effects", "draft rules", "dice rules", "tokens", "rules version 17", "save version 12"],
+  "productionFilesChanged": ["package.json", "public/npc-strategy.js", "public/release-notes.js"],
+  "browser": {
+    "reportScenarioSelectorVerified": ["normal", "expert"],
+    "reportConsoleErrors": 0,
+    "gameConsoleErrors": 0,
+    "gameMenuVersion": "0.5.1",
+    "serverRestartedWithNewCode": true,
+    "screenshot": "tests/screenshots/build051-balance-report.png",
+    "report": "http://127.0.0.1:8000/reports/build-051-balance.html",
+    "play": "http://127.0.0.1:8000/"
+  }
+}

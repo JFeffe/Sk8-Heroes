@@ -1,0 +1,62 @@
+{
+  "id": 29,
+  "key": "bluntslide",
+  "name": "Bluntslide",
+  "type": "slide",
+  "tier": "epic",
+  "copies": 1,
+  "points": 11,
+  "difficultyPoints": 9,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.3196159122085048,
+  "requirementCode": "high5three",
+  "cost": 3,
+  "pattern": "at-least",
+  "threshold": 5,
+  "symbols": [
+    "≥5",
+    "≥5",
+    "≥5"
+  ],
+  "rule": "Trois dés ≥ 5",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/bluntslide/01-illustration.webp?v=d79eca7e98c6",
+    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
+    "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=e71dd327eab3"
+  },
+  "printedPoints": 11,
+  "p": 0.3196159122085048,
+  "effect": "",
+  "tierLabel": "ÉPIQUE",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "label": "after",
+  "rulesVersion": 13,
+  "sessionsPerProfile": 250,
+  "players": 4,
+  "lengths": [
+    4,
+    6
+  ],
+  "methodology": "Same mixed seed indices, rotating human skater, lengths and public heuristic controllers before/after. Four risk profiles; identical card-combination and point rules. Every seat uses legal production commands and visible state only. Random streams diverge after different actions. This measures these policies, not optimal or human play.",
+  "runs": [
+    {
+      "profile": "prudent",
+      "completed": 250,
+      "attempts": 10000,
+      "modules": 1250,
+      "points": 86569,
+      "falls": 674,
+      "threeTricks": 352,
+      "unawarded": 17,
+      "ties": 430,
+      "tokenUses": {
+        "adjust": 4018,
+        "reroll": 1454,
+        "freeze": 3280
+      },
+      "tokenGains": {
+        "draft": 4000,
+        "cards": 5232,
+        "sequence": 352
+      },
+      "moduleEndStock": 16877,
+      "moduleEndPlayers": 5000,
+      "emptyModuleEnd": 122,
+      "maxStock": 12,
+      "colors": {
+        "blue": {
+          "pv": 853,
+          "modules": 880
+        },
+        "red": {
+          "pv": 849,
+          "modules": 828
+        },
+        "green": {
+          "pv": 915,
+          "modules": 814
+        },
+        "yellow": {
+          "pv": 954,
+          "modules": 846
+        },
+        "orange": {
+          "pv": 951,
+          "modules": 776
+        },
+        "purple": {
+          "pv": 943,
+          "modules": 856
+        }
+      },
+      "summary": {
+        "fallRate": 0.0674,
+        "meanAttempt": 8.6569,
+        "threeTrickRate": 0.0352,
+        "unawardedRate": 0.0136,
+        "tieRate": 0.344,
+        "tokensUsedPerPlayerModule": 1.7504,
+        "tokensGainedPerPlayerModule": 1.9168,
+        "meanModuleEndStock": 3.3754,
+        "emptyModuleEndRate": 0.0244,
+        "finalStockMedian": 4,
+        "finalStockP95": 8,
+        "maxStock": 12
+      }
+    },
+    {
+      "profile": "competitive",
+      "completed": 250,
+      "attempts": 10000,
+      "modules": 1250,
+      "points": 90829,
+      "falls": 1649,
+      "threeTricks": 1300,
+      "unawarded": 12,
+      "ties": 383,
+      "tokenUses": {
+        "adjust": 4783,
+        "reroll": 1916,
+        "freeze": 3535
+      },
+      "tokenGains": {
+        "draft": 4000,
+        "cards": 5304,
+        "sequence": 1300
+      },
+      "moduleEndStock": 13995,
+      "moduleEndPlayers": 5000,
+      "emptyModuleEnd": 189,
+      "maxStock": 11,
+      "colors": {
+        "blue": {
+          "pv": 871,
+          "modules": 880
+        },
+        "red": {
+          "pv": 869,
+          "modules": 828
+        },
+        "green": {
+          "pv": 819,
+          "modules": 814
+        },
+        "yellow": {
+          "pv": 924,
+          "modules": 846
+        },
+        "orange": {
+          "pv": 799,
+          "modules": 776
+        },
+        "purple": {
+          "pv": 896,
+          "modules": 856
+        }
+      },
+      "summary": {
+        "fallRate": 0.1649,
+        "meanAttempt": 9.0829,
+        "threeTrickRate": 0.13,
+        "unawardedRate": 0.0096,
+        "tieRate": 0.3064,
+        "tokensUsedPerPlayerModule": 2.0468,
+        "tokensGainedPerPlayerModule": 2.1208,
+        "meanModuleEndStock": 2.799,
+        "emptyModuleEndRate": 0.0378,
+        "finalStockMedian": 3,
+        "finalStockP95": 7,
+        "maxStock": 11
+      }
+    },
+    {
+      "profile": "audacious",
+      "completed": 250,
+      "attempts": 10000,
+      "modules": 1250,
+      "points": 91811,
+      "falls": 1681,
+      "threeTricks": 1450,
+      "unawarded": 19,
+      "ties": 372,
+      "tokenUses": {
+        "adjust": 4770,
+        "reroll": 1894,
+        "freeze": 3656
+      },
+      "tokenGains": {
+        "draft": 4000,
+        "cards": 5340,
+        "sequence": 1450
+      },
+      "moduleEndStock": 14025,
+      "moduleEndPlayers": 5000,
+      "emptyModuleEnd": 190,
+      "maxStock": 12,
+      "colors": {
+        "blue": {
+          "pv": 835,
+          "modules": 880
+        },
+        "red": {
+          "pv": 810,
+          "modules": 828
+        },
+        "green": {
+          "pv": 803,
+          "modules": 814
+        },
+        "yellow": {
+          "pv": 934,
+          "modules": 846
+        },
+        "orange": {
+          "pv": 794,
+          "modules": 776
+        },
+        "purple": {
+          "pv": 937,
+          "modules": 856
+        }
+      },
+      "summary": {
+        "fallRate": 0.1681,
+        "meanAttempt": 9.1811,
+        "threeTrickRate": 0.145,
+        "unawardedRate": 0.0152,
+        "tieRate": 0.2976,
+        "tokensUsedPerPlayerModule": 2.064,
+        "tokensGainedPerPlayerModule": 2.158,
+        "meanModuleEndStock": 2.805,
+        "emptyModuleEndRate": 0.038,
+        "finalStockMedian": 3,
+        "finalStockP95": 7,
+        "maxStock": 12
+      }
+    },
+    {
+      "profile": "mixed",
+      "completed": 250,
+      "attempts": 10000,
+      "modules": 1250,
+      "points": 89761,
+      "falls": 1394,
+      "threeTricks": 1045,
+      "unawarded": 16,
+      "ties": 382,
+      "tokenUses": {
+        "adjust": 4603,
+        "reroll": 1776,
+        "freeze": 3485
+      },
+      "tokenGains": {
+        "draft": 4000,
+        "cards": 5301,
+        "sequence": 1045
+      },
+      "moduleEndStock": 14687,
+      "moduleEndPlayers": 5000,
+      "emptyModuleEnd": 176,
+      "maxStock": 11,
+      "colors": {
+        "blue": {
+          "pv": 792,
+          "modules": 880
+        },
+        "red": {
+          "pv": 841,
+          "modules": 828
+        },
+        "green": {
+          "pv": 837,
+          "modules": 814
+        },
+        "yellow": {
+          "pv": 879,
+          "modules": 846
+        },
+        "orange": {
+          "pv": 815,
+          "modules": 776
+        },
+        "purple": {
+          "pv": 932,
+          "modules": 856
+        }
+      },
+      "summary": {
+        "fallRate": 0.1394,
+        "meanAttempt": 8.9761,
+        "threeTrickRate": 0.1045,
+        "unawardedRate": 0.0128,
+        "tieRate": 0.3056,
+        "tokensUsedPerPlayerModule": 1.9728,
+        "tokensGainedPerPlayerModule": 2.0692,
+        "meanModuleEndStock": 2.9374,
+        "emptyModuleEndRate": 0.0352,
+        "finalStockMedian": 3,
+        "finalStockP95": 7,
+        "maxStock": 11
+      }
+    }
+  ]
+}

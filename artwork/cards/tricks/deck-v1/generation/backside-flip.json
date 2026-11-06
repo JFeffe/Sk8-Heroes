@@ -1,0 +1,12 @@
+{
+  "key": "backside-flip",
+  "name": "Backside Flip",
+  "type": "kick",
+  "tier": "advanced",
+  "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\artwork\\cards\\tricks\\layer-templates-v1\\illustrations\\heelflip.png",
+  "prompt": "Use case: stylized-concept. The reference is the approved clean art style. Create a new illustration with the requested distinct trick, same coastal park world. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: Backside 180 kickflip: rider turns backside, back and trailing shoulder visible, one flipped board underneath bent legs.",
+  "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-fb73a033-8d12-482f-bde4-73e8904b1c54.png",
+  "asset": "artwork/cards/tricks/deck-v1/illustrations/backside-flip.png",
+  "tool": "built-in image_gen",
+  "status": "generated"
+}

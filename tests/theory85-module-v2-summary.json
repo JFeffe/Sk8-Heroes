@@ -1,0 +1,1777 @@
+{
+  "theoretical": true,
+  "version": 2,
+  "date": "2026-11-01",
+  "integration": false,
+  "productionUnchanged": true,
+  "sourceHashes": {
+    "public/app.js": "68359ea36947a1035733efa414d52c5f1cc6d87bbc5210c8cc4bb502db02c156",
+    "public/card-library.js": "af7ce0c2e786e7449b9b13ee353913e7586b7f823e545bbc3618c2ab237a4fcd",
+    "public/combinations.js": "8d42382a600e43220278f3b6ba85257d7b4a358eebed165e11af203d3b70f5fb",
+    "public/data.js": "b619447fec1c4f783e75eaf144a3e571d96e60c1452ec77d5c4aec103fc989c0",
+    "public/dice-feedback.js": "4e61e0a0d5cacfec547ce758a23fa5236a0449e9dff9e0e970d91fdac66f13aa",
+    "public/drag.js": "44f9bb979c881f88e235861b3988832ce8e1839edbda9e569ce82fa4c30db31b",
+    "public/engine.js": "5053c5df77cbf84a2bc71c7b651965c4cd18a50d81623d4837954e055f67c281",
+    "public/icons.js": "7438c41b2fc0a9199cc8b4d65b0963782155401773eb11070c0895f3ca79c84b",
+    "public/initial-draft.js": "0294cc3a52914b02cdc72649844908c3a26571bdb607369d3aced8913771980c",
+    "public/match-statistics.js": "9a66f292db66d306348755e21b90162fca7a4727b824e99be029282b380696be",
+    "public/match-ui.js": "22534e2c6d567a0da31b13a5c55689004075bcfefee8096de93e6707b178e0e7",
+    "public/match.js": "26bcca8c5907f85fa9b6b1493762ab737f7c964247c5468d341b82ef80c8ca9e",
+    "public/module-cards.js": "66d9c3742b9d77fee101ee2223a83f6b84f260a5f6421e233fca40be4b7c5fb4",
+    "public/module-rules.js": "00c717cbcfd5ecf3a9d8134e4b67b5de35f521bf68dd96c742ad267a86c99c45",
+    "public/npc-choice.js": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14",
+    "public/npc-dice.js": "9dde7279cc2abdcb543e8ca8761fbe8c13f59ca7453d24ff21b770d6a565f2e9",
+    "public/npc-difficulty.js": "f79cfeddcb86bacbb08619bd0e787a929b329357e80498c61795579a2e6c50b9",
+    "public/npc-strategy.js": "b6165f991d3eaa24b0926470091f18793e3eb222ef121c1791a9634b0f673839",
+    "public/npc-view.js": "ee9afb101b3c78ac88d3bb3c285102aea235f5750842a15b9b6647efcdcdf318",
+    "public/npc.js": "b4c2609a05068fb29f175d36768c6034312e0626684f43fc2d735926a023e0f2",
+    "public/odds.js": "b1fb1a59daf1e5dc5451f762ac6346a1930ee151b12bb6fe12a1421d36d85bcb",
+    "public/online-client.js": "457aacfbda0a41ce3c4a964dd22ddced34b494f86066b7055fedaceb722bec2d",
+    "public/online-ui.js": "50e0c2bc9c4763b6f9e13457c854d82772c6c84e4283d997a1cf8062e7c5d3bd",
+    "public/patch-notes-state.js": "d694a3e2515610101fc870d99db4ec7b60b2dbbc41ac9d1d7096ebd852c71bb8",
+    "public/played-card.js": "3937ab1379e6238eb660f1d7ed140563378d9251c732e00ef8778ddeb9fa1271",
+    "public/release-notes.js": "c550696a409ef5d8e33a69a3e0b07269b86c4ddb46ebd13d9cb3813dd15d7317",
+    "public/roll-probability.js": "47c89055a093c01bf12c4c962deccc9b0eaf2d4917a66a0b3a26c47cb6dea31d",
+    "public/skaters.js": "819c596a2a4e71d6d925d24f5dfd7d5341480917f98ee3acb68400d7ea2b756d",
+    "public/table-view.js": "8fcd94ee50d41b8d9eb9c30404e418c8cdc8cec377026a73a1e77bb74945e673",
+    "public/turn.js": "7ed0252cc2df1fe25d5fdeb6917d1b2150befdf1c742e5a70e59b03cdeb4c73a",
+    "public/ui-feedback.js": "99e841ae7205fcde614ce0f19a0ea8c5e02fb93b4f6d8a673f3b55cdeb140d61"
+  },
+  "formalGames": 2400,
+  "mainGames": 1200,
+  "controllerSensitivityGames": 1200,
+  "formalAttempts": 115200,
+  "controlledAttempts": 25500,
+  "validationGroups": 25,
+  "methodology": {
+    "conditions": "All twelve V2 conditions, bonus +2, minimum two banked cards, physical die faces (star=1). Actual trace, never planning estimates, awards points.",
+    "main": "400 mixed-cost matches at 3-die +2/4-die +2; 400 mixed at 3-die +2/4-die +4; 400 homogeneous at +2/+2. Same mixed seeds across premiums.",
+    "draft": "85 physical cards, mixed free-choice initial draft, 8 tier cards and 4 tokens between modules, lower-tier visible reserve.",
+    "controller": "Public-information bounded search; marginal sequence-value drafting. Pair estimates use ordinary matching face distributions, with a small joker uncertainty factor. Other unknown action/face goals use heuristic probabilities. Four-die mixed profile explicitly prepares a compatible Epic with resources; on Boucle it plays a cheap helper first.",
+    "sensitivity": "Earlier identical 1,200-game series estimated every unknown pair at a fixed low probability. Retained to demonstrate dependence on controller awareness.",
+    "limitations": "No human playtest, no proof of optimal strategy. Goal frequencies are observed choices and results, not intrinsic combination odds. Four-die stress profile is deliberately prepared; ordinary controllers still undervalue many Epics."
+  },
+  "main": {
+    "attempts": 19200,
+    "fallRate": 0.14307291666666666,
+    "threeRate": 0.41375,
+    "mean": 12.334322916666666,
+    "roleWins": {
+      "balanced": {
+        "matchWin": 0.273125,
+        "finalWin": 0.2497916666666667,
+        "highPremiumMatchWin": 0.251875,
+        "highPremiumFinalWin": 0.20499999999999996
+      },
+      "two": {
+        "matchWin": 0.196875,
+        "finalWin": 0.25229166666666664,
+        "highPremiumMatchWin": 0.179375,
+        "highPremiumFinalWin": 0.1745833333333333
+      },
+      "three": {
+        "matchWin": 0.248125,
+        "finalWin": 0.159375,
+        "highPremiumMatchWin": 0.224375,
+        "highPremiumFinalWin": 0.105
+      },
+      "four": {
+        "matchWin": 0.281875,
+        "finalWin": 0.33854166666666674,
+        "highPremiumMatchWin": 0.344375,
+        "highPremiumFinalWin": 0.5154166666666667
+      }
+    },
+    "fourDieCards": 346
+  },
+  "homogeneous": {
+    "attempts": 19200,
+    "fallRate": 0.13880208333333333,
+    "threeRate": 0.41375,
+    "mean": 12.518645833333334,
+    "fourDieCards": 0
+  },
+  "conditions": [
+    {
+      "id": 0,
+      "key": "ilot",
+      "name": "L’Îlot",
+      "stage": 0,
+      "needs": [
+        "kick"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "no-token",
+        "minimumTricks": 2
+      },
+      "condition": "Conserver au moins deux tricks sans dépenser de jeton.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/ilot.webp",
+      "pooled": {
+        "games": 414,
+        "attempts": 3312,
+        "banked": 2616,
+        "eligible": 2461,
+        "bonus": 520,
+        "falls": 696,
+        "three": 888,
+        "points": 35629,
+        "spent": 3828
+      },
+      "mixed": {
+        "games": 212,
+        "attempts": 1696,
+        "banked": 1329,
+        "eligible": 1259,
+        "bonus": 274,
+        "falls": 367,
+        "three": 464,
+        "points": 17926,
+        "pointsWithBonus": 4033,
+        "spent": 1923,
+        "bonusWinningAttempts": 89,
+        "withoutTokens": 473,
+        "byOpening": {
+          "2": {
+            "attempts": 1179,
+            "banked": 979,
+            "bonus": 192
+          },
+          "3": {
+            "attempts": 461,
+            "banked": 350,
+            "bonus": 82
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 202,
+        "attempts": 1616,
+        "banked": 1287,
+        "eligible": 1202,
+        "bonus": 246,
+        "falls": 329,
+        "three": 424,
+        "points": 17703,
+        "pointsWithBonus": 3636,
+        "spent": 1905,
+        "bonusWinningAttempts": 59,
+        "withoutTokens": 446,
+        "byOpening": {
+          "2": {
+            "attempts": 1071,
+            "banked": 905,
+            "bonus": 163
+          },
+          "3": {
+            "attempts": 498,
+            "banked": 382,
+            "bonus": 83
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.1570048309178744,
+      "bankedRate": 0.19877675840978593,
+      "eligibleRate": 0.21129622104835433
+    },
+    {
+      "id": 1,
+      "key": "quai-bas",
+      "name": "Le Quai bas",
+      "stage": 0,
+      "needs": [
+        "slide"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "shared-face",
+        "minimumTricks": 2
+      },
+      "condition": "Une même face physique sur deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/quai-bas.webp",
+      "pooled": {
+        "games": 394,
+        "attempts": 3152,
+        "banked": 2526,
+        "eligible": 2211,
+        "bonus": 1840,
+        "falls": 626,
+        "three": 846,
+        "points": 35405,
+        "spent": 3319
+      },
+      "mixed": {
+        "games": 195,
+        "attempts": 1560,
+        "banked": 1270,
+        "eligible": 1136,
+        "bonus": 946,
+        "falls": 290,
+        "three": 472,
+        "points": 17953,
+        "pointsWithBonus": 14719,
+        "spent": 1703,
+        "bonusWinningAttempts": 215,
+        "withoutTokens": 505,
+        "byOpening": {
+          "2": {
+            "attempts": 1113,
+            "banked": 965,
+            "bonus": 757
+          },
+          "3": {
+            "attempts": 378,
+            "banked": 305,
+            "bonus": 189
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 199,
+        "attempts": 1592,
+        "banked": 1256,
+        "eligible": 1075,
+        "bonus": 894,
+        "falls": 336,
+        "three": 374,
+        "points": 17452,
+        "pointsWithBonus": 14048,
+        "spent": 1616,
+        "bonusWinningAttempts": 217,
+        "withoutTokens": 564,
+        "byOpening": {
+          "2": {
+            "attempts": 1179,
+            "banked": 989,
+            "bonus": 736
+          },
+          "3": {
+            "attempts": 339,
+            "banked": 267,
+            "bonus": 158
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.583756345177665,
+      "bankedRate": 0.728424386381631,
+      "eligibleRate": 0.8322026232473994
+    },
+    {
+      "id": 2,
+      "key": "petite-vague",
+      "name": "La Petite Vague",
+      "stage": 0,
+      "needs": [
+        "air"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "base-advanced",
+        "minimumTricks": 2
+      },
+      "condition": "Une Base immédiatement suivie d’une Avancée.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/petite-vague.webp",
+      "pooled": {
+        "games": 404,
+        "attempts": 3232,
+        "banked": 2586,
+        "eligible": 2359,
+        "bonus": 624,
+        "falls": 646,
+        "three": 806,
+        "points": 35808,
+        "spent": 3866
+      },
+      "mixed": {
+        "games": 203,
+        "attempts": 1624,
+        "banked": 1316,
+        "eligible": 1196,
+        "bonus": 329,
+        "falls": 308,
+        "three": 471,
+        "points": 18135,
+        "pointsWithBonus": 5198,
+        "spent": 1977,
+        "bonusWinningAttempts": 93,
+        "withoutTokens": 417,
+        "byOpening": {
+          "2": {
+            "attempts": 832,
+            "banked": 697,
+            "bonus": 329
+          },
+          "3": {
+            "attempts": 758,
+            "banked": 619,
+            "bonus": 0
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 201,
+        "attempts": 1608,
+        "banked": 1270,
+        "eligible": 1163,
+        "bonus": 295,
+        "falls": 338,
+        "three": 335,
+        "points": 17673,
+        "pointsWithBonus": 4515,
+        "spent": 1889,
+        "bonusWinningAttempts": 65,
+        "withoutTokens": 434,
+        "byOpening": {
+          "2": {
+            "attempts": 723,
+            "banked": 587,
+            "bonus": 295
+          },
+          "3": {
+            "attempts": 856,
+            "banked": 683,
+            "bonus": 0
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.19306930693069307,
+      "bankedRate": 0.24129930394431554,
+      "eligibleRate": 0.2645188639253921
+    },
+    {
+      "id": 3,
+      "key": "rail-palmiers",
+      "name": "Le Rail des Palmiers",
+      "stage": 0,
+      "needs": [],
+      "pv": 2,
+      "bonus": {
+        "kind": "increasing-points",
+        "minimumTricks": 2
+      },
+      "condition": "Points imprimés strictement croissants.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/rail-palmiers.webp",
+      "pooled": {
+        "games": 388,
+        "attempts": 3104,
+        "banked": 2629,
+        "eligible": 2304,
+        "bonus": 1183,
+        "falls": 475,
+        "three": 686,
+        "points": 36189,
+        "spent": 3378
+      },
+      "mixed": {
+        "games": 190,
+        "attempts": 1520,
+        "banked": 1298,
+        "eligible": 1154,
+        "bonus": 531,
+        "falls": 222,
+        "three": 411,
+        "points": 17668,
+        "pointsWithBonus": 8632,
+        "spent": 1703,
+        "bonusWinningAttempts": 199,
+        "withoutTokens": 420,
+        "byOpening": {
+          "2": {
+            "attempts": 1151,
+            "banked": 998,
+            "bonus": 483
+          },
+          "3": {
+            "attempts": 369,
+            "banked": 300,
+            "bonus": 48
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 198,
+        "attempts": 1584,
+        "banked": 1331,
+        "eligible": 1150,
+        "bonus": 652,
+        "falls": 253,
+        "three": 275,
+        "points": 18521,
+        "pointsWithBonus": 10710,
+        "spent": 1675,
+        "bonusWinningAttempts": 214,
+        "withoutTokens": 485,
+        "byOpening": {
+          "2": {
+            "attempts": 1197,
+            "banked": 1007,
+            "bonus": 593
+          },
+          "3": {
+            "attempts": 387,
+            "banked": 324,
+            "bonus": 59
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.38112113402061853,
+      "bankedRate": 0.4499809813617345,
+      "eligibleRate": 0.5134548611111112
+    },
+    {
+      "id": 4,
+      "key": "retour-rail",
+      "name": "Le Retour du Rail",
+      "stage": 1,
+      "needs": [
+        "slide",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "own-die-last",
+        "minimumTricks": 2
+      },
+      "condition": "Utiliser le dé de sa couleur sur le dernier trick.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/retour-rail.webp",
+      "pooled": {
+        "games": 399,
+        "attempts": 3192,
+        "banked": 2803,
+        "eligible": 2803,
+        "bonus": 1668,
+        "falls": 389,
+        "three": 1775,
+        "points": 41998,
+        "spent": 4742
+      },
+      "mixed": {
+        "games": 195,
+        "attempts": 1560,
+        "banked": 1367,
+        "eligible": 1367,
+        "bonus": 809,
+        "falls": 193,
+        "three": 843,
+        "points": 20543,
+        "pointsWithBonus": 12694,
+        "spent": 2276,
+        "bonusWinningAttempts": 182,
+        "withoutTokens": 350,
+        "byOpening": {
+          "2": {
+            "attempts": 1218,
+            "banked": 1083,
+            "bonus": 618
+          },
+          "3": {
+            "attempts": 342,
+            "banked": 284,
+            "bonus": 191
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 204,
+        "attempts": 1632,
+        "banked": 1436,
+        "eligible": 1436,
+        "bonus": 859,
+        "falls": 196,
+        "three": 932,
+        "points": 21455,
+        "pointsWithBonus": 13296,
+        "spent": 2466,
+        "bonusWinningAttempts": 187,
+        "withoutTokens": 332,
+        "byOpening": {
+          "2": {
+            "attempts": 1353,
+            "banked": 1204,
+            "bonus": 716
+          },
+          "3": {
+            "attempts": 279,
+            "banked": 232,
+            "bonus": 143
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.5225563909774437,
+      "bankedRate": 0.5950767035319301,
+      "eligibleRate": 0.5950767035319301
+    },
+    {
+      "id": 5,
+      "key": "tour-ilot",
+      "name": "Le Tour de l’Îlot",
+      "stage": 1,
+      "needs": [
+        "air",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "carried-freeze",
+        "minimumTricks": 2
+      },
+      "condition": "Utiliser un dé gelé ayant été conservé lors d’un jet entre deux tricks.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/tour-ilot.webp",
+      "pooled": {
+        "games": 401,
+        "attempts": 3208,
+        "banked": 2785,
+        "eligible": 2785,
+        "bonus": 1537,
+        "falls": 423,
+        "three": 1306,
+        "points": 42040,
+        "spent": 4731
+      },
+      "mixed": {
+        "games": 203,
+        "attempts": 1624,
+        "banked": 1416,
+        "eligible": 1416,
+        "bonus": 804,
+        "falls": 208,
+        "three": 692,
+        "points": 21257,
+        "pointsWithBonus": 12821,
+        "spent": 2385,
+        "bonusWinningAttempts": 176,
+        "withoutTokens": 351,
+        "byOpening": {
+          "2": {
+            "attempts": 1032,
+            "banked": 930,
+            "bonus": 633
+          },
+          "3": {
+            "attempts": 592,
+            "banked": 486,
+            "bonus": 171
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 198,
+        "attempts": 1584,
+        "banked": 1369,
+        "eligible": 1369,
+        "bonus": 733,
+        "falls": 215,
+        "three": 614,
+        "points": 20783,
+        "pointsWithBonus": 12051,
+        "spent": 2346,
+        "bonusWinningAttempts": 181,
+        "withoutTokens": 349,
+        "byOpening": {
+          "2": {
+            "attempts": 986,
+            "banked": 875,
+            "bonus": 555
+          },
+          "3": {
+            "attempts": 598,
+            "banked": 494,
+            "bonus": 178
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.4791147132169576,
+      "bankedRate": 0.5518850987432675,
+      "eligibleRate": 0.5518850987432675
+    },
+    {
+      "id": 6,
+      "key": "coping-bleu",
+      "name": "Le Coping Bleu",
+      "stage": 1,
+      "needs": [
+        "air",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "reroll-rescue",
+        "minimumTricks": 2
+      },
+      "condition": "Réussir après une relance un trick dont le premier jet était insuffisant.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/coping-bleu.webp",
+      "pooled": {
+        "games": 411,
+        "attempts": 3288,
+        "banked": 2845,
+        "eligible": 2845,
+        "bonus": 710,
+        "falls": 443,
+        "three": 1409,
+        "points": 40315,
+        "spent": 4606
+      },
+      "mixed": {
+        "games": 218,
+        "attempts": 1744,
+        "banked": 1516,
+        "eligible": 1516,
+        "bonus": 372,
+        "falls": 228,
+        "three": 778,
+        "points": 21354,
+        "pointsWithBonus": 6184,
+        "spent": 2507,
+        "bonusWinningAttempts": 134,
+        "withoutTokens": 449,
+        "byOpening": {
+          "2": {
+            "attempts": 1156,
+            "banked": 1033,
+            "bonus": 230
+          },
+          "3": {
+            "attempts": 588,
+            "banked": 483,
+            "bonus": 142
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 193,
+        "attempts": 1544,
+        "banked": 1329,
+        "eligible": 1329,
+        "bonus": 338,
+        "falls": 215,
+        "three": 631,
+        "points": 18961,
+        "pointsWithBonus": 5557,
+        "spent": 2099,
+        "bonusWinningAttempts": 116,
+        "withoutTokens": 427,
+        "byOpening": {
+          "2": {
+            "attempts": 1051,
+            "banked": 930,
+            "bonus": 225
+          },
+          "3": {
+            "attempts": 493,
+            "banked": 399,
+            "bonus": 113
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.2159367396593674,
+      "bankedRate": 0.24956063268892795,
+      "eligibleRate": 0.24956063268892795
+    },
+    {
+      "id": 7,
+      "key": "double-quai",
+      "name": "Le Double Quai",
+      "stage": 1,
+      "needs": [
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "two-pairs",
+        "minimumTricks": 2
+      },
+      "condition": "Une paire sur chacune de deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/double-quai.webp",
+      "pooled": {
+        "games": 408,
+        "attempts": 3264,
+        "banked": 2921,
+        "eligible": 2833,
+        "bonus": 127,
+        "falls": 343,
+        "three": 1860,
+        "points": 40769,
+        "spent": 5010
+      },
+      "mixed": {
+        "games": 200,
+        "attempts": 1600,
+        "banked": 1419,
+        "eligible": 1380,
+        "bonus": 54,
+        "falls": 181,
+        "three": 875,
+        "points": 19806,
+        "pointsWithBonus": 940,
+        "spent": 2443,
+        "bonusWinningAttempts": 29,
+        "withoutTokens": 321,
+        "byOpening": {
+          "2": {
+            "attempts": 1191,
+            "banked": 1090,
+            "bonus": 48
+          },
+          "3": {
+            "attempts": 407,
+            "banked": 329,
+            "bonus": 6
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 208,
+        "attempts": 1664,
+        "banked": 1502,
+        "eligible": 1453,
+        "bonus": 73,
+        "falls": 162,
+        "three": 985,
+        "points": 20963,
+        "pointsWithBonus": 1263,
+        "spent": 2567,
+        "bonusWinningAttempts": 28,
+        "withoutTokens": 332,
+        "byOpening": {
+          "2": {
+            "attempts": 1346,
+            "banked": 1238,
+            "bonus": 69
+          },
+          "3": {
+            "attempts": 310,
+            "banked": 264,
+            "bonus": 4
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.0389093137254902,
+      "bankedRate": 0.043478260869565216,
+      "eligibleRate": 0.04482880338863396
+    },
+    {
+      "id": 8,
+      "key": "boucle-lagon",
+      "name": "La Boucle du Lagon",
+      "stage": 2,
+      "needs": [],
+      "pv": 4,
+      "bonus": {
+        "kind": "last-epic",
+        "minimumTricks": 2
+      },
+      "condition": "Terminer par une Épique.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/boucle-lagon.webp",
+      "pooled": {
+        "games": 384,
+        "attempts": 3072,
+        "banked": 2760,
+        "eligible": 2341,
+        "bonus": 129,
+        "falls": 312,
+        "three": 1478,
+        "points": 40857,
+        "spent": 5383
+      },
+      "mixed": {
+        "games": 194,
+        "attempts": 1552,
+        "banked": 1379,
+        "eligible": 1161,
+        "bonus": 125,
+        "falls": 173,
+        "three": 669,
+        "points": 20353,
+        "pointsWithBonus": 2580,
+        "spent": 2657,
+        "bonusWinningAttempts": 53,
+        "withoutTokens": 402,
+        "byOpening": {
+          "2": {
+            "attempts": 1122,
+            "banked": 1014,
+            "bonus": 124
+          },
+          "3": {
+            "attempts": 408,
+            "banked": 357,
+            "bonus": 1
+          },
+          "4": {
+            "attempts": 22,
+            "banked": 8,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 190,
+        "attempts": 1520,
+        "banked": 1381,
+        "eligible": 1180,
+        "bonus": 4,
+        "falls": 139,
+        "three": 809,
+        "points": 20504,
+        "pointsWithBonus": 83,
+        "spent": 2726,
+        "bonusWinningAttempts": 4,
+        "withoutTokens": 359,
+        "byOpening": {
+          "2": {
+            "attempts": 1243,
+            "banked": 1165,
+            "bonus": 1
+          },
+          "3": {
+            "attempts": 277,
+            "banked": 216,
+            "bonus": 3
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.0419921875,
+      "bankedRate": 0.04673913043478261,
+      "eligibleRate": 0.055104656129859035
+    },
+    {
+      "id": 9,
+      "key": "marches-palmiers",
+      "name": "Les Marches des Palmiers",
+      "stage": 1,
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "two-card-effects",
+        "minimumTricks": 2
+      },
+      "condition": "Activer les bonus de points de deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/marches-palmiers.webp",
+      "pooled": {
+        "games": 394,
+        "attempts": 3152,
+        "banked": 2805,
+        "eligible": 2805,
+        "bonus": 440,
+        "falls": 347,
+        "three": 1873,
+        "points": 39445,
+        "spent": 4737
+      },
+      "mixed": {
+        "games": 189,
+        "attempts": 1512,
+        "banked": 1319,
+        "eligible": 1319,
+        "bonus": 196,
+        "falls": 193,
+        "three": 831,
+        "points": 18434,
+        "pointsWithBonus": 3379,
+        "spent": 2219,
+        "bonusWinningAttempts": 85,
+        "withoutTokens": 325,
+        "byOpening": {
+          "2": {
+            "attempts": 1188,
+            "banked": 1052,
+            "bonus": 196
+          },
+          "3": {
+            "attempts": 324,
+            "banked": 267,
+            "bonus": 0
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 205,
+        "attempts": 1640,
+        "banked": 1486,
+        "eligible": 1486,
+        "bonus": 244,
+        "falls": 154,
+        "three": 1042,
+        "points": 21011,
+        "pointsWithBonus": 4219,
+        "spent": 2518,
+        "bonusWinningAttempts": 101,
+        "withoutTokens": 305,
+        "byOpening": {
+          "2": {
+            "attempts": 1402,
+            "banked": 1284,
+            "bonus": 244
+          },
+          "3": {
+            "attempts": 238,
+            "banked": 202,
+            "bonus": 0
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.13959390862944163,
+      "bankedRate": 0.1568627450980392,
+      "eligibleRate": 0.1568627450980392
+    },
+    {
+      "id": 10,
+      "key": "embruns",
+      "name": "Les Embruns",
+      "stage": 1,
+      "needs": [],
+      "pv": 3,
+      "bonus": {
+        "kind": "two-unused",
+        "minimumTricks": 2
+      },
+      "condition": "Conserver exactement deux tricks et laisser deux dés inutilisés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/embruns.webp",
+      "pooled": {
+        "games": 387,
+        "attempts": 3096,
+        "banked": 2745,
+        "eligible": 2633,
+        "bonus": 272,
+        "falls": 351,
+        "three": 1493,
+        "points": 39102,
+        "spent": 4654
+      },
+      "mixed": {
+        "games": 195,
+        "attempts": 1560,
+        "banked": 1378,
+        "eligible": 1313,
+        "bonus": 101,
+        "falls": 182,
+        "three": 748,
+        "points": 19484,
+        "pointsWithBonus": 1282,
+        "spent": 2231,
+        "bonusWinningAttempts": 8,
+        "withoutTokens": 348,
+        "byOpening": {
+          "2": {
+            "attempts": 1100,
+            "banked": 1009,
+            "bonus": 101
+          },
+          "3": {
+            "attempts": 460,
+            "banked": 369,
+            "bonus": 0
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 192,
+        "attempts": 1536,
+        "banked": 1367,
+        "eligible": 1320,
+        "bonus": 171,
+        "falls": 169,
+        "three": 745,
+        "points": 19618,
+        "pointsWithBonus": 2181,
+        "spent": 2423,
+        "bonusWinningAttempts": 15,
+        "withoutTokens": 297,
+        "byOpening": {
+          "2": {
+            "attempts": 1166,
+            "banked": 1072,
+            "bonus": 171
+          },
+          "3": {
+            "attempts": 370,
+            "banked": 295,
+            "bonus": 0
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.08785529715762273,
+      "bankedRate": 0.09908925318761384,
+      "eligibleRate": 0.1033042157235093
+    },
+    {
+      "id": 11,
+      "key": "grande-vague",
+      "name": "La Grande Vague",
+      "stage": 2,
+      "needs": [
+        "air"
+      ],
+      "pv": 4,
+      "bonus": {
+        "kind": "all-dice",
+        "minimumTricks": 2
+      },
+      "condition": "Poser les six dés sur les cartes réussies.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/grande-vague.webp",
+      "pooled": {
+        "games": 416,
+        "attempts": 3328,
+        "banked": 2967,
+        "eligible": 2630,
+        "bonus": 2488,
+        "falls": 361,
+        "three": 1468,
+        "points": 49620,
+        "spent": 5833
+      },
+      "mixed": {
+        "games": 206,
+        "attempts": 1648,
+        "banked": 1446,
+        "eligible": 1249,
+        "bonus": 1160,
+        "falls": 202,
+        "three": 690,
+        "points": 23906,
+        "pointsWithBonus": 21137,
+        "spent": 2926,
+        "bonusWinningAttempts": 314,
+        "withoutTokens": 344,
+        "byOpening": {
+          "2": {
+            "attempts": 833,
+            "banked": 770,
+            "bonus": 690
+          },
+          "3": {
+            "attempts": 645,
+            "banked": 517,
+            "bonus": 349
+          },
+          "4": {
+            "attempts": 169,
+            "banked": 159,
+            "bonus": 121
+          }
+        }
+      },
+      "homogeneous": {
+        "games": 210,
+        "attempts": 1680,
+        "banked": 1521,
+        "eligible": 1381,
+        "bonus": 1328,
+        "falls": 159,
+        "three": 778,
+        "points": 25714,
+        "pointsWithBonus": 24241,
+        "spent": 2907,
+        "bonusWinningAttempts": 318,
+        "withoutTokens": 308,
+        "byOpening": {
+          "2": {
+            "attempts": 914,
+            "banked": 863,
+            "bonus": 778
+          },
+          "3": {
+            "attempts": 765,
+            "banked": 658,
+            "bonus": 550
+          },
+          "4": {
+            "attempts": 0,
+            "banked": 0,
+            "bonus": 0
+          }
+        }
+      },
+      "allAttemptRate": 0.7475961538461539,
+      "bankedRate": 0.8385574654533199,
+      "eligibleRate": 0.9460076045627377
+    }
+  ],
+  "prepared": [
+    {
+      "module": 0,
+      "cards": [
+        "Ollie",
+        "50-50 Grind"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 493,
+      "bonus": 493,
+      "falls": 7,
+      "points": 2958,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "bankedRate": 0.986,
+      "bonusRate": 0.986,
+      "mean": 5.916
+    },
+    {
+      "module": 1,
+      "cards": [
+        "Noseslide",
+        "Nollie"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 498,
+      "bonus": 113,
+      "falls": 2,
+      "points": 2716,
+      "spent": {
+        "adjust": 154,
+        "reroll": 11,
+        "freeze": 6
+      },
+      "bankedRate": 0.996,
+      "bonusRate": 0.226,
+      "mean": 5.432
+    },
+    {
+      "module": 2,
+      "cards": [
+        "180°",
+        "Backside Flip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 488,
+      "bonus": 488,
+      "falls": 12,
+      "points": 5856,
+      "spent": {
+        "adjust": 212,
+        "reroll": 72,
+        "freeze": 16
+      },
+      "bankedRate": 0.976,
+      "bonusRate": 0.976,
+      "mean": 11.712
+    },
+    {
+      "module": 3,
+      "cards": [
+        "Ollie",
+        "Kickflip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 496,
+      "bonus": 496,
+      "falls": 4,
+      "points": 3968,
+      "spent": {
+        "adjust": 107,
+        "reroll": 39,
+        "freeze": 14
+      },
+      "bankedRate": 0.992,
+      "bonusRate": 0.992,
+      "mean": 7.936
+    },
+    {
+      "module": 4,
+      "cards": [
+        "50-50 Grind",
+        "Kickflip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 498,
+      "bonus": 392,
+      "falls": 2,
+      "points": 3772,
+      "spent": {
+        "adjust": 84,
+        "reroll": 29,
+        "freeze": 8
+      },
+      "bankedRate": 0.996,
+      "bonusRate": 0.784,
+      "mean": 7.544
+    },
+    {
+      "module": 5,
+      "cards": [
+        "180°",
+        "Kickflip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 498,
+      "bonus": 493,
+      "falls": 2,
+      "points": 3974,
+      "spent": {
+        "adjust": 54,
+        "reroll": 9,
+        "freeze": 500
+      },
+      "bankedRate": 0.996,
+      "bonusRate": 0.986,
+      "mean": 7.948
+    },
+    {
+      "module": 6,
+      "cards": [
+        "180°",
+        "Noseslide"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 494,
+      "bonus": 173,
+      "falls": 6,
+      "points": 3310,
+      "spent": {
+        "adjust": 50,
+        "reroll": 179,
+        "freeze": 174
+      },
+      "bankedRate": 0.988,
+      "bonusRate": 0.346,
+      "mean": 6.62
+    },
+    {
+      "module": 7,
+      "cards": [
+        "Noseslide",
+        "Nollie"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 497,
+      "bonus": 474,
+      "falls": 3,
+      "points": 3433,
+      "spent": {
+        "adjust": 166,
+        "reroll": 10,
+        "freeze": 5
+      },
+      "bankedRate": 0.994,
+      "bonusRate": 0.948,
+      "mean": 6.866
+    },
+    {
+      "module": 8,
+      "cards": [
+        "Ollie",
+        "360 Flip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 403,
+      "bonus": 403,
+      "falls": 97,
+      "points": 5642,
+      "spent": {
+        "adjust": 265,
+        "reroll": 247,
+        "freeze": 36
+      },
+      "bankedRate": 0.806,
+      "bonusRate": 0.806,
+      "mean": 11.284
+    },
+    {
+      "module": 8,
+      "cards": [
+        "Ollie",
+        "Laser Flip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 297,
+      "bonus": 297,
+      "falls": 203,
+      "points": 5643,
+      "spent": {
+        "adjust": 226,
+        "reroll": 356,
+        "freeze": 266
+      },
+      "bankedRate": 0.594,
+      "bonusRate": 0.594,
+      "mean": 11.286
+    },
+    {
+      "module": 8,
+      "cards": [
+        "Ollie",
+        "Hurricane"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 181,
+      "bonus": 181,
+      "falls": 319,
+      "points": 3620,
+      "spent": {
+        "adjust": 139,
+        "reroll": 413,
+        "freeze": 394
+      },
+      "bankedRate": 0.362,
+      "bonusRate": 0.362,
+      "mean": 7.24
+    },
+    {
+      "module": 9,
+      "cards": [
+        "Frontside Flip",
+        "Crooked Grind"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 483,
+      "bonus": 483,
+      "falls": 17,
+      "points": 6762,
+      "spent": {
+        "adjust": 253,
+        "reroll": 79,
+        "freeze": 42
+      },
+      "bankedRate": 0.966,
+      "bonusRate": 0.966,
+      "mean": 13.524
+    },
+    {
+      "module": 10,
+      "cards": [
+        "Ollie",
+        "50-50 Grind"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 500,
+      "bonus": 500,
+      "falls": 0,
+      "points": 3000,
+      "spent": {
+        "adjust": 3,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "bankedRate": 1,
+      "bonusRate": 1,
+      "mean": 6
+    },
+    {
+      "module": 11,
+      "cards": [
+        "360°",
+        "Ollie",
+        "50-50 Grind"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 499,
+      "bonus": 499,
+      "falls": 1,
+      "points": 5489,
+      "spent": {
+        "adjust": 176,
+        "reroll": 22,
+        "freeze": 10
+      },
+      "bankedRate": 0.998,
+      "bonusRate": 0.998,
+      "mean": 10.978
+    },
+    {
+      "module": 11,
+      "cards": [
+        "Stalefish",
+        "Backside Flip"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 394,
+      "bonus": 394,
+      "falls": 106,
+      "points": 7092,
+      "spent": {
+        "adjust": 319,
+        "reroll": 228,
+        "freeze": 35
+      },
+      "bankedRate": 0.788,
+      "bonusRate": 0.788,
+      "mean": 14.184
+    },
+    {
+      "module": 11,
+      "cards": [
+        "900°",
+        "Ollie"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 375,
+      "bonus": 375,
+      "falls": 125,
+      "points": 7500,
+      "spent": {
+        "adjust": 290,
+        "reroll": 308,
+        "freeze": 296
+      },
+      "bankedRate": 0.75,
+      "bonusRate": 0.75,
+      "mean": 15
+    },
+    {
+      "module": 8,
+      "cards": [
+        "Hurricane",
+        "Ollie"
+      ],
+      "reference": true,
+      "stock": 1,
+      "trials": 500,
+      "banked": 398,
+      "bonus": 0,
+      "falls": 102,
+      "points": 7164,
+      "spent": {
+        "adjust": 305,
+        "reroll": 253,
+        "freeze": 246
+      },
+      "bankedRate": 0.796,
+      "bonusRate": 0,
+      "mean": 14.328
+    }
+  ],
+  "epicOrderComparison": [
+    {
+      "module": 8,
+      "cards": [
+        "Ollie",
+        "Hurricane"
+      ],
+      "reference": false,
+      "stock": 1,
+      "trials": 500,
+      "banked": 181,
+      "bonus": 181,
+      "falls": 319,
+      "points": 3620,
+      "spent": {
+        "adjust": 139,
+        "reroll": 413,
+        "freeze": 394
+      },
+      "bankedRate": 0.362,
+      "bonusRate": 0.362,
+      "mean": 7.24
+    },
+    {
+      "module": 8,
+      "cards": [
+        "Hurricane",
+        "Ollie"
+      ],
+      "reference": true,
+      "stock": 1,
+      "trials": 500,
+      "banked": 398,
+      "bonus": 0,
+      "falls": 102,
+      "points": 7164,
+      "spent": {
+        "adjust": 305,
+        "reroll": 253,
+        "freeze": 246
+      },
+      "bankedRate": 0.796,
+      "bonusRate": 0,
+      "mean": 14.328
+    }
+  ],
+  "fourPremiumSensitivity": {
+    "pairs": 400,
+    "difference": 0.0625,
+    "approximate95": [
+      0.032682352452563304,
+      0.0923176475474367
+    ]
+  },
+  "pairModelSensitivity": {
+    "mixed": {
+      "games": 200,
+      "attempts": 1600,
+      "banked": 1442,
+      "eligible": 1398,
+      "bonus": 51,
+      "falls": 158,
+      "three": 896,
+      "points": 20017,
+      "pointsWithBonus": 891,
+      "spent": 2380,
+      "bonusWinningAttempts": 25,
+      "withoutTokens": 335,
+      "byOpening": {
+        "2": {
+          "attempts": 1195,
+          "banked": 1111,
+          "bonus": 47
+        },
+        "3": {
+          "attempts": 404,
+          "banked": 331,
+          "bonus": 4
+        },
+        "4": {
+          "attempts": 0,
+          "banked": 0,
+          "bonus": 0
+        }
+      }
+    },
+    "homogeneous": {
+      "games": 208,
+      "attempts": 1664,
+      "banked": 1485,
+      "eligible": 1435,
+      "bonus": 70,
+      "falls": 179,
+      "three": 965,
+      "points": 20543,
+      "pointsWithBonus": 1208,
+      "spent": 2536,
+      "bonusWinningAttempts": 29,
+      "withoutTokens": 331,
+      "byOpening": {
+        "2": {
+          "attempts": 1356,
+          "banked": 1235,
+          "bonus": 66
+        },
+        "3": {
+          "attempts": 297,
+          "banked": 250,
+          "bonus": 4
+        },
+        "4": {
+          "attempts": 0,
+          "banked": 0,
+          "bonus": 0
+        }
+      }
+    }
+  },
+  "findings": [
+    "All action-based triggers and archival/live scores pass boundary tests, including freeze across tricks and reroll rescue without manufactured initial failure.",
+    "Bonus frequencies differ substantially; this is not a direct player fairness measure because all players face the same module. Prepared scenarios show every goal is achievable.",
+    "The ending-Epic goal is highly dependent on draft and play preparation. Ordinary controllers almost never achieve it; its rarity cannot be treated as a pure dice probability. Controlled Hurricane/Ollie ordering confirms a much lower banked rate when the four-die Epic must come last.",
+    "At the same diverse module settings, four-die premium +4 favors the prepared four-die profile more than premium +2. Retain +2 as the candidate for human tests.",
+    "Double Quai needs a focused human test or a separately tested easing to one pair; its current natural frequency should not be mistaken for a broken trigger. Candidate changes remain recommendations, not simulated replacement rules.",
+    "Embruns trades its two-point bonus against the third-card point and token. Low uptake can be a rational decision when chasing a leader."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": 40,
+  "key": "1080",
+  "name": "1080°",
+  "type": "air",
+  "tier": "epic",
+  "copies": 1,
+  "points": 18,
+  "difficultyPoints": 16,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.0522119341563786,
+  "requirementCode": "fourKind",
+  "cost": 4,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      3,
+      3,
+      3
+    ],
+    [
+      4,
+      4,
+      4,
+      4
+    ],
+    [
+      5,
+      5,
+      5,
+      5
+    ],
+    [
+      6,
+      6,
+      6,
+      6
+    ]
+  ],
+  "symbols": [
+    "x",
+    "x",
+    "x",
+    "x"
+  ],
+  "rule": "Quatre dés identiques",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/1080/01-illustration.webp?v=8c1a6364aeed",
+    "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
+    "information": "assets/tricks/1080/03-textes-symboles.webp?v=195b382b2eea"
+  },
+  "printedPoints": 18,
+  "p": 0.0522119341563786,
+  "effect": "",
+  "tierLabel": "ÉPIQUE",
+  "sockets": [
+    {
+      "x": 82,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    },
+    {
+      "x": 206,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    },
+    {
+      "x": 330,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    },
+    {
+      "x": 454,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

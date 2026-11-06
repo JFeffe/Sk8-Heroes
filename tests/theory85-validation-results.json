@@ -1,0 +1,12 @@
+{
+  "checks": 6,
+  "passed": true,
+  "details": [
+    "Initial packets 2 Base + 1 Advanced; add Advanced; all 24 picks may be Advanced; exactly two cards per type/player.",
+    "Worst case: after all 24 Advanced starting picks, every recovery draft still has 8 correct-tier cards + 4 tokens; leftovers return; 85-card conservation and restoration.",
+    "Visible lower-tier Base can replace a new Advanced pick without consuming a new card; hidden current-tier deck cannot be selected.",
+    "Three physical Nollies banked together award three deferred ±1 tokens, plus the separate immediate third-trick choice; secured cards cannot replay.",
+    "Cards using 3 or 4 dice leave 3 or 2 free dice; two-card sequences do not earn the three-trick point/token.",
+    "Complete expert-controlled six-module match: every move legal, public-only controller views, no state/RNG mutation during decisions, physical inventory conserved."
+  ]
+}

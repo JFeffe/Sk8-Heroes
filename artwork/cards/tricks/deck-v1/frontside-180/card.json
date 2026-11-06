@@ -1,0 +1,84 @@
+{
+  "id": 3,
+  "key": "frontside-180",
+  "name": "Frontside 180",
+  "type": "kick",
+  "tier": "base",
+  "copies": 2,
+  "points": 3,
+  "difficultyPoints": 3,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9545181755829903,
+  "requirementCode": "oddGap",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "symbols": [
+    "A",
+    "B"
+  ],
+  "rule": "Écart ≥ 2 · au moins un impair",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/frontside-180/01-illustration.webp?v=fb455dfb3a6c",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=cc90e7000517"
+  },
+  "printedPoints": 3,
+  "p": 0.9545181755829903,
+  "effect": "",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

@@ -1,0 +1,105 @@
+/* The only three card-face layers share a 900 × 1300 reference canvas. */
+.trick-card {position:relative;isolation:isolate;overflow:hidden;aspect-ratio:9/13!important;padding:0!important;border:0;border-radius:7.222% / 5%;background:#fff7df;container-type:inline-size;}
+.trick-card .trick-layer {position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;}
+.trick-card .trick-layer--illustration {z-index:0;}.trick-card .trick-layer--graphics {z-index:1;}.trick-card .trick-layer--information {z-index:2;}
+.trick-card .trick-layer>img {display:block;width:100%;height:100%;object-fit:fill;pointer-events:none;user-select:none;-webkit-user-drag:none;}
+.card-readable-label {position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+.trick-card .trick-layer .card-sockets {position:absolute;inset:0;display:block;padding:0;margin:0;pointer-events:none;}
+.trick-card .trick-layer .die-socket {position:absolute;display:grid;place-items:center;min-width:0;min-height:0;margin:0;padding:0;border:0;border-radius:15%;background:transparent;box-shadow:none;}
+.trick-card .trick-layer .die-socket.filled {background:#fff7df;}
+.trick-card .trick-layer .die-socket .table-die {position:relative;width:auto;height:90%;max-width:94%;aspect-ratio:1;min-width:0;min-height:0;margin:0;padding:0;border:0;border-radius:16%;box-shadow:0 1px 2px #063e5055;pointer-events:auto;font-size:8.5cqw;line-height:1;}
+.trick-card .trick-layer .die-socket .table-die>span {font-size:1em;line-height:1;}
+.trick-card .trick-layer .die-socket .table-die .wild-value {font-size:2.8cqw;}
+.trick-card .layered-chance {position:absolute;left:32%;top:14.25%;width:15.55%;height:4.5%;display:flex;align-items:center;justify-content:center;background:#ff742b;color:#063e50;transform:rotate(-1.3deg);font:400 4.4cqw/1 Impact,'Arial Narrow',sans-serif;white-space:nowrap;border-radius:5%;}
+.trick-card .layered-chance.is-landed {color:#085c43;}
+.trick-card .layered-score-bonus {position:absolute;right:4.8%;top:82%;border-radius:50%;padding:.6cqw;background:#b7efbb;color:#075d40;font:800 4cqw/1 system-ui,sans-serif;box-shadow:0 0 0 .3cqw #2e9369;}
+.archive-face {position:absolute;inset:0;width:100%;height:100%;}
+.trick-card.hand-card {position:absolute;width:calc(var(--hand-card-h)*.6923077);}
+.trick-space{aspect-ratio:9/13;}.trick-space:has(>.trick-card){border:0;}.trick-card.table-card{width:100%;height:100%;}
+.campaign-offer .trick-card,.library-card-button .trick-card,.draft-hand .trick-card,.attempt-full-cards>.trick-card,.played-trick-inspection>.trick-card,.trick-inspection>.trick-card {aspect-ratio:9/13;}
+.draft-reserve {margin:20px 0;padding-top:12px;border-top:1px solid #b9c9bb;}.draft-reserve>h2 {font:800 20px var(--display);margin:0 0 12px;}
+.draft-reserve .reserve-card-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,145px));gap:12px;}
+.draft-reserve .trick-card {width:100%;height:auto;aspect-ratio:9/13;}
+.paired-draft .draft-main>.draft-hand{position:sticky;top:8px;z-index:4;margin:12px 0;background:#e4eee1f5;box-shadow:0 5px 16px #0b434322;backdrop-filter:blur(6px);}
+.draft-hand .owned-card{cursor:zoom-in;}
+.draft-hand-cards>p{grid-column:1/-1;}
+.paired-draft .campaign-offer {display:grid;grid-template-columns:repeat(4,minmax(105px,1fr));gap:14px;align-items:start;}
+.paired-draft .campaign-offer .trick-card {width:100%;height:auto;max-width:200px;justify-self:center;}
+@media(max-width:900px){.paired-draft .campaign-offer{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;}.draft-reserve .reserve-card-grid{grid-template-columns:repeat(auto-fit,minmax(95px,1fr));}}
+@media(max-width:600px){.paired-draft .campaign-offer{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}.paired-draft .campaign-offer .trick-card{max-width:180px;}.draft-reserve .reserve-card-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;}}
+@media(max-width:650px){.paired-draft .draft-hand-cards{grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;}.paired-draft .draft-main>.draft-hand{top:0;padding:8px;}}
+@media(min-width:651px) and (max-height:800px){
+ body:has(.paired-draft) .session-route{height:50px;padding:2px 18px;}
+ body:has(.paired-draft) .module-route-button,body:has(.paired-draft) .module-route-list>li{width:26px;}
+ body:has(.paired-draft) .module-route-number{height:8px;font-size:6px;}
+ body:has(.paired-draft) .session-route-label>strong{font-size:14px;}
+ body:has(.paired-draft) .session-route-label>span,body:has(.paired-draft) .session-route-label>small{font-size:8px;}
+ .paired-draft{margin-top:7px;}
+ .paired-draft .draft-title h1{font-size:30px;margin:3px 0;}
+ .paired-draft>p{margin:5px 0 8px;font-size:11px;line-height:1.3;}
+ .paired-draft .choice-token-stock{padding:3px 10px;}.paired-draft .choice-token-stock .token-stack{height:27px;}
+ .paired-draft .draft-main>.draft-hand{padding:7px 10px;margin:8px 0;}
+ .paired-draft .draft-hand h2{margin-bottom:6px;font-size:10px;}
+ .paired-draft .draft-main .draft-hand-cards{grid-template-columns:repeat(var(--cards),minmax(0,80px));gap:8px;}
+ .paired-draft .draft-hand .owned-card{max-width:80px;}
+ .paired-draft .campaign-offer{margin:7px 0 10px;}.paired-draft .campaign-offer .trick-card{max-width:146px;}
+ .paired-draft .draft-token-offer .draft-bonus-choice{display:grid;grid-template-columns:32px minmax(0,1fr);grid-template-rows:auto auto;min-height:55px;padding:5px;gap:0 5px;text-align:left;}
+ .paired-draft .draft-token-offer .draft-bonus-choice>.token-stack{grid-row:1/3;}
+ .paired-draft .draft-token-offer .draft-bonus-choice>strong{font-size:14px;white-space:nowrap;}.paired-draft .draft-token-offer .draft-bonus-choice>small{font-size:10px;}
+ .paired-draft .draft-pair-confirm{margin-top:8px;padding:0;}.paired-draft .draft-pair-confirm>button{padding:8px 14px;font-size:12px;}
+}
+@media(min-width:651px) and (max-height:500px){
+ body:has(.shared-draft:not(.paired-draft)) .session-route{height:48px;}
+ body:has(.shared-draft:not(.paired-draft)) .module-route-button,body:has(.shared-draft:not(.paired-draft)) .module-route-list>li{width:25px;}
+ .shared-draft:not(.paired-draft)>p{display:none;}
+ .shared-draft:not(.paired-draft) .draft-title h1{font-size:25px;margin:1px 0 5px;}
+ .shared-draft:not(.paired-draft) .draft-main{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:7px 12px;}
+ .shared-draft:not(.paired-draft) .choice-token-stock{grid-column:1/-1;padding:2px 8px;}
+ .shared-draft:not(.paired-draft) .choice-token-stock .token-stack{height:24px;}
+ .shared-draft:not(.paired-draft) .draft-main>.campaign-offer{grid-column:1;grid-row:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:0;align-self:start;}
+ .shared-draft:not(.paired-draft) .draft-main>.campaign-offer .trick-card{width:100%;max-width:none;}
+ .shared-draft:not(.paired-draft) .draft-main>.draft-hand{grid-column:2;grid-row:2;margin:0;padding:6px;align-self:start;}
+ .shared-draft:not(.paired-draft) .draft-main .draft-hand-cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;}
+ .shared-draft:not(.paired-draft) .draft-main .owned-card{max-width:calc((100dvh - 226px)*9/26);justify-self:center;}
+}
+@media(prefers-reduced-motion:reduce){.trick-card{scroll-behavior:auto;}}
+/* A landscape phone keeps the card readable beside its existing rule note. */
+@media(min-width:601px) and (max-height:600px){
+ .campaign-modal.trick-detail-modal{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 24px;max-width:680px;padding:14px 20px;align-items:center;}
+ .trick-detail-modal>[data-action="dismiss"]{grid-column:1/-1;margin:0 0 2px auto;}
+ .trick-detail-modal .trick-inspection{width:calc((100dvh - 110px)*9/13);margin:0;}
+ .trick-detail-modal .trick-inspection-note h2{margin:0 0 12px;}
+ .trick-detail-modal .trick-inspection-note p{font-size:13px;}
+ .campaign-modal.played-trick-modal{max-width:380px;padding:10px 18px;}
+ .played-trick-modal>[data-action="dismiss"]{margin:0 0 5px auto;padding:5px 12px;font-size:11px;}
+ .played-trick-modal .played-inspection-caption{margin:5px 0;font-size:11px;line-height:1.2;}
+ .played-trick-modal .played-trick-inspection{width:calc((100dvh - 120px)*9/13);}
+}
+/* A short landscape viewport gives the actions their own row above the hand. */
+@media(min-width:651px) and (max-height:500px){
+ #app.table-game{grid-template-rows:30px 46px minmax(0,1fr);}
+ #app.table-game.online-game{grid-template-rows:30px 24px 46px minmax(0,1fr);}
+ .table-game .game-hud{height:30px;}
+ .table-game .session-route{height:46px;padding:1px 18px;}
+ .table-game .module-route-button,.table-game .module-route-list>li{width:24px;}
+ .table-game .module-route-number{height:8px;font-size:6px;}
+ .table-game .session-route-label>strong{font-size:13px;}.table-game .session-route-label>span,.table-game .session-route-label>small{font-size:7px;}
+ .table-game .play-world,.table-game.online-game .play-world{--hand-card-h:75px;--table-card-h:82px;}
+ .table-game .match-strip{height:42px;inset:0 18px auto;}
+ .table-game .player-score{padding:2px 4px;min-width:95px;gap:4px;}.table-game .rider-avatar{width:20px;height:20px;}.table-game .rider-name{font-size:8px;}.table-game .rider-name small{font-size:6px;}.table-game .player-score>strong{font-size:16px;}.table-game .round-score{font-size:7px;}.table-game .round-score>b{font-size:10px;}.table-game .round-score>span{font-size:6px;}
+ .table-game .table-rim{top:46px;bottom:79px;border-width:6px;}
+ .table-game .play-table{grid-template-columns:80px minmax(0,1fr);gap:10px;padding:4px 12px 6px;}
+ .table-game .table-center{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px;align-items:center;}
+ .table-game .dice-zone,.table-game .trick-row,.table-game .table-controls{grid-column:1/-1;}
+ .table-game .dice-zone{height:30px;min-height:30px;gap:12px;flex-direction:row;}
+ .table-game .loose-dice{min-height:26px;gap:6px;}.table-game .loose-dice .table-die{width:24px;height:24px;}.table-game .loose-dice .table-die>span{font-size:23px;}.table-game .loose-dice .table-die.star>span{font-size:18px;}
+ .table-game .bonus-tools{gap:0;}.table-game .bonus-hint,.table-game .spent-bonuses{display:none;}
+ .table-game .central-actions{grid-column:1;min-height:29px;gap:8px;}.table-game .central-actions>button{min-height:29px;padding:5px 14px;font-size:11px;}.table-game .central-actions .land-button{min-width:205px;min-height:29px;font-size:18px;}
+ .table-game .live-sequence{grid-column:2;min-height:25px;padding:4px 7px;}.table-game .live-sequence>strong{font-size:11px;white-space:nowrap;}.table-game .live-sequence>span,.table-game .live-sequence>.projected-score{display:none;}
+ .table-game .table-controls{min-height:20px;margin:0;}.table-game .table-controls p{font-size:9px;}.table-game .table-actions button{padding:3px 8px;min-height:20px;font-size:9px;}
+ .table-game .hand-card{bottom:14px;}.table-game .hand-label{bottom:4px;font-size:7px;}
+ .table-game .play-world:has(.archive-tray){--hand-card-h:75px;}
+ .table-game .play-table:has(.archive-tray){grid-template-columns:170px minmax(0,1fr);--table-card-h:78px;}
+ .table-game .module-area.has-archive .lagoon-module-card{width:37.3px;height:56px;}.table-game .module-area.has-archive{gap:3px;}
+ .table-game .module-area .archive-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;}
+}

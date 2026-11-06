@@ -1,0 +1,39 @@
+{
+  "id": 10,
+  "key": "embruns",
+  "name": "Les Embruns",
+  "stage": 1,
+  "needs": [],
+  "pv": 3,
+  "bonus": {
+    "kind": "three-tokens",
+    "tokens": 2
+  },
+  "condition": "Trois tricks réussis donnent deux jetons au choix au lieu d’un ; le bonus habituel de +1 point est conservé.",
+  "park": "Le Lagon",
+  "rounds": [
+    3,
+    4,
+    5
+  ],
+  "image": "assets/modules/lagoon/embruns.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/embruns/01-illustration.webp?v=8c7d368c8348",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/embruns/03-textes-symboles.webp?v=400951881c7c"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/embruns.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

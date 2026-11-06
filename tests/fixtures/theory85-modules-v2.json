@@ -1,0 +1,281 @@
+{
+  "theoretical": true,
+  "version": 2,
+  "park": "Le Lagon",
+  "moduleBonus": 2,
+  "drawPattern": {
+    "early": 2,
+    "middle": 3,
+    "final": 1
+  },
+  "modules": [
+    {
+      "id": 0,
+      "key": "ilot",
+      "name": "L’Îlot",
+      "stage": 0,
+      "needs": [
+        "kick"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "no-token",
+        "minimumTricks": 2
+      },
+      "condition": "Conserver au moins deux tricks sans dépenser de jeton.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/ilot.webp"
+    },
+    {
+      "id": 1,
+      "key": "quai-bas",
+      "name": "Le Quai bas",
+      "stage": 0,
+      "needs": [
+        "slide"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "shared-face",
+        "minimumTricks": 2
+      },
+      "condition": "Une même face physique sur deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/quai-bas.webp"
+    },
+    {
+      "id": 2,
+      "key": "petite-vague",
+      "name": "La Petite Vague",
+      "stage": 0,
+      "needs": [
+        "air"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "base-advanced",
+        "minimumTricks": 2
+      },
+      "condition": "Une Base immédiatement suivie d’une Avancée.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/petite-vague.webp"
+    },
+    {
+      "id": 3,
+      "key": "rail-palmiers",
+      "name": "Le Rail des Palmiers",
+      "stage": 0,
+      "needs": [],
+      "pv": 2,
+      "bonus": {
+        "kind": "increasing-points",
+        "minimumTricks": 2
+      },
+      "condition": "Points imprimés strictement croissants.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/rail-palmiers.webp"
+    },
+    {
+      "id": 4,
+      "key": "retour-rail",
+      "name": "Le Retour du Rail",
+      "stage": 1,
+      "needs": [
+        "slide",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "own-die-last",
+        "minimumTricks": 2
+      },
+      "condition": "Utiliser le dé de sa couleur sur le dernier trick.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/retour-rail.webp"
+    },
+    {
+      "id": 5,
+      "key": "tour-ilot",
+      "name": "Le Tour de l’Îlot",
+      "stage": 1,
+      "needs": [
+        "air",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "carried-freeze",
+        "minimumTricks": 2
+      },
+      "condition": "Utiliser un dé gelé ayant été conservé lors d’un jet entre deux tricks.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/tour-ilot.webp"
+    },
+    {
+      "id": 6,
+      "key": "coping-bleu",
+      "name": "Le Coping Bleu",
+      "stage": 1,
+      "needs": [
+        "air",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "reroll-rescue",
+        "minimumTricks": 2
+      },
+      "condition": "Réussir après une relance un trick dont le premier jet était insuffisant.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/coping-bleu.webp"
+    },
+    {
+      "id": 7,
+      "key": "double-quai",
+      "name": "Le Double Quai",
+      "stage": 1,
+      "needs": [
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "two-pairs",
+        "minimumTricks": 2
+      },
+      "condition": "Une paire sur chacune de deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/double-quai.webp"
+    },
+    {
+      "id": 8,
+      "key": "boucle-lagon",
+      "name": "La Boucle du Lagon",
+      "stage": 2,
+      "needs": [],
+      "pv": 4,
+      "bonus": {
+        "kind": "last-epic",
+        "minimumTricks": 2
+      },
+      "condition": "Terminer par une Épique.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/boucle-lagon.webp"
+    },
+    {
+      "id": 9,
+      "key": "marches-palmiers",
+      "name": "Les Marches des Palmiers",
+      "stage": 1,
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "two-card-effects",
+        "minimumTricks": 2
+      },
+      "condition": "Activer les bonus de points de deux cartes différentes.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/marches-palmiers.webp"
+    },
+    {
+      "id": 10,
+      "key": "embruns",
+      "name": "Les Embruns",
+      "stage": 1,
+      "needs": [],
+      "pv": 3,
+      "bonus": {
+        "kind": "two-unused",
+        "minimumTricks": 2
+      },
+      "condition": "Conserver exactement deux tricks et laisser deux dés inutilisés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/embruns.webp"
+    },
+    {
+      "id": 11,
+      "key": "grande-vague",
+      "name": "La Grande Vague",
+      "stage": 2,
+      "needs": [
+        "air"
+      ],
+      "pv": 4,
+      "bonus": {
+        "kind": "all-dice",
+        "minimumTricks": 2
+      },
+      "condition": "Poser les six dés sur les cartes réussies.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/grande-vague.webp"
+    }
+  ],
+  "minimumTricks": 2,
+  "physicalFaces": true
+}

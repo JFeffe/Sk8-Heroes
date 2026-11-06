@@ -1,0 +1,18 @@
+{
+  "blender": "4.5.9 LTS",
+  "checks": [
+    "QA: arc endpoints, ellipse scaling, toe/coping/deck radii match source",
+    "QB: arc endpoints, ellipse scaling, toe/coping/deck radii match source",
+    "QC: arc endpoints, ellipse scaling, toe/coping/deck radii match source",
+    "QD: arc endpoints, ellipse scaling, toe/coping/deck radii match source",
+    "L | ledge: footprint matches source",
+    "P | plateau: footprint matches source",
+    "Original scene preserved",
+    "No external texture file",
+    "PNG RGBA transparency enabled",
+    "All park meshes inside perspective camera frame",
+    "All park meshes inside top camera frame",
+    "Rendered alpha: transparent corner, opaque park center"
+  ],
+  "passed": true
+}

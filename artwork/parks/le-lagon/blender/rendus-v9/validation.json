@@ -1,0 +1,9 @@
+{
+  "blender": "4.5.9 LTS",
+  "objects": 151,
+  "meshes": 34,
+  "vertices": 19386,
+  "transparent": true,
+  "errors": [],
+  "note": "Volumes fermés vérifiés séparément ; raccords entre pièces non fusionnés."
+}

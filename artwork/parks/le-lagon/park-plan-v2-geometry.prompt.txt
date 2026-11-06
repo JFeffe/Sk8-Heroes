@@ -1,0 +1,14 @@
+Use case: precise-object-edit.
+Image 1 is the EDIT TARGET, the expanded LE LAGON map with twelve complete three-trick microzones and all their small companion obstacles.
+Image 2 is the exact GEOMETRY REFERENCE for obstacle 12 only.
+
+This is a localized architectural correction. Preserve all of image 1, including every added small ledge/bank and the three-trick riding areas, the sea, palms, title, typography, numbers, legend and style. Correct just these three things:
+
+A. REPLACE THE ENTIRE MINI-RAMP AT 12 with the actual shape shown in image 2, including its orientation if needed. Do not simply repaint or retain the old halfpipe silhouette. Use a consistent extruded U-shaped side profile, two opposing shallow concave cylindrical transitions facing each other, tangent joins into one wide FLAT bottom, identical width on the left and right transitions, same-height flat decks, and TWO PARALLEL STRAIGHT COPINGS. Use image 2's exact perspective and planarity: the coping lines run up-right/down-left in the image, parallel to one another and the ramp width. The riding direction runs diagonally upper-left to lower-right. It is a straight halfpipe, NOT a bowl, no rear concave corner, no curved wall across its width, no twisted/nonparallel decks. Fit this into the numbered 12 ground footprint, modestly re-spacing that local apron if necessary. Preserve the little grind ledge on the flat apron beside 12. Apply the target map's cream concrete, turquoise/orange wave side paint and light blue metal railings on OUTER deck ends only. The two safety rails should not cross the riding surface. Do not copy reference text or technical grids.
+
+B. At 03, replace only the main riding face of the little ramp with a STRAIGHT FLAT GENTLE INCLINED PLANE, a bank. It must not be concave. Keep the adjacent grind ledge, flat apron and the 03 marker. The one curved quarter at 07 must stay curved and unchanged, making the two obstacles visually distinct.
+
+C. At 10, the staircase must visibly have EXACTLY THREE broad shallow steps with THREE horizontal treads and THREE risers, NOT five small steps. Keep its handrail, the adjacent low bank, flat approach and the marker 10. Its legend remains "Les Trois Marches".
+
+All other geometry, all twelve labels 01 through 12 and every word of French remain unchanged. Keep the same lovely illustrated vintage surf/skate board-game art, wide composition and border. No extra badges, no new text, no people.
+

@@ -1,0 +1,83 @@
+{
+  "id": 19,
+  "key": "tailslide",
+  "name": "Tailslide",
+  "type": "slide",
+  "tier": "base",
+  "copies": 2,
+  "points": 3,
+  "difficultyPoints": 3,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9416152263374485,
+  "requirementCode": "largeGap",
+  "cost": 2,
+  "pattern": "choices",
+  "choices": [
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "symbols": [
+    "A",
+    "B"
+  ],
+  "rule": "Écart ≥ 3",
+  "comboBonus": {
+    "kind": "reward",
+    "type": "freeze"
+  },
+  "layers": {
+    "illustration": "assets/tricks/tailslide/01-illustration.webp?v=af8e53447d02",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=e30b29a955fd"
+  },
+  "printedPoints": 3,
+  "p": 0.9416152263374485,
+  "effect": "token:freeze",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

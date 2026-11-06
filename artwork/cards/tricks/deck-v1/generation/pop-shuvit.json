@@ -1,0 +1,12 @@
+{
+  "key": "pop-shuvit",
+  "name": "Pop Shuvit",
+  "type": "kick",
+  "tier": "base",
+  "reference": "C:\\Users\\jeanf\\OneDrive\\Documents\\ChatGPT\\Sk8 Heroes\\public\\assets\\tricks-1.webp",
+  "prompt": "Use case: precise-object-edit. The reference is a four-card sheet. Use ONLY the UPPER RIGHT illustration (Pop Shuvit) as the edit target. Preserve that rider, clothing, trick and scene style while removing the old card layout and completing the sky/ground naturally. Ignore all other cards. Create ONE clean full-bleed portrait illustration master for layer 1 of a Sk8 Heroes card. Style: the approved sunny richly detailed graphic-novel/screenprint art, vivid cobalt sky, turquoise lagoon/ocean, palm trees, cream coastal concrete, distant city and mountain, orange and teal accents. No card frame, title, badge, words, typography, numbers, icons, motion arrows, motion ribbons, logos or watermark. The complete skater and the ENTIRE single board must be clearly visible in the middle 20–68% of the portrait. Generous sky above and quiet ground/transition below will receive separate card layout later. Perspective and limb anatomy must be credible. One board, one deck, two trucks, exactly FOUR physical wheels (only perspective-visible wheels need appear). No duplicated limbs or wheel sets. Diverse adult riders with varied outfits/caps/hair matching the existing art style; no extra people near the action. Opaque illustrated background. Portrait composition 2:3. Specific action: A pop shove-it: one board rotates flat horizontally under the skater, grip tape stays upwards, no longitudinal flip.",
+  "source": "C:\\Users\\jeanf\\.codex\\generated_images\\01a17526-8894-7e62-af4a-1d48fa05beb0\\exec-8c7cd82b-73c5-49c7-83b0-8f5f0a70f2f7.png",
+  "asset": "artwork/cards/tricks/deck-v1/illustrations/pop-shuvit.png",
+  "tool": "built-in image_gen",
+  "status": "generated"
+}

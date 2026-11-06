@@ -1,0 +1,2983 @@
+{
+  "games": 4940,
+  "fullGameAttempts": 237120,
+  "controlledTrials": 180000,
+  "recoveryDrafts": 24700,
+  "inventoryChecksPassed": true,
+  "functionalChecks": 6,
+  "rates": {
+    "no-premium-mixed": {
+      "balanced": {
+        "match": {
+          "n": 800,
+          "mean": 0.2577083333333333,
+          "low": 0.2282550933576235,
+          "high": 0.2871615733090431
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.219375,
+          "low": 0.1930709924586637,
+          "high": 0.2456790075413363
+        }
+      },
+      "two": {
+        "match": {
+          "n": 800,
+          "mean": 0.32229166666666664,
+          "low": 0.2906808113319395,
+          "high": 0.35390252200139377
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.2608333333333334,
+          "low": 0.23322373438461066,
+          "high": 0.2884429322820562
+        }
+      },
+      "three": {
+        "match": {
+          "n": 800,
+          "mean": 0.07208333333333333,
+          "low": 0.0546506402819012,
+          "high": 0.08951602638476547
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.07145833333333333,
+          "low": 0.055806456224179644,
+          "high": 0.08711021044248701
+        }
+      },
+      "four": {
+        "match": {
+          "n": 800,
+          "mean": 0.3479166666666667,
+          "low": 0.31573948946740227,
+          "high": 0.38009384386593115
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.4483333333333333,
+          "low": 0.4162321376761629,
+          "high": 0.4804345289905037
+        }
+      }
+    },
+    "approved-mixed": {
+      "balanced": {
+        "match": {
+          "n": 800,
+          "mean": 0.231875,
+          "low": 0.20366597979969447,
+          "high": 0.2600840202003055
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.20656250000000007,
+          "low": 0.181913352070489,
+          "high": 0.23121164792951113
+        }
+      },
+      "two": {
+        "match": {
+          "n": 800,
+          "mean": 0.19479166666666672,
+          "low": 0.1683492517146763,
+          "high": 0.22123408161865715
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.23364583333333344,
+          "low": 0.2074004129724955,
+          "high": 0.2598912536941714
+        }
+      },
+      "three": {
+        "match": {
+          "n": 800,
+          "mean": 0.25333333333333335,
+          "low": 0.2242181786547711,
+          "high": 0.28244848801189565
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.15739583333333326,
+          "low": 0.13567990777310152,
+          "high": 0.179111758893565
+        }
+      },
+      "four": {
+        "match": {
+          "n": 800,
+          "mean": 0.32,
+          "low": 0.2886772525182748,
+          "high": 0.3513227474817252
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.4023958333333333,
+          "low": 0.3716215168540192,
+          "high": 0.4331701498126474
+        }
+      }
+    },
+    "strong-premium-mixed": {
+      "balanced": {
+        "match": {
+          "n": 800,
+          "mean": 0.2672916666666667,
+          "low": 0.23736302303867932,
+          "high": 0.2972203102946541
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.25281250000000005,
+          "low": 0.22623216771727628,
+          "high": 0.2793928322827238
+        }
+      },
+      "two": {
+        "match": {
+          "n": 800,
+          "mean": 0.10666666666666666,
+          "low": 0.0862522692124637,
+          "high": 0.1270810641208696
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.15427083333333327,
+          "low": 0.13147639546120662,
+          "high": 0.17706527120545992
+        }
+      },
+      "three": {
+        "match": {
+          "n": 800,
+          "mean": 0.32333333333333336,
+          "low": 0.29180277243857716,
+          "high": 0.35486389422808956
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.22406250000000008,
+          "low": 0.19870076970223047,
+          "high": 0.2494242302977697
+        }
+      },
+      "four": {
+        "match": {
+          "n": 800,
+          "mean": 0.30270833333333336,
+          "low": 0.27163411895252154,
+          "high": 0.3337825477141452
+        },
+        "final": {
+          "n": 800,
+          "mean": 0.3688541666666667,
+          "low": 0.3388585953737232,
+          "high": 0.3988497379596102
+        }
+      }
+    },
+    "approved-homogeneous": {
+      "balanced": {
+        "match": {
+          "n": 400,
+          "mean": 0.25,
+          "low": 0.25,
+          "high": 0.25
+        },
+        "final": {
+          "n": 400,
+          "mean": 0.25,
+          "low": 0.25,
+          "high": 0.25
+        }
+      }
+    },
+    "four-lower-mixed": {
+      "balanced": {
+        "match": {
+          "n": 600,
+          "mean": 0.25055555555555553,
+          "low": 0.21685105553880318,
+          "high": 0.2842600555723079
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.23541666666666658,
+          "low": 0.2054563719206402,
+          "high": 0.26537696141269296
+        }
+      },
+      "two": {
+        "match": {
+          "n": 600,
+          "mean": 0.19194444444444445,
+          "low": 0.1616488680353754,
+          "high": 0.2222400208535135
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.2459722222222222,
+          "low": 0.21529582993656854,
+          "high": 0.27664861450787587
+        }
+      },
+      "three": {
+        "match": {
+          "n": 600,
+          "mean": 0.2686111111111111,
+          "low": 0.23408620490740262,
+          "high": 0.30313601731481954
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.17041666666666658,
+          "low": 0.14403013974291715,
+          "high": 0.196803193590416
+        }
+      },
+      "four": {
+        "match": {
+          "n": 600,
+          "mean": 0.2888888888888889,
+          "low": 0.25369613660858353,
+          "high": 0.3240816411691943
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.34819444444444464,
+          "low": 0.31361384970008355,
+          "high": 0.38277503918880573
+        }
+      }
+    },
+    "four-higher-mixed": {
+      "balanced": {
+        "match": {
+          "n": 600,
+          "mean": 0.22888888888888886,
+          "low": 0.19627510370680357,
+          "high": 0.26150267407097416
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.19597222222222216,
+          "low": 0.1675710285964736,
+          "high": 0.22437341584797071
+        }
+      },
+      "two": {
+        "match": {
+          "n": 600,
+          "mean": 0.18861111111111112,
+          "low": 0.15853488198714405,
+          "high": 0.2186873402350782
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.23152777777777775,
+          "low": 0.20115789985750088,
+          "high": 0.2618976556980546
+        }
+      },
+      "three": {
+        "match": {
+          "n": 600,
+          "mean": 0.2519444444444444,
+          "low": 0.21824908536397297,
+          "high": 0.28563980352491586
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.13374999999999998,
+          "low": 0.10921233140613698,
+          "high": 0.15828766859386298
+        }
+      },
+      "four": {
+        "match": {
+          "n": 600,
+          "mean": 0.33055555555555555,
+          "low": 0.29401956502213594,
+          "high": 0.36709154608897515
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.4387500000000002,
+          "low": 0.4008953553792194,
+          "high": 0.476604644620781
+        }
+      }
+    },
+    "three-higher-mixed": {
+      "balanced": {
+        "match": {
+          "n": 600,
+          "mean": 0.2761111111111111,
+          "low": 0.24113016961938252,
+          "high": 0.3110920526028396
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.25500000000000006,
+          "low": 0.22453699392081525,
+          "high": 0.28546300607918484
+        }
+      },
+      "two": {
+        "match": {
+          "n": 600,
+          "mean": 0.09444444444444446,
+          "low": 0.0721812583087229,
+          "high": 0.116707630580166
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.15555555555555553,
+          "low": 0.12941555764199233,
+          "high": 0.18169555346911873
+        }
+      },
+      "three": {
+        "match": {
+          "n": 600,
+          "mean": 0.32777777777777783,
+          "low": 0.29118697358459933,
+          "high": 0.36436858197095634
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.25638888888888883,
+          "low": 0.2259958553284772,
+          "high": 0.28678192244930045
+        }
+      },
+      "four": {
+        "match": {
+          "n": 600,
+          "mean": 0.3016666666666667,
+          "low": 0.2657928757595247,
+          "high": 0.3375404575738087
+        },
+        "final": {
+          "n": 600,
+          "mean": 0.33305555555555566,
+          "low": 0.30001384662657593,
+          "high": 0.3660972644845354
+        }
+      }
+    }
+  },
+  "costStats": {
+    "2": {
+      "selected": 60293,
+      "landedRate": 0.9494468677955982,
+      "bankedRate": 0.8786757998440947,
+      "meanBankedAttemptOpenedByCost": 12.397711483449122,
+      "opened": 24470,
+      "fallRateOpened": 0.13988557417245606,
+      "threeRateOpened": 0.5044544340008174,
+      "meanContributionPerBankedCard": 4.512495752954057
+    },
+    "3": {
+      "selected": 24696,
+      "landedRate": 0.8909540006478782,
+      "bankedRate": 0.8177842565597667,
+      "meanBankedAttemptOpenedByCost": 11.944006930225232,
+      "opened": 12698,
+      "fallRateOpened": 0.19168372972121595,
+      "threeRateOpened": 0,
+      "meanContributionPerBankedCard": 8.639631610219846
+    },
+    "4": {
+      "selected": 286,
+      "landedRate": 0.7692307692307693,
+      "bankedRate": 0.7657342657342657,
+      "meanBankedAttemptOpenedByCost": 15.734265734265735,
+      "opened": 286,
+      "fallRateOpened": 0.23426573426573427,
+      "threeRateOpened": 0,
+      "meanContributionPerBankedCard": 18
+    }
+  },
+  "fourComparison": {
+    "approvedMinusLower": {
+      "match": {
+        "n": 600,
+        "mean": 0.030833333333333334,
+        "low": 0.01651519285609168,
+        "high": 0.04515147381057499
+      },
+      "final": {
+        "n": 600,
+        "mean": 0.05055555555555557,
+        "low": 0.033718332181927387,
+        "high": 0.06739277892918374
+      }
+    },
+    "approvedMatched": {
+      "match": {
+        "n": 600,
+        "mean": 0.31972222222222224,
+        "low": 0.2834833918246692,
+        "high": 0.3559610526197753
+      },
+      "final": {
+        "n": 600,
+        "mean": 0.39875000000000016,
+        "low": 0.36278744327138446,
+        "high": 0.43471255672861586
+      }
+    },
+    "lowerMatched": {
+      "match": {
+        "n": 600,
+        "mean": 0.2888888888888889,
+        "low": 0.25369613660858353,
+        "high": 0.3240816411691943
+      },
+      "final": {
+        "n": 600,
+        "mean": 0.34819444444444464,
+        "low": 0.31361384970008355,
+        "high": 0.38277503918880573
+      }
+    }
+  },
+  "finalByModule": {
+    "8": {
+      "games": 422,
+      "credits": {
+        "balanced": 105.74999999999997,
+        "two": 142.74999999999997,
+        "three": 68.08333333333336,
+        "four": 105.41666666666661
+      }
+    },
+    "11": {
+      "games": 378,
+      "credits": {
+        "balanced": 59.50000000000001,
+        "two": 44.16666666666668,
+        "three": 57.83333333333335,
+        "four": 216.50000000000003
+      }
+    }
+  },
+  "bankRows": [
+    {
+      "afterModule": 1,
+      "mean": 3.035,
+      "median": 3,
+      "p90": 5,
+      "max": 7,
+      "meanByType": {
+        "adjust": 0.666875,
+        "reroll": 1.415,
+        "freeze": 0.953125
+      }
+    },
+    {
+      "afterModule": 2,
+      "mean": 3.981875,
+      "median": 4,
+      "p90": 7,
+      "max": 11,
+      "meanByType": {
+        "adjust": 0.790625,
+        "reroll": 1.931875,
+        "freeze": 1.259375
+      }
+    },
+    {
+      "afterModule": 3,
+      "mean": 4.80875,
+      "median": 4,
+      "p90": 9,
+      "max": 16,
+      "meanByType": {
+        "adjust": 0.969375,
+        "reroll": 2.370625,
+        "freeze": 1.46875
+      }
+    },
+    {
+      "afterModule": 4,
+      "mean": 5.661875,
+      "median": 5,
+      "p90": 11,
+      "max": 20,
+      "meanByType": {
+        "adjust": 1.125,
+        "reroll": 2.831875,
+        "freeze": 1.705
+      }
+    },
+    {
+      "afterModule": 5,
+      "mean": 6.441875,
+      "median": 6,
+      "p90": 12,
+      "max": 24,
+      "meanByType": {
+        "adjust": 1.26875,
+        "reroll": 3.315,
+        "freeze": 1.858125
+      }
+    },
+    {
+      "afterModule": 6,
+      "mean": 5.93875,
+      "median": 5,
+      "p90": 12,
+      "max": 24,
+      "meanByType": {
+        "adjust": 1.01875,
+        "reroll": 3.511875,
+        "freeze": 1.408125
+      }
+    }
+  ],
+  "controlled": [
+    {
+      "name": "Varial Kickflip",
+      "cost": 2,
+      "points": 5,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 861,
+      "banked": 452,
+      "falls": 548,
+      "three": 452,
+      "score": 5370,
+      "scoreSquared": 63846,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 452,
+      "variant": "approved",
+      "landRate": 0.861,
+      "meanScore": 5.37,
+      "meanSpent": 0,
+      "scoreSE": 0.1871071885310663
+    },
+    {
+      "name": "Varial Kickflip",
+      "cost": 2,
+      "points": 5,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 981,
+      "falls": 19,
+      "three": 981,
+      "score": 12451,
+      "scoreSquared": 158245,
+      "spent": {
+        "adjust": 522,
+        "reroll": 101,
+        "freeze": 966
+      },
+      "deferred": 0,
+      "immediate": 981,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 12.451,
+      "meanSpent": 1.589,
+      "scoreSE": 0.05672388385856507
+    },
+    {
+      "name": "Varial Kickflip",
+      "cost": 2,
+      "points": 5,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 1000,
+      "score": 12994,
+      "scoreSquared": 168856,
+      "spent": {
+        "adjust": 913,
+        "reroll": 3,
+        "freeze": 18
+      },
+      "deferred": 0,
+      "immediate": 1000,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 12.994,
+      "meanSpent": 0.934,
+      "scoreSE": 0.0034589015597449547
+    },
+    {
+      "name": "Frontside Flip",
+      "cost": 2,
+      "points": 5,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 802,
+      "banked": 480,
+      "falls": 520,
+      "three": 480,
+      "score": 5760,
+      "scoreSquared": 69120,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 480,
+      "variant": "approved",
+      "landRate": 0.802,
+      "meanScore": 5.76,
+      "meanSpent": 0,
+      "scoreSE": 0.18958480951806242
+    },
+    {
+      "name": "Frontside Flip",
+      "cost": 2,
+      "points": 5,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 985,
+      "falls": 15,
+      "three": 985,
+      "score": 12516,
+      "scoreSquared": 159704,
+      "spent": {
+        "adjust": 531,
+        "reroll": 72,
+        "freeze": 988
+      },
+      "deferred": 0,
+      "immediate": 985,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 12.516,
+      "meanSpent": 1.591,
+      "scoreSE": 0.05526069127327304
+    },
+    {
+      "name": "Frontside Flip",
+      "cost": 2,
+      "points": 5,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 1000,
+      "score": 13966,
+      "scoreSquared": 195110,
+      "spent": {
+        "adjust": 1010,
+        "reroll": 5,
+        "freeze": 5
+      },
+      "deferred": 0,
+      "immediate": 1000,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 13.966,
+      "meanSpent": 1.02,
+      "scoreSE": 0.007800256406044062
+    },
+    {
+      "name": "Bigspin",
+      "cost": 2,
+      "points": 7,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 698,
+      "banked": 447,
+      "falls": 553,
+      "three": 447,
+      "score": 5720,
+      "scoreSquared": 73268,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 447,
+      "immediate": 447,
+      "variant": "approved",
+      "landRate": 0.698,
+      "meanScore": 5.72,
+      "meanSpent": 0,
+      "scoreSE": 0.20136931245847767
+    },
+    {
+      "name": "Bigspin",
+      "cost": 2,
+      "points": 7,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 995,
+      "banked": 979,
+      "falls": 21,
+      "three": 979,
+      "score": 13347,
+      "scoreSquared": 182833,
+      "spent": {
+        "adjust": 533,
+        "reroll": 154,
+        "freeze": 939
+      },
+      "deferred": 979,
+      "immediate": 979,
+      "variant": "approved",
+      "landRate": 0.995,
+      "meanScore": 13.347,
+      "meanSpent": 1.626,
+      "scoreSE": 0.06848788944039677
+    },
+    {
+      "name": "Bigspin",
+      "cost": 2,
+      "points": 7,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 1000,
+      "score": 14778,
+      "scoreSquared": 218778,
+      "spent": {
+        "adjust": 1167,
+        "reroll": 11,
+        "freeze": 24
+      },
+      "deferred": 1000,
+      "immediate": 1000,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 14.778,
+      "meanSpent": 1.202,
+      "scoreSE": 0.01971588192295714
+    },
+    {
+      "name": "Backside Flip",
+      "cost": 3,
+      "points": 8,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 777,
+      "banked": 597,
+      "falls": 403,
+      "three": 0,
+      "score": 6567,
+      "scoreSquared": 72237,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 597,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.777,
+      "meanScore": 6.567,
+      "meanSpent": 0,
+      "scoreSE": 0.17062095709495945
+    },
+    {
+      "name": "Backside Flip",
+      "cost": 3,
+      "points": 8,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 989,
+      "falls": 11,
+      "three": 0,
+      "score": 11796,
+      "scoreSquared": 140760,
+      "spent": {
+        "adjust": 474,
+        "reroll": 122,
+        "freeze": 73
+      },
+      "deferred": 989,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 11.796,
+      "meanSpent": 0.669,
+      "scoreSE": 0.04017939770578948
+    },
+    {
+      "name": "Backside Flip",
+      "cost": 3,
+      "points": 8,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 11997,
+      "scoreSquared": 143931,
+      "spent": {
+        "adjust": 712,
+        "reroll": 3,
+        "freeze": 103
+      },
+      "deferred": 1000,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 11.997,
+      "meanSpent": 0.818,
+      "scoreSE": 0.0017294507798745317
+    },
+    {
+      "name": "Varial Heelflip",
+      "cost": 3,
+      "points": 8,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 750,
+      "banked": 588,
+      "falls": 412,
+      "three": 0,
+      "score": 7056,
+      "scoreSquared": 84672,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.75,
+      "meanScore": 7.056,
+      "meanSpent": 0,
+      "scoreSE": 0.18677490195419724
+    },
+    {
+      "name": "Varial Heelflip",
+      "cost": 3,
+      "points": 8,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 997,
+      "banked": 986,
+      "falls": 14,
+      "three": 0,
+      "score": 11832,
+      "scoreSquared": 141984,
+      "spent": {
+        "adjust": 402,
+        "reroll": 141,
+        "freeze": 84
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.997,
+      "meanScore": 11.832,
+      "meanSpent": 0.627,
+      "scoreSE": 0.044584481605150425
+    },
+    {
+      "name": "Varial Heelflip",
+      "cost": 3,
+      "points": 8,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 12007,
+      "scoreSquared": 144175,
+      "spent": {
+        "adjust": 634,
+        "reroll": 5,
+        "freeze": 9
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 12.007,
+      "meanSpent": 0.648,
+      "scoreSE": 0.0026364749192842756
+    },
+    {
+      "name": "Inward Heelflip",
+      "cost": 3,
+      "points": 9,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 686,
+      "banked": 576,
+      "falls": 424,
+      "three": 0,
+      "score": 6684,
+      "scoreSquared": 77700,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.686,
+      "meanScore": 6.684,
+      "meanSpent": 0,
+      "scoreSE": 0.1817254632680847
+    },
+    {
+      "name": "Inward Heelflip",
+      "cost": 3,
+      "points": 9,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 999,
+      "banked": 988,
+      "falls": 12,
+      "three": 0,
+      "score": 11858,
+      "scoreSquared": 142322,
+      "spent": {
+        "adjust": 466,
+        "reroll": 76,
+        "freeze": 64
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.999,
+      "meanScore": 11.858,
+      "meanSpent": 0.606,
+      "scoreSE": 0.041350163240306506
+    },
+    {
+      "name": "Inward Heelflip",
+      "cost": 3,
+      "points": 9,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 12000,
+      "scoreSquared": 144000,
+      "spent": {
+        "adjust": 578,
+        "reroll": 2,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 12,
+      "meanSpent": 0.58,
+      "scoreSE": 0
+    },
+    {
+      "name": "Hardflip",
+      "cost": 2,
+      "points": 8,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 496,
+      "banked": 410,
+      "falls": 590,
+      "three": 0,
+      "score": 4745,
+      "scoreSquared": 55015,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.496,
+      "meanScore": 4.745,
+      "meanSpent": 0,
+      "scoreSE": 0.1802774944356616
+    },
+    {
+      "name": "Hardflip",
+      "cost": 2,
+      "points": 8,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 996,
+      "banked": 974,
+      "falls": 26,
+      "three": 918,
+      "score": 13902,
+      "scoreSquared": 199720,
+      "spent": {
+        "adjust": 660,
+        "reroll": 218,
+        "freeze": 919
+      },
+      "deferred": 0,
+      "immediate": 918,
+      "variant": "approved",
+      "landRate": 0.996,
+      "meanScore": 13.902,
+      "meanSpent": 1.797,
+      "scoreSE": 0.08033925565998251
+    },
+    {
+      "name": "Hardflip",
+      "cost": 2,
+      "points": 8,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 981,
+      "score": 15721,
+      "scoreSquared": 247777,
+      "spent": {
+        "adjust": 1330,
+        "reroll": 1,
+        "freeze": 10
+      },
+      "deferred": 0,
+      "immediate": 981,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 15.721,
+      "meanSpent": 1.341,
+      "scoreSE": 0.02504314277402055
+    },
+    {
+      "name": "720°",
+      "cost": 3,
+      "points": 10,
+      "stock": 0,
+      "target": 12,
+      "trials": 1000,
+      "landed": 574,
+      "banked": 537,
+      "falls": 463,
+      "three": 0,
+      "score": 6444,
+      "scoreSquared": 77328,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.574,
+      "meanScore": 6.444,
+      "meanSpent": 0,
+      "scoreSE": 0.18921644748805533
+    },
+    {
+      "name": "720°",
+      "cost": 3,
+      "points": 10,
+      "stock": 1,
+      "target": 12,
+      "trials": 1000,
+      "landed": 992,
+      "banked": 991,
+      "falls": 9,
+      "three": 0,
+      "score": 12502,
+      "scoreSquared": 157956,
+      "spent": {
+        "adjust": 525,
+        "reroll": 119,
+        "freeze": 69
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.992,
+      "meanScore": 12.502,
+      "meanSpent": 0.713,
+      "scoreSE": 0.04069393075140271
+    },
+    {
+      "name": "720°",
+      "cost": 3,
+      "points": 10,
+      "stock": 3,
+      "target": 12,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 12994,
+      "scoreSquared": 168850,
+      "spent": {
+        "adjust": 728,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 12.994,
+      "meanSpent": 0.728,
+      "scoreSE": 0.0024421302176595443
+    },
+    {
+      "name": "360 Flip",
+      "cost": 2,
+      "points": 10,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 334,
+      "banked": 76,
+      "falls": 924,
+      "three": 76,
+      "score": 1444,
+      "scoreSquared": 27436,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 76,
+      "variant": "approved",
+      "landRate": 0.334,
+      "meanScore": 1.444,
+      "meanSpent": 0,
+      "scoreSE": 0.15921954653873374
+    },
+    {
+      "name": "360 Flip",
+      "cost": 2,
+      "points": 10,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 924,
+      "banked": 591,
+      "falls": 409,
+      "three": 591,
+      "score": 11161,
+      "scoreSquared": 210903,
+      "spent": {
+        "adjust": 745,
+        "reroll": 661,
+        "freeze": 844
+      },
+      "deferred": 0,
+      "immediate": 591,
+      "variant": "approved",
+      "landRate": 0.924,
+      "meanScore": 11.161,
+      "meanSpent": 2.25,
+      "scoreSE": 0.2938283155177527
+    },
+    {
+      "name": "360 Flip",
+      "cost": 2,
+      "points": 10,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 983,
+      "falls": 17,
+      "three": 983,
+      "score": 18677,
+      "scoreSquared": 354863,
+      "spent": {
+        "adjust": 1887,
+        "reroll": 230,
+        "freeze": 1370
+      },
+      "deferred": 0,
+      "immediate": 983,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 18.677,
+      "meanSpent": 3.487,
+      "scoreSE": 0.07767027101793834
+    },
+    {
+      "name": "Bluntslide",
+      "cost": 3,
+      "points": 11,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 378,
+      "banked": 348,
+      "falls": 652,
+      "three": 0,
+      "score": 4524,
+      "scoreSquared": 58812,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.378,
+      "meanScore": 4.524,
+      "meanSpent": 0,
+      "scoreSE": 0.19581987641707876
+    },
+    {
+      "name": "Bluntslide",
+      "cost": 3,
+      "points": 11,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 925,
+      "banked": 891,
+      "falls": 109,
+      "three": 0,
+      "score": 12929,
+      "scoreSquared": 188267,
+      "spent": {
+        "adjust": 538,
+        "reroll": 428,
+        "freeze": 670
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.925,
+      "meanScore": 12.929,
+      "meanSpent": 1.636,
+      "scoreSE": 0.14528578388816984
+    },
+    {
+      "name": "Bluntslide",
+      "cost": 3,
+      "points": 11,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 14836,
+      "scoreSquared": 220408,
+      "spent": {
+        "adjust": 1339,
+        "reroll": 115,
+        "freeze": 762
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 14.836,
+      "meanSpent": 2.216,
+      "scoreSE": 0.017352348544216745
+    },
+    {
+      "name": "Laser Flip",
+      "cost": 3,
+      "points": 15,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 217,
+      "banked": 120,
+      "falls": 880,
+      "three": 0,
+      "score": 2280,
+      "scoreSquared": 43320,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.217,
+      "meanScore": 2.28,
+      "meanSpent": 0,
+      "scoreSE": 0.19524753519570995
+    },
+    {
+      "name": "Laser Flip",
+      "cost": 3,
+      "points": 15,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 850,
+      "banked": 724,
+      "falls": 276,
+      "three": 0,
+      "score": 13756,
+      "scoreSquared": 261364,
+      "spent": {
+        "adjust": 625,
+        "reroll": 602,
+        "freeze": 780
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.85,
+      "meanScore": 13.756,
+      "meanSpent": 2.007,
+      "scoreSE": 0.26858232257540693
+    },
+    {
+      "name": "Laser Flip",
+      "cost": 3,
+      "points": 15,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 0,
+      "score": 18981,
+      "scoreSquared": 360639,
+      "spent": {
+        "adjust": 1653,
+        "reroll": 139,
+        "freeze": 557
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 18.981,
+      "meanSpent": 2.349,
+      "scoreSE": 0.018990497623810047
+    },
+    {
+      "name": "Impossible",
+      "cost": 3,
+      "points": 17,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 102,
+      "banked": 91,
+      "falls": 909,
+      "three": 0,
+      "score": 1759,
+      "scoreSquared": 34021,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.102,
+      "meanScore": 1.759,
+      "meanSpent": 0,
+      "scoreSE": 0.1758605100640846
+    },
+    {
+      "name": "Impossible",
+      "cost": 3,
+      "points": 17,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 575,
+      "banked": 551,
+      "falls": 449,
+      "three": 0,
+      "score": 10881,
+      "scoreSquared": 215001,
+      "spent": {
+        "adjust": 388,
+        "reroll": 794,
+        "freeze": 581
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.575,
+      "meanScore": 10.881,
+      "meanSpent": 1.763,
+      "scoreSE": 0.31081318987456114
+    },
+    {
+      "name": "Impossible",
+      "cost": 3,
+      "points": 17,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 993,
+      "banked": 991,
+      "falls": 9,
+      "three": 0,
+      "score": 19825,
+      "scoreSquared": 396613,
+      "spent": {
+        "adjust": 1881,
+        "reroll": 603,
+        "freeze": 223
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.993,
+      "meanScore": 19.825,
+      "meanSpent": 2.707,
+      "scoreSE": 0.0598529447897095
+    },
+    {
+      "name": "Hurricane",
+      "cost": 4,
+      "points": 18,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 178,
+      "banked": 123,
+      "falls": 877,
+      "three": 0,
+      "score": 2460,
+      "scoreSquared": 49200,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.178,
+      "meanScore": 2.46,
+      "meanSpent": 0,
+      "scoreSE": 0.20772192951154678
+    },
+    {
+      "name": "Hurricane",
+      "cost": 4,
+      "points": 18,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 854,
+      "banked": 791,
+      "falls": 209,
+      "three": 0,
+      "score": 15836,
+      "scoreSquared": 317072,
+      "spent": {
+        "adjust": 688,
+        "reroll": 512,
+        "freeze": 804
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.854,
+      "meanScore": 15.836,
+      "meanSpent": 2.004,
+      "scoreSE": 0.25747447252106376
+    },
+    {
+      "name": "Hurricane",
+      "cost": 4,
+      "points": 18,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 20030,
+      "scoreSquared": 401260,
+      "spent": {
+        "adjust": 1713,
+        "reroll": 90,
+        "freeze": 185
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 20.03,
+      "meanSpent": 1.988,
+      "scoreSE": 0.007687652437509384
+    },
+    {
+      "name": "900°",
+      "cost": 4,
+      "points": 18,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 179,
+      "banked": 122,
+      "falls": 878,
+      "three": 0,
+      "score": 2440,
+      "scoreSquared": 48800,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.179,
+      "meanScore": 2.44,
+      "meanSpent": 0,
+      "scoreSE": 0.2069937197114927
+    },
+    {
+      "name": "900°",
+      "cost": 4,
+      "points": 18,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 769,
+      "banked": 704,
+      "falls": 296,
+      "three": 0,
+      "score": 14413,
+      "scoreSquared": 295307,
+      "spent": {
+        "adjust": 614,
+        "reroll": 580,
+        "freeze": 833
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.769,
+      "meanScore": 14.413,
+      "meanSpent": 2.027,
+      "scoreSE": 0.2959263945645944
+    },
+    {
+      "name": "900°",
+      "cost": 4,
+      "points": 18,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 0,
+      "score": 20834,
+      "scoreSquared": 434636,
+      "spent": {
+        "adjust": 1756,
+        "reroll": 222,
+        "freeze": 453
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 20.834,
+      "meanSpent": 2.431,
+      "scoreSE": 0.024092405442380734
+    },
+    {
+      "name": "1080°",
+      "cost": 4,
+      "points": 20,
+      "stock": 0,
+      "target": 20,
+      "trials": 1000,
+      "landed": 73,
+      "banked": 73,
+      "falls": 927,
+      "three": 0,
+      "score": 1460,
+      "scoreSquared": 29200,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.073,
+      "meanScore": 1.46,
+      "meanSpent": 0,
+      "scoreSE": 0.1645247701715459
+    },
+    {
+      "name": "1080°",
+      "cost": 4,
+      "points": 20,
+      "stock": 1,
+      "target": 20,
+      "trials": 1000,
+      "landed": 642,
+      "banked": 642,
+      "falls": 358,
+      "three": 0,
+      "score": 13195,
+      "scoreSquared": 272093,
+      "spent": {
+        "adjust": 588,
+        "reroll": 625,
+        "freeze": 630
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.642,
+      "meanScore": 13.195,
+      "meanSpent": 1.843,
+      "scoreSE": 0.31302551812911356
+    },
+    {
+      "name": "1080°",
+      "cost": 4,
+      "points": 20,
+      "stock": 3,
+      "target": 20,
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 22300,
+      "scoreSquared": 498920,
+      "spent": {
+        "adjust": 2118,
+        "reroll": 66,
+        "freeze": 99
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 22.3,
+      "meanSpent": 2.283,
+      "scoreSE": 0.040373258476372645
+    }
+  ],
+  "mature": [
+    {
+      "name": "Varial Kickflip",
+      "cost": 2,
+      "points": 5,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 861,
+      "banked": 430,
+      "falls": 570,
+      "three": 0,
+      "score": 4745,
+      "scoreSquared": 54035,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 347,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.861,
+      "meanScore": 4.745,
+      "meanSpent": 0
+    },
+    {
+      "name": "Varial Kickflip",
+      "cost": 2,
+      "points": 5,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 961,
+      "falls": 39,
+      "three": 700,
+      "score": 13678,
+      "scoreSquared": 196796,
+      "spent": {
+        "adjust": 617,
+        "reroll": 203,
+        "freeze": 775
+      },
+      "deferred": 901,
+      "immediate": 700,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 13.678,
+      "meanSpent": 1.595
+    },
+    {
+      "name": "Varial Kickflip",
+      "cost": 2,
+      "points": 5,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 961,
+      "score": 16412,
+      "scoreSquared": 272156,
+      "spent": {
+        "adjust": 1209,
+        "reroll": 12,
+        "freeze": 728
+      },
+      "deferred": 137,
+      "immediate": 961,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 16.412,
+      "meanSpent": 1.949
+    },
+    {
+      "name": "Frontside Flip",
+      "cost": 2,
+      "points": 5,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 802,
+      "banked": 419,
+      "falls": 581,
+      "three": 0,
+      "score": 4458,
+      "scoreSquared": 49506,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 305,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.802,
+      "meanScore": 4.458,
+      "meanSpent": 0
+    },
+    {
+      "name": "Frontside Flip",
+      "cost": 2,
+      "points": 5,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 947,
+      "falls": 53,
+      "three": 632,
+      "score": 14438,
+      "scoreSquared": 223080,
+      "spent": {
+        "adjust": 700,
+        "reroll": 229,
+        "freeze": 873
+      },
+      "deferred": 666,
+      "immediate": 632,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 14.438,
+      "meanSpent": 1.802
+    },
+    {
+      "name": "Frontside Flip",
+      "cost": 2,
+      "points": 5,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 958,
+      "score": 17257,
+      "scoreSquared": 300519,
+      "spent": {
+        "adjust": 1284,
+        "reroll": 14,
+        "freeze": 816
+      },
+      "deferred": 133,
+      "immediate": 958,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 17.257,
+      "meanSpent": 2.114
+    },
+    {
+      "name": "Bigspin",
+      "cost": 2,
+      "points": 7,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 698,
+      "banked": 646,
+      "falls": 354,
+      "three": 0,
+      "score": 5814,
+      "scoreSquared": 52326,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 646,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.698,
+      "meanScore": 5.814,
+      "meanSpent": 0
+    },
+    {
+      "name": "Bigspin",
+      "cost": 2,
+      "points": 7,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 995,
+      "banked": 944,
+      "falls": 56,
+      "three": 647,
+      "score": 14444,
+      "scoreSquared": 227650,
+      "spent": {
+        "adjust": 682,
+        "reroll": 293,
+        "freeze": 643
+      },
+      "deferred": 1212,
+      "immediate": 647,
+      "variant": "approved",
+      "landRate": 0.995,
+      "meanScore": 14.444,
+      "meanSpent": 1.618
+    },
+    {
+      "name": "Bigspin",
+      "cost": 2,
+      "points": 7,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 922,
+      "score": 17779,
+      "scoreSquared": 318527,
+      "spent": {
+        "adjust": 1486,
+        "reroll": 66,
+        "freeze": 754
+      },
+      "deferred": 1197,
+      "immediate": 922,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 17.779,
+      "meanSpent": 2.306
+    },
+    {
+      "name": "Backside Flip",
+      "cost": 3,
+      "points": 8,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 777,
+      "banked": 777,
+      "falls": 223,
+      "three": 0,
+      "score": 6216,
+      "scoreSquared": 49728,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 777,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.777,
+      "meanScore": 6.216,
+      "meanSpent": 0
+    },
+    {
+      "name": "Backside Flip",
+      "cost": 3,
+      "points": 8,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 935,
+      "falls": 65,
+      "three": 0,
+      "score": 13811,
+      "scoreSquared": 207629,
+      "spent": {
+        "adjust": 486,
+        "reroll": 231,
+        "freeze": 681
+      },
+      "deferred": 1316,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 13.811,
+      "meanSpent": 1.398
+    },
+    {
+      "name": "Backside Flip",
+      "cost": 3,
+      "points": 8,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 15513,
+      "scoreSquared": 240903,
+      "spent": {
+        "adjust": 1003,
+        "reroll": 37,
+        "freeze": 750
+      },
+      "deferred": 1487,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 15.513,
+      "meanSpent": 1.79
+    },
+    {
+      "name": "Varial Heelflip",
+      "cost": 3,
+      "points": 8,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 750,
+      "banked": 750,
+      "falls": 250,
+      "three": 0,
+      "score": 6000,
+      "scoreSquared": 48000,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.75,
+      "meanScore": 6,
+      "meanSpent": 0
+    },
+    {
+      "name": "Varial Heelflip",
+      "cost": 3,
+      "points": 8,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 998,
+      "banked": 943,
+      "falls": 57,
+      "three": 0,
+      "score": 13952,
+      "scoreSquared": 212592,
+      "spent": {
+        "adjust": 508,
+        "reroll": 281,
+        "freeze": 664
+      },
+      "deferred": 431,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.998,
+      "meanScore": 13.952,
+      "meanSpent": 1.453
+    },
+    {
+      "name": "Varial Heelflip",
+      "cost": 3,
+      "points": 8,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 0,
+      "score": 15994,
+      "scoreSquared": 256482,
+      "spent": {
+        "adjust": 1087,
+        "reroll": 72,
+        "freeze": 781
+      },
+      "deferred": 640,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 15.994,
+      "meanSpent": 1.94
+    },
+    {
+      "name": "Inward Heelflip",
+      "cost": 3,
+      "points": 9,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 686,
+      "banked": 596,
+      "falls": 404,
+      "three": 0,
+      "score": 6408,
+      "scoreSquared": 70200,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.686,
+      "meanScore": 6.408,
+      "meanSpent": 0
+    },
+    {
+      "name": "Inward Heelflip",
+      "cost": 3,
+      "points": 9,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 999,
+      "banked": 951,
+      "falls": 49,
+      "three": 0,
+      "score": 14144,
+      "scoreSquared": 213558,
+      "spent": {
+        "adjust": 551,
+        "reroll": 197,
+        "freeze": 561
+      },
+      "deferred": 349,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.999,
+      "meanScore": 14.144,
+      "meanSpent": 1.309
+    },
+    {
+      "name": "Inward Heelflip",
+      "cost": 3,
+      "points": 9,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 15539,
+      "scoreSquared": 243213,
+      "spent": {
+        "adjust": 1071,
+        "reroll": 20,
+        "freeze": 450
+      },
+      "deferred": 268,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 15.539,
+      "meanSpent": 1.541
+    },
+    {
+      "name": "Hardflip",
+      "cost": 2,
+      "points": 8,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 496,
+      "banked": 394,
+      "falls": 606,
+      "three": 0,
+      "score": 4378,
+      "scoreSquared": 49036,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.496,
+      "meanScore": 4.378,
+      "meanSpent": 0
+    },
+    {
+      "name": "Hardflip",
+      "cost": 2,
+      "points": 8,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 995,
+      "banked": 926,
+      "falls": 74,
+      "three": 551,
+      "score": 14771,
+      "scoreSquared": 241181,
+      "spent": {
+        "adjust": 749,
+        "reroll": 302,
+        "freeze": 705
+      },
+      "deferred": 543,
+      "immediate": 551,
+      "variant": "approved",
+      "landRate": 0.995,
+      "meanScore": 14.771,
+      "meanSpent": 1.756
+    },
+    {
+      "name": "Hardflip",
+      "cost": 2,
+      "points": 8,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 932,
+      "score": 18954,
+      "scoreSquared": 362580,
+      "spent": {
+        "adjust": 1504,
+        "reroll": 45,
+        "freeze": 971
+      },
+      "deferred": 399,
+      "immediate": 932,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 18.954,
+      "meanSpent": 2.52
+    },
+    {
+      "name": "720°",
+      "cost": 3,
+      "points": 10,
+      "stock": 0,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 574,
+      "banked": 518,
+      "falls": 482,
+      "three": 0,
+      "score": 6029,
+      "scoreSquared": 71327,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.574,
+      "meanScore": 6.029,
+      "meanSpent": 0
+    },
+    {
+      "name": "720°",
+      "cost": 3,
+      "points": 10,
+      "stock": 1,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 992,
+      "banked": 916,
+      "falls": 84,
+      "three": 0,
+      "score": 14448,
+      "scoreSquared": 232784,
+      "spent": {
+        "adjust": 603,
+        "reroll": 346,
+        "freeze": 504
+      },
+      "deferred": 314,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.992,
+      "meanScore": 14.448,
+      "meanSpent": 1.453
+    },
+    {
+      "name": "720°",
+      "cost": 3,
+      "points": 10,
+      "stock": 3,
+      "target": 12,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 0,
+      "score": 17443,
+      "scoreSquared": 304931,
+      "spent": {
+        "adjust": 1249,
+        "reroll": 69,
+        "freeze": 698
+      },
+      "deferred": 509,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 17.443,
+      "meanSpent": 2.016
+    },
+    {
+      "name": "360 Flip",
+      "cost": 2,
+      "points": 10,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 334,
+      "banked": 301,
+      "falls": 699,
+      "three": 0,
+      "score": 3612,
+      "scoreSquared": 43344,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.334,
+      "meanScore": 3.612,
+      "meanSpent": 0
+    },
+    {
+      "name": "360 Flip",
+      "cost": 2,
+      "points": 10,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 924,
+      "banked": 858,
+      "falls": 142,
+      "three": 287,
+      "score": 13943,
+      "scoreSquared": 234001,
+      "spent": {
+        "adjust": 772,
+        "reroll": 454,
+        "freeze": 318
+      },
+      "deferred": 106,
+      "immediate": 287,
+      "variant": "approved",
+      "landRate": 0.924,
+      "meanScore": 13.943,
+      "meanSpent": 1.544
+    },
+    {
+      "name": "360 Flip",
+      "cost": 2,
+      "points": 10,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 799,
+      "score": 20695,
+      "scoreSquared": 433559,
+      "spent": {
+        "adjust": 1959,
+        "reroll": 70,
+        "freeze": 934
+      },
+      "deferred": 80,
+      "immediate": 799,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 20.695,
+      "meanSpent": 2.963
+    },
+    {
+      "name": "Bluntslide",
+      "cost": 3,
+      "points": 11,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 378,
+      "banked": 378,
+      "falls": 622,
+      "three": 0,
+      "score": 4158,
+      "scoreSquared": 45738,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.378,
+      "meanScore": 4.158,
+      "meanSpent": 0
+    },
+    {
+      "name": "Bluntslide",
+      "cost": 3,
+      "points": 11,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 925,
+      "banked": 877,
+      "falls": 123,
+      "three": 0,
+      "score": 13550,
+      "scoreSquared": 218314,
+      "spent": {
+        "adjust": 615,
+        "reroll": 526,
+        "freeze": 611
+      },
+      "deferred": 39,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.925,
+      "meanScore": 13.55,
+      "meanSpent": 1.752
+    },
+    {
+      "name": "Bluntslide",
+      "cost": 3,
+      "points": 11,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 999,
+      "falls": 1,
+      "three": 0,
+      "score": 18342,
+      "scoreSquared": 340146,
+      "spent": {
+        "adjust": 1785,
+        "reroll": 242,
+        "freeze": 657
+      },
+      "deferred": 9,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 18.342,
+      "meanSpent": 2.684
+    },
+    {
+      "name": "Laser Flip",
+      "cost": 3,
+      "points": 15,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 217,
+      "banked": 217,
+      "falls": 783,
+      "three": 0,
+      "score": 3255,
+      "scoreSquared": 48825,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.217,
+      "meanScore": 3.255,
+      "meanSpent": 0
+    },
+    {
+      "name": "Laser Flip",
+      "cost": 3,
+      "points": 15,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 850,
+      "banked": 824,
+      "falls": 176,
+      "three": 0,
+      "score": 14493,
+      "scoreSquared": 259555,
+      "spent": {
+        "adjust": 649,
+        "reroll": 597,
+        "freeze": 496
+      },
+      "deferred": 25,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.85,
+      "meanScore": 14.493,
+      "meanSpent": 1.742
+    },
+    {
+      "name": "Laser Flip",
+      "cost": 3,
+      "points": 15,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 998,
+      "falls": 2,
+      "three": 0,
+      "score": 19517,
+      "scoreSquared": 384761,
+      "spent": {
+        "adjust": 1900,
+        "reroll": 163,
+        "freeze": 154
+      },
+      "deferred": 1,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 19.517,
+      "meanSpent": 2.217
+    },
+    {
+      "name": "Impossible",
+      "cost": 3,
+      "points": 17,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 102,
+      "banked": 102,
+      "falls": 898,
+      "three": 0,
+      "score": 1734,
+      "scoreSquared": 29478,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.102,
+      "meanScore": 1.734,
+      "meanSpent": 0
+    },
+    {
+      "name": "Impossible",
+      "cost": 3,
+      "points": 17,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 575,
+      "banked": 558,
+      "falls": 442,
+      "three": 0,
+      "score": 10557,
+      "scoreSquared": 201891,
+      "spent": {
+        "adjust": 408,
+        "reroll": 817,
+        "freeze": 552
+      },
+      "deferred": 19,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.575,
+      "meanScore": 10.557,
+      "meanSpent": 1.777
+    },
+    {
+      "name": "Impossible",
+      "cost": 3,
+      "points": 17,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 993,
+      "banked": 990,
+      "falls": 10,
+      "three": 0,
+      "score": 20732,
+      "scoreSquared": 437086,
+      "spent": {
+        "adjust": 2132,
+        "reroll": 687,
+        "freeze": 343
+      },
+      "deferred": 56,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.993,
+      "meanScore": 20.732,
+      "meanSpent": 3.162
+    },
+    {
+      "name": "Hurricane",
+      "cost": 4,
+      "points": 18,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 178,
+      "banked": 178,
+      "falls": 822,
+      "three": 0,
+      "score": 3204,
+      "scoreSquared": 57672,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.178,
+      "meanScore": 3.204,
+      "meanSpent": 0
+    },
+    {
+      "name": "Hurricane",
+      "cost": 4,
+      "points": 18,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 854,
+      "banked": 854,
+      "falls": 146,
+      "three": 0,
+      "score": 15997,
+      "scoreSquared": 300685,
+      "spent": {
+        "adjust": 691,
+        "reroll": 440,
+        "freeze": 446
+      },
+      "deferred": 5,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.854,
+      "meanScore": 15.997,
+      "meanSpent": 1.577
+    },
+    {
+      "name": "Hurricane",
+      "cost": 4,
+      "points": 18,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 19969,
+      "scoreSquared": 400177,
+      "spent": {
+        "adjust": 1718,
+        "reroll": 59,
+        "freeze": 124
+      },
+      "deferred": 33,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 19.969,
+      "meanSpent": 1.901
+    },
+    {
+      "name": "900°",
+      "cost": 4,
+      "points": 18,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 179,
+      "banked": 179,
+      "falls": 821,
+      "three": 0,
+      "score": 3222,
+      "scoreSquared": 57996,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.179,
+      "meanScore": 3.222,
+      "meanSpent": 0
+    },
+    {
+      "name": "900°",
+      "cost": 4,
+      "points": 18,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 769,
+      "banked": 769,
+      "falls": 231,
+      "three": 0,
+      "score": 14767,
+      "scoreSquared": 285319,
+      "spent": {
+        "adjust": 614,
+        "reroll": 546,
+        "freeze": 553
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.769,
+      "meanScore": 14.767,
+      "meanSpent": 1.713
+    },
+    {
+      "name": "900°",
+      "cost": 4,
+      "points": 18,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 20574,
+      "scoreSquared": 424690,
+      "spent": {
+        "adjust": 1753,
+        "reroll": 196,
+        "freeze": 303
+      },
+      "deferred": 2,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 20.574,
+      "meanSpent": 2.252
+    },
+    {
+      "name": "1080°",
+      "cost": 4,
+      "points": 20,
+      "stock": 0,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 73,
+      "banked": 73,
+      "falls": 927,
+      "three": 0,
+      "score": 1460,
+      "scoreSquared": 29200,
+      "spent": {
+        "adjust": 0,
+        "reroll": 0,
+        "freeze": 0
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.073,
+      "meanScore": 1.46,
+      "meanSpent": 0
+    },
+    {
+      "name": "1080°",
+      "cost": 4,
+      "points": 20,
+      "stock": 1,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 642,
+      "banked": 642,
+      "falls": 358,
+      "three": 0,
+      "score": 13195,
+      "scoreSquared": 272093,
+      "spent": {
+        "adjust": 588,
+        "reroll": 625,
+        "freeze": 630
+      },
+      "deferred": 0,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 0.642,
+      "meanScore": 13.195,
+      "meanSpent": 1.843
+    },
+    {
+      "name": "1080°",
+      "cost": 4,
+      "points": 20,
+      "stock": 3,
+      "target": 20,
+      "objective": "score",
+      "helpers": "mature",
+      "trials": 1000,
+      "landed": 1000,
+      "banked": 1000,
+      "falls": 0,
+      "three": 0,
+      "score": 22315,
+      "scoreSquared": 499681,
+      "spent": {
+        "adjust": 2118,
+        "reroll": 66,
+        "freeze": 99
+      },
+      "deferred": 3,
+      "immediate": 0,
+      "variant": "approved",
+      "landRate": 1,
+      "meanScore": 22.315,
+      "meanSpent": 2.283
+    }
+  ],
+  "productionUnchanged": true,
+  "productionHashes": {
+    "public/app.js": "68359ea36947a1035733efa414d52c5f1cc6d87bbc5210c8cc4bb502db02c156",
+    "public/card-library.js": "af7ce0c2e786e7449b9b13ee353913e7586b7f823e545bbc3618c2ab237a4fcd",
+    "public/combinations.js": "8d42382a600e43220278f3b6ba85257d7b4a358eebed165e11af203d3b70f5fb",
+    "public/data.js": "b619447fec1c4f783e75eaf144a3e571d96e60c1452ec77d5c4aec103fc989c0",
+    "public/dice-feedback.js": "4e61e0a0d5cacfec547ce758a23fa5236a0449e9dff9e0e970d91fdac66f13aa",
+    "public/drag.js": "44f9bb979c881f88e235861b3988832ce8e1839edbda9e569ce82fa4c30db31b",
+    "public/engine.js": "5053c5df77cbf84a2bc71c7b651965c4cd18a50d81623d4837954e055f67c281",
+    "public/icons.js": "7438c41b2fc0a9199cc8b4d65b0963782155401773eb11070c0895f3ca79c84b",
+    "public/initial-draft.js": "0294cc3a52914b02cdc72649844908c3a26571bdb607369d3aced8913771980c",
+    "public/match-statistics.js": "9a66f292db66d306348755e21b90162fca7a4727b824e99be029282b380696be",
+    "public/match-ui.js": "22534e2c6d567a0da31b13a5c55689004075bcfefee8096de93e6707b178e0e7",
+    "public/match.js": "26bcca8c5907f85fa9b6b1493762ab737f7c964247c5468d341b82ef80c8ca9e",
+    "public/module-cards.js": "66d9c3742b9d77fee101ee2223a83f6b84f260a5f6421e233fca40be4b7c5fb4",
+    "public/module-rules.js": "00c717cbcfd5ecf3a9d8134e4b67b5de35f521bf68dd96c742ad267a86c99c45",
+    "public/npc-choice.js": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14",
+    "public/npc-dice.js": "9dde7279cc2abdcb543e8ca8761fbe8c13f59ca7453d24ff21b770d6a565f2e9",
+    "public/npc-difficulty.js": "f79cfeddcb86bacbb08619bd0e787a929b329357e80498c61795579a2e6c50b9",
+    "public/npc-strategy.js": "b6165f991d3eaa24b0926470091f18793e3eb222ef121c1791a9634b0f673839",
+    "public/npc-view.js": "ee9afb101b3c78ac88d3bb3c285102aea235f5750842a15b9b6647efcdcdf318",
+    "public/npc.js": "b4c2609a05068fb29f175d36768c6034312e0626684f43fc2d735926a023e0f2",
+    "public/odds.js": "b1fb1a59daf1e5dc5451f762ac6346a1930ee151b12bb6fe12a1421d36d85bcb",
+    "public/online-client.js": "457aacfbda0a41ce3c4a964dd22ddced34b494f86066b7055fedaceb722bec2d",
+    "public/online-ui.js": "50e0c2bc9c4763b6f9e13457c854d82772c6c84e4283d997a1cf8062e7c5d3bd",
+    "public/patch-notes-state.js": "d694a3e2515610101fc870d99db4ec7b60b2dbbc41ac9d1d7096ebd852c71bb8",
+    "public/played-card.js": "3937ab1379e6238eb660f1d7ed140563378d9251c732e00ef8778ddeb9fa1271",
+    "public/release-notes.js": "c550696a409ef5d8e33a69a3e0b07269b86c4ddb46ebd13d9cb3813dd15d7317",
+    "public/roll-probability.js": "47c89055a093c01bf12c4c962deccc9b0eaf2d4917a66a0b3a26c47cb6dea31d",
+    "public/skaters.js": "819c596a2a4e71d6d925d24f5dfd7d5341480917f98ee3acb68400d7ea2b756d",
+    "public/table-view.js": "8fcd94ee50d41b8d9eb9c30404e418c8cdc8cec377026a73a1e77bb74945e673",
+    "public/turn.js": "7ed0252cc2df1fe25d5fdeb6917d1b2150befdf1c742e5a70e59b03cdeb4c73a",
+    "public/ui-feedback.js": "99e841ae7205fcde614ce0f19a0ea8c5e02fb93b4f6d8a673f3b55cdeb140d61"
+  },
+  "recommendation": {
+    "threeDicePremium": 2,
+    "fourDicePremiumForNextPlaytest": 2,
+    "proposedFourDiceScores": {
+      "Hurricane": 16,
+      "900°": 16,
+      "1080°": 18
+    },
+    "integrated": false
+  },
+  "interpretation": {
+    "three": "The +2 premium makes the 3-die preference competitive; +3 displaces 2-die preference strongly. No strategy is proven optimal.",
+    "four": "Lowering +4 to +2 reduces the four-die preference win share by 3.08 percentage points in 600 paired seeds (approximate 95% interval 1.65 to 4.52 points). This is evidence within the tested heuristics, not a proof of a human-game optimum.",
+    "draft": "All drafts filled even with all 24 initial Advanced picks. Older cards remain attractive. Legacy draft controller almost never buys 4-die cards; sequence-aware control raises uptake but still has an approximation bias.",
+    "tokens": "Stock remains finite without a cap, but stacks make initially rare Epic requirements highly achievable. Three of each token is a well-stocked controlled case, not an average player."
+  }
+}

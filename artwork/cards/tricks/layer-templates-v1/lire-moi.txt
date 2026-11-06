@@ -1,0 +1,48 @@
+SK8 HEROES — GABARITS À TROIS COUCHES, V1
+
+Ouvrir index.html pour voir les trois exemples, masquer les couches et
+essayer un autre score. Le nombre modifié dans l’aperçu ne change pas
+automatiquement les fichiers : télécharger le calque texte modifié pour
+conserver cette modification.
+
+Pour chaque carte :
+01-illustration.svg / .png : illustration seule, sans titre ni chiffres.
+02-graphisme.svg / .png : cadre, vagues, panneaux et emplacements vides.
+03-textes-symboles.svg / .png : titre, type, rareté, combinaison, score et bonus.
+carte-assemblee.png : résultat de leur superposition, dans cet ordre.
+card.json : informations de référence utilisées pour produire cet exemple.
+
+Les trois couches ont la même taille : 900 × 1 300 pixels.
+Les PNG préservent la transparence. Les SVG gardent les formes et les
+textes modifiables ; la première couche embarque son illustration.
+Les illustrations PNG originales sont aussi conservées dans illustrations/.
+Les cadres vides à 2, 3 et 4 dés sont dans frames/.
+
+FLUX DE VALIDATION
+1. Valider la scène, le rider et la représentation du trick.
+2. Valider le cadre commun et les variantes de nombre de dés.
+3. Valider les valeurs, les symboles et l’effet depuis les règles approuvées.
+4. Assembler les trois couches et inspecter la carte complète.
+
+L’outil assemble.mjs reconstruit une carte à partir de ses trois SVG,
+sans générer ni modifier la scène. Après une modification manuelle du
+texte, remplacer seulement 03-textes-symboles.svg, puis réassembler.
+
+Exemple depuis le dossier de ce gabarit, dans ce poste Codex :
+node assemble.mjs heelflip C:/Users/jeanf/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp
+
+Pour régénérer les trois exemples depuis le catalogue et le gabarit commun,
+utiliser le script du projet scripts/artwork/build-trick-layer-templates.mjs
+avec le même chemin de bibliothèque sharp en premier argument.
+Ce script de construction remplace les exports d’exemple. L’assembleur
+ci-dessus conserve les SVG édités et régénère uniquement leurs rendus.
+
+Les pourcentages sont calculés à six dés ordinaires, sans jeton ni joker.
+Le 900° affiche 16 points, conformément au réglage simulé avec une prime
+de +2 pour les cartes à quatre dés. Les données du jeu jouable sont séparées.
+Les jetons des cartes sont gagnés en fin de module.
+
+Les nouvelles illustrations ont été préparées avec l’outil intégré image_gen
+à partir du style des planches existantes ; les prompts sont conservés dans
+generation-prompts.json. Le cadre et les textes sont produits en SVG.
+Ces exemples attendent une validation visuelle et ne sont pas intégrés au jeu.

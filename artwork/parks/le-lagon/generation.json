@@ -1,0 +1,37 @@
+{
+  "mode": "built-in image_gen",
+  "finalImage": "park-plan-v2.png",
+  "specification": "draft-v2.json",
+  "geometryReference": {
+    "editable": "mini-ramp-reference.svg",
+    "raster": "mini-ramp-reference.png",
+    "generator": "draw-mini-reference.mjs"
+  },
+  "promptSet": [
+    "park-plan-v1.prompt.txt",
+    "park-plan-v1-refine.prompt.txt",
+    "park-plan-v2.prompt.txt",
+    "park-plan-v2-geometry.prompt.txt"
+  ],
+  "stages": [
+    {
+      "kind": "generation",
+      "source": "C:/Users/jeanf/.codex/generated_images/01a17526-8894-7e62-af4a-1d48fa05beb0/exec-7d0cd6e0-a6fa-4bc8-9a1a-04f45d936a7d.png"
+    },
+    {
+      "kind": "geometry-refinement",
+      "savedAs": "park-plan-v1.png",
+      "source": "C:/Users/jeanf/.codex/generated_images/01a17526-8894-7e62-af4a-1d48fa05beb0/exec-2c8f460c-4bbe-4561-bb87-cf63465ab944.png"
+    },
+    {
+      "kind": "three-trick-zones",
+      "source": "C:/Users/jeanf/.codex/generated_images/01a17526-8894-7e62-af4a-1d48fa05beb0/exec-6f8a3314-8bdd-407a-acb5-a95953e961dd.png"
+    },
+    {
+      "kind": "final-perspective-refinement",
+      "savedAs": "park-plan-v2.png",
+      "source": "C:/Users/jeanf/.codex/generated_images/01a17526-8894-7e62-af4a-1d48fa05beb0/exec-e324a064-a0cc-48c6-bf4a-112960e02742.png"
+    }
+  ]
+}
+

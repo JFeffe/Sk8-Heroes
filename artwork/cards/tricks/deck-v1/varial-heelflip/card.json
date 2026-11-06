@@ -1,0 +1,117 @@
+{
+  "id": 9,
+  "key": "varial-heelflip",
+  "name": "Varial Heelflip",
+  "type": "kick",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 8,
+  "difficultyPoints": 6,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.65625,
+  "requirementCode": "even3",
+  "cost": 3,
+  "pattern": "choices",
+  "choices": [
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      4
+    ],
+    [
+      2,
+      2,
+      6
+    ],
+    [
+      2,
+      4,
+      4
+    ],
+    [
+      2,
+      4,
+      6
+    ],
+    [
+      2,
+      6,
+      6
+    ],
+    [
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      6
+    ],
+    [
+      4,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      6
+    ]
+  ],
+  "symbols": [
+    "2·4·6",
+    "2·4·6",
+    "2·4·6"
+  ],
+  "rule": "Trois pairs · doublons permis",
+  "comboBonus": {
+    "kind": "companion",
+    "type": "kick",
+    "points": 1
+  },
+  "layers": {
+    "illustration": "assets/tricks/varial-heelflip/01-illustration.webp?v=f9dc12e84a1e",
+    "graphics": "assets/tricks/frames/3-bonus.svg?v=0c175840bc30",
+    "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=bccb7d8b0c5f"
+  },
+  "printedPoints": 8,
+  "p": 0.65625,
+  "effect": "point:kick",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

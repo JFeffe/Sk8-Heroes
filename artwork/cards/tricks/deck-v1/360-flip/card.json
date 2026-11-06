@@ -1,0 +1,58 @@
+{
+  "id": 13,
+  "key": "360-flip",
+  "name": "360 Flip",
+  "type": "kick",
+  "tier": "epic",
+  "copies": 1,
+  "points": 10,
+  "difficultyPoints": 10,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.263224451303155,
+  "requirementCode": "double4",
+  "cost": 2,
+  "pattern": "exact",
+  "values": [
+    4,
+    4
+  ],
+  "symbols": [
+    "4",
+    "4"
+  ],
+  "rule": "Deux 4",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/360-flip/01-illustration.webp?v=664891a132b8",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=5a2f3e187dd2"
+  },
+  "printedPoints": 10,
+  "p": 0.263224451303155,
+  "effect": "",
+  "tierLabel": "ÉPIQUE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

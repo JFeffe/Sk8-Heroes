@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-31",
+  "kind": "presentation-only",
+  "copyAdded": false,
+  "ruleChanges": false,
+  "tests": {
+    "total": 173,
+    "passed": 173,
+    "failed": 0,
+    "completeCompetitions": 100
+  },
+  "browser": {
+    "desktop": [
+      1280,
+      720
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "verified": [
+      "placement feedback",
+      "trick success",
+      "banking",
+      "three-trick celebration",
+      "token use and gain",
+      "fall feedback",
+      "rider reservation feedback",
+      "full initial draft hand",
+      "no archive scrolling",
+      "mobile score alignment"
+    ],
+    "initialDraft": {
+      "step": 6,
+      "chosenCards": 5,
+      "documentHeight": 720,
+      "handBottom": 706.89,
+      "profilesBottom": 675.05
+    },
+    "mobileArchive": {
+      "clientWidth": 292,
+      "scrollWidth": 292,
+      "clientHeight": 111,
+      "scrollHeight": 111,
+      "controlsBottom": 676.52,
+      "handTop": 714
+    },
+    "consoleErrors": 0
+  },
+  "screenshots": [
+    "tests/screenshots/ui-polish-table.png",
+    "tests/screenshots/ui-polish-draft.png",
+    "tests/screenshots/ui-polish-mobile.png",
+    "tests/screenshots/ui-polish-lobby.png"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": 2,
+  "key": "petite-vague",
+  "name": "La Petite Vague",
+  "stage": 0,
+  "needs": [
+    "air"
+  ],
+  "pv": 2,
+  "bonus": {
+    "kind": "favored",
+    "type": "slide",
+    "points": 1
+  },
+  "condition": "Chaque Slide rapporte +1 point.",
+  "park": "Le Lagon",
+  "rounds": [
+    1,
+    2
+  ],
+  "image": "assets/modules/lagoon/petite-vague.webp",
+  "layers": {
+    "illustration": "assets/modules/lagoon/layers/petite-vague/01-illustration.webp?v=0686578eb4fe",
+    "graphics": "assets/modules/lagoon/layers/frames/module.svg?v=bb9eb38fa41f",
+    "information": "assets/modules/lagoon/layers/petite-vague/03-textes-symboles.webp?v=780a0a585cff"
+  },
+  "illustrationMaster": "artwork/parks/le-lagon/modules/petite-vague.png",
+  "canvas": [
+    900,
+    1300
+  ],
+  "textResolution": [
+    1800,
+    2600
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

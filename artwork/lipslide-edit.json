@@ -1,0 +1,8 @@
+{
+  "mode": "built-in image_gen",
+  "useCase": "precise-object-edit",
+  "source": "public/assets/tricks-4.webp (Lipslide, upper-right card)",
+  "output": "public/assets/lipslide-corrected.webp",
+  "prompt": "Use case: precise-object-edit. Edit target: the supplied Lipslide game card. Correct ONLY the skateboard under the skater's feet: it currently has three axles and six wheels. It must be a normal skateboard with exactly TWO trucks/axles and FOUR wheels total, one pair close to each end, no axle and no wheels in the center. Remove the extra middle axle and its two wheels, reconstruct the exposed board/rail naturally. Preserve the woman's pose, feet, deck position, the rail, shadows, tropical landscape and illustration style. Preserve the full card framing, navy/orange/turquoise/cream palette, typography and every printed word/number exactly as supplied: Lipslide, SLIDE, DIFFICULTÉ 5, SCORE 5, Aucun effet. Keep the same full portrait card composition; no additions or redesign.",
+  "atlasOutput": "public/assets/tricks-4.webp (only the Lipslide cell replaced)"
+}

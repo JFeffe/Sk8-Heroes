@@ -1,0 +1,20 @@
+{
+  "rulesVersion": 14,
+  "matchVersion": 9,
+  "automatedTests": {"passed": 97, "failed": 0},
+  "moduleCatalog": {"cards": 12, "illustrationsLoaded": 12, "stagePools": [4, 6, 2]},
+  "sixRoundDraws": {"seedsChecked": 2000, "duplicates": 0, "wrongRoundAppearances": 0, "allTwelveCardsObserved": true},
+  "competitiveSimulation": {"completed": 100, "roundsPerGame": 6, "players": 4, "modules": 600, "attempts": 4800, "commands": 56327, "restoreAfterEveryTransition": true},
+  "soloRegressionSimulation": {"completed": 1000, "modules": 5000, "attempts": 10000},
+  "browserChecks": {
+    "viewportsWithoutPageOverflow": ["1280x720", "1366x600", "390x844"],
+    "sixModulesVisibleFromInitialDraft": true,
+    "routePreservedAfterReload": true,
+    "expandedPreviewAndClickInspection": true,
+    "inspectionDialogFitsWithoutScrolling": true,
+    "consoleErrorsOrWarnings": 0,
+    "playedExample": {"module": "Le Quai bas", "tricks": ["Smith Grind", "Boardslide"], "trickPoints": 7, "cardBonus": 2, "moduleBonus": 2, "attemptTotal": 11, "victoryPoints": 2, "victoryPointsAfterReload": 2}
+  },
+  "screenshots": ["tests/screenshots/lagoon-table-verified.jpg", "tests/screenshots/lagoon-12-modules.jpg"],
+  "note": "Functional validation. Simulations use heuristic controllers and do not establish balance for human play. Four-round routes remain supported only by the older engine/simulation API; the game setup uses six rounds."
+}

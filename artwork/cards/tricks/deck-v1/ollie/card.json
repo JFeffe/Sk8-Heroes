@@ -1,0 +1,55 @@
+{
+  "id": 0,
+  "key": "ollie",
+  "name": "Ollie",
+  "type": "kick",
+  "tier": "base",
+  "copies": 3,
+  "points": 2,
+  "difficultyPoints": 2,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.9993355624142661,
+  "requirementCode": "high2",
+  "cost": 2,
+  "pattern": "at-least",
+  "threshold": 2,
+  "symbols": [
+    "≥2",
+    "≥2"
+  ],
+  "rule": "Deux dés ≥ 2",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/ollie/01-illustration.webp?v=6952a6873a83",
+    "graphics": "assets/tricks/frames/2-plain.svg?v=52fe7036faf4",
+    "information": "assets/tricks/ollie/03-textes-symboles.webp?v=1f7dfb4837e1"
+  },
+  "printedPoints": 2,
+  "p": 0.9993355624142661,
+  "effect": "",
+  "tierLabel": "BASE",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

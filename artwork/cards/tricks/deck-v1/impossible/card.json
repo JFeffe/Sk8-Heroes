@@ -1,0 +1,66 @@
+{
+  "id": 15,
+  "key": "impossible",
+  "name": "Impossible",
+  "type": "kick",
+  "tier": "epic",
+  "copies": 1,
+  "points": 17,
+  "difficultyPoints": 15,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.062285665294924554,
+  "requirementCode": "exact666",
+  "cost": 3,
+  "pattern": "exact",
+  "values": [
+    6,
+    6,
+    6
+  ],
+  "symbols": [
+    "6",
+    "6",
+    "6"
+  ],
+  "rule": "Trois 6",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/impossible/01-illustration.webp?v=93d26bec1c0c",
+    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
+    "information": "assets/tricks/impossible/03-textes-symboles.webp?v=01fa9b626f38"
+  },
+  "printedPoints": 17,
+  "p": 0.062285665294924554,
+  "effect": "",
+  "tierLabel": "ÉPIQUE",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

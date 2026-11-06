@@ -1,0 +1,74 @@
+{
+  "updated": "2026-11-02",
+  "modules": {
+    "status": "Simple effects approved and integrated in version 0.5.0; rules v17 / save v12.",
+    "catalog": "public/module-catalog.js",
+    "tests": "tests/module-effects.test.js",
+    "previousTheory": "tests/fixtures/theory85-modules-v3.json",
+    "ranking": "Best complete banked attempt; both attempts independent.",
+    "minimumTricks": "None generally; recovery requires exactly two, sequence effects require three.",
+    "swap": {
+      "copingBleu": "Grande amplitude",
+      "doubleQuai": "Zone de récupération"
+    }
+  },
+  "moduleCards": {
+    "status": "Version 0.5.0; all 12 three-layer cards print their approved simple effects.",
+    "layers": [
+      "Illustration",
+      "Graphic frame",
+      "Text and semantic symbols"
+    ],
+    "canvas": [
+      900,
+      1300
+    ],
+    "textResolution": [
+      1800,
+      2600
+    ],
+    "template": "scripts/artwork/module-card-template.mjs",
+    "sharedTemplate": "scripts/artwork/trick-card-template.mjs",
+    "manifest": "artwork/cards/modules/le-lagon-v1/manifest.json",
+    "artwork": "Existing approved art-only masters in artwork/parks/le-lagon/modules/",
+    "editableTextFormat": "SVG",
+    "webTextFormat": "Transparent lossless WebP at 2x",
+    "assetCaching": "SHA-256 versioned URLs; one shared graphics layer",
+    "alignment": "Shared score and badge anchors with trick cards; measured titles and PV ink bounds.",
+    "rulesNote": "No generic +2 or two-trick minimum; score and token effects are printed individually."
+  },
+  "trickCards": {
+    "status": "Integrated in game version 0.3.0; all 41 unique tricks / 85 physical cards use the approved three-layer template.",
+    "layers": [
+      "Illustration",
+      "Graphic frame",
+      "Text and semantic symbols"
+    ],
+    "template": "artwork/cards/tricks/layer-templates-v1/specification.json",
+    "examples": [
+      "heelflip",
+      "smith-grind",
+      "900"
+    ],
+    "style": "Established cream/navy/turquoise/orange illustrated coastal skatepark cards",
+    "textSymbols": "All title, type, combination, score and bonus information stays out of illustration and graphics.",
+    "alignment": "Common frame anchors, matching badge rotation, and measured text ink bounds; illustration artwork and rules unchanged.",
+    "catalog": "public/trick-catalog.js",
+    "manifest": "artwork/cards/tricks/deck-v1/manifest.json",
+    "uniqueCards": 41,
+    "physicalCards": 85,
+    "copiesByTier": {
+      "base": 36,
+      "advanced": 40,
+      "epic": 9
+    },
+    "webTextResolution": [
+      1800,
+      2600
+    ],
+    "editableTextFormat": "SVG",
+    "webTextFormat": "Transparent lossless WebP at 2x",
+    "assetCaching": "SHA-256 versioned URLs; illustrations and semantic overlays reused across table renders",
+    "illustrationMode": "Built-in image generation; one art-only master per trick; original generation prompts retained in generation/"
+  }
+}

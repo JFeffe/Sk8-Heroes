@@ -1,0 +1,52 @@
+LE LAGON V8 — MODIFICATIONS DES TROIS CAPTURES
+
+1. GRAND DROP ENTRE LES DUNES ET LES PALMIERS
+   Nouveau module E sur le côté ouest (gauche du plan), descente vers le centre.
+   Hauteur de départ : 3,80 m, contre 1,35 m pour l'ancien module le plus haut.
+   Il dépasse également le double du nouveau quarter à 1,80 m.
+   Pente haute : 75 degrés, raccord circulaire tangent au sol et à la pente.
+   Largeur : 8,40 m ; projection horizontale : 3 m ; plateforme : 1,20 m.
+   Deux dégagements de 0,60 m séparent ses côtés des modules voisins.
+
+2. QUARTER DE L'ANSE DU LARGE
+   Remplacement de l'anse ovale oblique par un demi-cercle régulier de 180°.
+   Deux extrémités symétriques, même hauteur, ouverture vers le centre / ouest.
+   Centre conservé, rayons pied / coping / deck conservés.
+   Hauteur : 1,80 m au lieu de 1,35 m ; transition verticale au coping.
+
+3. DROP DROIT DES DUNES
+   Hauteur : 1,50 m au lieu de 0,90 m.
+   Terrasse et quarter raccordé rehaussés ensemble pour conserver un niveau commun.
+   Emprise au sol conservée, pente du bank plus forte.
+
+Les autres obstacles et leurs positions sont conservés. Matériaux procéduraux,
+fresques, caméras, éclairage et fond transparent sont repris de la V7.
+La V7 reste disponible dans ses fichiers d'origine.
+
+OUVRIR DIRECTEMENT
+Ouvrir rendus-v8/le-lagon-v8.blend dans Blender 4.5 LTS.
+La scène active s'appelle « LE LAGON | V8 ». F12 lance le rendu.
+
+RECONSTRUIRE AVEC LE SCRIPT
+Scripting > Open > le_lagon_v8.py > Run Script (Alt+P dans l'éditeur).
+Le script est autonome, sans addon ni texture externe. Il crée une nouvelle
+scène et conserve les scènes déjà présentes. Il ne modifie pas une scène V7
+dans laquelle tu aurais fait d'autres retouches manuelles.
+
+Les paramètres HEIGHTS, DROP_HEIGHT, DROP_LIP_ANGLE, DROP_Y_RANGE et
+DROP_TOE_X / DROP_LIP_X / DROP_BACK_X sont en tête du script.
+DROP_LIP_ANGLE est l'angle par rapport à l'horizontale.
+Le profil refuse les dimensions qui produiraient une transition impossible
+avec l'angle choisi, et les quarters refusent les profils en surplomb.
+
+COMMANDE
+blender --background --python le_lagon_v8.py -- --save --render --validate
+Sortie par défaut : rendus-v8, voisin du script.
+--output CHEMIN change le dossier ; --preview accélère le rendu ; --top donne
+la vue de dessus. Les noms des fichiers de sortie portent la version V8.
+
+VALIDATION
+Exécution dans Blender 4.5.9 LTS, inspection des rendus et volumes fermés.
+Le rapport verification-v8.json contrôle les hauteurs réelles des maillages,
+la symétrie de l'Anse, la pente du drop, l'emprise, le cadrage et l'alpha.
+Il s'agit d'une scène artistique, avec des pièces séparées pour l'édition.

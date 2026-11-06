@@ -1,0 +1,30 @@
+{
+  "build": "0.5.0",
+  "date": "2026-11-02",
+  "balanceAudit": {
+    "completedGames": 2000,
+    "completedModules": 12000,
+    "completedAttempts": 96000,
+    "invariantChecksPassed": 324335,
+    "primaryGamesReplayedIdentically": 1600,
+    "replaysExcludedFromSampleSize": true,
+    "productionSourceHashesUnchanged": true
+  },
+  "functionalTests": {
+    "uniqueTestsPassed": 222,
+    "initialSuite": {"passed": 193, "failed": 29},
+    "initialFailureCause": "All 29 failures were EPERM errors renaming temporary online-room files under the Windows sandbox.",
+    "failedSubsetRerun": {"file": "tests/online.test.js", "passed": 29, "failed": 0, "outsideSandbox": true},
+    "remainingFailures": 0
+  },
+  "reportBrowserChecks": {
+    "normalScenarioScore": 10.69,
+    "expertScenarioScore": 12.36,
+    "moduleRows": 12,
+    "roundRows": 6,
+    "airAdvancedFilterRows": 4,
+    "consoleErrors": 0,
+    "screenshot": "tests/screenshots/build050-balance-report.png",
+    "url": "http://127.0.0.1:8000/reports/build-050-balance.html"
+  }
+}

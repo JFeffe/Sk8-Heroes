@@ -1,0 +1,74 @@
+{
+  "id": 31,
+  "key": "hurricane",
+  "name": "Hurricane",
+  "type": "slide",
+  "tier": "epic",
+  "copies": 1,
+  "points": 16,
+  "difficultyPoints": 14,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.12602880658436214,
+  "requirementCode": "exact2345",
+  "cost": 4,
+  "pattern": "exact",
+  "values": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "symbols": [
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "rule": "Un 2, un 3, un 4 et un 5",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/hurricane/01-illustration.webp?v=f54f6dcdf276",
+    "graphics": "assets/tricks/frames/4-plain.svg?v=a0895322b032",
+    "information": "assets/tricks/hurricane/03-textes-symboles.webp?v=c97a15c9b407"
+  },
+  "printedPoints": 16,
+  "p": 0.12602880658436214,
+  "effect": "",
+  "tierLabel": "ÉPIQUE",
+  "sockets": [
+    {
+      "x": 82,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    },
+    {
+      "x": 206,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    },
+    {
+      "x": 330,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    },
+    {
+      "x": 454,
+      "y": 1025,
+      "size": 106,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

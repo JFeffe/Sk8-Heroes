@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1300" viewBox="0 0 900 1300" role="img"><title>Textes et symboles · Le Quai bas</title><g><text x="55" y="142" fill="#fff7df" font-family="Impact,Arial Narrow,sans-serif" font-size="102" font-weight="400" id="module-title-0">Le Quai bas</text><g color="#fff7df"><svg x="731.5" y="70.5" width="97" height="97" class="type-icon type-slide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="slide"><title>slide</title><path d="m3 10 18-5M6 10v10m12-13v9M3 20h6m6-4h6"/></svg></g>
+   <g id="module-appearance" transform="rotate(-1.3 250 217)"><text x="143" y="233.5" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="40" font-weight="400" >MANCHES 1–2</text></g>
+   <text x="221" y="1011.5" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="35" font-weight="400" id="module-bonus-heading">TYPE FAVORISÉ</text><g color="#063e50"><svg x="205" y="1024" width="88" height="88" class="type-icon type-kick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="kick"><title>kick</title><path fill="currentColor" stroke="none" d="M4 12 18 6c4-2 7 3 3 5L7 17c-4 2-7-3-3-5Z"/><circle cx="8" cy="20" r="1.6" fill="currentColor" stroke="none"/><circle cx="20" cy="14" r="1.6" fill="currentColor" stroke="none"/></svg></g><text x="339.5" y="1100.5" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="80" font-weight="400" id="module-goal-title">+1</text><text x="200" y="1151.5" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="31" font-weight="400" id="module-goal-caption">Par trick de ce type</text>
+   <g id="module-podium-information">
+    <text x="628" y="1005.5" fill="#fff7df" font-family="Impact,Arial Narrow,sans-serif" font-size="27" font-weight="400" id="module-prize-heading">POINTS DE VICTOIRE</text>
+    <svg x="669.5" y="1026" width="37" height="37" viewBox="0 0 40 40" aria-hidden="true">
+   <g stroke="#063e50" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M11 6H3v4a9 9 0 0 0 10 9m16-13h8v4a9 9 0 0 1-10 9" fill="none" stroke-width="5.4"/>
+    <path d="M11 6H3v4a9 9 0 0 0 10 9m16-13h8v4a9 9 0 0 1-10 9" fill="none" stroke="#ffc344" stroke-width="2.2"/>
+    <path d="M9 3h22v9c0 7-4 12-9 13v6h4l5 4v3H9v-3l5-4h4v-6c-5-1-9-6-9-13Z" fill="#ffc344"/>
+   </g><path d="M13 7v5c0 3 1 6 3 8" fill="none" stroke="#fff0a5" stroke-width="2" stroke-linecap="round"/>
+  </svg><svg x="793" y="1069" width="19" height="19" viewBox="0 0 40 40" aria-hidden="true">
+   <g stroke="#063e50" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M11 6H3v4a9 9 0 0 0 10 9m16-13h8v4a9 9 0 0 1-10 9" fill="none" stroke-width="5.4"/>
+    <path d="M11 6H3v4a9 9 0 0 0 10 9m16-13h8v4a9 9 0 0 1-10 9" fill="none" stroke="#ffc344" stroke-width="2.2"/>
+    <path d="M9 3h22v9c0 7-4 12-9 13v6h4l5 4v3H9v-3l5-4h4v-6c-5-1-9-6-9-13Z" fill="#ffc344"/>
+   </g><path d="M13 7v5c0 3 1 6 3 8" fill="none" stroke="#fff0a5" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+    <text x="665.5" y="1150" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="92" font-weight="400" id="module-pv-first">2</text>
+    <text x="795" y="1133.5" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="47" font-weight="400" id="module-pv-second">1</text>
+   </g>
+   <text x="376.5" y="1234" fill="#063e50" font-family="Impact,Arial Narrow,sans-serif" font-size="42" font-weight="400" id="module-park">LE LAGON</text>
+  </g></svg>

@@ -1,0 +1,58 @@
+{
+  "id": 10,
+  "key": "bigspin",
+  "name": "Bigspin",
+  "type": "kick",
+  "tier": "advanced",
+  "copies": 2,
+  "points": 7,
+  "difficultyPoints": 7,
+  "scorePremium": 0,
+  "effortBonus": 0,
+  "p6": 0.6488340192043895,
+  "requirementCode": "high5",
+  "cost": 2,
+  "pattern": "at-least",
+  "threshold": 5,
+  "symbols": [
+    "≥5",
+    "≥5"
+  ],
+  "rule": "Deux dés ≥ 5",
+  "comboBonus": {
+    "kind": "reward",
+    "type": "reroll"
+  },
+  "layers": {
+    "illustration": "assets/tricks/bigspin/01-illustration.webp?v=605a7e4d5da1",
+    "graphics": "assets/tricks/frames/2-bonus.svg?v=26461e32d57d",
+    "information": "assets/tricks/bigspin/03-textes-symboles.webp?v=8b2a52d3fff6"
+  },
+  "printedPoints": 7,
+  "p": 0.6488340192043895,
+  "effect": "token:reroll",
+  "tierLabel": "AVANCÉ",
+  "sockets": [
+    {
+      "x": 172,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    },
+    {
+      "x": 342,
+      "y": 1025,
+      "size": 128,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

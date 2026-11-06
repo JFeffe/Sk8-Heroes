@@ -1,0 +1,2404 @@
+{
+  "rulesVersion": 10,
+  "matchVersion": 5,
+  "sessionsPerConfiguration": 200,
+  "players": 4,
+  "lengths": [
+    4,
+    6
+  ],
+  "seedStart": 1,
+  "seedScheme": "32-bit mixed index using 0x21f0aaad and 0x735a2d97",
+  "methodology": "Exact single-roll probabilities; real multiplayer engine and draft, fixed seeds; three heuristic controllers, not optimal or human players. Same rules and token supply. Proposed catalog exists in memory only. Draft point caps remain those of the current game and can change offers. Freeze preserves a face only when it improves the next chosen trick. Adjust planner includes choices in its cache key.",
+  "probabilities": [
+    {
+      "id": 0,
+      "name": "Kickflip",
+      "type": "kick",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "at-least",
+        "threshold": 4,
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.25,
+        "3": 0.5000000000000002,
+        "4": 0.6875000000000003,
+        "5": 0.8124999999999982,
+        "6": 0.8906249999999952
+      },
+      "p6WithOneAdjust": 0.9720293209876487,
+      "p6WithOneFullReroll": 0.988037109374999,
+      "p6WithOneAdjustAndOneFullReroll": 0.999217641115588
+    },
+    {
+      "id": 1,
+      "name": "Pop Shuvit",
+      "type": "kick",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "at-least",
+        "threshold": 2,
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.6944444444444446,
+        "3": 0.9259259259259255,
+        "4": 0.9837962962962974,
+        "5": 0.9966563786008205,
+        "6": 0.9993355624142601
+      },
+      "p6WithOneAdjust": 0.9999785665294865,
+      "p6WithOneFullReroll": 0.9999995585226946,
+      "p6WithOneAdjustAndOneFullReroll": 0.9999999995406064
+    },
+    {
+      "id": 2,
+      "name": "Heelflip",
+      "type": "kick",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "at-most",
+        "threshold": 3,
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.25,
+        "3": 0.5000000000000001,
+        "4": 0.6875000000000003,
+        "5": 0.8124999999999984,
+        "6": 0.8906249999999959
+      },
+      "p6WithOneAdjust": 0.9720293209876493,
+      "p6WithOneFullReroll": 0.9880371093749991,
+      "p6WithOneAdjustAndOneFullReroll": 0.9992176411155881
+    },
+    {
+      "id": 3,
+      "name": "Frontside Flip",
+      "type": "kick",
+      "cost": 2,
+      "points": 4,
+      "combination": {
+        "pattern": "odd-distinct",
+        "cost": 2,
+        "points": 4
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.16666666666666666,
+        "3": 0.36111111111111116,
+        "4": 0.5324074074074072,
+        "5": 0.6674382716049375,
+        "6": 0.7678755144032895
+      },
+      "p6WithOneAdjust": 0.9829818244170043,
+      "p6WithOneFullReroll": 0.9461182231864625,
+      "p6WithOneAdjustAndOneFullReroll": 0.9997103816998263
+    },
+    {
+      "id": 4,
+      "name": "360 Flip",
+      "type": "kick",
+      "cost": 2,
+      "points": 7,
+      "combination": {
+        "pattern": "exact",
+        "values": [
+          3,
+          6
+        ],
+        "cost": 2,
+        "points": 7
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.05555555555555555,
+        "3": 0.1388888888888889,
+        "4": 0.23302469135802467,
+        "5": 0.32793209876543195,
+        "6": 0.41799554183813403
+      },
+      "p6WithOneAdjust": 0.8257887517146737,
+      "p6WithOneFullReroll": 0.6612708106797128,
+      "p6WithOneAdjustAndOneFullReroll": 0.9696504409708684
+    },
+    {
+      "id": 5,
+      "name": "Laser Flip",
+      "type": "kick",
+      "cost": 2,
+      "points": 5,
+      "combination": {
+        "pattern": "at-least",
+        "threshold": 5,
+        "cost": 2,
+        "points": 5
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.1111111111111111,
+        "3": 0.2592592592592593,
+        "4": 0.40740740740740744,
+        "5": 0.5390946502057604,
+        "6": 0.6488340192043871
+      },
+      "p6WithOneAdjust": 0.849708504801093,
+      "p6WithOneFullReroll": 0.8766824539318552,
+      "p6WithOneAdjustAndOneFullReroll": 0.9774124664708769
+    },
+    {
+      "id": 6,
+      "name": "Hardflip",
+      "type": "kick",
+      "cost": 2,
+      "points": 11,
+      "combination": {
+        "pattern": "exact",
+        "values": [
+          4,
+          4
+        ],
+        "cost": 2,
+        "points": 11
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.027777777777777776,
+        "3": 0.07407407407407407,
+        "4": 0.13194444444444445,
+        "5": 0.19624485596707805,
+        "6": 0.2632244513031545
+      },
+      "p6WithOneAdjust": 0.6338520233196139,
+      "p6WithOneFullReroll": 0.45716179084246233,
+      "p6WithOneAdjustAndOneFullReroll": 0.8659356591728594
+    },
+    {
+      "id": 7,
+      "name": "Impossible",
+      "type": "kick",
+      "cost": 3,
+      "points": 20,
+      "combination": {
+        "pattern": "exact",
+        "values": [
+          2,
+          5,
+          5
+        ],
+        "cost": 3,
+        "points": 20
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.013888888888888888,
+        "4": 0.044753086419753084,
+        "5": 0.09066358024691361,
+        "6": 0.14780521262002735
+      },
+      "p6WithOneAdjust": 0.4961419753086414,
+      "p6WithOneFullReroll": 0.2737640443624032,
+      "p6WithOneAdjustAndOneFullReroll": 0.7461270909541222
+    },
+    {
+      "id": 8,
+      "name": "Inward Heelflip",
+      "type": "kick",
+      "cost": 3,
+      "points": 5,
+      "combination": {
+        "pattern": "choices",
+        "choices": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            2,
+            6
+          ],
+          [
+            2,
+            4,
+            4
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            6,
+            6
+          ],
+          [
+            4,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            6
+          ],
+          [
+            4,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            6
+          ]
+        ],
+        "cost": 3,
+        "points": 5
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.125,
+        "4": 0.31250000000000006,
+        "5": 0.4999999999999996,
+        "6": 0.6562499999999974
+      },
+      "p6WithOneAdjust": 0.8906249999999953,
+      "p6WithOneFullReroll": 0.8818359374999982,
+      "p6WithOneAdjustAndOneFullReroll": 0.988037109374999
+    },
+    {
+      "id": 9,
+      "name": "50-50 Grind",
+      "type": "slide",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "at-most",
+        "threshold": 5,
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.6944444444444446,
+        "3": 0.9259259259259257,
+        "4": 0.9837962962962974,
+        "5": 0.9966563786008206,
+        "6": 0.9993355624142604
+      },
+      "p6WithOneAdjust": 0.9999785665294865,
+      "p6WithOneFullReroll": 0.9999995585226946,
+      "p6WithOneAdjustAndOneFullReroll": 0.9999999995406064
+    },
+    {
+      "id": 10,
+      "name": "Boardslide",
+      "type": "slide",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "at-least",
+        "threshold": 3,
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.44444444444444453,
+        "3": 0.7407407407407406,
+        "4": 0.8888888888888896,
+        "5": 0.9547325102880633,
+        "6": 0.982167352537717
+      },
+      "p6WithOneAdjust": 0.9981138545953301,
+      "p6WithOneFullReroll": 0.999681996684486,
+      "p6WithOneAdjustAndOneFullReroll": 0.9999964424555124
+    },
+    {
+      "id": 11,
+      "name": "FS Boardslide",
+      "type": "slide",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "straight",
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.2777777777777778,
+        "3": 0.5833333333333333,
+        "4": 0.7762345679012351,
+        "5": 0.883487654320986,
+        "6": 0.9402863511659761
+      },
+      "p6WithOneAdjust": 0.999999999999994,
+      "p6WithOneFullReroll": 0.9964342801429269,
+      "p6WithOneAdjustAndOneFullReroll": 1
+    },
+    {
+      "id": 12,
+      "name": "Noseslide",
+      "type": "slide",
+      "cost": 2,
+      "points": 4,
+      "combination": {
+        "pattern": "even-distinct",
+        "cost": 2,
+        "points": 4
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.16666666666666666,
+        "3": 0.3611111111111112,
+        "4": 0.5324074074074073,
+        "5": 0.6674382716049374,
+        "6": 0.7678755144032889
+      },
+      "p6WithOneAdjust": 0.9829818244170039,
+      "p6WithOneFullReroll": 0.9461182231864623,
+      "p6WithOneAdjustAndOneFullReroll": 0.9997103816998263
+    },
+    {
+      "id": 13,
+      "name": "Lipslide",
+      "type": "slide",
+      "cost": 3,
+      "points": 5,
+      "combination": {
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            1,
+            3,
+            3
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            5,
+            5
+          ],
+          [
+            3,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            5
+          ],
+          [
+            3,
+            5,
+            5
+          ],
+          [
+            5,
+            5,
+            5
+          ]
+        ],
+        "cost": 3,
+        "points": 5
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.125,
+        "4": 0.31250000000000006,
+        "5": 0.4999999999999993,
+        "6": 0.6562499999999972
+      },
+      "p6WithOneAdjust": 0.8906249999999956,
+      "p6WithOneFullReroll": 0.8818359374999981,
+      "p6WithOneAdjustAndOneFullReroll": 0.988037109374999
+    },
+    {
+      "id": 14,
+      "name": "Smith Grind",
+      "type": "slide",
+      "cost": 2,
+      "points": 5,
+      "combination": {
+        "pattern": "at-most",
+        "threshold": 2,
+        "cost": 2,
+        "points": 5
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.1111111111111111,
+        "3": 0.25925925925925924,
+        "4": 0.40740740740740733,
+        "5": 0.5390946502057605,
+        "6": 0.6488340192043873
+      },
+      "p6WithOneAdjust": 0.849708504801094,
+      "p6WithOneFullReroll": 0.8766824539318554,
+      "p6WithOneAdjustAndOneFullReroll": 0.9774124664708772
+    },
+    {
+      "id": 15,
+      "name": "Bluntslide",
+      "type": "slide",
+      "cost": 3,
+      "points": 20,
+      "combination": {
+        "pattern": "exact",
+        "values": [
+          3,
+          6,
+          6
+        ],
+        "cost": 3,
+        "points": 20
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.013888888888888888,
+        "4": 0.044753086419753084,
+        "5": 0.09066358024691361,
+        "6": 0.14780521262002735
+      },
+      "p6WithOneAdjust": 0.42283950617283894,
+      "p6WithOneFullReroll": 0.2737640443624032,
+      "p6WithOneAdjustAndOneFullReroll": 0.6668857643651875
+    },
+    {
+      "id": 16,
+      "name": "Feeble Grind",
+      "type": "slide",
+      "cost": 2,
+      "points": 7,
+      "combination": {
+        "pattern": "exact",
+        "values": [
+          2,
+          5
+        ],
+        "cost": 2,
+        "points": 7
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.05555555555555555,
+        "3": 0.1388888888888889,
+        "4": 0.23302469135802462,
+        "5": 0.32793209876543183,
+        "6": 0.4179955418381341
+      },
+      "p6WithOneAdjust": 0.8837019890260589,
+      "p6WithOneFullReroll": 0.6612708106797128,
+      "p6WithOneAdjustAndOneFullReroll": 0.986474772643505
+    },
+    {
+      "id": 17,
+      "name": "Crooked Grind",
+      "type": "slide",
+      "cost": 3,
+      "points": 12,
+      "combination": {
+        "pattern": "exact",
+        "values": [
+          2,
+          4,
+          6
+        ],
+        "cost": 3,
+        "points": 12
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.027777777777777776,
+        "4": 0.08333333333333333,
+        "5": 0.15817901234567902,
+        "6": 0.24305555555555539
+      },
+      "p6WithOneAdjust": 0.684156378600821,
+      "p6WithOneFullReroll": 0.427035108024691,
+      "p6WithOneAdjustAndOneFullReroll": 0.9002428068214521
+    },
+    {
+      "id": 18,
+      "name": "180°",
+      "type": "air",
+      "cost": 2,
+      "points": 3,
+      "combination": {
+        "pattern": "at-most",
+        "threshold": 4,
+        "cost": 2,
+        "points": 3
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0.44444444444444453,
+        "3": 0.7407407407407406,
+        "4": 0.8888888888888897,
+        "5": 0.9547325102880638,
+        "6": 0.9821673525377176
+      },
+      "p6WithOneAdjust": 0.9981138545953304,
+      "p6WithOneFullReroll": 0.999681996684486,
+      "p6WithOneAdjustAndOneFullReroll": 0.9999964424555124
+    },
+    {
+      "id": 19,
+      "name": "360°",
+      "type": "air",
+      "cost": 3,
+      "points": 4,
+      "combination": {
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            1,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "cost": 3,
+        "points": 4
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.22222222222222227,
+        "4": 0.44444444444444425,
+        "5": 0.6172839506172835,
+        "6": 0.7407407407407381
+      },
+      "p6WithOneAdjust": 0.957604595336072,
+      "p6WithOneFullReroll": 0.9327846364883389,
+      "p6WithOneAdjustAndOneFullReroll": 0.9982026296633818
+    },
+    {
+      "id": 20,
+      "name": "540°",
+      "type": "air",
+      "cost": 3,
+      "points": 6,
+      "combination": {
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "cost": 3,
+        "points": 6
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0.05555555555555555,
+        "4": 0.16666666666666669,
+        "5": 0.3163580246913579,
+        "6": 0.4706790123456786
+      },
+      "p6WithOneAdjust": 0.8873456790123421,
+      "p6WithOneFullReroll": 0.7198192920286537,
+      "p6WithOneAdjustAndOneFullReroll": 0.9873090039628097
+    },
+    {
+      "id": 21,
+      "name": "720°",
+      "type": "air",
+      "cost": 4,
+      "points": 11,
+      "combination": {
+        "pattern": "straight",
+        "cost": 4,
+        "points": 11
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.05555555555555555,
+        "5": 0.154320987654321,
+        "6": 0.2700617283950617
+      },
+      "p6WithOneAdjust": 0.7433127572016435,
+      "p6WithOneFullReroll": 0.46719011964639534,
+      "p6WithOneAdjustAndOneFullReroll": 0.9341116593845775
+    },
+    {
+      "id": 22,
+      "name": "900°",
+      "type": "air",
+      "cost": 4,
+      "points": 24,
+      "combination": {
+        "pattern": "choices",
+        "choices": [
+          [
+            4,
+            4,
+            5,
+            5
+          ],
+          [
+            4,
+            4,
+            6,
+            6
+          ],
+          [
+            5,
+            5,
+            6,
+            6
+          ]
+        ],
+        "cost": 4,
+        "points": 24
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.013888888888888888,
+        "5": 0.054012345679012363,
+        "6": 0.12281378600823047
+      },
+      "p6WithOneAdjust": 0.3470936213991764,
+      "p6WithOneFullReroll": 0.2305443459827855,
+      "p6WithOneAdjustAndOneFullReroll": 0.5737132607823581
+    },
+    {
+      "id": 23,
+      "name": "1080°",
+      "type": "air",
+      "cost": 4,
+      "points": 57,
+      "combination": {
+        "pattern": "choices",
+        "choices": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            3,
+            3,
+            3,
+            3
+          ],
+          [
+            4,
+            4,
+            4,
+            4
+          ],
+          [
+            5,
+            5,
+            5,
+            5
+          ],
+          [
+            6,
+            6,
+            6,
+            6
+          ]
+        ],
+        "cost": 4,
+        "points": 57
+      },
+      "p": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0.004629629629629629,
+        "5": 0.020061728395061734,
+        "6": 0.05221193415637863
+      },
+      "p6WithOneAdjust": 0.27040466392318174,
+      "p6WithOneFullReroll": 0.10169778224440718,
+      "p6WithOneAdjustAndOneFullReroll": 0.46769064557495466
+    }
+  ],
+  "runs": [
+    {
+      "version": "live",
+      "mode": "prudent",
+      "sessions": 200,
+      "configuration": {
+        "points": [
+          3,
+          2,
+          3,
+          4,
+          7,
+          5,
+          9,
+          13,
+          7,
+          2,
+          2,
+          3,
+          4,
+          7,
+          5,
+          13,
+          7,
+          11,
+          3,
+          7,
+          9,
+          10,
+          13,
+          16
+        ],
+        "targets": [
+          2,
+          2,
+          3,
+          3,
+          7,
+          7,
+          7,
+          7,
+          10,
+          10,
+          11,
+          9
+        ]
+      },
+      "completed": 200,
+      "commands": 88406,
+      "modules": 1000,
+      "attempts": 8000,
+      "falls": 1387,
+      "banked": 6613,
+      "points": 59803,
+      "threeTricks": 437,
+      "unawarded": 32,
+      "ties": 364,
+      "bonusUses": {
+        "adjust": 1998,
+        "reroll": 1506,
+        "freeze": 1928
+      },
+      "modulesById": {
+        "0": {
+          "name": "Le Flat",
+          "count": 73,
+          "unawarded": 0,
+          "ties": 25,
+          "attempts": 584,
+          "qualifiedAttempts": 550,
+          "falls": 34,
+          "points": 4365,
+          "best": 835
+        },
+        "1": {
+          "name": "Rail bas",
+          "count": 85,
+          "unawarded": 0,
+          "ties": 24,
+          "attempts": 680,
+          "qualifiedAttempts": 569,
+          "falls": 111,
+          "points": 4728,
+          "best": 956
+        },
+        "2": {
+          "name": "Petite rampe",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 50,
+          "attempts": 568,
+          "qualifiedAttempts": 550,
+          "falls": 18,
+          "points": 4133,
+          "best": 639
+        },
+        "3": {
+          "name": "Place du bord de mer",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 28,
+          "attempts": 568,
+          "qualifiedAttempts": 557,
+          "falls": 11,
+          "points": 4124,
+          "best": 634
+        },
+        "4": {
+          "name": "Rail et sortie",
+          "count": 131,
+          "unawarded": 0,
+          "ties": 56,
+          "attempts": 1048,
+          "qualifiedAttempts": 815,
+          "falls": 228,
+          "points": 7462,
+          "best": 1448
+        },
+        "5": {
+          "name": "Rampe et réception",
+          "count": 124,
+          "unawarded": 0,
+          "ties": 46,
+          "attempts": 992,
+          "qualifiedAttempts": 752,
+          "falls": 240,
+          "points": 7724,
+          "best": 1523
+        },
+        "6": {
+          "name": "Rampe et coping",
+          "count": 118,
+          "unawarded": 0,
+          "ties": 27,
+          "attempts": 944,
+          "qualifiedAttempts": 748,
+          "falls": 196,
+          "points": 7673,
+          "best": 1501
+        },
+        "7": {
+          "name": "Double ledge",
+          "count": 127,
+          "unawarded": 0,
+          "ties": 40,
+          "attempts": 1016,
+          "qualifiedAttempts": 797,
+          "falls": 217,
+          "points": 7173,
+          "best": 1402
+        },
+        "8": {
+          "name": "La grande ligne",
+          "count": 38,
+          "unawarded": 0,
+          "ties": 19,
+          "attempts": 304,
+          "qualifiedAttempts": 132,
+          "falls": 49,
+          "points": 2478,
+          "best": 424
+        },
+        "9": {
+          "name": "La ligne street",
+          "count": 48,
+          "unawarded": 0,
+          "ties": 9,
+          "attempts": 384,
+          "qualifiedAttempts": 195,
+          "falls": 118,
+          "points": 2796,
+          "best": 607
+        },
+        "10": {
+          "name": "Le parcours libre",
+          "count": 57,
+          "unawarded": 32,
+          "ties": 0,
+          "attempts": 456,
+          "qualifiedAttempts": 26,
+          "falls": 79,
+          "points": 3659,
+          "best": 632
+        },
+        "11": {
+          "name": "La grande rampe",
+          "count": 57,
+          "unawarded": 0,
+          "ties": 40,
+          "attempts": 456,
+          "qualifiedAttempts": 370,
+          "falls": 86,
+          "points": 3488,
+          "best": 581
+        }
+      },
+      "cards": {
+        "0": {
+          "name": "Kickflip",
+          "drafted": 714,
+          "selected": 1124,
+          "landed": 942,
+          "banked": 889,
+          "winningAttempts": 250
+        },
+        "1": {
+          "name": "Pop Shuvit",
+          "drafted": 257,
+          "selected": 507,
+          "landed": 499,
+          "banked": 478,
+          "winningAttempts": 70
+        },
+        "2": {
+          "name": "Heelflip",
+          "drafted": 346,
+          "selected": 340,
+          "landed": 281,
+          "banked": 270,
+          "winningAttempts": 57
+        },
+        "3": {
+          "name": "Frontside Flip",
+          "drafted": 497,
+          "selected": 757,
+          "landed": 678,
+          "banked": 625,
+          "winningAttempts": 276
+        },
+        "4": {
+          "name": "360 Flip",
+          "drafted": 207,
+          "selected": 34,
+          "landed": 22,
+          "banked": 18,
+          "winningAttempts": 8
+        },
+        "5": {
+          "name": "Laser Flip",
+          "drafted": 170,
+          "selected": 154,
+          "landed": 130,
+          "banked": 120,
+          "winningAttempts": 33
+        },
+        "6": {
+          "name": "Hardflip",
+          "drafted": 122,
+          "selected": 0,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        },
+        "7": {
+          "name": "Impossible",
+          "drafted": 124,
+          "selected": 1,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        },
+        "8": {
+          "name": "Inward Heelflip",
+          "drafted": 351,
+          "selected": 757,
+          "landed": 697,
+          "banked": 655,
+          "winningAttempts": 171
+        },
+        "9": {
+          "name": "50-50 Grind",
+          "drafted": 444,
+          "selected": 1160,
+          "landed": 1145,
+          "banked": 1109,
+          "winningAttempts": 220
+        },
+        "10": {
+          "name": "Boardslide",
+          "drafted": 272,
+          "selected": 342,
+          "landed": 313,
+          "banked": 304,
+          "winningAttempts": 55
+        },
+        "11": {
+          "name": "FS Boardslide",
+          "drafted": 521,
+          "selected": 1250,
+          "landed": 1142,
+          "banked": 1032,
+          "winningAttempts": 286
+        },
+        "12": {
+          "name": "Noseslide",
+          "drafted": 424,
+          "selected": 847,
+          "landed": 769,
+          "banked": 700,
+          "winningAttempts": 291
+        },
+        "13": {
+          "name": "Lipslide",
+          "drafted": 484,
+          "selected": 1188,
+          "landed": 1061,
+          "banked": 983,
+          "winningAttempts": 181
+        },
+        "14": {
+          "name": "Smith Grind",
+          "drafted": 273,
+          "selected": 581,
+          "landed": 496,
+          "banked": 452,
+          "winningAttempts": 141
+        },
+        "15": {
+          "name": "Bluntslide",
+          "drafted": 118,
+          "selected": 8,
+          "landed": 4,
+          "banked": 4,
+          "winningAttempts": 4
+        },
+        "16": {
+          "name": "Feeble Grind",
+          "drafted": 122,
+          "selected": 44,
+          "landed": 33,
+          "banked": 33,
+          "winningAttempts": 18
+        },
+        "17": {
+          "name": "Crooked Grind",
+          "drafted": 144,
+          "selected": 23,
+          "landed": 11,
+          "banked": 11,
+          "winningAttempts": 9
+        },
+        "18": {
+          "name": "180°",
+          "drafted": 866,
+          "selected": 1937,
+          "landed": 1840,
+          "banked": 1723,
+          "winningAttempts": 535
+        },
+        "19": {
+          "name": "360°",
+          "drafted": 1114,
+          "selected": 3458,
+          "landed": 3229,
+          "banked": 2932,
+          "winningAttempts": 900
+        },
+        "20": {
+          "name": "540°",
+          "drafted": 156,
+          "selected": 93,
+          "landed": 73,
+          "banked": 63,
+          "winningAttempts": 33
+        },
+        "21": {
+          "name": "720°",
+          "drafted": 144,
+          "selected": 14,
+          "landed": 9,
+          "banked": 8,
+          "winningAttempts": 8
+        },
+        "22": {
+          "name": "900°",
+          "drafted": 61,
+          "selected": 3,
+          "landed": 1,
+          "banked": 1,
+          "winningAttempts": 1
+        },
+        "23": {
+          "name": "1080°",
+          "drafted": 69,
+          "selected": 2,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        }
+      }
+    },
+    {
+      "version": "live",
+      "mode": "competitive",
+      "sessions": 200,
+      "configuration": {
+        "points": [
+          3,
+          2,
+          3,
+          4,
+          7,
+          5,
+          9,
+          13,
+          7,
+          2,
+          2,
+          3,
+          4,
+          7,
+          5,
+          13,
+          7,
+          11,
+          3,
+          7,
+          9,
+          10,
+          13,
+          16
+        ],
+        "targets": [
+          2,
+          2,
+          3,
+          3,
+          7,
+          7,
+          7,
+          7,
+          10,
+          10,
+          11,
+          9
+        ]
+      },
+      "completed": 200,
+      "commands": 92526,
+      "modules": 1000,
+      "attempts": 8000,
+      "falls": 2212,
+      "banked": 5788,
+      "points": 57408,
+      "threeTricks": 938,
+      "unawarded": 42,
+      "ties": 310,
+      "bonusUses": {
+        "adjust": 2101,
+        "reroll": 1629,
+        "freeze": 1838
+      },
+      "modulesById": {
+        "0": {
+          "name": "Le Flat",
+          "count": 73,
+          "unawarded": 0,
+          "ties": 18,
+          "attempts": 584,
+          "qualifiedAttempts": 423,
+          "falls": 161,
+          "points": 4161,
+          "best": 921
+        },
+        "1": {
+          "name": "Rail bas",
+          "count": 85,
+          "unawarded": 0,
+          "ties": 32,
+          "attempts": 680,
+          "qualifiedAttempts": 475,
+          "falls": 205,
+          "points": 4712,
+          "best": 1049
+        },
+        "2": {
+          "name": "Petite rampe",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 30,
+          "attempts": 568,
+          "qualifiedAttempts": 459,
+          "falls": 109,
+          "points": 4139,
+          "best": 807
+        },
+        "3": {
+          "name": "Place du bord de mer",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 36,
+          "attempts": 568,
+          "qualifiedAttempts": 519,
+          "falls": 49,
+          "points": 4484,
+          "best": 736
+        },
+        "4": {
+          "name": "Rail et sortie",
+          "count": 131,
+          "unawarded": 0,
+          "ties": 33,
+          "attempts": 1048,
+          "qualifiedAttempts": 647,
+          "falls": 398,
+          "points": 6842,
+          "best": 1650
+        },
+        "5": {
+          "name": "Rampe et réception",
+          "count": 124,
+          "unawarded": 0,
+          "ties": 37,
+          "attempts": 992,
+          "qualifiedAttempts": 705,
+          "falls": 287,
+          "points": 7427,
+          "best": 1554
+        },
+        "6": {
+          "name": "Rampe et coping",
+          "count": 118,
+          "unawarded": 0,
+          "ties": 35,
+          "attempts": 944,
+          "qualifiedAttempts": 672,
+          "falls": 272,
+          "points": 7002,
+          "best": 1491
+        },
+        "7": {
+          "name": "Double ledge",
+          "count": 127,
+          "unawarded": 0,
+          "ties": 41,
+          "attempts": 1016,
+          "qualifiedAttempts": 713,
+          "falls": 302,
+          "points": 7099,
+          "best": 1528
+        },
+        "8": {
+          "name": "La grande ligne",
+          "count": 38,
+          "unawarded": 1,
+          "ties": 15,
+          "attempts": 304,
+          "qualifiedAttempts": 131,
+          "falls": 59,
+          "points": 2392,
+          "best": 430
+        },
+        "9": {
+          "name": "La ligne street",
+          "count": 48,
+          "unawarded": 1,
+          "ties": 11,
+          "attempts": 384,
+          "qualifiedAttempts": 163,
+          "falls": 149,
+          "points": 2466,
+          "best": 594
+        },
+        "10": {
+          "name": "Le parcours libre",
+          "count": 57,
+          "unawarded": 40,
+          "ties": 0,
+          "attempts": 456,
+          "qualifiedAttempts": 22,
+          "falls": 100,
+          "points": 3435,
+          "best": 610
+        },
+        "11": {
+          "name": "La grande rampe",
+          "count": 57,
+          "unawarded": 0,
+          "ties": 22,
+          "attempts": 456,
+          "qualifiedAttempts": 334,
+          "falls": 121,
+          "points": 3249,
+          "best": 634
+        }
+      },
+      "cards": {
+        "0": {
+          "name": "Kickflip",
+          "drafted": 708,
+          "selected": 1342,
+          "landed": 1001,
+          "banked": 874,
+          "winningAttempts": 247
+        },
+        "1": {
+          "name": "Pop Shuvit",
+          "drafted": 263,
+          "selected": 565,
+          "landed": 556,
+          "banked": 530,
+          "winningAttempts": 53
+        },
+        "2": {
+          "name": "Heelflip",
+          "drafted": 346,
+          "selected": 392,
+          "landed": 312,
+          "banked": 269,
+          "winningAttempts": 79
+        },
+        "3": {
+          "name": "Frontside Flip",
+          "drafted": 491,
+          "selected": 816,
+          "landed": 695,
+          "banked": 539,
+          "winningAttempts": 322
+        },
+        "4": {
+          "name": "360 Flip",
+          "drafted": 200,
+          "selected": 39,
+          "landed": 21,
+          "banked": 17,
+          "winningAttempts": 11
+        },
+        "5": {
+          "name": "Laser Flip",
+          "drafted": 189,
+          "selected": 183,
+          "landed": 146,
+          "banked": 85,
+          "winningAttempts": 57
+        },
+        "6": {
+          "name": "Hardflip",
+          "drafted": 135,
+          "selected": 1,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        },
+        "7": {
+          "name": "Impossible",
+          "drafted": 135,
+          "selected": 0,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        },
+        "8": {
+          "name": "Inward Heelflip",
+          "drafted": 352,
+          "selected": 791,
+          "landed": 702,
+          "banked": 623,
+          "winningAttempts": 121
+        },
+        "9": {
+          "name": "50-50 Grind",
+          "drafted": 417,
+          "selected": 1175,
+          "landed": 1142,
+          "banked": 1082,
+          "winningAttempts": 106
+        },
+        "10": {
+          "name": "Boardslide",
+          "drafted": 270,
+          "selected": 384,
+          "landed": 342,
+          "banked": 315,
+          "winningAttempts": 86
+        },
+        "11": {
+          "name": "FS Boardslide",
+          "drafted": 523,
+          "selected": 1521,
+          "landed": 1302,
+          "banked": 1099,
+          "winningAttempts": 355
+        },
+        "12": {
+          "name": "Noseslide",
+          "drafted": 437,
+          "selected": 932,
+          "landed": 797,
+          "banked": 616,
+          "winningAttempts": 361
+        },
+        "13": {
+          "name": "Lipslide",
+          "drafted": 487,
+          "selected": 1173,
+          "landed": 1010,
+          "banked": 894,
+          "winningAttempts": 169
+        },
+        "14": {
+          "name": "Smith Grind",
+          "drafted": 263,
+          "selected": 612,
+          "landed": 495,
+          "banked": 350,
+          "winningAttempts": 166
+        },
+        "15": {
+          "name": "Bluntslide",
+          "drafted": 130,
+          "selected": 6,
+          "landed": 2,
+          "banked": 2,
+          "winningAttempts": 2
+        },
+        "16": {
+          "name": "Feeble Grind",
+          "drafted": 135,
+          "selected": 50,
+          "landed": 33,
+          "banked": 25,
+          "winningAttempts": 18
+        },
+        "17": {
+          "name": "Crooked Grind",
+          "drafted": 129,
+          "selected": 10,
+          "landed": 6,
+          "banked": 5,
+          "winningAttempts": 4
+        },
+        "18": {
+          "name": "180°",
+          "drafted": 858,
+          "selected": 2239,
+          "landed": 2036,
+          "banked": 1714,
+          "winningAttempts": 623
+        },
+        "19": {
+          "name": "360°",
+          "drafted": 1119,
+          "selected": 3550,
+          "landed": 3236,
+          "banked": 2870,
+          "winningAttempts": 773
+        },
+        "20": {
+          "name": "540°",
+          "drafted": 144,
+          "selected": 75,
+          "landed": 54,
+          "banked": 43,
+          "winningAttempts": 26
+        },
+        "21": {
+          "name": "720°",
+          "drafted": 128,
+          "selected": 11,
+          "landed": 4,
+          "banked": 3,
+          "winningAttempts": 3
+        },
+        "22": {
+          "name": "900°",
+          "drafted": 64,
+          "selected": 2,
+          "landed": 1,
+          "banked": 1,
+          "winningAttempts": 1
+        },
+        "23": {
+          "name": "1080°",
+          "drafted": 77,
+          "selected": 4,
+          "landed": 1,
+          "banked": 1,
+          "winningAttempts": 1
+        }
+      }
+    },
+    {
+      "version": "live",
+      "mode": "audacious",
+      "sessions": 200,
+      "configuration": {
+        "points": [
+          3,
+          2,
+          3,
+          4,
+          7,
+          5,
+          9,
+          13,
+          7,
+          2,
+          2,
+          3,
+          4,
+          7,
+          5,
+          13,
+          7,
+          11,
+          3,
+          7,
+          9,
+          10,
+          13,
+          16
+        ],
+        "targets": [
+          2,
+          2,
+          3,
+          3,
+          7,
+          7,
+          7,
+          7,
+          10,
+          10,
+          11,
+          9
+        ]
+      },
+      "completed": 200,
+      "commands": 84795,
+      "modules": 1000,
+      "attempts": 8000,
+      "falls": 2986,
+      "banked": 5014,
+      "points": 54390,
+      "threeTricks": 246,
+      "unawarded": 15,
+      "ties": 235,
+      "bonusUses": {
+        "adjust": 1977,
+        "reroll": 2007,
+        "freeze": 1825
+      },
+      "modulesById": {
+        "0": {
+          "name": "Le Flat",
+          "count": 73,
+          "unawarded": 0,
+          "ties": 29,
+          "attempts": 584,
+          "qualifiedAttempts": 360,
+          "falls": 224,
+          "points": 4288,
+          "best": 1031
+        },
+        "1": {
+          "name": "Rail bas",
+          "count": 85,
+          "unawarded": 0,
+          "ties": 24,
+          "attempts": 680,
+          "qualifiedAttempts": 408,
+          "falls": 272,
+          "points": 4521,
+          "best": 1172
+        },
+        "2": {
+          "name": "Petite rampe",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 17,
+          "attempts": 568,
+          "qualifiedAttempts": 415,
+          "falls": 153,
+          "points": 4270,
+          "best": 977
+        },
+        "3": {
+          "name": "Place du bord de mer",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 15,
+          "attempts": 568,
+          "qualifiedAttempts": 448,
+          "falls": 120,
+          "points": 4717,
+          "best": 995
+        },
+        "4": {
+          "name": "Rail et sortie",
+          "count": 131,
+          "unawarded": 0,
+          "ties": 26,
+          "attempts": 1048,
+          "qualifiedAttempts": 528,
+          "falls": 520,
+          "points": 5854,
+          "best": 1723
+        },
+        "5": {
+          "name": "Rampe et réception",
+          "count": 124,
+          "unawarded": 0,
+          "ties": 34,
+          "attempts": 992,
+          "qualifiedAttempts": 576,
+          "falls": 416,
+          "points": 6689,
+          "best": 1693
+        },
+        "6": {
+          "name": "Rampe et coping",
+          "count": 118,
+          "unawarded": 0,
+          "ties": 20,
+          "attempts": 944,
+          "qualifiedAttempts": 545,
+          "falls": 399,
+          "points": 6006,
+          "best": 1570
+        },
+        "7": {
+          "name": "Double ledge",
+          "count": 127,
+          "unawarded": 0,
+          "ties": 34,
+          "attempts": 1016,
+          "qualifiedAttempts": 630,
+          "falls": 386,
+          "points": 6859,
+          "best": 1674
+        },
+        "8": {
+          "name": "La grande ligne",
+          "count": 38,
+          "unawarded": 0,
+          "ties": 6,
+          "attempts": 304,
+          "qualifiedAttempts": 107,
+          "falls": 79,
+          "points": 2226,
+          "best": 446
+        },
+        "9": {
+          "name": "La ligne street",
+          "count": 48,
+          "unawarded": 1,
+          "ties": 13,
+          "attempts": 384,
+          "qualifiedAttempts": 156,
+          "falls": 171,
+          "points": 2357,
+          "best": 625
+        },
+        "10": {
+          "name": "Le parcours libre",
+          "count": 57,
+          "unawarded": 14,
+          "ties": 2,
+          "attempts": 456,
+          "qualifiedAttempts": 54,
+          "falls": 122,
+          "points": 3294,
+          "best": 672
+        },
+        "11": {
+          "name": "La grande rampe",
+          "count": 57,
+          "unawarded": 0,
+          "ties": 15,
+          "attempts": 456,
+          "qualifiedAttempts": 332,
+          "falls": 124,
+          "points": 3309,
+          "best": 669
+        }
+      },
+      "cards": {
+        "0": {
+          "name": "Kickflip",
+          "drafted": 352,
+          "selected": 344,
+          "landed": 251,
+          "banked": 231,
+          "winningAttempts": 44
+        },
+        "1": {
+          "name": "Pop Shuvit",
+          "drafted": 260,
+          "selected": 494,
+          "landed": 477,
+          "banked": 467,
+          "winningAttempts": 70
+        },
+        "2": {
+          "name": "Heelflip",
+          "drafted": 327,
+          "selected": 468,
+          "landed": 346,
+          "banked": 295,
+          "winningAttempts": 45
+        },
+        "3": {
+          "name": "Frontside Flip",
+          "drafted": 426,
+          "selected": 804,
+          "landed": 564,
+          "banked": 520,
+          "winningAttempts": 238
+        },
+        "4": {
+          "name": "360 Flip",
+          "drafted": 505,
+          "selected": 702,
+          "landed": 438,
+          "banked": 309,
+          "winningAttempts": 214
+        },
+        "5": {
+          "name": "Laser Flip",
+          "drafted": 304,
+          "selected": 388,
+          "landed": 271,
+          "banked": 233,
+          "winningAttempts": 80
+        },
+        "6": {
+          "name": "Hardflip",
+          "drafted": 114,
+          "selected": 24,
+          "landed": 12,
+          "banked": 9,
+          "winningAttempts": 5
+        },
+        "7": {
+          "name": "Impossible",
+          "drafted": 126,
+          "selected": 7,
+          "landed": 1,
+          "banked": 1,
+          "winningAttempts": 1
+        },
+        "8": {
+          "name": "Inward Heelflip",
+          "drafted": 340,
+          "selected": 615,
+          "landed": 513,
+          "banked": 410,
+          "winningAttempts": 86
+        },
+        "9": {
+          "name": "50-50 Grind",
+          "drafted": 354,
+          "selected": 663,
+          "landed": 638,
+          "banked": 608,
+          "winningAttempts": 59
+        },
+        "10": {
+          "name": "Boardslide",
+          "drafted": 281,
+          "selected": 423,
+          "landed": 382,
+          "banked": 359,
+          "winningAttempts": 52
+        },
+        "11": {
+          "name": "FS Boardslide",
+          "drafted": 348,
+          "selected": 813,
+          "landed": 708,
+          "banked": 655,
+          "winningAttempts": 118
+        },
+        "12": {
+          "name": "Noseslide",
+          "drafted": 411,
+          "selected": 781,
+          "landed": 577,
+          "banked": 473,
+          "winningAttempts": 210
+        },
+        "13": {
+          "name": "Lipslide",
+          "drafted": 523,
+          "selected": 1213,
+          "landed": 1002,
+          "banked": 805,
+          "winningAttempts": 131
+        },
+        "14": {
+          "name": "Smith Grind",
+          "drafted": 306,
+          "selected": 544,
+          "landed": 391,
+          "banked": 293,
+          "winningAttempts": 129
+        },
+        "15": {
+          "name": "Bluntslide",
+          "drafted": 135,
+          "selected": 27,
+          "landed": 4,
+          "banked": 2,
+          "winningAttempts": 2
+        },
+        "16": {
+          "name": "Feeble Grind",
+          "drafted": 349,
+          "selected": 657,
+          "landed": 429,
+          "banked": 313,
+          "winningAttempts": 192
+        },
+        "17": {
+          "name": "Crooked Grind",
+          "drafted": 137,
+          "selected": 128,
+          "landed": 61,
+          "banked": 45,
+          "winningAttempts": 32
+        },
+        "18": {
+          "name": "180°",
+          "drafted": 528,
+          "selected": 573,
+          "landed": 509,
+          "banked": 486,
+          "winningAttempts": 127
+        },
+        "19": {
+          "name": "360°",
+          "drafted": 1144,
+          "selected": 4014,
+          "landed": 3524,
+          "banked": 2945,
+          "winningAttempts": 673
+        },
+        "20": {
+          "name": "540°",
+          "drafted": 314,
+          "selected": 607,
+          "landed": 476,
+          "banked": 333,
+          "winningAttempts": 205
+        },
+        "21": {
+          "name": "720°",
+          "drafted": 232,
+          "selected": 210,
+          "landed": 121,
+          "banked": 57,
+          "winningAttempts": 39
+        },
+        "22": {
+          "name": "900°",
+          "drafted": 106,
+          "selected": 48,
+          "landed": 14,
+          "banked": 12,
+          "winningAttempts": 10
+        },
+        "23": {
+          "name": "1080°",
+          "drafted": 78,
+          "selected": 0,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        }
+      }
+    },
+    {
+      "version": "live",
+      "mode": "mixed",
+      "sessions": 200,
+      "configuration": {
+        "points": [
+          3,
+          2,
+          3,
+          4,
+          7,
+          5,
+          9,
+          13,
+          7,
+          2,
+          2,
+          3,
+          4,
+          7,
+          5,
+          13,
+          7,
+          11,
+          3,
+          7,
+          9,
+          10,
+          13,
+          16
+        ],
+        "targets": [
+          2,
+          2,
+          3,
+          3,
+          7,
+          7,
+          7,
+          7,
+          10,
+          10,
+          11,
+          9
+        ]
+      },
+      "completed": 200,
+      "commands": 89336,
+      "modules": 1000,
+      "attempts": 8000,
+      "falls": 2319,
+      "banked": 5681,
+      "points": 56148,
+      "threeTricks": 676,
+      "unawarded": 26,
+      "ties": 212,
+      "bonusUses": {
+        "adjust": 2038,
+        "reroll": 1754,
+        "freeze": 1824
+      },
+      "modulesById": {
+        "0": {
+          "name": "Le Flat",
+          "count": 73,
+          "unawarded": 0,
+          "ties": 14,
+          "attempts": 584,
+          "qualifiedAttempts": 444,
+          "falls": 140,
+          "points": 4222,
+          "best": 946
+        },
+        "1": {
+          "name": "Rail bas",
+          "count": 85,
+          "unawarded": 0,
+          "ties": 10,
+          "attempts": 680,
+          "qualifiedAttempts": 492,
+          "falls": 188,
+          "points": 4851,
+          "best": 1114
+        },
+        "2": {
+          "name": "Petite rampe",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 20,
+          "attempts": 568,
+          "qualifiedAttempts": 482,
+          "falls": 86,
+          "points": 4215,
+          "best": 830
+        },
+        "3": {
+          "name": "Place du bord de mer",
+          "count": 71,
+          "unawarded": 0,
+          "ties": 24,
+          "attempts": 568,
+          "qualifiedAttempts": 518,
+          "falls": 50,
+          "points": 4481,
+          "best": 816
+        },
+        "4": {
+          "name": "Rail et sortie",
+          "count": 131,
+          "unawarded": 0,
+          "ties": 20,
+          "attempts": 1048,
+          "qualifiedAttempts": 640,
+          "falls": 407,
+          "points": 6531,
+          "best": 1638
+        },
+        "5": {
+          "name": "Rampe et réception",
+          "count": 124,
+          "unawarded": 0,
+          "ties": 30,
+          "attempts": 992,
+          "qualifiedAttempts": 656,
+          "falls": 336,
+          "points": 7031,
+          "best": 1624
+        },
+        "6": {
+          "name": "Rampe et coping",
+          "count": 118,
+          "unawarded": 0,
+          "ties": 21,
+          "attempts": 944,
+          "qualifiedAttempts": 650,
+          "falls": 294,
+          "points": 6837,
+          "best": 1541
+        },
+        "7": {
+          "name": "Double ledge",
+          "count": 127,
+          "unawarded": 0,
+          "ties": 30,
+          "attempts": 1016,
+          "qualifiedAttempts": 678,
+          "falls": 337,
+          "points": 6700,
+          "best": 1549
+        },
+        "8": {
+          "name": "La grande ligne",
+          "count": 38,
+          "unawarded": 0,
+          "ties": 14,
+          "attempts": 304,
+          "qualifiedAttempts": 127,
+          "falls": 69,
+          "points": 2361,
+          "best": 457
+        },
+        "9": {
+          "name": "La ligne street",
+          "count": 48,
+          "unawarded": 0,
+          "ties": 8,
+          "attempts": 384,
+          "qualifiedAttempts": 176,
+          "falls": 156,
+          "points": 2454,
+          "best": 609
+        },
+        "10": {
+          "name": "Le parcours libre",
+          "count": 57,
+          "unawarded": 26,
+          "ties": 3,
+          "attempts": 456,
+          "qualifiedAttempts": 40,
+          "falls": 134,
+          "points": 3194,
+          "best": 677
+        },
+        "11": {
+          "name": "La grande rampe",
+          "count": 57,
+          "unawarded": 0,
+          "ties": 18,
+          "attempts": 456,
+          "qualifiedAttempts": 333,
+          "falls": 122,
+          "points": 3271,
+          "best": 660
+        }
+      },
+      "cards": {
+        "0": {
+          "name": "Kickflip",
+          "drafted": 631,
+          "selected": 1006,
+          "landed": 793,
+          "banked": 714,
+          "winningAttempts": 134
+        },
+        "1": {
+          "name": "Pop Shuvit",
+          "drafted": 258,
+          "selected": 518,
+          "landed": 506,
+          "banked": 487,
+          "winningAttempts": 54
+        },
+        "2": {
+          "name": "Heelflip",
+          "drafted": 305,
+          "selected": 323,
+          "landed": 258,
+          "banked": 233,
+          "winningAttempts": 41
+        },
+        "3": {
+          "name": "Frontside Flip",
+          "drafted": 472,
+          "selected": 788,
+          "landed": 656,
+          "banked": 543,
+          "winningAttempts": 240
+        },
+        "4": {
+          "name": "360 Flip",
+          "drafted": 330,
+          "selected": 326,
+          "landed": 183,
+          "banked": 136,
+          "winningAttempts": 117
+        },
+        "5": {
+          "name": "Laser Flip",
+          "drafted": 194,
+          "selected": 250,
+          "landed": 168,
+          "banked": 136,
+          "winningAttempts": 62
+        },
+        "6": {
+          "name": "Hardflip",
+          "drafted": 133,
+          "selected": 8,
+          "landed": 5,
+          "banked": 1,
+          "winningAttempts": 1
+        },
+        "7": {
+          "name": "Impossible",
+          "drafted": 134,
+          "selected": 2,
+          "landed": 1,
+          "banked": 0,
+          "winningAttempts": 0
+        },
+        "8": {
+          "name": "Inward Heelflip",
+          "drafted": 349,
+          "selected": 733,
+          "landed": 648,
+          "banked": 554,
+          "winningAttempts": 102
+        },
+        "9": {
+          "name": "50-50 Grind",
+          "drafted": 387,
+          "selected": 990,
+          "landed": 965,
+          "banked": 929,
+          "winningAttempts": 94
+        },
+        "10": {
+          "name": "Boardslide",
+          "drafted": 260,
+          "selected": 399,
+          "landed": 351,
+          "banked": 322,
+          "winningAttempts": 51
+        },
+        "11": {
+          "name": "FS Boardslide",
+          "drafted": 491,
+          "selected": 1225,
+          "landed": 1101,
+          "banked": 953,
+          "winningAttempts": 184
+        },
+        "12": {
+          "name": "Noseslide",
+          "drafted": 419,
+          "selected": 842,
+          "landed": 701,
+          "banked": 599,
+          "winningAttempts": 257
+        },
+        "13": {
+          "name": "Lipslide",
+          "drafted": 487,
+          "selected": 1179,
+          "landed": 978,
+          "banked": 832,
+          "winningAttempts": 179
+        },
+        "14": {
+          "name": "Smith Grind",
+          "drafted": 272,
+          "selected": 619,
+          "landed": 485,
+          "banked": 384,
+          "winningAttempts": 146
+        },
+        "15": {
+          "name": "Bluntslide",
+          "drafted": 141,
+          "selected": 8,
+          "landed": 4,
+          "banked": 4,
+          "winningAttempts": 4
+        },
+        "16": {
+          "name": "Feeble Grind",
+          "drafted": 188,
+          "selected": 220,
+          "landed": 128,
+          "banked": 96,
+          "winningAttempts": 78
+        },
+        "17": {
+          "name": "Crooked Grind",
+          "drafted": 131,
+          "selected": 79,
+          "landed": 42,
+          "banked": 33,
+          "winningAttempts": 25
+        },
+        "18": {
+          "name": "180°",
+          "drafted": 783,
+          "selected": 1729,
+          "landed": 1578,
+          "banked": 1388,
+          "winningAttempts": 337
+        },
+        "19": {
+          "name": "360°",
+          "drafted": 1126,
+          "selected": 3661,
+          "landed": 3309,
+          "banked": 2832,
+          "winningAttempts": 723
+        },
+        "20": {
+          "name": "540°",
+          "drafted": 190,
+          "selected": 220,
+          "landed": 168,
+          "banked": 102,
+          "winningAttempts": 68
+        },
+        "21": {
+          "name": "720°",
+          "drafted": 178,
+          "selected": 48,
+          "landed": 31,
+          "banked": 16,
+          "winningAttempts": 15
+        },
+        "22": {
+          "name": "900°",
+          "drafted": 74,
+          "selected": 7,
+          "landed": 1,
+          "banked": 1,
+          "winningAttempts": 1
+        },
+        "23": {
+          "name": "1080°",
+          "drafted": 67,
+          "selected": 0,
+          "landed": 0,
+          "banked": 0,
+          "winningAttempts": 0
+        }
+      }
+    }
+  ]
+}

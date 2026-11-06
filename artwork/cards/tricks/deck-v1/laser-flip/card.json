@@ -1,0 +1,66 @@
+{
+  "id": 14,
+  "key": "laser-flip",
+  "name": "Laser Flip",
+  "type": "kick",
+  "tier": "epic",
+  "copies": 1,
+  "points": 15,
+  "difficultyPoints": 13,
+  "scorePremium": 2,
+  "effortBonus": 2,
+  "p6": 0.14780521262002744,
+  "requirementCode": "exact446",
+  "cost": 3,
+  "pattern": "exact",
+  "values": [
+    4,
+    4,
+    6
+  ],
+  "symbols": [
+    "4",
+    "4",
+    "6"
+  ],
+  "rule": "Deux 4 et un 6",
+  "comboBonus": null,
+  "layers": {
+    "illustration": "assets/tricks/laser-flip/01-illustration.webp?v=9cf4407b86e0",
+    "graphics": "assets/tricks/frames/3-plain.svg?v=ca309fa6ee4a",
+    "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=e0643bc75e9f"
+  },
+  "printedPoints": 15,
+  "p": 0.14780521262002744,
+  "effect": "",
+  "tierLabel": "ÉPIQUE",
+  "sockets": [
+    {
+      "x": 115,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 263,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    },
+    {
+      "x": 411,
+      "y": 1025,
+      "size": 116,
+      "height": 96
+    }
+  ],
+  "layerSize": [
+    900,
+    1300
+  ],
+  "layerOrder": [
+    "01-illustration",
+    "02-graphisme",
+    "03-textes-symboles"
+  ]
+}

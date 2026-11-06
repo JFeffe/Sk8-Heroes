@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "heelflip: independent SVG assembler reproduces the three-layer PNG exactly; dimensions, alpha and tested score agree.",
+    "heelflip: rasterized labels, percentages, socket values and score are centered; badge rotation and score padding agree.",
+    "smith-grind: independent SVG assembler reproduces the three-layer PNG exactly; dimensions, alpha and tested score agree.",
+    "smith-grind: rasterized labels, percentages, socket values and score are centered; badge rotation and score padding agree.",
+    "900: independent SVG assembler reproduces the three-layer PNG exactly; dimensions, alpha and tested score agree.",
+    "900: rasterized labels, percentages, socket values and score are centered; badge rotation and score padding agree.",
+    "Editing the score only in an isolated text SVG changes its rendered layer and assembly, while illustration and graphic PNGs stay byte-identical.",
+    "Preview card payload parses and its inline JavaScript compiles; no browser/file-policy bypass is used.",
+    "Every static preview image and local source link resolves; ZIP is packaged separately after validation."
+  ],
+  "groups": 9,
+  "browserPreviewVerified": false,
+  "browserPreviewLimitation": "Browser URL policy blocks file: navigation. PNG and SVG exports were verified locally; preview JavaScript was compiled without execution.",
+  "productionUnchanged": true
+}

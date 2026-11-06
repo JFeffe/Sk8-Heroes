@@ -1,0 +1,43 @@
+{
+  "mode": "built-in image generation",
+  "promptSet": "generation-prompts.txt",
+  "layoutReference": "../park-illustration-v7.png",
+  "designReference": "../../../../public/assets/modules.webp",
+  "purpose": "Three illustrated module card examples, no engine integration",
+  "images": [
+    {
+      "name": "Le Quai bas",
+      "file": "manche-1-quai-bas.png",
+      "source": "exec-d372f42d-7e59-48e3-afb7-6abd5210362c.png",
+      "roundExample": 1,
+      "appearanceRounds": [
+        1,
+        2
+      ],
+      "pv": 2
+    },
+    {
+      "name": "Les Marches des Palmiers",
+      "file": "manche-4-marches-palmiers.png",
+      "source": "exec-1ff223c9-f4e5-471f-bf11-a9c1dee69166.png",
+      "roundExample": 4,
+      "appearanceRounds": [
+        3,
+        4,
+        5
+      ],
+      "pv": 3,
+      "note": "Staircase corrected to four steps."
+    },
+    {
+      "name": "La Grande Vague",
+      "file": "manche-6-grande-vague.png",
+      "source": "exec-372fe265-14c3-4295-ac64-aa90feba904f.png",
+      "roundExample": 6,
+      "appearanceRounds": [
+        6
+      ],
+      "pv": 4
+    }
+  ]
+}

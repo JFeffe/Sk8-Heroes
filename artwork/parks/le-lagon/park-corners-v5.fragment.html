@@ -1,0 +1,118 @@
+<div id="lagoon-corners-v5">
+  <div class="viz-controls">
+    <label class="form-label">Parcours possible
+      <select class="form-select" id="lagoon-v5-select" aria-label="Parcours du Lagon">
+        <option value="0">Vue d’ensemble · les quatre coins</option>
+        <optgroup label="Niveaux 1–2">
+          <option value="1">01 · Le Quai bas · A</option>
+          <option value="2">02 · Le Rail des Palmiers · B</option>
+          <option value="3">03 · La Petite Vague · C</option>
+          <option value="4">04 · L’Îlot · D</option>
+        </optgroup>
+        <optgroup label="Niveaux 3–5">
+          <option value="5">05 · Le Double Quai · A</option>
+          <option value="6">06 · Le Retour du Rail · A</option>
+          <option value="7">07 · Le Virage des Dunes · B</option>
+          <option value="8">08 · Le Tour de l’Îlot · B</option>
+          <option value="9">09 · Le Coping Bleu · C</option>
+          <option value="10">10 · Les Embruns · D</option>
+        </optgroup>
+        <optgroup label="Niveau 6">
+          <option value="11">11 · La Grande Traverse · C</option>
+          <option value="12">12 · La Boucle du Lagon · D</option>
+        </optgroup>
+      </select>
+    </label>
+  </div>
+  <div id="lagoon-v5-detail" class="text-small" aria-live="polite">Quatre coins en quarterpipe · un bank · trois éléments street partagés</div>
+  <div class="lagoon-map-wrap">
+    <svg id="lagoon-v5-map" role="img" aria-labelledby="lagoon-v5-title lagoon-v5-desc">
+      <title id="lagoon-v5-title">Le Lagon, les quarterpipes de coin et leurs lignes</title>
+      <desc id="lagoon-v5-desc">Vue de dessus d’un skatepark organique avec quatre coins courbes, quatre plateformes de départ et trois obstacles street au centre.</desc>
+      <defs>
+        <pattern id="v5-bank-hatch" width=".4" height=".4" patternUnits="userSpaceOnUse"><path d="M0 .4 .4 0" class="hatch"/></pattern>
+        <marker id="v5-slope-arrow" viewBox="0 0 7 7" refX="6" refY="3.5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 7 3.5 0 7" class="slope-head"/></marker>
+        <marker id="v5-route-arrow" viewBox="0 0 7 7" refX="6" refY="3.5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 7 3.5 0 7Z" class="route-head"/></marker>
+      </defs>
+      <g id="lagoon-v5-drawing"><g id="lagoon-v5-base"></g><g id="lagoon-v5-route"></g></g>
+    </svg>
+  </div>
+  <div class="viz-row text-small lagoon-key"><span>A · Dunes / bank</span><span>B · Palmiers</span><span>C · Large</span><span>D · Soleil</span></div>
+  <div class="viz-row text-small lagoon-key"><span>Q · Quarter de coin</span><span>R · Rail</span><span>L · Ledge</span><span>P · Îlot</span><span>1–3 · Tricks possibles</span><span>V · Virage sans trick</span></div>
+  <script type="application/json" id="lagoon-v5-data">__PARK_DATA__</script>
+</div>
+<style>
+  #lagoon-corners-v5{color:var(--foreground)}
+  #lagoon-corners-v5 .lagoon-map-wrap{width:100%;margin-top:10px}
+  #lagoon-corners-v5 #lagoon-v5-map{display:block;width:100%;height:auto}
+  #lagoon-corners-v5 .lagoon-key{margin-top:6px;gap:7px 16px}
+  #lagoon-corners-v5 .floor{fill:var(--card);stroke:var(--foreground);stroke-width:.13}
+  #lagoon-corners-v5 .sea{fill:color-mix(in srgb,var(--blue) 13%,var(--background))}
+  #lagoon-corners-v5 .shore{fill:none;stroke:color-mix(in srgb,var(--blue) 40%,var(--border));stroke-width:.06}
+  #lagoon-corners-v5 .walk{fill:none;stroke:var(--border);stroke-width:.8}
+  #lagoon-corners-v5 .tree{fill:color-mix(in srgb,var(--green) 12%,var(--background));stroke:var(--border);stroke-width:.05}
+  #lagoon-corners-v5 .deck{fill:var(--muted);stroke:var(--muted-foreground);stroke-width:.06}
+  #lagoon-corners-v5 .quarter{fill:color-mix(in srgb,var(--blue) 10%,var(--card));stroke:none}
+  #lagoon-corners-v5 .contour{fill:none;stroke:var(--muted-foreground);stroke-width:.035;opacity:.5}
+  #lagoon-corners-v5 .coping{fill:none;stroke:var(--foreground);stroke-width:.16}
+  #lagoon-corners-v5 .toe{fill:none;stroke:var(--muted-foreground);stroke-width:.055}
+  #lagoon-corners-v5 .bank{fill:url(#v5-bank-hatch);stroke:var(--muted-foreground);stroke-width:.055}
+  #lagoon-corners-v5 .hatch{stroke:var(--muted-foreground);stroke-width:.035;opacity:.55}
+  #lagoon-corners-v5 .bank-top,#lagoon-corners-v5 .grind-edge{stroke:var(--foreground);stroke-width:.1}
+  #lagoon-corners-v5 .rail{stroke:var(--foreground);stroke-width:.16}
+  #lagoon-corners-v5 .support{fill:var(--card);stroke:var(--foreground);stroke-width:.06}
+  #lagoon-corners-v5 .pad{fill:var(--muted);stroke:var(--foreground);stroke-width:.08}
+  #lagoon-corners-v5 .padtop{fill:var(--card);stroke:var(--muted-foreground);stroke-width:.05}
+  #lagoon-corners-v5 .slope{fill:none;stroke:var(--muted-foreground);stroke-width:.055}
+  #lagoon-corners-v5 .slope-head{fill:none;stroke:var(--muted-foreground);stroke-width:1}
+  #lagoon-corners-v5 .map-label{fill:var(--foreground);text-anchor:middle;font-weight:400}
+  #lagoon-corners-v5 .start-text{fill:var(--foreground);text-anchor:middle;font-weight:500}
+  #lagoon-corners-v5 .start-disc,#lagoon-corners-v5 .spot-disc{fill:var(--card);stroke:var(--foreground);stroke-width:.075}
+  #lagoon-corners-v5 .route-halo{fill:none;stroke:var(--card);stroke-linecap:round;stroke-linejoin:round}
+  #lagoon-corners-v5 .route{fill:none;stroke:var(--viz-series-1);stroke-linecap:round;stroke-linejoin:round;marker-end:url(#v5-route-arrow)}
+  #lagoon-corners-v5 .route-head{fill:var(--viz-series-1)}
+  #lagoon-corners-v5 .event{fill:var(--card);stroke:var(--viz-series-1)}
+  #lagoon-corners-v5 .event-label{fill:var(--foreground);text-anchor:middle;font-weight:500}
+  #lagoon-corners-v5 .leader{fill:none;stroke:var(--viz-series-1)}
+  #lagoon-corners-v5 .carve{fill:var(--muted);stroke:var(--muted-foreground)}
+  #lagoon-corners-v5 .carve-label{fill:var(--foreground);text-anchor:middle;font-weight:400}
+  #lagoon-corners-v5 .compact .flat-label,#lagoon-corners-v5 .compact-route .spot-disc,#lagoon-corners-v5 .compact-route .spot-label{display:none}
+  #lagoon-corners-v5 .has-route .quarter-label{display:none}
+</style>
+<script>
+(() => {
+  const root=document.getElementById('lagoon-corners-v5');
+  const data=JSON.parse(root.querySelector('#lagoon-v5-data').textContent);
+  const svg=root.querySelector('#lagoon-v5-map'),drawing=root.querySelector('#lagoon-v5-drawing'),base=root.querySelector('#lagoon-v5-base'),active=root.querySelector('#lagoon-v5-route');
+  const select=root.querySelector('#lagoon-v5-select'),detail=root.querySelector('#lagoon-v5-detail'),desc=root.querySelector('#lagoon-v5-desc');
+  base.innerHTML=data.baseMarkup.replaceAll('url(#slope-arrow)','url(#v5-slope-arrow)');
+  let selected=0;
+  const ns='http://www.w3.org/2000/svg';
+  const element=(tag,attrs)=>{const node=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>node.setAttribute(k,v));active.appendChild(node);return node;};
+  const label=(p,value,cls,size)=>{const node=element('text',{x:p[0],y:p[1],class:cls,'font-size':size,dy:size*.32});node.textContent=value;return node;};
+  function draw(){
+    const width=svg.parentElement.getBoundingClientRect().width;if(!width)return;
+    const scale=width/68,height=scale*54,fs=parseFloat(getComputedStyle(root).getPropertyValue('--font-size-base'))||14;
+    svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('height',height);drawing.setAttribute('transform',`translate(${scale*2} ${scale*5}) scale(${scale})`);
+    base.classList.toggle('compact',width<500);base.classList.toggle('compact-route',width<600&&selected!==0);base.classList.toggle('has-route',selected!==0);
+    base.querySelectorAll('text').forEach(node=>{node.setAttribute('font-size',fs*.86/scale);node.setAttribute('dy',fs*.28/scale);if(!node.dataset.originalY)node.dataset.originalY=node.getAttribute('y');node.setAttribute('y',Number(node.dataset.originalY)-.28);});
+    const card=data.cards.find(c=>c.id===selected),start=data.starts.find(s=>s.id===card?.start);
+    base.querySelectorAll('.start-disc').forEach((node,i)=>{node.setAttribute('r',Math.max(1,fs*.65/scale));node.style.display=width<500&&start&&data.starts[i].id!==start.id?'none':'';});
+    base.querySelectorAll('.start-text').forEach((node,i)=>{node.style.display=width<500&&start&&data.starts[i].id!==start.id?'none':'';});
+    base.querySelectorAll('.spot-disc').forEach(node=>node.setAttribute('r',Math.max(.75,fs*.56/scale)));
+    active.replaceChildren();
+    if(!card){detail.textContent='Quatre coins en quarterpipe · un bank · trois éléments street partagés';desc.textContent='Quatre coins courbes concaves vers le centre, plateformes A à D, bank au sud-ouest, rail R, ledge L et îlot P au centre.';return;}
+    element('path',{class:'route-halo',d:card.path,'stroke-width':5/scale});element('path',{class:'route',d:card.path,'stroke-width':2.6/scale});
+    card.events.forEach((event,i)=>{const p=event.point.slice();if(width<500&&Math.hypot(p[0]-start.point[0],p[1]-start.point[1])*scale<fs*1.8){p[0]-=3;element('line',{x1:event.point[0],y1:event.point[1],x2:p[0],y2:p[1],class:'leader','stroke-width':1/scale});}
+      element('circle',{class:'event',cx:p[0],cy:p[1],r:fs*.63/scale,'stroke-width':1.3/scale});label(p,i+1,'event-label',fs*.86/scale);
+    });
+    if(card.carve){const p=card.carve.point;element('circle',{class:'carve',cx:p[0],cy:p[1],r:width<500?2/scale:fs*.58/scale,'stroke-width':1/scale});if(width>=500)label(p,'V','carve-label',fs*.86/scale);}
+    detail.textContent=`Départ ${card.start} · `+card.events.map((event,i)=>`${i+1} ${event.type}`).join(' · ')+(card.carve?` · Virage ${card.carve.place}`:'');
+    desc.textContent=`${card.name}, niveaux ${card.level}, départ ${card.start}. `+card.events.map((event,i)=>`${i+1}, ${event.type}, ${event.place}`).join('. ')+(card.carve?`. Virage sans trick dans ${card.carve.place}.`:'.');
+  }
+  function apply(state){const m=state?.modelContent??state;const value=m?.version===5?Number(m.routeId??0):0;selected=value===0||data.cards.some(c=>c.id===value)?value:0;select.value=String(selected);draw();}
+  select.addEventListener('change',()=>{selected=Number(select.value);draw();const c=data.cards.find(c=>c.id===selected);window.openai?.setWidgetState?.({modelContent:{park:'Le Lagon',version:5,routeId:selected,routeName:c?.name??null,start:c?.start??null},privateContent:null})?.catch(()=>{});});
+  window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState)apply(event.detail.globals.widgetState);});
+  new ResizeObserver(draw).observe(svg.parentElement);apply(window.openai?.widgetState);
+})();
+</script>

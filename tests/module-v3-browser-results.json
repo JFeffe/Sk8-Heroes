@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-01",
+  "version": "0.4.0",
+  "rulesVersion": 16,
+  "saveVersion": 11,
+  "catalog": {
+    "cards": 12,
+    "layersPerCard": 3,
+    "allV3ConditionsPresent": true
+  },
+  "responsive": [
+    {
+      "aligned": true,
+      "cardFits": true,
+      "layers": 3,
+      "loaded": true,
+      "modalFits": true,
+      "modalOverflow": false,
+      "viewport": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "layers": 3,
+      "loaded": true,
+      "modalFits": true,
+      "modalOverflow": false,
+      "viewport": [
+        1366,
+        768
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "layers": 3,
+      "loaded": true,
+      "modalFits": true,
+      "modalOverflow": false,
+      "viewport": [
+        1024,
+        768
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "layers": 3,
+      "loaded": true,
+      "modalFits": true,
+      "modalOverflow": false,
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "layers": 3,
+      "loaded": true,
+      "modalFits": true,
+      "modalOverflow": false,
+      "viewport": [
+        844,
+        390
+      ]
+    },
+    {
+      "aligned": true,
+      "cardFits": true,
+      "layers": 3,
+      "loaded": true,
+      "modalFits": true,
+      "modalOverflow": false,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "tests": {
+    "passed": 231,
+    "failed": 0
+  },
+  "functionalSimulation": {
+    "sessions": 100,
+    "modules": 600,
+    "attempts": 4800,
+    "file": "tests/match-simulation-results.json",
+    "balanceClaim": false
+  },
+  "screenshots": [
+    "tests/screenshots/module-v3-coping-1280.png",
+    "tests/screenshots/module-v3-coping-mobile.png"
+  ]
+}

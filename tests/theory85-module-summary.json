@@ -1,0 +1,502 @@
+{
+  "theoretical": true,
+  "proposalVersion": 1,
+  "modules": [
+    {
+      "id": 0,
+      "key": "ilot",
+      "name": "L’Îlot",
+      "stage": 0,
+      "needs": [
+        "kick"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "count-type",
+        "type": "kick",
+        "count": 2
+      },
+      "condition": "Réussir 2 Kicks.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/ilot.webp"
+    },
+    {
+      "id": 1,
+      "key": "quai-bas",
+      "name": "Le Quai bas",
+      "stage": 0,
+      "needs": [
+        "slide"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "slide",
+          "kick"
+        ]
+      },
+      "condition": "Réussir Slide → Kick.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/quai-bas.webp"
+    },
+    {
+      "id": 2,
+      "key": "petite-vague",
+      "name": "La Petite Vague",
+      "stage": 0,
+      "needs": [
+        "air"
+      ],
+      "pv": 2,
+      "bonus": {
+        "kind": "count-type",
+        "type": "air",
+        "count": 2
+      },
+      "condition": "Réussir 2 Airs.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/petite-vague.webp"
+    },
+    {
+      "id": 3,
+      "key": "rail-palmiers",
+      "name": "Le Rail des Palmiers",
+      "stage": 0,
+      "needs": [],
+      "pv": 2,
+      "bonus": {
+        "kind": "variety",
+        "count": 2
+      },
+      "condition": "Réussir des tricks de 2 types différents.",
+      "park": "Le Lagon",
+      "rounds": [
+        1,
+        2
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/rail-palmiers.webp"
+    },
+    {
+      "id": 4,
+      "key": "retour-rail",
+      "name": "Le Retour du Rail",
+      "stage": 1,
+      "needs": [
+        "slide",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "slide",
+          "kick"
+        ]
+      },
+      "condition": "Réussir un Slide immédiatement suivi d’un Kick.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/retour-rail.webp"
+    },
+    {
+      "id": 5,
+      "key": "tour-ilot",
+      "name": "Le Tour de l’Îlot",
+      "stage": 1,
+      "needs": [
+        "air",
+        "kick"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "kick",
+          "air"
+        ]
+      },
+      "condition": "Réussir Kick → Air.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/tour-ilot.webp"
+    },
+    {
+      "id": 6,
+      "key": "coping-bleu",
+      "name": "Le Coping Bleu",
+      "stage": 1,
+      "needs": [
+        "air",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "air",
+          "slide"
+        ]
+      },
+      "condition": "Réussir un Air immédiatement suivi d’un Slide.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/coping-bleu.webp"
+    },
+    {
+      "id": 7,
+      "key": "double-quai",
+      "name": "Le Double Quai",
+      "stage": 1,
+      "needs": [
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "dice-pair",
+        "costs": [
+          2,
+          3
+        ]
+      },
+      "condition": "Réussir 2 tricks utilisant 5 dés au total : un à 2 dés et un à 3 dés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/double-quai.webp"
+    },
+    {
+      "id": 8,
+      "key": "boucle-lagon",
+      "name": "La Boucle du Lagon",
+      "stage": 2,
+      "needs": [
+        "kick",
+        "slide",
+        "air"
+      ],
+      "pv": 4,
+      "bonus": {
+        "kind": "all-types"
+      },
+      "condition": "Réussir un Kick, un Slide et un Air, dans n’importe quel ordre.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/boucle-lagon.webp"
+    },
+    {
+      "id": 9,
+      "key": "marches-palmiers",
+      "name": "Les Marches des Palmiers",
+      "stage": 1,
+      "needs": [
+        "kick",
+        "slide"
+      ],
+      "pv": 3,
+      "bonus": {
+        "kind": "ordered",
+        "types": [
+          "kick",
+          "slide",
+          "kick"
+        ]
+      },
+      "condition": "Réussir Kick → Slide → Kick, dans cet ordre.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/marches-palmiers.webp"
+    },
+    {
+      "id": 10,
+      "key": "embruns",
+      "name": "Les Embruns",
+      "stage": 1,
+      "needs": [],
+      "pv": 3,
+      "bonus": {
+        "kind": "dice-pair",
+        "costs": [
+          3,
+          3
+        ]
+      },
+      "condition": "Réussir deux tricks à trois dés.",
+      "park": "Le Lagon",
+      "rounds": [
+        3,
+        4,
+        5
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/embruns.webp"
+    },
+    {
+      "id": 11,
+      "key": "grande-vague",
+      "name": "La Grande Vague",
+      "stage": 2,
+      "needs": [
+        "air"
+      ],
+      "pv": 4,
+      "bonus": {
+        "kind": "all-dice"
+      },
+      "condition": "Poser les six dés sur une séquence conservée.",
+      "park": "Le Lagon",
+      "rounds": [
+        6
+      ],
+      "bonusPoints": 2,
+      "image": "assets/modules/lagoon/grande-vague.webp"
+    }
+  ],
+  "ordinaryDiagnostic": [
+    {
+      "key": "routes-v1-four2-mixed",
+      "games": 600,
+      "cost4Selected": 0
+    },
+    {
+      "key": "routes-v1-four4-mixed",
+      "games": 600,
+      "cost4Selected": 0
+    }
+  ],
+  "probe": {
+    "games": 1600,
+    "method": "Four-die profile explicitly drafts a usable 4-die card and opens with it when it has at least one adjust and one reroll; card ranking uses empirical precomputed success rates, never future rolls. Other profiles unchanged.",
+    "rows": [
+      {
+        "key": "old-four2-mixed",
+        "games": 400,
+        "matchWins": {
+          "balanced": 0.21833333333333332,
+          "two": 0.18166666666666667,
+          "three": 0.28791666666666665,
+          "four": 0.3120833333333333
+        },
+        "finals": {
+          "8": {
+            "games": 194,
+            "credits": {
+              "balanced": 42.25,
+              "two": 62.41666666666668,
+              "three": 21.583333333333332,
+              "four": 67.75
+            }
+          },
+          "11": {
+            "games": 206,
+            "credits": {
+              "balanced": 33.83333333333333,
+              "two": 24.5,
+              "three": 53.166666666666686,
+              "four": 94.49999999999997
+            }
+          }
+        },
+        "cost4Selected": 326,
+        "cost4Banked": 295,
+        "falls": 0.17755208333333333,
+        "three": 0.3209375,
+        "score": 11.958802083333333
+      },
+      {
+        "key": "old-four4-mixed",
+        "games": 400,
+        "matchWins": {
+          "balanced": 0.20625,
+          "two": 0.16333333333333336,
+          "three": 0.26458333333333334,
+          "four": 0.3658333333333333
+        },
+        "finals": {
+          "8": {
+            "games": 194,
+            "credits": {
+              "balanced": 43.50000000000001,
+              "two": 62.83333333333334,
+              "three": 18.666666666666668,
+              "four": 69
+            }
+          },
+          "11": {
+            "games": 206,
+            "credits": {
+              "balanced": 21.583333333333336,
+              "two": 12.583333333333334,
+              "three": 25.75,
+              "four": 146.08333333333334
+            }
+          }
+        },
+        "cost4Selected": 327,
+        "cost4Banked": 298,
+        "falls": 0.17625,
+        "three": 0.32046875,
+        "score": 11.952291666666667
+      },
+      {
+        "key": "routes-v1-four2-mixed",
+        "games": 400,
+        "matchWins": {
+          "balanced": 0.25416666666666665,
+          "two": 0.14333333333333334,
+          "three": 0.29583333333333334,
+          "four": 0.30666666666666664
+        },
+        "finals": {
+          "8": {
+            "games": 194,
+            "credits": {
+              "balanced": 37.16666666666667,
+              "two": 63.33333333333334,
+              "three": 24.66666666666666,
+              "four": 68.83333333333334
+            }
+          },
+          "11": {
+            "games": 206,
+            "credits": {
+              "balanced": 46.00000000000001,
+              "two": 26.333333333333332,
+              "three": 58.333333333333336,
+              "four": 75.33333333333333
+            }
+          }
+        },
+        "cost4Selected": 258,
+        "cost4Banked": 250,
+        "falls": 0.1759375,
+        "three": 0.31083333333333335,
+        "score": 12.127083333333333
+      },
+      {
+        "key": "routes-v1-four4-mixed",
+        "games": 400,
+        "matchWins": {
+          "balanced": 0.2475,
+          "two": 0.15875,
+          "three": 0.27875,
+          "four": 0.315
+        },
+        "finals": {
+          "8": {
+            "games": 194,
+            "credits": {
+              "balanced": 35.166666666666664,
+              "two": 66.33333333333333,
+              "three": 18.499999999999996,
+              "four": 74
+            }
+          },
+          "11": {
+            "games": 206,
+            "credits": {
+              "balanced": 44.250000000000014,
+              "two": 29.249999999999996,
+              "three": 47.083333333333336,
+              "four": 85.41666666666666
+            }
+          }
+        },
+        "cost4Selected": 260,
+        "cost4Banked": 252,
+        "falls": 0.17432291666666666,
+        "three": 0.31005208333333334,
+        "score": 12.134791666666667
+      }
+    ]
+  },
+  "functional": {
+    "theoretical": true,
+    "passed": true,
+    "checks": 5,
+    "details": [
+      "Four early, six middle and two final modules; PV 2/3/4 and optional sequence bonus +2 preserved.",
+      "Grande Vague grants +2 for 2+2+2, 3+3, 4+2 and 2+4 dice; never for one 4-die Air or only five dice.",
+      "Embruns requires two separate 3-die cards; Quai bas and Tour de l’Îlot require their printed order for the optional bonus.",
+      "Real-engine Grande Vague: 900° alone gets no module bonus; 900°+Ollie gets +2; three 2-die cards get module +2 and their separate third-trick point/token.",
+      "Two-type mandatory opening remains enforced: missing type cannot be skipped or banked; third card stays free when dice permit."
+    ]
+  },
+  "productionUnchanged": true,
+  "productionHashes": {
+    "public/app.js": "68359ea36947a1035733efa414d52c5f1cc6d87bbc5210c8cc4bb502db02c156",
+    "public/card-library.js": "af7ce0c2e786e7449b9b13ee353913e7586b7f823e545bbc3618c2ab237a4fcd",
+    "public/combinations.js": "8d42382a600e43220278f3b6ba85257d7b4a358eebed165e11af203d3b70f5fb",
+    "public/data.js": "b619447fec1c4f783e75eaf144a3e571d96e60c1452ec77d5c4aec103fc989c0",
+    "public/dice-feedback.js": "4e61e0a0d5cacfec547ce758a23fa5236a0449e9dff9e0e970d91fdac66f13aa",
+    "public/drag.js": "44f9bb979c881f88e235861b3988832ce8e1839edbda9e569ce82fa4c30db31b",
+    "public/engine.js": "5053c5df77cbf84a2bc71c7b651965c4cd18a50d81623d4837954e055f67c281",
+    "public/icons.js": "7438c41b2fc0a9199cc8b4d65b0963782155401773eb11070c0895f3ca79c84b",
+    "public/initial-draft.js": "0294cc3a52914b02cdc72649844908c3a26571bdb607369d3aced8913771980c",
+    "public/match-statistics.js": "9a66f292db66d306348755e21b90162fca7a4727b824e99be029282b380696be",
+    "public/match-ui.js": "22534e2c6d567a0da31b13a5c55689004075bcfefee8096de93e6707b178e0e7",
+    "public/match.js": "26bcca8c5907f85fa9b6b1493762ab737f7c964247c5468d341b82ef80c8ca9e",
+    "public/module-cards.js": "66d9c3742b9d77fee101ee2223a83f6b84f260a5f6421e233fca40be4b7c5fb4",
+    "public/module-rules.js": "00c717cbcfd5ecf3a9d8134e4b67b5de35f521bf68dd96c742ad267a86c99c45",
+    "public/npc-choice.js": "bb64aa8448c0b09d1c19e34115fcc28a59bc3ef76acff3bd13bf19736318cb14",
+    "public/npc-dice.js": "9dde7279cc2abdcb543e8ca8761fbe8c13f59ca7453d24ff21b770d6a565f2e9",
+    "public/npc-difficulty.js": "f79cfeddcb86bacbb08619bd0e787a929b329357e80498c61795579a2e6c50b9",
+    "public/npc-strategy.js": "b6165f991d3eaa24b0926470091f18793e3eb222ef121c1791a9634b0f673839",
+    "public/npc-view.js": "ee9afb101b3c78ac88d3bb3c285102aea235f5750842a15b9b6647efcdcdf318",
+    "public/npc.js": "b4c2609a05068fb29f175d36768c6034312e0626684f43fc2d735926a023e0f2",
+    "public/odds.js": "b1fb1a59daf1e5dc5451f762ac6346a1930ee151b12bb6fe12a1421d36d85bcb",
+    "public/online-client.js": "457aacfbda0a41ce3c4a964dd22ddced34b494f86066b7055fedaceb722bec2d",
+    "public/online-ui.js": "50e0c2bc9c4763b6f9e13457c854d82772c6c84e4283d997a1cf8062e7c5d3bd",
+    "public/patch-notes-state.js": "d694a3e2515610101fc870d99db4ec7b60b2dbbc41ac9d1d7096ebd852c71bb8",
+    "public/played-card.js": "3937ab1379e6238eb660f1d7ed140563378d9251c732e00ef8778ddeb9fa1271",
+    "public/release-notes.js": "c550696a409ef5d8e33a69a3e0b07269b86c4ddb46ebd13d9cb3813dd15d7317",
+    "public/roll-probability.js": "47c89055a093c01bf12c4c962deccc9b0eaf2d4917a66a0b3a26c47cb6dea31d",
+    "public/skaters.js": "819c596a2a4e71d6d925d24f5dfd7d5341480917f98ee3acb68400d7ea2b756d",
+    "public/table-view.js": "8fcd94ee50d41b8d9eb9c30404e418c8cdc8cec377026a73a1e77bb74945e673",
+    "public/turn.js": "7ed0252cc2df1fe25d5fdeb6917d1b2150befdf1c742e5a70e59b03cdeb4c73a",
+    "public/ui-feedback.js": "99e841ae7205fcde614ce0f19a0ea8c5e02fb93b4f6d8a673f3b55cdeb140d61"
+  }
+}

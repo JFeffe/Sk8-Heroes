@@ -1,0 +1,11 @@
+{
+  "build": "0.5.2",
+  "date": "2026-11-02",
+  "functionalTests": {"passed": 255, "failed": 0, "newTargetedCases": 27, "log": ".local-games/build052-tests-final.log"},
+  "simulations": {"completedGames": 1000, "attempts": 48000, "freshSeedNormalGames": 200, "exploratoryGamesExcluded": 80, "gameChecks": 148346, "independentBonusSpendsChecked": 54115, "noPossibleObjectiveViolations": 0},
+  "sourceChanges": ["package.json", "public/npc.js", "public/npc-strategy.js", "public/release-notes.js"],
+  "rulesVersion": 17,
+  "saveVersion": 12,
+  "browser": {"gameVersion": "0.5.2", "gameConsoleErrors": 0, "reportConsoleErrors": 0, "serverReloaded": true, "screenshot": "tests/screenshots/build052-objectives-report.png", "report": "http://127.0.0.1:8000/reports/build-052-objectives.html"},
+  "limitations": ["The independent spend audit verifies necessary objective feasibility using upper bounds; it does not prove optimality or actual profit after random rolls.", "Normal simulations show increased falls and increased last-player advantage; this change does not validate overall balance."]
+}

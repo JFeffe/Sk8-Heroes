@@ -1,89 +1,120 @@
-import {TRICKS,MODULES,makeDeck} from './data.js';
-export const shuffle=(a,rng=Math.random)=>{a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
-export const difficulty=c=>Math.max(2,c.difficulty-(c.upgraded?1:0));
-export const value=d=>d.face+d.boost;
+import {MODULES,makeDeck} from './data.js';
+import {createTurnEngine,newTurn,sequenceScore} from './turn.js';
+import {validModuleRoute} from './module-rules.js';
+export {freeDice,activeCard,banked,matches,findMatch,resolveDice,wildColor,isOwnStar,sequenceScore,sequenceView,rerollableDice} from './turn.js';
+export const RULESET_VERSION=17;
+export const BONUS_TYPES=['adjust','reroll','freeze'];
+export const BONUS_LIMIT=3;
+export const bonusSlots=(s,type)=>Math.max(0,BONUS_LIMIT-(s.bank[type]||0));
+export const canAddBonus=(s,type)=>BONUS_TYPES.includes(type)&&bonusSlots(s,type)>0;
+export function draftBonusChoices(s,tokens){
+  const available=tokens.filter(token=>canAddBonus(s,token.type));
+  return available.length?available:tokens;
+}
+export function fitSequenceReward(s){
+  const reward=s.sequenceReward;if(!reward?.pending)return;
+  const slots=BONUS_TYPES.reduce((sum,type)=>sum+bonusSlots(s,type),0);
+  reward.remaining=Math.min(reward.remaining,slots);reward.pending=reward.remaining>0;
+}
+const emptyEarned=()=>Object.fromEntries(BONUS_TYPES.map(type=>[type,0]));
+export const shuffle=(a,rng=Math.random)=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
 export const currentModule=s=>MODULES[s.route[s.module]];
-export const selectedCards=s=>s.selected.map(id=>s.hand.find(c=>c.uid===id));
-export function legal(cards,m){
- if(!cards.length||cards.length>3)return false;
- if(cards.length<(m.minCards||1))return false;
- if(cards.length>1&&cards.some(c=>c.effect==='solo'))return false;
- const types=cards.map(c=>c.type);
- for(const t of m.needs){const i=types.indexOf(t);if(i<0)return false;types.splice(i,1);}
- return true;
+const turn=createTurnEngine(s=>currentModule(s).needs);
+export const {eligible,options,requiredTypes,missingTypes,typeAllowed,canStop,canFall,canFreeze,chooseCard,resetPlacement,roll,place,autoPlace,bonus,canLand,continueRun}=turn;
+function finishAction(action){return s=>{
+  const changed=turn[action](s);
+  if(changed&&s.phase==='result'){
+    const cards=s.landed.map(e=>s.hand.find(c=>c.uid===e.card));
+    const scored=sequenceScore(cards,currentModule(s),s);
+    s.last={points:s.score,success:s.score>0,reason:s.reason,
+      base:s.score?scored.base:0,bonus:s.score?scored.bonus:0,sequenceBonus:s.score?scored.sequenceBonus:0,
+      cardBonus:s.score?scored.cardBonus:0,moduleBonus:s.score?scored.moduleBonus:0,
+      tokenReward:null,tokenRewards:[],rewardTokens:s.score?scored.rewardTokens:0,moduleEffect:s.score?scored.moduleEffect:{points:0,tokens:0},cards:cards.map(c=>c.name),failed:s.reason==='fall'?s.hand.find(c=>c.uid===s.active)?.name||null:null,
+      entries:[...s.landed.map(e=>({card:e.card,confirmed:true,bonus:s.score?scored.details.find(d=>d.card===e.card)?.points||0:0,dice:e.dice.map(id=>({...s.dice[id]}))})),...(s.reason==='fall'&&s.active?[{card:s.active,confirmed:false,bonus:0,dice:s.pending.map(id=>({...s.dice[id]}))}]:[])]};
+    s.sequenceReward=s.last.rewardTokens?{pending:true,choice:null,choices:[],total:s.last.rewardTokens,remaining:s.last.rewardTokens}:null;
+    fitSequenceReward(s);
+    s.attempts.push({...s.last});
+    if(!['fall','pass'].includes(s.reason)){
+      s.sequences.push({attempt:s.attempt,points:s.score,bonus:scored.bonus,moduleBonus:scored.moduleBonus,sequenceBonus:scored.sequenceBonus,tokenRewards:[],rewardTokens:scored.rewardTokens,moduleEffect:scored.moduleEffect,
+        entries:s.landed.map(e=>({card:e.card,bonus:scored.details.find(d=>d.card===e.card).points,dice:e.dice.map(id=>({id,color:s.dice[id].color,face:s.dice[id].face,wildValue:s.dice[id].wildValue}))}))});
+      s.secured.push(...cards.map(c=>c.uid));
+      for(const c of cards)if(c.comboBonus?.kind==='reward')s.earned[c.comboBonus.type]=(s.earned[c.comboBonus.type]||0)+1;
+    }
+  }
+  return changed;
+};}
+export const land=finishAction('land'),stop=finishAction('stop'),fall=finishAction('fall'),pass=finishAction('pass');
+export function drawModuleRoute(length=6,rng=Math.random){
+  return [...shuffle(MODULES.filter(m=>m.stage===0),rng).slice(0,length===6?2:1),
+    ...shuffle(MODULES.filter(m=>m.stage===1),rng).slice(0,length===6?3:2),
+    ...shuffle(MODULES.filter(m=>m.stage===2),rng).slice(0,1)].map(m=>m.id);
 }
-export function evaluate(cards,dice,allocation,m){
- const totals=cards.map(c=>dice.reduce((n,d,i)=>n+(allocation[i]===c.uid?value(d):0),0));
- const counts=cards.map(c=>allocation.filter(id=>id===c.uid).length);
- const met=cards.map((c,i)=>counts[i]>0&&totals[i]>=difficulty(c));
- const combo=cards.length===3?6:cards.length===2?2:0;
- let points=cards.reduce((n,c)=>n+c.points,0)+combo;
- cards.forEach((c,i)=>{
-  const others=cards.filter((_,j)=>i!==j);
-  if(c.effect==='kick'&&others.some(x=>x.type==='kick'))points++;
-  if(c.effect==='air'&&others.some(x=>x.type==='air'))points+=2;
-  if(c.effect==='slide'&&others.some(x=>x.type==='slide'))points+=2;
-  if(c.effect==='variety'&&new Set(cards.map(x=>x.type)).size===3)points+=2;
-  if(c.effect==='exact'&&totals[i]===difficulty(c))points+=2;
-  if(c.effect==='one'&&counts[i]===1)points+=2;
- });
- return {success:legal(cards,m)&&met.every(Boolean)&&points>=m.min,points,totals,counts,met,combo};
-}
-export function autoAssign(cards,dice,m){
- let best=null,quality=-Infinity,a=Array(dice.length).fill(null);
- function walk(i){
-  if(i===dice.length){const e=evaluate(cards,dice,a,m);const q=e.success?100000+e.points:e.met.filter(Boolean).length*1000+e.totals.reduce((n,t,j)=>n+Math.min(t,difficulty(cards[j]))/difficulty(cards[j]),0);if(q>quality){quality=q;best=[...a];}return;}
-  for(const c of [null,...cards]){a[i]=c?.uid||null;walk(i+1);}
- }
- walk(0);return best;
-}
-export function newGame({name='Rider',length=6}={},rng=Math.random){
- const route=[...shuffle(MODULES.filter(m=>m.stage===0),rng).slice(0,length===6?2:1),...shuffle(MODULES.filter(m=>m.stage===1),rng).slice(0,length===6?3:2),...shuffle(MODULES.filter(m=>m.stage===2),rng).slice(0,1)].map(m=>m.id);
- const s={version:1,name:name.trim().slice(0,24)||'Rider',route,module:0,attempt:0,phase:'initial',deck:shuffle(makeDeck(),rng),hand:[],offer:[],selected:[],locked:[],dice:[],allocation:[],bank:{boost:0,reroll:1},used:{boost:false,reroll:false},earned:{boost:false,reroll:false},attempts:[],history:[],pv:0,created:Date.now()};
- offer(s,rng);return s;
+export function newGame({name='Rider',length=6,skaterId=null,route:fixedRoute=null}={},rng=Math.random){
+  if(fixedRoute&&!validModuleRoute(fixedRoute,MODULES))throw Error('Parcours de modules invalide');
+  const route=fixedRoute?[...fixedRoute]:drawModuleRoute(length,rng);
+  const s={...newTurn(),version:RULESET_VERSION,skaterId,name:name.trim().slice(0,24)||'Rider',route,module:0,attempt:0,
+    phase:'initial',deck:shuffle(makeDeck(),rng),hand:[],offer:[],bank:{adjust:1,reroll:1,freeze:1},draftPick:0,bonusOffer:null,secured:[],sequences:[],earned:emptyEarned(),attempts:[],history:[],pv:0,created:Date.now()};
+  offer(s,rng);return s;
 }
 export function offer(s,rng=Math.random){
- const type=['kick','kick','slide','slide','air','air'][s.hand.length];
- const pool=s.phase==='initial'?s.deck.filter(c=>c.type===type&&(c.type==='air'?c.difficulty<=10:c.difficulty<=7)):s.deck;
- const different=[...new Map(shuffle(pool,rng).map(c=>[c.id,c])).values()];
- s.offer=different.slice(0,3).map(c=>c.uid);
+  s.bonusOffer=s.phase==='initial'?null:['adjust','reroll','freeze'][Math.floor(rng()*3)];
+  const type=['kick','kick','slide','slide','air','air'][s.draftPick];
+  // Prefer accessible scores first, while offering three distinct tricks.
+  const cap=s.draftPick===5?16:7;
+  const pool=s.phase==='initial'?s.deck.filter(c=>c.type===type):s.deck;
+  const shuffled=shuffle(pool,rng);
+  // Prefer accessible cards, but still offer three distinct tricks when that
+  // tier has too few remaining copies (notably Air in a four-player draft).
+  if(s.phase==='initial')shuffled.sort((a,b)=>Number(a.points>cap)-Number(b.points>cap));
+  s.offer=[...new Map(shuffled.map(c=>[c.id,c])).values()].slice(0,3).map(c=>c.uid);
 }
-export function choose(s,uid,rng=Math.random){
- if(!['initial','draft'].includes(s.phase)||!s.offer.includes(uid))return false;
- const i=s.deck.findIndex(c=>c.uid===uid);if(i<0)return false;
- s.hand.push(s.deck.splice(i,1)[0]);s.offer=[];
- if(s.phase==='initial'&&s.hand.length<6){offer(s,rng);}else if(s.phase==='draft'){s.module++;resetModule(s);}else s.phase='select';
- return true;
-}
-function resetModule(s){s.attempt=0;s.attempts=[];s.locked=[];s.selected=[];s.dice=[];s.allocation=[];s.earned={boost:false,reroll:false};s.used={boost:false,reroll:false};s.phase='select';}
-export function toggle(s,uid){if(s.phase!=='select'||s.locked.includes(uid)||!s.hand.some(c=>c.uid===uid))return false;const i=s.selected.indexOf(uid);if(i>=0)s.selected.splice(i,1);else if(s.selected.length<3)s.selected.push(uid);return true;}
-export function roll(s,rng=Math.random){if(s.phase!=='select'||!legal(selectedCards(s),currentModule(s)))return false;s.dice=Array.from({length:6},()=>({face:1+Math.floor(rng()*6),boost:0}));s.allocation=Array(6).fill(null);s.used={boost:false,reroll:false};s.phase='roll';return true;}
-export function assign(s,die,uid){if(s.phase!=='roll'||die<0||die>=6||uid!==null&&!s.selected.includes(uid))return false;s.allocation[die]=uid;return true;}
-export function bonus(s,type,die,rng=Math.random){if(s.phase!=='roll'||!['boost','reroll'].includes(type)||s.used[type]||s.bank[type]<=0||!s.dice[die])return false;s.bank[type]--;s.used[type]=true;if(type==='boost')s.dice[die].boost+=2;else s.dice[die].face=1+Math.floor(rng()*6);return true;}
-export function resolve(s,pass=false){
- if(pass?s.phase!=='select':s.phase!=='roll')return false;
- const cards=selectedCards(s);const e=pass?{success:false,points:0}:evaluate(cards,s.dice,s.allocation,currentModule(s));
- const outcome={success:e.success,points:e.success?e.points:0,cards:cards.map(c=>c.name),pass};
- s.attempts.push(outcome);s.last=outcome;
- if(e.success){s.locked.push(...s.selected);for(const t of ['boost','reroll'])if(cards.some(c=>c.effect===t))s.earned[t]=true;}
- s.phase='result';return true;
+export const choose=(s,uid,rng=Math.random)=>draftChoice(s,'card',uid,rng);
+export const chooseBonus=(s,type,rng=Math.random)=>draftChoice(s,'bonus',type,rng);
+export const skipDraft=(s,rng=Math.random)=>draftChoice(s,'skip',null,rng);
+function draftChoice(s,kind,value,rng){
+  if(!['initial','draft'].includes(s.phase))return false;
+  if(s.phase==='initial'&&kind!=='card')return false;
+  if(kind==='card'){
+    if(!s.offer.includes(value))return false;
+    const i=s.deck.findIndex(c=>c.uid===value);if(i<0)return false;
+    s.hand.push(s.deck.splice(i,1)[0]);
+  }else if(kind==='bonus'){
+    if(value!==s.bonusOffer||!addBonus(s,value))return false;
+  }else if(kind!=='skip')return false;
+  s.offer=[];s.bonusOffer=null;
+  if(s.phase==='initial'){
+    s.draftPick++;
+    if(s.draftPick<6){if(!s.deferredOffer)offer(s,rng);}else Object.assign(s,newTurn());
+  }else{s.module++;s.attempt=0;s.attempts=[];s.secured=[];s.sequences=[];s.earned=emptyEarned();Object.assign(s,newTurn());}
+  return true;
 }
 export function proceed(s){
- if(s.phase!=='result')return false;
- if(s.attempt===0){s.attempt=1;s.selected=[];s.dice=[];s.allocation=[];s.phase='select';return true;}
- const m=currentModule(s),best=Math.max(...s.attempts.map(a=>a.points)),success=s.attempts.some(a=>a.success);
- s.history.push({module:m.id,best,total:s.attempts.reduce((n,a)=>n+a.points,0),attempts:JSON.parse(JSON.stringify(s.attempts)),pv:success?m.pv:0});s.pv+=success?m.pv:0;
- if(s.module===s.route.length-1){s.phase='complete';return true;}
- // Earned trick bonuses are deferred until the module is over; capacity is three.
- for(const t of ['boost','reroll'])if(s.earned[t])addBonus(s,t);
- s.reward=success?m.reward:'choice';
- if(s.reward==='upgrade'&&!s.hand.some(c=>!c.upgraded))s.reward='choice';
- s.phase='reward';return true;
+  if(s.phase!=='result'||s.sequenceReward?.pending)return false;
+  if(s.attempt===0){s.attempt=1;Object.assign(s,newTurn());return true;}
+  const m=currentModule(s),best=Math.max(...s.attempts.map(a=>a.points)),qualified=best>0,pv=qualified&&!s.competitive?m.pv:0;
+  s.history.push({module:m.id,best,total:s.attempts.reduce((n,a)=>n+a.points,0),attempts:structuredClone(s.attempts),sequences:structuredClone(s.sequences),pv});s.pv+=pv;
+  s.trickRewards=BONUS_TYPES.flatMap(type=>Array.from({length:s.earned[type]||0},()=>({type,added:addBonus(s,type)})));
+  if(s.module===s.route.length-1){s.phase='complete';return true;}
+  if(s.competitive){s.reward=null;s.phase='awaiting-draft';return true;}
+  s.reward='choice';s.phase='reward';return true;
 }
-export function addBonus(s,t){if(s.bank.boost+s.bank.reroll>=3)return false;s.bank[t]++;return true;}
+export function nextModule(s){
+  s.module++;s.attempt=0;s.attempts=[];s.secured=[];s.sequences=[];s.earned=emptyEarned();s.offer=[];s.bonusOffer=null;Object.assign(s,newTurn());
+}
+export function addBonus(s,type){
+  if(!canAddBonus(s,type))return false;
+  s.bank[type]=(s.bank[type]||0)+1;return true;
+}
+export function claimSequenceReward(s,type){
+  if(s.phase!=='result'||!s.sequenceReward?.pending||!addBonus(s,type))return false;
+  const reward=s.sequenceReward;reward.choices.push(type);reward.remaining--;fitSequenceReward(s);reward.choice=reward.choices[0];
+  for(const entry of [s.last,s.attempts.at(-1),s.sequences.at(-1)]){entry.tokenReward=reward.choice;entry.tokenRewards=[...reward.choices];}
+  return true;
+}
 export function claim(s,choice,rng=Math.random){
- if(s.phase!=='reward')return false;
- if(s.reward==='upgrade'){const c=s.hand.find(c=>c.uid===choice);if(!c||c.upgraded)return false;c.upgraded=true;}
- else {const type=s.reward==='choice'?choice:s.reward;if(!['boost','reroll'].includes(type))return false;addBonus(s,type);}
- s.reward=null;s.phase='draft';offer(s,rng);return true;
+  if(s.phase!=='reward')return false;
+  const type=s.reward==='choice'?choice:s.reward;
+  if(!['adjust','reroll','freeze'].includes(type))return false;
+  if(s.reward==='choice'&&!canAddBonus(s,type)&&BONUS_TYPES.some(t=>canAddBonus(s,t)))return false;
+  s.rewardAdded=addBonus(s,type);s.reward=null;s.phase='draft';offer(s,rng);return true;
 }

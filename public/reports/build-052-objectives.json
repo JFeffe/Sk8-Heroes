@@ -1,0 +1,287 @@
+{
+  "build": "0.5.2",
+  "date": "2026-11-02",
+  "games": 1000,
+  "attempts": 48000,
+  "checks": 148346,
+  "tests": 255,
+  "bonusSpendsAudited": 54115,
+  "bonusViolations": 0,
+  "scenarios": {
+    "normal": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 9.264114583333333,
+      "bestScore": 14.478333333333333,
+      "falls": 0.31135416666666665,
+      "passes": 0.07140625,
+      "three": 0.27598958333333334,
+      "tokens": {
+        "gained": 15.69125,
+        "spent": 13.775,
+        "remaining": 4.91625
+      },
+      "order": [
+        0.175347222222222,
+        0.22326388888888862,
+        0.27354166666666707,
+        0.32784722222222296
+      ],
+      "attemptRounds": [
+        {
+          "score": 13.119583333333333,
+          "falls": 0.1946875,
+          "passes": 0.00010416666666666667
+        },
+        {
+          "score": 5.408645833333333,
+          "falls": 0.42802083333333335,
+          "passes": 0.14270833333333333
+        }
+      ],
+      "objectiveSpends": {
+        "checked": 22040,
+        "scoringPossible": 18700,
+        "profitableTokensPossible": 9732,
+        "paths": 125745
+      }
+    },
+    "mixed": {
+      "games": 200,
+      "attempts": 9600,
+      "score": 9.118229166666667,
+      "bestScore": 14.086666666666666,
+      "falls": 0.3095833333333333,
+      "passes": 0.0728125,
+      "three": 0.2710416666666667,
+      "tokens": {
+        "gained": 15.53375,
+        "spent": 13.0075,
+        "remaining": 5.52625
+      },
+      "order": [
+        0.19097222222222238,
+        0.2341666666666669,
+        0.266111111111111,
+        0.3087499999999997
+      ],
+      "attemptRounds": [
+        {
+          "score": 12.657916666666667,
+          "falls": 0.20854166666666665,
+          "passes": 0.0008333333333333334
+        },
+        {
+          "score": 5.578541666666666,
+          "falls": 0.410625,
+          "passes": 0.14479166666666668
+        }
+      ],
+      "objectiveSpends": {
+        "checked": 10406,
+        "scoringPossible": 8850,
+        "profitableTokensPossible": 4447,
+        "paths": 57269
+      }
+    },
+    "expert": {
+      "games": 100,
+      "attempts": 4800,
+      "score": 9.891875,
+      "bestScore": 15.514166666666666,
+      "falls": 0.3047916666666667,
+      "passes": 0.08333333333333333,
+      "three": 0.24729166666666666,
+      "tokens": {
+        "gained": 15.615,
+        "spent": 13.785,
+        "remaining": 4.83
+      },
+      "order": [
+        0.20249999999999996,
+        0.20138888888888884,
+        0.2783333333333334,
+        0.3177777777777779
+      ],
+      "attemptRounds": [
+        {
+          "score": 14.218333333333334,
+          "falls": 0.20583333333333334,
+          "passes": 0.0004166666666666667
+        },
+        {
+          "score": 5.565416666666667,
+          "falls": 0.40375,
+          "passes": 0.16625
+        }
+      ],
+      "objectiveSpends": {
+        "checked": 5514,
+        "scoringPossible": 4861,
+        "profitableTokensPossible": 2166,
+        "paths": 28464
+      }
+    },
+    "easy": {
+      "games": 100,
+      "attempts": 4800,
+      "score": 8.814166666666667,
+      "bestScore": 13.537083333333333,
+      "falls": 0.27166666666666667,
+      "passes": 0.07770833333333334,
+      "three": 0.30854166666666666,
+      "tokens": {
+        "gained": 15.115,
+        "spent": 12.2725,
+        "remaining": 5.8425
+      },
+      "order": [
+        0.17027777777777764,
+        0.22416666666666651,
+        0.27,
+        0.33555555555555583
+      ],
+      "attemptRounds": [
+        {
+          "score": 12.187083333333334,
+          "falls": 0.16,
+          "passes": 0.00125
+        },
+        {
+          "score": 5.44125,
+          "falls": 0.38333333333333336,
+          "passes": 0.15416666666666667
+        }
+      ],
+      "objectiveSpends": {
+        "checked": 4909,
+        "scoringPossible": 4282,
+        "profitableTokensPossible": 2086,
+        "paths": 28796
+      }
+    },
+    "holdout": {
+      "games": 200,
+      "attempts": 9600,
+      "score": 9.2759375,
+      "bestScore": 14.422916666666667,
+      "falls": 0.30625,
+      "passes": 0.07260416666666666,
+      "three": 0.27760416666666665,
+      "tokens": {
+        "gained": 16.075,
+        "spent": 14.0575,
+        "remaining": 5.0175
+      },
+      "order": [
+        0.19027777777777796,
+        0.21819444444444472,
+        0.27486111111111083,
+        0.31666666666666626
+      ],
+      "attemptRounds": [
+        {
+          "score": 13.013333333333334,
+          "falls": 0.2,
+          "passes": 0.000625
+        },
+        {
+          "score": 5.538541666666666,
+          "falls": 0.4125,
+          "passes": 0.14458333333333334
+        }
+      ],
+      "objectiveSpends": {
+        "checked": 11246,
+        "scoringPossible": 9526,
+        "profitableTokensPossible": 5151,
+        "paths": 65223
+      }
+    }
+  },
+  "normalComparison": {
+    "before": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 10.84765625,
+      "bestScore": 15.130416666666667,
+      "falls": 0.20984375,
+      "passes": 0,
+      "three": 0.27828125,
+      "tokens": {
+        "gained": 16.753125,
+        "spent": 15.838125,
+        "remaining": 3.915
+      },
+      "order": [
+        0.21201388888888845,
+        0.22965277777777762,
+        0.25520833333333326,
+        0.3031250000000003
+      ],
+      "attemptRounds": [
+        {
+          "score": 13.58625,
+          "falls": 0.093125,
+          "passes": 0
+        },
+        {
+          "score": 8.1090625,
+          "falls": 0.3265625,
+          "passes": 0
+        }
+      ]
+    },
+    "after": {
+      "games": 400,
+      "attempts": 19200,
+      "score": 9.264114583333333,
+      "bestScore": 14.478333333333333,
+      "falls": 0.31135416666666665,
+      "passes": 0.07140625,
+      "three": 0.27598958333333334,
+      "tokens": {
+        "gained": 15.69125,
+        "spent": 13.775,
+        "remaining": 4.91625
+      },
+      "order": [
+        0.175347222222222,
+        0.22326388888888862,
+        0.27354166666666707,
+        0.32784722222222296
+      ],
+      "attemptRounds": [
+        {
+          "score": 13.119583333333333,
+          "falls": 0.1946875,
+          "passes": 0.00010416666666666667
+        },
+        {
+          "score": 5.408645833333333,
+          "falls": 0.42802083333333335,
+          "passes": 0.14270833333333333
+        }
+      ],
+      "objectiveSpends": {
+        "checked": 22040,
+        "scoringPossible": 18700,
+        "profitableTokensPossible": 9732,
+        "paths": 125745
+      }
+    }
+  },
+  "sourceChanges": [
+    "package.json",
+    "public/npc-strategy.js",
+    "public/npc.js",
+    "public/release-notes.js"
+  ],
+  "method": {
+    "sample": "400 Normal, 200 mixtes, 100 Détente, 100 Expert, 200 Normal sur de nouvelles graines (indices 200–249).",
+    "excluded": "80 parties exploratoires, suite fonctionnelle et éventuelles répétitions exclues du total.",
+    "audit": "Chaque dépense doit conserver au moins un objectif légal possible : améliorer le score connu, ou obtenir plus de jetons que les dépenses de l’essai. Contrôle indépendant du planificateur, avec bornes supérieures pour les points dépendant des dés inconnus ; il ne prouve ni la rentabilité réelle après les jets ni l’optimalité du choix.",
+    "balance": "Les tentatives gratuites de collecte peuvent chuter sans perte de jetons. Les passes valent zéro. Ces changements affectent donc la moyenne par essai et le taux de chutes ; le meilleur essai par module reste le critère de classement.",
+    "limits": "Stratégies NPC, pas des joueurs humains. Les flux aléatoires divergent après des choix différents. Le gain en jetons reste soumis aux jets ; un objectif rentable prévu peut échouer."
+  }
+}
