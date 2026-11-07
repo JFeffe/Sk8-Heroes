@@ -4,9 +4,9 @@ export function bindCardPreview(root){
  const panel=document.createElement('aside');
  panel.className='card-side-preview';panel.hidden=true;panel.inert=true;
  panel.setAttribute('aria-hidden','true');
- panel.innerHTML='<div class="card-preview-caption"></div><div class="card-preview-face"></div>';
+ panel.innerHTML='<div class="card-preview-face"></div>';
  document.body.append(panel);
- const caption=panel.firstElementChild,face=panel.lastElementChild;
+ const face=panel.firstElementChild;
  let pointer=null,focused=null,pressed=false,touch=false,signature='',frame=0;
  function clear(){panel.hidden=true;signature='';face.replaceChildren();}
  function sourceAt(target){
@@ -21,8 +21,7 @@ export function bindCardPreview(root){
  }
  function show(card){
   if(!card||pressed||root.querySelector('.backdrop')){clear();return;}
-  const landscape=card.classList.contains('park-card'),box=card.getBoundingClientRect();
-  panel.dataset.side=box.left+box.width/2>innerWidth/2?'left':'right';
+  const landscape=card.classList.contains('park-card');
   panel.classList.toggle('landscape',landscape);
   const next=key(card)+'|'+card.innerHTML;
   if(next!==signature){
@@ -36,7 +35,6 @@ export function bindCardPreview(root){
     if(element instanceof HTMLImageElement){element.loading='eager';element.draggable=false;}
     if(element.matches('button,input,select,textarea,a,[role="button"]')){element.setAttribute('tabindex','-1');element.removeAttribute('href');}
    }
-   caption.textContent=card.querySelector('[data-preview-name]')?.dataset.previewName||card.querySelector('h2')?.textContent||card.getAttribute('aria-label')||'Carte';
    face.replaceChildren(clone);
   }
   panel.hidden=false;
@@ -57,7 +55,7 @@ export function bindCardPreview(root){
  root.addEventListener('focusout',()=>{focused=null;refresh();});
  window.addEventListener('blur',()=>{pointer=null;focused=null;pressed=false;clear();});
  window.addEventListener('resize',refresh);
- window.addEventListener('scroll',refresh,{passive:true});
+ window.addEventListener('scroll',refresh,{passive:true,capture:true});
  document.addEventListener('keydown',event=>{touch=false;if(event.key==='Escape'){pointer=null;focused=null;clear();}});
  // Called after every local or multiplayer render, even if the mouse is still.
  return {refresh};

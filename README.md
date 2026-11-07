@@ -38,7 +38,7 @@ Les fichiers de parties et `.tools/` sont exclus de Git. L’outil de partage es
 
 ## Table et cartes
 
-Survoler une carte (ou la sélectionner au clavier) affiche un grand aperçu sur le côté opposé de l’écran. Cela couvre les tricks en main, joués et archivés, les drafts et la collection, ainsi que les modules, la carte skater et le parc. L’aperçu fonctionne aussi hors de son tour et se rafraîchit en multijoueur sans déplacer la souris. Il est uniquement visuel : le clic et le glisser-déposer continuent d’agir sur la carte d’origine.
+Survoler une carte (ou la sélectionner au clavier) affiche un grand aperçu toujours à droite, dans un espace réservé qui ne recouvre ni les actions ni la main. Cela couvre les tricks en main, joués et archivés, les drafts et la collection, ainsi que les modules, la carte skater et le parc. L’aperçu fonctionne aussi hors de son tour et se rafraîchit en multijoueur sans déplacer la souris. Il est uniquement visuel : le clic et le glisser-déposer continuent d’agir sur la carte d’origine.
 
 En mode Avancé, les choix de spécialité apparaissent directement sous les boutons d’action, avec les icônes des composants concernés. Le jeton de spécialité ramène à cette zone ; aucun popup ne masque la table. La carte du module en cours est agrandie et conserve sa taille pendant le deuxième essai. Sur ordinateur, la table et la main partagent la hauteur de l’écran pour rester visibles sans défilement. Les spécialités utilisent une rangée compacte, avec les échanges de Troc représentés par leurs jetons.
 

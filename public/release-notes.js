@@ -1,5 +1,8 @@
-export const APP_VERSION='0.6.7';
-export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-06',changes:[
+export const APP_VERSION='0.6.8';
+export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-07',changes:[
+ 'Les aperçus restent toujours à droite dans un espace réservé, sans recouvrir les boutons ni les cartes en main, en solo et en multijoueur.',
+ 'L’encadré blanc et le titre répété sont supprimés : seule la carte et sa propre bordure sont affichées.'
+]},{version:'0.6.7',date:'2026-11-06',changes:[
  'Survole une carte pour la lire en grand sur le côté : main, tricks joués, drafts, collection, modules, skaters et parc.',
  'L’aperçu reste disponible hors de ton tour et suit les mises à jour multijoueurs, sans masquer la carte survolée ni bloquer les actions.'
 ]},{version:'0.6.6',date:'2026-11-06',changes:[

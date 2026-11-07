@@ -1,12 +1,57 @@
-.card-side-preview{position:fixed;z-index:900;top:58px;right:14px;width:min(365px,42vw,calc((100dvh - 120px)*63/88));padding:7px;background:#fff7df;color:#073f4e;border:2px solid #e6c88f;border-radius:15px;box-shadow:0 12px 40px #001f32aa;pointer-events:none;}
-.card-side-preview[hidden]{display:none;}.card-side-preview[data-side="left"]{left:14px;right:auto;}
-.card-preview-caption{font:700 13px/1.25 system-ui,sans-serif;margin:2px 3px 7px;max-height:34px;overflow:hidden;}
+/* Space is reserved before hovering so the hand never moves under the pointer. */
+:root{--preview-rail:clamp(200px,26vw,380px);--play-width:calc(100vw - var(--preview-rail));}
+#app:has(.trick-card,.lagoon-module-card,.skater-mat,.park-card){width:var(--play-width);}
+.card-side-preview{position:fixed;z-index:900;top:58px;right:12px;left:auto;width:min(calc(var(--preview-rail) - 24px),calc((100dvh - 84px)*63/88));padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;pointer-events:none;filter:drop-shadow(0 8px 18px #001f3280);}
+.card-side-preview[hidden]{display:none;}
 .card-preview-face{width:100%;}.card-preview-face>.trick-card,.card-preview-face>.lagoon-module-card,.card-preview-face>.skater-mat,.card-preview-face>.park-card{display:block;position:relative;inset:auto;width:100%;height:auto;max-width:none;max-height:none;min-height:0;transform:none;margin:0;filter:none;opacity:1;box-shadow:none;}
-.card-side-preview.landscape{width:min(470px,46vw,calc((100dvh - 120px)*88/63));}
+.card-side-preview.landscape{width:calc(var(--preview-rail) - 24px);}
 .card-preview-face .skater-specialty{font-size:3.7cqw;line-height:1.2;overflow:visible;}.card-preview-face .skater-specialty strong{font-size:5.7cqw;}.card-preview-face .skater-specialty p{font-size:3.7cqw;line-height:1.2;margin:2cqw 0;}.card-preview-face .skater-specialty small{font-size:3.2cqw;}
 .card-preview-face .skater-bonus-area .token-stack{width:8cqw;height:9cqw;}.card-preview-face .skater-bonus-area .bonus-token{width:8cqw;height:8cqw;font-size:4cqw;}.card-preview-face .token-stack>b{font-size:3cqw;}.card-preview-face .mat-token-slots small{font-size:3cqw;}
 .card-preview-face .park-marker-slots{grid-template-columns:repeat(2,12px);grid-template-rows:repeat(2,12px);}.card-preview-face .park-marker{width:12px;height:12px;font-size:8px;}
 /* The side copy is the magnification; the hovered hand keeps its stable place. */
 .player-hand .hand-card:hover,.player-hand .hand-card:focus-visible{left:calc(50% + var(--offset)*var(--fan-step));transform:translateX(-50%) translateY(calc(var(--lift)*1px)) rotate(calc(var(--angle)*1deg));}
 .module-route-peek{display:none!important;}
-@media(max-width:700px){.card-side-preview{right:6px;top:48px;width:min(250px,60vw,calc((100dvh - 100px)*63/88));}.card-side-preview[data-side="left"]{left:6px;}.card-side-preview.landscape{width:min(340px,75vw);}}
+
+@media(min-width:701px){
+ .table-game .play-table,.table-game .play-table:has(.archive-tray),.table-game .play-table:has(.sequence-reward-choices){grid-template-columns:clamp(110px,calc(var(--play-width)*.13),170px) minmax(0,1fr) clamp(95px,calc(var(--play-width)*.115),140px);gap:10px;padding-left:10px;padding-right:10px;}
+ .table-game .player-hand{--fan-step:min(112px,calc((var(--play-width) - 160px)/var(--intervals)));}
+ #app.table-game .session-route{gap:12px;}
+ .table-game .match-strip{gap:8px;margin-left:18px;margin-right:18px;}
+ .table-game .player-scores{min-width:0;flex:1;gap:4px;}
+ .table-game .player-score{min-width:0;max-width:170px;flex:1;padding:3px 5px;}
+ .table-game .rider-name{max-width:68px;}
+ .table-game .skater-mat{max-width:100%;}
+ .table-game .physical-piles{container-type:inline-size;}.table-game .physical-pile{min-width:0;}.table-game .physical-pile b{font-size:clamp(10px,10cqw,17px);}
+ .table-game .central-actions .sequence-reward-choices{gap:6px;max-width:100%;}
+ .table-game .central-actions .sequence-reward-choices button{width:calc((100cqw - 24px)/3);max-width:120px;min-width:0;min-height:36px;padding:4px;grid-template-columns:1fr;grid-template-rows:1fr;}
+ .table-game .central-actions .sequence-reward-choices button>.token-stack{grid-row:auto;margin:0;}
+}
+@media(min-width:701px) and (max-width:1100px){
+ #app.table-game .session-route{gap:8px;padding-left:8px;padding-right:8px;}
+ .table-game .session-route-label{display:none;}
+ .table-game .session-route .park-card{width:calc((var(--route-h) - 20px)*88/63);}
+ .table-game .module-route-list{gap:5px;min-width:0;}
+ .table-game .module-route-list>li,.table-game .module-route-button{width:clamp(32px,calc((var(--play-width) - 200px)/7),50px);}
+ .table-game .match-strip{margin-left:12px;margin-right:12px;gap:4px;}
+ .table-game .rider-name{font-size:9px;max-width:48px;}.table-game .rider-name small{font-size:6px;}
+ .table-game .rider-avatar{width:22px;height:22px;}.table-game .player-score>strong{font-size:16px;}
+ .table-game .round-score{font-size:7px;gap:2px;}.table-game .round-score>span{font-size:6px;}
+ .table-game .round-route{gap:5px;}.table-game .round-route>b{font-size:8px;}
+ .table-game .table-rim{margin:0 8px;border-width:6px;}
+ .table-game .play-table,.table-game .play-table:has(.archive-tray){grid-template-columns:100px minmax(0,1fr) 92px;gap:6px;padding-left:6px;padding-right:6px;}
+ .table-game .table-controls{flex-wrap:wrap;justify-content:center;}
+ .table-game .central-actions{flex-wrap:wrap;gap:4px;}.table-game .central-actions>button{padding-left:10px;padding-right:10px;}.table-game .central-actions .land-button{min-width:0;}
+ .table-game .live-sequence{flex-wrap:wrap;}.table-game .live-sequence>strong{font-size:11px;}
+ .specialty-inline{gap:3px;padding:3px;}.specialty-inline-heading{font-size:10px;}.specialty-inline-heading>small{font-size:7px;}.specialty-inline p{font-size:9px;}
+ .specialty-inline-choices{gap:3px;}.specialty-choice{padding:3px;gap:3px;min-height:28px;font-size:9px;}
+ .specialty-choice .token-stack,.specialty-choice .bonus-token{width:20px;height:20px;}.specialty-exchange{gap:3px;}
+}
+/* On narrow portrait screens the preview has its own band above the table. */
+@media(max-width:700px){
+ :root{--preview-rail:clamp(140px,45vw,240px);--preview-band:calc((var(--preview-rail) - 16px)*88/63 + 24px);}
+ #app,#app.table-game,#app.table-game.online-game{position:fixed;top:var(--preview-band);bottom:0;width:100%;height:auto;min-height:0;padding-top:0;overflow:auto;}
+ #app:not(:has(.trick-card,.lagoon-module-card,.skater-mat,.park-card)){position:static;top:auto;bottom:auto;height:auto;overflow:visible;}
+ .card-side-preview{top:10px;right:8px;width:calc(var(--preview-rail) - 16px);}
+ .card-side-preview.landscape{width:calc(var(--preview-rail) - 16px);}
+ .table-game .player-hand{--fan-step:calc((100vw - 180px)/var(--intervals));}
+}

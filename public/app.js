@@ -270,7 +270,7 @@ function render(){
  root.className=isBoard()?'table-game'+(online?' online-game':''):'';root.dataset.bonusMode=bonusMode?.type||'';root.dataset.bonusDelta=bonusMode?.delta||0;document.body.classList.toggle('table-mode',!!isBoard());
  root.innerHTML=header()+(online&&['play','lobby'].includes(screen)?onlineBar(onlineView,{connected:onlineConnected,busy:onlineBusy,inviteLink:inviteLink(),sharing:onlineSharing}):'')+(screen==='play'&&match?moduleRoute(match):'')+(screen==='home'?home():screen==='create'?setup():screen==='join'?onlineJoin(onlineJoinLobby,{error:onlineError,busy:onlineBusy}):screen==='lobby'?onlineLobby(onlineView,{inviteLink:inviteLink(),busy:onlineBusy,sharing:onlineSharing,recoveryCode:online.token}):screen==='cards'?cardLibrary({kind:libraryKind,packId:libraryPackId},cardFace):match.phase==='draft-summary'?draftReview(match,draftHand()):match.phase==='recap'?recap(match):match.phase==='complete'?complete():match.phase==='initial'||match.phase==='recovery'?draft():board())+overlay();
  const page=[screen,match?.phase,match?.module,screen==='cards'?libraryPackId:''].join(':');
- if(page!==renderedPage){window.scrollTo(0,0);renderedPage=page;}
+ if(page!==renderedPage){window.scrollTo(0,0);root.scrollTo(0,0);renderedPage=page;}
  observePatchNotes();feedback.decorate(root,myId());cardPreview.refresh();
  if(online)root.querySelectorAll('[data-action="start-module"],[data-action="next-module"]').forEach(button=>button.disabled=!online.isHost||onlineBusy);
  if(screen==='play'&&match.phase==='recap'&&!modal&&!animatedRecaps.has(match.module))animateScores();
