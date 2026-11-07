@@ -1,5 +1,8 @@
-export const APP_VERSION='0.6.5';
+export const APP_VERSION='0.6.6';
 export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-06',changes:[
+ 'La zone de spécialité est compacte : choix sur une ligne et échanges représentés par les jetons.',
+ 'La table et la main partagent la hauteur disponible pour rester visibles ensemble, sans défilement sur ordinateur.'
+]},{version:'0.6.5',date:'2026-11-06',changes:[
  'Les choix de spécialité sont directement sous les boutons d’action, avec les icônes de jetons, de dé ou de type de trick. Le popup est supprimé.',
  'La carte du module en cours est agrandie sur la table et garde sa taille quand une séquence est archivée.'
 ]},{version:'0.6.4',date:'2026-11-06',changes:[
