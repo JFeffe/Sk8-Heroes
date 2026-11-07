@@ -38,6 +38,8 @@ Les fichiers de parties et `.tools/` sont exclus de Git. L’outil de partage es
 
 ## Table et cartes
 
+En mode Avancé, les choix de spécialité apparaissent directement sous les boutons d’action, avec les icônes des composants concernés. Le jeton de spécialité ramène à cette zone ; aucun popup ne masque la table. La carte du module en cours est agrandie et conserve sa taille pendant le deuxième essai. Sur les écrans plus courts, la table et la main se suivent avec défilement pour rester accessibles.
+
 - Au menu, **Voir les cartes** ouvre la collection : choisir **Tricks** ou **Skateparks**, puis un paquet. **Tricks du Lagon** présente les 41 figures complètes, dans l’ordre Kick / Slide / Air, avec leurs exemplaires et l’accès aux probabilités détaillées. **Le Lagon** présente ses 12 modules. Chaque carte peut être agrandie au clic ; les boutons et le fil de navigation permettent de changer de paquet ou de revenir au menu. Le bouton **Cartes** en partie ouvre la même collection et permet de revenir à la table.
 - Main en éventail, agrandissement au survol et au clavier, carte déposée sur la table avant chaque jet.
 - Les dés déposés sur une carte se rangent dans les cases compatibles. Le clic reste une alternative au glisser-déposer. Après le lancer, la carte reste engagée. « Reprendre les dés », à côté d’Auto, remet uniquement les dés non confirmés dans la réserve : faces, gel, tricks validés et jetons dépensés sont conservés. Le glisser-déposer permet aussi de reprendre un dé isolé avant validation.

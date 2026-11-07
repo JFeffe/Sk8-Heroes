@@ -1,5 +1,8 @@
-export const APP_VERSION='0.6.4';
+export const APP_VERSION='0.6.5';
 export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-06',changes:[
+ 'Les choix de spécialité sont directement sous les boutons d’action, avec les icônes de jetons, de dé ou de type de trick. Le popup est supprimé.',
+ 'La carte du module en cours est agrandie sur la table et garde sa taille quand une séquence est archivée.'
+]},{version:'0.6.4',date:'2026-11-06',changes:[
  'Le popup des spécialités utilise un texte sombre lisible. Bon rythme explique ses conditions et propose un bouton d’activation après un essai admissible.',
  'Le lanceur reconnaît cette version du jeu et choisit un port libre si un ancien serveur est déjà ouvert.',
  'Le menu du site public présente le multijoueur entre amis et les étapes pour héberger sur son ordinateur.',
