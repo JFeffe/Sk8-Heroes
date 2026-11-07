@@ -85,3 +85,6 @@
 .lobby-rider .lobby-power{font-size:10px;line-height:1.25;text-transform:none;margin:6px;}
 
 .signature-returned{width:80px;min-height:110px;flex:none;border:2px dashed #9cd2b5;border-radius:8px;padding:8px 4px;background:#104b4380;color:#fff7df;display:flex;flex-direction:column;justify-content:center;gap:8px;font-size:10px;}.signature-returned small{font-size:8px;}
+
+/* Dialogs opened over the dark table must not inherit its white text. */
+.modal.specialty-modal { color:#073f4e;background:#fff8e8; }.specialty-modal h2,.specialty-modal p,.specialty-modal strong,.specialty-modal .secondary { color:#073f4e; }.specialty-modal .secondary { background:#f6efdf;border-color:#739f9c; }.specialty-modal .specialty-unavailable { padding:12px;background:#e1eee3;border-radius:10px; }

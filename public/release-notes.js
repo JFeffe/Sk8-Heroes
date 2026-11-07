@@ -1,5 +1,11 @@
-export const APP_VERSION='0.6.3';
+export const APP_VERSION='0.6.4';
 export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-06',changes:[
+ 'Le popup des spécialités utilise un texte sombre lisible. Bon rythme explique ses conditions et propose un bouton d’activation après un essai admissible.',
+ 'Le lanceur reconnaît cette version du jeu et choisit un port libre si un ancien serveur est déjà ouvert.',
+ 'Le menu du site public présente le multijoueur entre amis et les étapes pour héberger sur son ordinateur.',
+ 'Sous Windows, Lancer le multijoueur.cmd prépare le partage Internet et ouvre directement la création du salon.',
+ 'Les invités rejoignent par lien, sans installation. Base et Avancé, NPC, choix des skaters et reprise de partie restent disponibles.'
+]},{version:'0.6.3',date:'2026-11-06',changes:[
  'Sol possède Réserve renforcée : en Avancé, sa capacité passe à 4 jetons ±1. Relance et gel restent limités à 3.',
  'Ce pouvoir est passif pendant toute la partie. La correction gratuite est supprimée ; les NPC utilisent la nouvelle capacité au draft et aux récompenses.',
  'Carte, repère de spécialité et compteurs mis à jour. Nouvelle partie nécessaire.'

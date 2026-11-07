@@ -4,11 +4,12 @@ import path from 'node:path';
 import {randomBytes,timingSafeEqual} from 'node:crypto';
 import {RoomStore,RoomError} from './rooms.mjs';
 import {InternetTunnel} from './tunnel.mjs';
+import {hostIdentity} from './host-identity.mjs';
 
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.ico':'image/x-icon'};
 const secureEqual=(a,b)=>typeof a==='string'&&/^[a-f0-9]{64}$/.test(a)&&a.length===b.length&&timingSafeEqual(Buffer.from(a),Buffer.from(b));
 export function createGameServer({root,directory,port=8000,npcDelay=850}={}){
- const rooms=new RoomStore(directory,{npcDelay}),tunnel=new InternetTunnel(port),localKey=randomBytes(32).toString('hex');
+ const rooms=new RoomStore(directory,{npcDelay}),tunnel=new InternetTunnel(port),localKey=randomBytes(32).toString('hex'),instanceId=hostIdentity(root);
  const local=req=>['127.0.0.1','::1','::ffff:127.0.0.1'].includes(req.socket.remoteAddress)&&/^(localhost|127\.0\.0\.1)(:\d+)?$/.test(req.headers.host||'')&&!req.headers['cf-ray']&&!req.headers['cf-connecting-ip']&&!req.headers['x-forwarded-for'];
  const hostAccess=req=>{if(!local(req)||!secureEqual(req.headers['x-sk8-local-key'],localKey))throw new RoomError(403,'Crée et gère le partage depuis le navigateur de l’hôte sur localhost.');};
  const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8'});res.end(JSON.stringify(data?.match?{...data,publicBaseUrl:tunnel.url}:data));};
@@ -23,7 +24,7 @@ export function createGameServer({root,directory,port=8000,npcDelay=850}={}){
    const url=new URL(req.url,'http://localhost');
    if(url.pathname.startsWith('/api/')){
     if(req.headers.origin&&new URL(req.headers.origin).host!==req.headers.host)throw new RoomError(403,'Origine de requête invalide.');
-    if(req.method==='GET'&&url.pathname==='/api/info')return json(res,200,{online:true,canHost:local(req),localKey:local(req)?localKey:null,publicBaseUrl:tunnel.url});
+    if(req.method==='GET'&&url.pathname==='/api/info')return json(res,200,{online:true,canHost:local(req),localKey:local(req)?localKey:null,instanceId:local(req)?instanceId:null,publicBaseUrl:tunnel.url});
     if(req.method==='POST'&&url.pathname==='/api/share'){hostAccess(req);return json(res,200,{publicBaseUrl:await tunnel.start()});}
     if(req.method==='DELETE'&&url.pathname==='/api/share'){hostAccess(req);tunnel.stop();return json(res,200,{publicBaseUrl:null});}
     if(req.method==='POST'&&url.pathname==='/api/rooms'){hostAccess(req);return json(res,201,await rooms.create(await body(req)));}

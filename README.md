@@ -12,9 +12,11 @@ npm start
 
 Ouvrir http://localhost:8000, choisir **Nouvelle session**, le nombre de NPC (trois par défaut) et un des six skaters. Les NPC choisissent au hasard parmi les skaters restants. Node.js 22 suffit, sans installation de dépendances. Les modules JavaScript nécessitent HTTP.
 
-Sous Windows, un double-clic sur **Lancer Sk8 Heroes.cmd** démarre le serveur en arrière-plan et ouvre le jeu. Si le serveur fonctionne déjà, il est réutilisé.
+Sous Windows, un double-clic sur **Lancer Sk8 Heroes.cmd** démarre le serveur en arrière-plan et ouvre le jeu. Si le serveur de cette copie et de cette version fonctionne déjà, il est réutilisé. Si le port habituel est occupé par un autre programme ou une ancienne version, le lanceur choisit un port libre entre 8000 et 8009.
 
 ## Jouer à distance sur Internet
+
+Sous Windows, double-cliquer sur **Lancer le multijoueur.cmd** : le partage Internet est préparé si nécessaire, puis le navigateur ouvre directement la création du salon. Choisir Base ou Avancé, créer le salon, puis **Activer le lien Internet** et **Copier le lien**. Les amis ouvrent cette invitation sans installation. Le site GitHub Pages propose aussi le bouton **Multijoueur entre amis** avec ces instructions.
 
 Sur l’ordinateur de l’hôte, installer une première fois l’outil officiel de partage puis lancer le serveur :
 

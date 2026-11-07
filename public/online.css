@@ -3,3 +3,5 @@
 @media(min-width:651px) { .table-game.online-game .play-world { --table-card-h:clamp(112px,18vh,176px);--hand-card-h:clamp(130px,20vh,180px); } }
 @media(min-width:651px) and (max-height:680px) { .table-game.online-game .play-world { --table-card-h:90px;--hand-card-h:110px; } }
 .online-recovery { margin-top:25px;border-top:1px solid #afc9b9;padding-top:15px;font-size:11px;color:#4b6d61; }.online-recovery summary { cursor:pointer;font-weight:700; }.online-recovery p { margin:12px 0;max-width:630px; }.online-recovery input { display:block;max-width:500px;width:100%;padding:10px;border:1px solid #b2c8bc;border-radius:8px;background:#fffaf0;margin:10px 0; }
+
+.multiplayer-help { max-width:650px;max-height:85vh;overflow:auto; }.multiplayer-help h2 { margin:20px 0; }.multiplayer-help h3 { margin:22px 0 12px; }.multiplayer-help p,.multiplayer-help li { line-height:1.6; }.multiplayer-help ol { padding-left:24px; }.multiplayer-help li { margin:10px 0; }.multiplayer-help a { text-decoration:underline; }.multiplayer-help details { margin:20px 0; }.multiplayer-help summary { cursor:pointer; }.multiplayer-hint { padding:12px;border-radius:10px;background:#e1eee3; }
