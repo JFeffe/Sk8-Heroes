@@ -1,3 +1,4 @@
+import {bindCardPreview} from './card-preview.js';
 import {SPECIALTIES,specialtyActions,hasResultSpecialty,specialtyIcon} from './specialties.js';
 import {parkCard} from './park-card.js';
 import {skaterMat,renderDeckPiles,trophyStock,specialtyToken} from './physical-table.js';
@@ -270,7 +271,7 @@ function render(){
  root.innerHTML=header()+(online&&['play','lobby'].includes(screen)?onlineBar(onlineView,{connected:onlineConnected,busy:onlineBusy,inviteLink:inviteLink(),sharing:onlineSharing}):'')+(screen==='play'&&match?moduleRoute(match):'')+(screen==='home'?home():screen==='create'?setup():screen==='join'?onlineJoin(onlineJoinLobby,{error:onlineError,busy:onlineBusy}):screen==='lobby'?onlineLobby(onlineView,{inviteLink:inviteLink(),busy:onlineBusy,sharing:onlineSharing,recoveryCode:online.token}):screen==='cards'?cardLibrary({kind:libraryKind,packId:libraryPackId},cardFace):match.phase==='draft-summary'?draftReview(match,draftHand()):match.phase==='recap'?recap(match):match.phase==='complete'?complete():match.phase==='initial'||match.phase==='recovery'?draft():board())+overlay();
  const page=[screen,match?.phase,match?.module,screen==='cards'?libraryPackId:''].join(':');
  if(page!==renderedPage){window.scrollTo(0,0);renderedPage=page;}
- observePatchNotes();feedback.decorate(root,myId());
+ observePatchNotes();feedback.decorate(root,myId());cardPreview.refresh();
  if(online)root.querySelectorAll('[data-action="start-module"],[data-action="next-module"]').forEach(button=>button.disabled=!online.isHost||onlineBusy);
  if(screen==='play'&&match.phase==='recap'&&!modal&&!animatedRecaps.has(match.module))animateScores();
  if(!online&&screen==='play'&&isNpc()&&!modal&&!npcPaused)npcTimer=setTimeout(()=>{if(M.npcStep(match)){picked=[];bonusMode=null;render();}else toast('Le NPC attend une action valide.');},npcFast?45:420);
@@ -292,6 +293,7 @@ function placeDice(ids,target=true){
  if(target){const next=[...new Set([...s.pending,...ids])];if(!arrangeDice(E.activeCard(s),next.map(id=>s.dice[id]),E.wildColor(s)))return false;}
  return command('place',{ids,target});
 }
+const cardPreview=bindCardPreview(root);
 const cancelDrag=bindDrag(root,{enabled:()=>!modal&&isBoard()&&canAct(),diceSelection:id=>picked.includes(id)?[...picked]:[id],onDrop:(payload,target)=>{
  const changed=payload.kind==='card'?target.drop==='combo'&&command('choose',{cardId:payload.id}):placeDice(payload.indices,target.drop==='trick');
  if(changed){picked=[];bonusMode=null;render();}else{feedback.reject(root.querySelector('[data-drop="trick"]')||root.querySelector('.dice-zone'));toast('Ces dés ne correspondent pas aux emplacements libres.');}

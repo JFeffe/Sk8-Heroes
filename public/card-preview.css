@@ -1,0 +1,12 @@
+.card-side-preview{position:fixed;z-index:900;top:58px;right:14px;width:min(365px,42vw,calc((100dvh - 120px)*63/88));padding:7px;background:#fff7df;color:#073f4e;border:2px solid #e6c88f;border-radius:15px;box-shadow:0 12px 40px #001f32aa;pointer-events:none;}
+.card-side-preview[hidden]{display:none;}.card-side-preview[data-side="left"]{left:14px;right:auto;}
+.card-preview-caption{font:700 13px/1.25 system-ui,sans-serif;margin:2px 3px 7px;max-height:34px;overflow:hidden;}
+.card-preview-face{width:100%;}.card-preview-face>.trick-card,.card-preview-face>.lagoon-module-card,.card-preview-face>.skater-mat,.card-preview-face>.park-card{display:block;position:relative;inset:auto;width:100%;height:auto;max-width:none;max-height:none;min-height:0;transform:none;margin:0;filter:none;opacity:1;box-shadow:none;}
+.card-side-preview.landscape{width:min(470px,46vw,calc((100dvh - 120px)*88/63));}
+.card-preview-face .skater-specialty{font-size:3.7cqw;line-height:1.2;overflow:visible;}.card-preview-face .skater-specialty strong{font-size:5.7cqw;}.card-preview-face .skater-specialty p{font-size:3.7cqw;line-height:1.2;margin:2cqw 0;}.card-preview-face .skater-specialty small{font-size:3.2cqw;}
+.card-preview-face .skater-bonus-area .token-stack{width:8cqw;height:9cqw;}.card-preview-face .skater-bonus-area .bonus-token{width:8cqw;height:8cqw;font-size:4cqw;}.card-preview-face .token-stack>b{font-size:3cqw;}.card-preview-face .mat-token-slots small{font-size:3cqw;}
+.card-preview-face .park-marker-slots{grid-template-columns:repeat(2,12px);grid-template-rows:repeat(2,12px);}.card-preview-face .park-marker{width:12px;height:12px;font-size:8px;}
+/* The side copy is the magnification; the hovered hand keeps its stable place. */
+.player-hand .hand-card:hover,.player-hand .hand-card:focus-visible{left:calc(50% + var(--offset)*var(--fan-step));transform:translateX(-50%) translateY(calc(var(--lift)*1px)) rotate(calc(var(--angle)*1deg));}
+.module-route-peek{display:none!important;}
+@media(max-width:700px){.card-side-preview{right:6px;top:48px;width:min(250px,60vw,calc((100dvh - 100px)*63/88));}.card-side-preview[data-side="left"]{left:6px;}.card-side-preview.landscape{width:min(340px,75vw);}}

@@ -1,5 +1,8 @@
-export const APP_VERSION='0.6.6';
+export const APP_VERSION='0.6.7';
 export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-06',changes:[
+ 'Survole une carte pour la lire en grand sur le côté : main, tricks joués, drafts, collection, modules, skaters et parc.',
+ 'L’aperçu reste disponible hors de ton tour et suit les mises à jour multijoueurs, sans masquer la carte survolée ni bloquer les actions.'
+]},{version:'0.6.6',date:'2026-11-06',changes:[
  'La zone de spécialité est compacte : choix sur une ligne et échanges représentés par les jetons.',
  'La table et la main partagent la hauteur disponible pour rester visibles ensemble, sans défilement sur ordinateur.'
 ]},{version:'0.6.5',date:'2026-11-06',changes:[
