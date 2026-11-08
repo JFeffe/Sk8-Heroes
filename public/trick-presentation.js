@@ -6,7 +6,7 @@ const definitions={
  straight2:[['x','x+1'],'Deux valeurs consécutives'],high4:[['≥4','≥4'],'Deux dés ≥ 4'],extremes:[['≤2','≥5'],'Un dé ≤ 2 et un dé ≥ 5'],oddDistinct:[['I','≠I'],'Deux impairs différents'],
  bands3:[['1–2','3–4','5–6'],'Un dé de chaque tranche'],even3:[['2·4·6','2·4·6','2·4·6'],'Trois pairs · doublons permis'],high5:[['≥5','≥5'],'Deux dés ≥ 5'],
  straight3:[['x','x+1','x+2'],'Trois valeurs consécutives'],exact36:[[3,6],'Un 3 et un 6'],double4:[[4,4],'Deux 4'],exact446:[[4,4,6],'Deux 4 et un 6'],exact666:[[6,6,6],'Trois 6'],
- low5:[['≤5','≤5'],'Deux dés ≤ 5'],largeGap:[['A','B'],'Écart ≥ 3'],doubleLow:[['x','x'],'Une paire de 1 à 5'],gap2:[['x','x+2'],'Deux valeurs d’écart 2'],evenDistinct:[['P','≠P'],'Deux pairs différents'],
+ low5:[['≤5','≤5'],'Deux dés ≤ 5'],largeGap:[['A','B'],'Écart ≥ 3'],doubleLow:[['x','x'],'Une paire de 1 à 5'],gap2:[['x','x+2'],'Exactement 2 valeurs d’écart'],evenDistinct:[['P','≠P'],'Deux pairs différents'],
  odd3:[['1·3·5','1·3·5','1·3·5'],'Trois impairs · doublons permis'],low2:[['≤2','≤2'],'Deux dés ≤ 2'],exact25:[[2,5],'Un 2 et un 5'],high5three:[['≥5','≥5','≥5'],'Trois dés ≥ 5'],
  exact366:[[3,6,6],'Un 3 et deux 6'],exact2345:[[2,3,4,5],'Un 2, un 3, un 4 et un 5'],low4:[['≤4','≤4'],'Deux dés ≤ 4'],gap3:[['x','x+3'],'Deux valeurs d’écart 3'],
  parityRun3:[['1/2','3/4','5/6'],'1·3·5 ou 2·4·6'],highPairs4:[['A','A','B','B'],'Deux paires distinctes · 4, 5 ou 6'],fourKind:[['x','x','x','x'],'Quatre dés identiques']

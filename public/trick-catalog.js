@@ -25,7 +25,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/ollie/01-illustration.webp?v=58cab4ab4fe3",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/ollie/03-textes-symboles.webp?v=5d997594676a"
+      "information": "assets/tricks/ollie/03-textes-symboles.webp?v=8454143a4947"
     }
   },
   {
@@ -81,7 +81,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/nollie/01-illustration.webp?v=15f62ba28905",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/nollie/03-textes-symboles.webp?v=a957484ad02f"
+      "information": "assets/tricks/nollie/03-textes-symboles.webp?v=96c2d8fd0e5e"
     }
   },
   {
@@ -150,7 +150,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/pop-shuvit/01-illustration.webp?v=81bd27a3b9e9",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=1e53740b412b"
+      "information": "assets/tricks/pop-shuvit/03-textes-symboles.webp?v=e884ef49a50a"
     }
   },
   {
@@ -207,7 +207,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/frontside-180/01-illustration.webp?v=2730b3989318",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=3482e4cda643"
+      "information": "assets/tricks/frontside-180/03-textes-symboles.webp?v=fd9f4336aaa8"
     }
   },
   {
@@ -237,7 +237,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/heelflip/01-illustration.webp?v=41f1f0679757",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/heelflip/03-textes-symboles.webp?v=09456c276f9c"
+      "information": "assets/tricks/heelflip/03-textes-symboles.webp?v=d39178c0c6d1"
     }
   },
   {
@@ -265,7 +265,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/kickflip/01-illustration.webp?v=2e093ff87df0",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/kickflip/03-textes-symboles.webp?v=3481ecdf842b"
+      "information": "assets/tricks/kickflip/03-textes-symboles.webp?v=ba2122d936cb"
     }
   },
   {
@@ -310,7 +310,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/varial-kickflip/01-illustration.webp?v=1f5ca0720969",
       "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
-      "information": "assets/tricks/varial-kickflip/03-textes-symboles.webp?v=ccfba2e8f001"
+      "information": "assets/tricks/varial-kickflip/03-textes-symboles.webp?v=1d514a5553a9"
     }
   },
   {
@@ -355,7 +355,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/frontside-flip/01-illustration.webp?v=bc62e272808e",
       "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
-      "information": "assets/tricks/frontside-flip/03-textes-symboles.webp?v=49cb2571967d"
+      "information": "assets/tricks/frontside-flip/03-textes-symboles.webp?v=a053aba9c9cc"
     }
   },
   {
@@ -428,7 +428,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/backside-flip/01-illustration.webp?v=a288b7be06af",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/backside-flip/03-textes-symboles.webp?v=c2a14c820d5f"
+      "information": "assets/tricks/backside-flip/03-textes-symboles.webp?v=5abe3d0da817"
     }
   },
   {
@@ -512,7 +512,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/varial-heelflip/01-illustration.webp?v=c949cdcd3e27",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=2e3829279ea1"
+      "information": "assets/tricks/varial-heelflip/03-textes-symboles.webp?v=8989d5f9bff7"
     }
   },
   {
@@ -543,7 +543,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/bigspin/01-illustration.webp?v=f70bb80ab7da",
       "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
-      "information": "assets/tricks/bigspin/03-textes-symboles.webp?v=bd983fd03938"
+      "information": "assets/tricks/bigspin/03-textes-symboles.webp?v=17e3d7961888"
     }
   },
   {
@@ -575,7 +575,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/inward-heelflip/01-illustration.webp?v=ac857cd4cdd4",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/inward-heelflip/03-textes-symboles.webp?v=472b111e5939"
+      "information": "assets/tricks/inward-heelflip/03-textes-symboles.webp?v=efe24bfc7440"
     }
   },
   {
@@ -606,7 +606,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/hardflip/01-illustration.webp?v=8d56e305e4a8",
       "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
-      "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=4c06951b0587"
+      "information": "assets/tricks/hardflip/03-textes-symboles.webp?v=ad53c9d3b81b"
     }
   },
   {
@@ -637,7 +637,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/360-flip/01-illustration.webp?v=c1765df7d67e",
       "graphics": "assets/tricks/frames/epic-2-plain.svg?v=d46e18e069c9",
-      "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=f0dccd6bad58"
+      "information": "assets/tricks/360-flip/03-textes-symboles.webp?v=4a05cd99d096"
     }
   },
   {
@@ -670,7 +670,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/laser-flip/01-illustration.webp?v=e5bb72263e80",
       "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
-      "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=7f005e4a7e2e"
+      "information": "assets/tricks/laser-flip/03-textes-symboles.webp?v=c5093350293c"
     }
   },
   {
@@ -703,7 +703,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/impossible/01-illustration.webp?v=ee13847a47c2",
       "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
-      "information": "assets/tricks/impossible/03-textes-symboles.webp?v=452c79059e99"
+      "information": "assets/tricks/impossible/03-textes-symboles.webp?v=60eed2c9c5a8"
     }
   },
   {
@@ -731,7 +731,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/50-50-grind/01-illustration.webp?v=c4cbe598393c",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/50-50-grind/03-textes-symboles.webp?v=f57107eff333"
+      "information": "assets/tricks/50-50-grind/03-textes-symboles.webp?v=210fa59be5c1"
     }
   },
   {
@@ -800,7 +800,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/boardslide/01-illustration.webp?v=89b4cf25e26e",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/boardslide/03-textes-symboles.webp?v=b61013b27722"
+      "information": "assets/tricks/boardslide/03-textes-symboles.webp?v=63501674c453"
     }
   },
   {
@@ -830,7 +830,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/lipslide/01-illustration.webp?v=299a356ff7b6",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/lipslide/03-textes-symboles.webp?v=648b5c42e471"
+      "information": "assets/tricks/lipslide/03-textes-symboles.webp?v=fd430e5f6b2b"
     }
   },
   {
@@ -886,7 +886,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/tailslide/01-illustration.webp?v=ebf04eac1d19",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=f2b31060c329"
+      "information": "assets/tricks/tailslide/03-textes-symboles.webp?v=ff1fc521df4b"
     }
   },
   {
@@ -939,7 +939,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/noseslide/01-illustration.webp?v=3c8c6ee57312",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/noseslide/03-textes-symboles.webp?v=59f77feb0fc3"
+      "information": "assets/tricks/noseslide/03-textes-symboles.webp?v=15ebeb9ca3e8"
     }
   },
   {
@@ -979,12 +979,12 @@ export const TRICKS=[
       "x",
       "x+2"
     ],
-    "rule": "Deux valeurs d’écart 2",
+    "rule": "Exactement 2 valeurs d’écart",
     "comboBonus": null,
     "layers": {
       "illustration": "assets/tricks/nosegrind/01-illustration.webp?v=858881e06ee1",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=4263fb47719e"
+      "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=d13bd20f2970"
     }
   },
   {
@@ -1029,7 +1029,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/5-0-grind/01-illustration.webp?v=c02b032dc4e1",
       "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
-      "information": "assets/tricks/5-0-grind/03-textes-symboles.webp?v=4afbaaedc759"
+      "information": "assets/tricks/5-0-grind/03-textes-symboles.webp?v=34a073b3de6b"
     }
   },
   {
@@ -1074,7 +1074,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/crooked-grind/01-illustration.webp?v=78b4c5288bab",
       "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
-      "information": "assets/tricks/crooked-grind/03-textes-symboles.webp?v=6525c56810be"
+      "information": "assets/tricks/crooked-grind/03-textes-symboles.webp?v=88af9bc55f6f"
     }
   },
   {
@@ -1147,7 +1147,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/feeble-grind/01-illustration.webp?v=a42884878a97",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/feeble-grind/03-textes-symboles.webp?v=4e6e35e386ae"
+      "information": "assets/tricks/feeble-grind/03-textes-symboles.webp?v=18b040b0d292"
     }
   },
   {
@@ -1231,7 +1231,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/smith-grind/01-illustration.webp?v=f83f9b661508",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=4d1dd21ea75c"
+      "information": "assets/tricks/smith-grind/03-textes-symboles.webp?v=a62c43a4c4b1"
     }
   },
   {
@@ -1262,7 +1262,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/suski-grind/01-illustration.webp?v=0ffd60a7f98e",
       "graphics": "assets/tricks/frames/advanced-2-bonus.svg?v=444d14e6c4b2",
-      "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=1ef8e8f75c4e"
+      "information": "assets/tricks/suski-grind/03-textes-symboles.webp?v=33270d2c09d2"
     }
   },
   {
@@ -1294,7 +1294,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/salad-grind/01-illustration.webp?v=90adee3f01bc",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/salad-grind/03-textes-symboles.webp?v=836716b7a010"
+      "information": "assets/tricks/salad-grind/03-textes-symboles.webp?v=9429f042216a"
     }
   },
   {
@@ -1325,7 +1325,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/overcrook/01-illustration.webp?v=d1364f933c51",
       "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
-      "information": "assets/tricks/overcrook/03-textes-symboles.webp?v=cfb93040fee1"
+      "information": "assets/tricks/overcrook/03-textes-symboles.webp?v=3f404d7d1edd"
     }
   },
   {
@@ -1354,7 +1354,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/bluntslide/01-illustration.webp?v=165f5d5273a0",
       "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
-      "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=b1b606c0029a"
+      "information": "assets/tricks/bluntslide/03-textes-symboles.webp?v=b7392bb27126"
     }
   },
   {
@@ -1387,7 +1387,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/nosebluntslide/01-illustration.webp?v=68acc655c333",
       "graphics": "assets/tricks/frames/epic-3-plain.svg?v=96945c2bb9ff",
-      "information": "assets/tricks/nosebluntslide/03-textes-symboles.webp?v=8dacdc62d98d"
+      "information": "assets/tricks/nosebluntslide/03-textes-symboles.webp?v=0e5d8c8a7001"
     }
   },
   {
@@ -1422,7 +1422,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/hurricane/01-illustration.webp?v=d8139c3f2c37",
       "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
-      "information": "assets/tricks/hurricane/03-textes-symboles.webp?v=544f176e6533"
+      "information": "assets/tricks/hurricane/03-textes-symboles.webp?v=63bb1f7bc215"
     }
   },
   {
@@ -1450,7 +1450,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/180/01-illustration.webp?v=a837b736df06",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/180/03-textes-symboles.webp?v=02b23eccb2ad"
+      "information": "assets/tricks/180/03-textes-symboles.webp?v=53db6418140f"
     }
   },
   {
@@ -1519,7 +1519,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/indy-grab/01-illustration.webp?v=09446090a9a7",
       "graphics": "assets/tricks/frames/base-2-bonus.svg?v=c2fb603f9bca",
-      "information": "assets/tricks/indy-grab/03-textes-symboles.webp?v=f47d61330e29"
+      "information": "assets/tricks/indy-grab/03-textes-symboles.webp?v=7991ac1a5053"
     }
   },
   {
@@ -1560,7 +1560,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/360/01-illustration.webp?v=dd17a165e256",
       "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-      "information": "assets/tricks/360/03-textes-symboles.webp?v=a4e738bcd4c4"
+      "information": "assets/tricks/360/03-textes-symboles.webp?v=5491558b86d0"
     }
   },
   {
@@ -1605,7 +1605,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/melon-grab/01-illustration.webp?v=292cd6cfc9cf",
       "graphics": "assets/tricks/frames/advanced-2-plain.svg?v=453f304469b0",
-      "information": "assets/tricks/melon-grab/03-textes-symboles.webp?v=bdbc904cd3a9"
+      "information": "assets/tricks/melon-grab/03-textes-symboles.webp?v=73e884e76c9c"
     }
   },
   {
@@ -1678,7 +1678,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/stalefish/01-illustration.webp?v=18d1e2d00432",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/stalefish/03-textes-symboles.webp?v=6351004d41c9"
+      "information": "assets/tricks/stalefish/03-textes-symboles.webp?v=d2e6886f6190"
     }
   },
   {
@@ -1710,7 +1710,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/540/01-illustration.webp?v=3b34ef010de2",
       "graphics": "assets/tricks/frames/advanced-3-bonus.svg?v=4fae24ce1fbb",
-      "information": "assets/tricks/540/03-textes-symboles.webp?v=8c85f0e82f1c"
+      "information": "assets/tricks/540/03-textes-symboles.webp?v=504ca1a25a92"
     }
   },
   {
@@ -1750,7 +1750,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/720/01-illustration.webp?v=08353636f5c0",
       "graphics": "assets/tricks/frames/advanced-3-plain.svg?v=9b1769042b51",
-      "information": "assets/tricks/720/03-textes-symboles.webp?v=0422d4fd2118"
+      "information": "assets/tricks/720/03-textes-symboles.webp?v=d1dffb6d2581"
     }
   },
   {
@@ -1799,7 +1799,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/900/01-illustration.webp?v=96ca1782c9be",
       "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
-      "information": "assets/tricks/900/03-textes-symboles.webp?v=77cf67aa9d4d"
+      "information": "assets/tricks/900/03-textes-symboles.webp?v=2ce97856c55a"
     }
   },
   {
@@ -1866,7 +1866,7 @@ export const TRICKS=[
     "layers": {
       "illustration": "assets/tricks/1080/01-illustration.webp?v=67a031a14446",
       "graphics": "assets/tricks/frames/epic-4-plain.svg?v=c83dd597ee17",
-      "information": "assets/tricks/1080/03-textes-symboles.webp?v=3ed2feca6734"
+      "information": "assets/tricks/1080/03-textes-symboles.webp?v=c0d7911bb95c"
     }
   }
 ];

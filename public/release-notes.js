@@ -1,5 +1,9 @@
-export const APP_VERSION='0.6.8';
+export const APP_VERSION='0.6.9';
 export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-07',changes:[
+ 'Skater à gauche, module à droite et repère TOI pour identifier ta table.',
+ 'Tour actif en rouge contrasté avec un libellé visible dans la barre des joueurs.',
+ 'Nosegrind : exactement 2 valeurs d’écart. Icônes ajoutées dans les textes des cartes et contours superflus retirés.'
+]},{version:'0.6.8',date:'2026-11-07',changes:[
  'Les aperçus restent toujours à droite dans un espace réservé, sans recouvrir les boutons ni les cartes en main, en solo et en multijoueur.',
  'L’encadré blanc et le titre répété sont supprimés : seule la carte et sa propre bordure sont affichées.'
 ]},{version:'0.6.7',date:'2026-11-06',changes:[

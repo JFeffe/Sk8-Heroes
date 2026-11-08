@@ -23,7 +23,7 @@
   "layers": {
     "illustration": "assets/modules/lagoon/layers/retour-rail/01-illustration.webp?v=04657079bd80",
     "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
-    "information": "assets/modules/lagoon/layers/retour-rail/03-textes-symboles.webp?v=869776865c41"
+    "information": "assets/modules/lagoon/layers/retour-rail/03-textes-symboles.webp?v=fca65ffdc855"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/retour-rail.png",
   "canvas": [

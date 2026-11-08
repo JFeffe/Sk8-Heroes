@@ -4,10 +4,10 @@ import {moduleGoalPresentation} from '../../public/module-goals.js';
 
 // Modules use the same canvas, measured lettering, palette and frame as tricks.
 export function createModuleTemplate(sharp){
- const shared=createCardTemplate(sharp),{W,H,C,svg,graphics,ink,centeredText,text,icon,alignment}=shared;
+ const shared=createCardTemplate(sharp),{W,H,C,svg,graphics,ink,centeredText,richText,text,icon,alignment}=shared;
  async function fit(cx,cy,value,size,maxWidth=500,color=C.navy,extra=''){
   const bounds=await ink(value,size);if(bounds.width>maxWidth)size=Math.floor(size*maxWidth/bounds.width);
-  return centeredText(cx,cy,value,size,color,extra);
+  return richText(cx,cy,value,size,maxWidth,color,extra);
  }
  async function title(name){
   let lines=[name],size=102;

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {readFile,writeFile,mkdir,access} from 'node:fs/promises';
+import {readFile,writeFile as writeFileOnce,mkdir,access} from 'node:fs/promises';
 import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
@@ -8,6 +8,13 @@ import {createCardTemplate} from './trick-card-template.mjs';
 import {versionTrickAssets} from './version-trick-assets.mjs';
 const root=fileURLToPath(new URL('../../',import.meta.url)),output=path.join(root,'artwork/cards/tricks/deck-v1'),publicFolder=path.join(root,'public/assets/tricks');
 const sharp=createRequire(import.meta.url)(process.argv[2]||'sharp'),template=createCardTemplate(sharp),{svg,graphics,information,sockets}=template;
+// Synced Windows folders can briefly lock an output while it is being indexed.
+async function writeFile(...args){
+ for(let attempt=0;;attempt++)try{return await writeFileOnce(...args);}catch(error){
+  if(attempt===4||!['EBUSY','EPERM','UNKNOWN'].includes(error.code))throw error;
+  await new Promise(resolve=>setTimeout(resolve,250*(attempt+1)));
+ }
+}
 const missing=[];for(const c of TRICKS)try{await access(path.join(output,'illustrations',c.key+'.png'));}catch{missing.push(c.name);}
 assert.equal(missing.length,0,'Missing illustrations: '+missing.join(', '));
 await mkdir(path.join(publicFolder,'frames'),{recursive:true});

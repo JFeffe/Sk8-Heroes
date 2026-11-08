@@ -1,0 +1,31 @@
+/* Player identity, active turn and inspected table are distinct cues. */
+.player-score.active,.player-score.active:hover{background:#972d39;border-color:#ff6170;box-shadow:inset 4px 0 0 #ff8190,0 0 0 2px #ff6170,0 3px 10px #380d1866;color:#fff;}
+.player-score.active .rider-name small{opacity:1;color:#fff;}
+.player-score .turn-label{display:block;color:#fff3c9;font-size:8px;font-weight:900;line-height:1.2;letter-spacing:.04em;}
+.player-score .self-label{color:#fff3c9;font-weight:900;}
+.skater-owner{display:flex;align-items:center;justify-content:center;gap:5px;width:100%;min-height:18px;margin:0;color:#fff7df;font-size:10px;line-height:1.2;text-align:center;}
+.skater-owner b{padding:2px 5px;border-radius:4px;background:#fff0bc;color:#123f37;}
+.skater-owner span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.card-text-component{white-space:nowrap;}
+.component-icon{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.18em;margin-right:.12em;}
+.skater-specialty strong>.specialty-icon{display:inline-block;width:1.1em;height:1.1em;vertical-align:-.15em;margin-right:.2em;}
+/* The card face already provides its frame. Keep only interaction highlights. */
+.skater-mat{border:0;box-shadow:0 5px 10px #042f3540;}
+.trick-card.hand-card,.trick-card.table-card,.trick-card.archived-card{border:0;}
+.trick-space:has(>.trick-card){background:transparent;box-shadow:none;}
+.card-preview-face>.skater-mat,.card-preview-face>.park-card{border:0;}
+@media(min-width:701px){
+ .table-game .physical-table-side{grid-column:1;grid-row:1;}
+ .table-game .module-area,.table-game .module-area.has-archive{grid-column:3;grid-row:1;}
+ .table-game .play-table,.table-game .play-table:has(.archive-tray),.table-game .play-table:has(.sequence-reward-choices){grid-template-columns:clamp(95px,calc(var(--play-width)*.115),140px) minmax(0,1fr) clamp(110px,calc(var(--play-width)*.13),170px);}
+}
+@media(min-width:701px) and (max-width:1100px){
+ .table-game .play-table,.table-game .play-table:has(.archive-tray),.table-game .play-table:has(.sequence-reward-choices){grid-template-columns:92px minmax(0,1fr) 100px;}
+ .player-score .turn-label{font-size:7px;letter-spacing:0;}
+ .skater-owner{font-size:8px;}
+}
+@media(max-width:700px){
+ .table-game .physical-table-side{grid-column:1;grid-row:2;}
+ .table-game .module-area,.table-game .module-area.has-archive{grid-column:2;grid-row:2;}
+ .player-score .turn-label{font-size:7px;letter-spacing:0;}
+}

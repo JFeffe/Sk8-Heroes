@@ -1,10 +1,12 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {createRequire} from 'node:module';
+import {createCardTemplate} from './trick-card-template.mjs';
 import {SKATERS} from '../../public/skaters.js';
 import {trophyIcon} from '../../public/icons.js';
 import {SPECIALTIES,specialtyIcon} from '../../public/specialties.js';
 const sharp=createRequire(import.meta.url)(process.argv[2]||'sharp');
+const {richText}=createCardTemplate(sharp);
 const root=new URL('../../',import.meta.url),folder=new URL('artwork/cards/players/poker-v1/',root);
 await mkdir(folder,{recursive:true});
 const cream='#fff7df',navy='#063e50';
@@ -19,7 +21,7 @@ for(const skater of SKATERS){
  const power=SPECIALTIES[skater.id],words=power.text.split(' '),lines=[''];
  for(const word of words){if((lines.at(-1)+' '+word).trim().length>43)lines.push(word);else lines[lines.length-1]=(lines.at(-1)+' '+word).trim();}
  const powerIcon=specialtyIcon(skater.id).replace('class="specialty-icon"',`x="58" y="698" width="82" height="82" color="${navy}"`);
- const rules=lines.map((line,i)=>`<text x="58" y="${826+i*39}" font-family="Arial,sans-serif" font-size="35" fill="${navy}">${line}</text>`).join('');
+ const rules=(await Promise.all(lines.map((line,i)=>richText(500,810+i*39,line,35,884,navy)))).join('');
  const advanced=body.replace('height="840"','height="510"')+`<rect x="20" y="684" width="968" height="314" rx="12" fill="${cream}"/>${powerIcon}${text(162,753,power.name,57)}${rules}${text(58,984,power.passive?'PASSIF · TOUTE LA PARTIE':'1 FOIS PAR MODULE · PARMI LES 2 ESSAIS',31)}`;
  await save('skater-'+skater.id+'-advanced',svg(1008,1408,advanced));
  for(const used of [false,true]){

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {TRICKS} from '../../public/trick-catalog.js';
 import {printedOdds,printedPercent} from '../../public/physical-table.js';
 import {typeIcon} from '../../public/icons.js';
+import {cardTextParts,componentIcon} from '../../public/card-text.js';
 export function createCardTemplate(sharp){
 const W=900,H=1300,C={cream:'#fff7df',navy:'#063e50',aqua:'#31c4c3',pale:'#a6e2da',orange:'#ff742b'};
 const alignment={badge:{transform:'rotate(-1.3 250 217)',labelX:169,chanceX:358,centerY:217,fontSize:40},requirement:{centerX:321,headingY:994.5,socketY:1073},score:{centerX:733,headingY:994.5,bodyTop:1019,bodyBottom:1166,numberSize:118,unitSize:25,gap:10}};
@@ -27,6 +28,23 @@ async function centeredText(cx,cy,value,size,fill=C.navy,extra='',capAlign=false
  return text(cx-bounds.x-(bounds.width-1)/2,cy-vertical.y-(vertical.height-1)/2,value,size,fill,extra);
 }
 function speckles(seed,count,box,color,opacity){let result='';for(let i=0;i<count;i++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const a=seed/2**32;seed=(Math.imul(seed,1664525)+1013904223)>>>0;const b=seed/2**32;result+=`<circle cx="${(box[0]+a*box[2]).toFixed(1)}" cy="${(box[1]+b*box[3]).toFixed(1)}" r="${(.6+a*1.8).toFixed(1)}" fill="${color}" opacity="${opacity}"/>`;}return result;}
+async function richText(cx,cy,value,size,maxWidth,fill=C.navy,extra=''){
+ const parts=[];
+ for(const p of cardTextParts(value)){
+  const words=p.text.trim(),bounds=words?await ink(words,size):null;
+  const leading=p.text.match(/^\s*/)[0].length*size*.22,trailing=p.text.match(/\s*$/)[0].length*size*.22;
+  const iconWidth=p.icon?size*1.25:0;
+  parts.push({...p,words,bounds,leading,width:bounds?leading+bounds.width+trailing+iconWidth:p.text.length*size*.22,iconWidth});
+ }
+ const width=parts.reduce((n,p)=>n+p.width,0),scale=Math.min(1,maxWidth/width);
+ let x=-width/2,body='';
+ for(const p of parts){
+  if(p.icon)body+=componentIcon(p.icon).replace('<svg ',`<svg x="${x+p.leading}" y="${-size/2}" width="${size}" height="${size}" `);
+  if(p.bounds)body+=text(x+p.leading+p.iconWidth-p.bounds.x,-p.bounds.y-(p.bounds.height-1)/2,p.words,size,fill);
+  x+=p.width;
+ }
+ return `<g ${extra} transform="translate(${cx} ${cy}) scale(${scale})" color="${fill}">${body}</g>`;
+}
 function graphics(card){
  const slots=card.kind==='module'?'':sockets(card.cost).map(s=>`<rect x="${s.x}" y="${s.y}" width="${s.size}" height="${s.height}" rx="16" fill="${C.cream}" fill-opacity=".96" stroke="${C.cream}" stroke-width="5"/>`).join('');
  return `<defs><clipPath id="inside"><rect x="28" y="28" width="844" height="1244" rx="40"/></clipPath><clipPath id="score-cap"><rect x="612" y="970" width="242" height="196" rx="23"/></clipPath></defs>
@@ -70,7 +88,7 @@ async function information(card){
  const titleBounds=await ink(card.name,titleSize);if(titleBounds.width>626)titleSize=Math.floor(titleSize*626/titleBounds.width);
  const slotText=(await Promise.all(sockets(card.cost).map((s,i)=>centeredText(s.x+s.size/2,alignment.requirement.socketY,card.symbols[i],card.cost===4?62:card.symbols[i].length>2?49:68,C.navy,`id="socket-${i}"`)))).join('');
  const rows=printedOdds(card.id===undefined?{...card,id:TRICKS.find(c=>c.name===card.name).id}:card);
- const badge=`<g id="badge-information">${await centeredText(172.5,223,'DÉS / CHANCE',26)}${(await Promise.all(rows.map(async(row,i)=>`${await centeredText(92,261+i*43,String(row.dice),31)}${await centeredText(210,261+i*43,printedPercent(row.probability),31)}`))).join('')}${await centeredText(172.5,257+rows.length*43,'SANS JOKER / BONUS',18)}${await centeredText(775.5,232,card.tierLabel,32,card.tier==='base'?C.navy:C.cream,'id="badge-label"')}</g>`;
+ const badge=`<g id="badge-information">${await richText(172.5,223,'DÉS / CHANCE',26,240)}${(await Promise.all(rows.map(async(row,i)=>`${await centeredText(92,261+i*43,String(row.dice),31)}${await centeredText(210,261+i*43,printedPercent(row.probability),31)}`))).join('')}${await centeredText(172.5,257+rows.length*43,'SANS JOKER / BONUS',18)}${await centeredText(775.5,232,card.tierLabel,32,card.tier==='base'?C.navy:C.cream,'id="badge-label"')}</g>`;
 
  const digit=await ink(card.printedPoints,alignment.score.numberSize),unit=await ink('PTS',alignment.score.unitSize);
  const groupHeight=digit.height+alignment.score.gap+unit.height,groupTop=alignment.score.bodyTop+(alignment.score.bodyBottom-alignment.score.bodyTop-groupHeight)/2;
@@ -82,8 +100,8 @@ async function information(card){
  return `<g>${text(59,141,card.name,titleSize,C.cream,'id="card-title"')}${icon(card.type,731,69,97)}
  ${badge}
  ${await centeredText(alignment.requirement.centerX,alignment.requirement.headingY,'COMBINAISON',35,C.navy,'id="requirement-heading"')}${slotText}
- ${text(alignment.requirement.centerX,1152,card.rule,card.rule.length>31?27:29,C.navy,'text-anchor="middle" font-family="Arial Narrow,Segoe UI,sans-serif"')}
+ ${await richText(alignment.requirement.centerX,1142,card.rule,31,510,C.navy)}
  ${await centeredText(alignment.score.centerX,alignment.score.headingY,'SCORE',35,C.cream,'id="score-heading"')}<g id="score-information">${score}${units}</g>${bonus}</g>`;
 }
-return {W,H,C,alignment,svg,sockets,graphics,information,ink,centeredText,text,icon};
+return {W,H,C,alignment,svg,sockets,graphics,information,ink,centeredText,richText,text,icon};
 }

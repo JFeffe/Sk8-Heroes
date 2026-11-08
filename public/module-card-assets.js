@@ -3,61 +3,61 @@ export const MODULE_CARD_ASSETS={
   "ilot": {
     "illustration": "assets/modules/lagoon/layers/ilot/01-illustration.webp?v=d755016369d3",
     "graphics": "assets/modules/lagoon/layers/frames/module-0.svg?v=48e7b0ebcdf5",
-    "information": "assets/modules/lagoon/layers/ilot/03-textes-symboles.webp?v=23d7b08bc75d"
+    "information": "assets/modules/lagoon/layers/ilot/03-textes-symboles.webp?v=251b05bbde5a"
   },
   "quai-bas": {
     "illustration": "assets/modules/lagoon/layers/quai-bas/01-illustration.webp?v=e94590890461",
     "graphics": "assets/modules/lagoon/layers/frames/module-0.svg?v=48e7b0ebcdf5",
-    "information": "assets/modules/lagoon/layers/quai-bas/03-textes-symboles.webp?v=fbf9553d3534"
+    "information": "assets/modules/lagoon/layers/quai-bas/03-textes-symboles.webp?v=3394afd3e9cf"
   },
   "petite-vague": {
     "illustration": "assets/modules/lagoon/layers/petite-vague/01-illustration.webp?v=354532d7e8c6",
     "graphics": "assets/modules/lagoon/layers/frames/module-0.svg?v=48e7b0ebcdf5",
-    "information": "assets/modules/lagoon/layers/petite-vague/03-textes-symboles.webp?v=b4ff403b2973"
+    "information": "assets/modules/lagoon/layers/petite-vague/03-textes-symboles.webp?v=5a1d306f52a7"
   },
   "rail-palmiers": {
     "illustration": "assets/modules/lagoon/layers/rail-palmiers/01-illustration.webp?v=8e77ab20614d",
     "graphics": "assets/modules/lagoon/layers/frames/module-0.svg?v=48e7b0ebcdf5",
-    "information": "assets/modules/lagoon/layers/rail-palmiers/03-textes-symboles.webp?v=6b596247b99d"
+    "information": "assets/modules/lagoon/layers/rail-palmiers/03-textes-symboles.webp?v=8aa63bdc2f95"
   },
   "retour-rail": {
     "illustration": "assets/modules/lagoon/layers/retour-rail/01-illustration.webp?v=04657079bd80",
     "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
-    "information": "assets/modules/lagoon/layers/retour-rail/03-textes-symboles.webp?v=869776865c41"
+    "information": "assets/modules/lagoon/layers/retour-rail/03-textes-symboles.webp?v=fca65ffdc855"
   },
   "tour-ilot": {
     "illustration": "assets/modules/lagoon/layers/tour-ilot/01-illustration.webp?v=ed26d1afc009",
     "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
-    "information": "assets/modules/lagoon/layers/tour-ilot/03-textes-symboles.webp?v=e9f2d131879c"
+    "information": "assets/modules/lagoon/layers/tour-ilot/03-textes-symboles.webp?v=d958408b7893"
   },
   "coping-bleu": {
     "illustration": "assets/modules/lagoon/layers/coping-bleu/01-illustration.webp?v=c34c88ac6f74",
     "graphics": "assets/modules/lagoon/layers/frames/module-2.svg?v=e4fb8d790cb1",
-    "information": "assets/modules/lagoon/layers/coping-bleu/03-textes-symboles.webp?v=34dd3c29f474"
+    "information": "assets/modules/lagoon/layers/coping-bleu/03-textes-symboles.webp?v=6dedf7bc2b4c"
   },
   "double-quai": {
     "illustration": "assets/modules/lagoon/layers/double-quai/01-illustration.webp?v=2e9a5dbf6c88",
     "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
-    "information": "assets/modules/lagoon/layers/double-quai/03-textes-symboles.webp?v=e9691e4797b5"
+    "information": "assets/modules/lagoon/layers/double-quai/03-textes-symboles.webp?v=4409ccc8557a"
   },
   "boucle-lagon": {
     "illustration": "assets/modules/lagoon/layers/boucle-lagon/01-illustration.webp?v=591ce259c31b",
     "graphics": "assets/modules/lagoon/layers/frames/module-2.svg?v=e4fb8d790cb1",
-    "information": "assets/modules/lagoon/layers/boucle-lagon/03-textes-symboles.webp?v=c6575c65a337"
+    "information": "assets/modules/lagoon/layers/boucle-lagon/03-textes-symboles.webp?v=ef39c340b837"
   },
   "marches-palmiers": {
     "illustration": "assets/modules/lagoon/layers/marches-palmiers/01-illustration.webp?v=6dfe20222b1b",
     "graphics": "assets/modules/lagoon/layers/frames/module-2.svg?v=e4fb8d790cb1",
-    "information": "assets/modules/lagoon/layers/marches-palmiers/03-textes-symboles.webp?v=e6c958303b49"
+    "information": "assets/modules/lagoon/layers/marches-palmiers/03-textes-symboles.webp?v=aeca3bd341cc"
   },
   "embruns": {
     "illustration": "assets/modules/lagoon/layers/embruns/01-illustration.webp?v=5ec49f8377fc",
     "graphics": "assets/modules/lagoon/layers/frames/module-1.svg?v=acdd26d5dfa7",
-    "information": "assets/modules/lagoon/layers/embruns/03-textes-symboles.webp?v=a4858926c517"
+    "information": "assets/modules/lagoon/layers/embruns/03-textes-symboles.webp?v=08d3c483f5e1"
   },
   "grande-vague": {
     "illustration": "assets/modules/lagoon/layers/grande-vague/01-illustration.webp?v=63254c8998c4",
     "graphics": "assets/modules/lagoon/layers/frames/module-2.svg?v=e4fb8d790cb1",
-    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=4c9207b3c272"
+    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=3fc954b78c37"
   }
 };

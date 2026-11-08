@@ -35,12 +35,12 @@
     "x",
     "x+2"
   ],
-  "rule": "Deux valeurs d’écart 2",
+  "rule": "Exactement 2 valeurs d’écart",
   "comboBonus": null,
   "layers": {
     "illustration": "assets/tricks/nosegrind/01-illustration.webp?v=858881e06ee1",
     "graphics": "assets/tricks/frames/base-2-plain.svg?v=f8435afda254",
-    "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=4263fb47719e"
+    "information": "assets/tricks/nosegrind/03-textes-symboles.webp?v=d13bd20f2970"
   },
   "printedPoints": 4,
   "p": 0.8823731138545954,

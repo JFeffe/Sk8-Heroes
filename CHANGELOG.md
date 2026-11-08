@@ -1,3 +1,11 @@
+# Version 0.6.9 — 7 novembre 2026
+
+- Skater à gauche, module à droite et repère explicite de propriétaire sur la table.
+- Tour actif en rouge contrasté avec libellé visible, distinct de la table consultée.
+- Nosegrind précise « Exactement 2 valeurs d’écart » sur sa face et dans ses textes accessibles.
+- Icônes de composants dans les textes des cartes, y compris les exports imprimables ; retrait des contours extérieurs superflus.
+- Règles et sauvegardes inchangées.
+
 # Version 0.6.3 — 6 novembre 2026
 
 - Livraison des évolutions depuis la version publiée 0.5.5 : cartes au format poker, probabilités fixes imprimées, carte du parc pour les meilleurs essais, jetons trophée et piles/défausses visibles.

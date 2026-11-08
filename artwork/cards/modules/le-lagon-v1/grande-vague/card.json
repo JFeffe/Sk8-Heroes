@@ -22,7 +22,7 @@
   "layers": {
     "illustration": "assets/modules/lagoon/layers/grande-vague/01-illustration.webp?v=63254c8998c4",
     "graphics": "assets/modules/lagoon/layers/frames/module-2.svg?v=e4fb8d790cb1",
-    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=4c9207b3c272"
+    "information": "assets/modules/lagoon/layers/grande-vague/03-textes-symboles.webp?v=3fc954b78c37"
   },
   "illustrationMaster": "artwork/parks/le-lagon/modules/grande-vague.png",
   "canvas": [
