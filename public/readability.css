@@ -14,6 +14,24 @@
 .trick-card.hand-card,.trick-card.table-card,.trick-card.archived-card{border:0;}
 .trick-space:has(>.trick-card){background:transparent;box-shadow:none;}
 .card-preview-face>.skater-mat,.card-preview-face>.park-card{border:0;}
+/* Full-height artwork; flowing overlays share space instead of overlapping. */
+.skater-mat{background:#164c49;}
+.skater-mat .skater-portrait{inset:0;width:100%;height:100%;object-fit:contain;object-position:center;}
+.skater-mat h2{top:0;padding:4cqw 6cqw 8cqw;font-size:10cqw;border:0;background:linear-gradient(#063e50e8,#063e5066,transparent);text-shadow:0 1px 3px #063e50;}
+.skater-mat .skater-overlay{position:absolute;inset:auto 0 0;display:grid;gap:3cqw;padding:12cqw 4cqw 4cqw;background:linear-gradient(transparent,#073a42b8 20%,#073a42b8);color:#fff7df;}
+.skater-mat .skater-specialty{position:static;inset:auto;overflow:visible;font-size:5cqw;line-height:1.2;}
+.skater-mat .skater-specialty strong{display:block;color:#fff7df;font-size:6.8cqw;line-height:1.12;}
+.skater-mat .skater-specialty p{margin:2cqw 0;font-size:5cqw;line-height:1.2;}
+.skater-mat .skater-specialty small{display:block;font-size:4.1cqw;line-height:1.2;color:#f9d69d;}
+.skater-mat .skater-bonus-area{position:static;inset:auto;padding:0;background:none;border:0;}
+.skater-mat .token-reserve,.skater-mat .mat-token-slots{gap:3cqw;}
+.skater-mat .token-reserve>*,.skater-mat .mat-token-slots>div{min-height:22cqw;padding:2cqw 0;gap:2cqw;border:0;border-radius:4cqw;background:#fff7df20;color:#fff7df;}
+.skater-mat .token-stack{width:15cqw;height:16cqw;margin:0;}
+.skater-mat .bonus-token{width:15cqw;height:14cqw;font-size:8cqw;border-width:1px;bottom:calc(var(--layer)*1px);}
+.skater-mat .token-stack>b{font-size:5cqw;right:-3cqw;}
+.skater-mat .adjust-tokens>div{display:flex;gap:1cqw;}
+.skater-mat .adjust-tokens .chip{width:10cqw;height:10cqw;min-height:0;font-size:5.5cqw;padding:0;}
+.skater-mat .mat-token-slots small{font-size:4.5cqw;}
 @media(min-width:701px){
  .table-game .physical-table-side{grid-column:1;grid-row:1;}
  .table-game .module-area,.table-game .module-area.has-archive{grid-column:3;grid-row:1;}

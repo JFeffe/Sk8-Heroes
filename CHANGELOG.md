@@ -1,3 +1,10 @@
+# Version 0.6.10 — 8 novembre 2026
+
+- Personnages en pied sur les cartes skaters, nom et informations superposés sur des dégradés translucides.
+- Spécialité et jetons disposés dans un même flux, tailles proportionnelles à la carte ; suppression des zones fixes qui coupaient le texte.
+- Douze cartes imprimables Base/Avancé régénérées. Règles et sauvegardes inchangées.
+- Audit descriptif de 120 parties NPC : réserves observées au début des essais et gains ventilés par source. Résultats dans tests/token-pressure-audit/summary.json ; aucun changement d’équilibrage appliqué.
+
 # Version 0.6.9 — 7 novembre 2026
 
 - Skater à gauche, module à droite et repère explicite de propriétaire sur la table.

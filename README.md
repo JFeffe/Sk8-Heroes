@@ -38,6 +38,8 @@ Les fichiers de parties et `.tools/` sont exclus de Git. L’outil de partage es
 
 ## Table et cartes
 
+Les cartes skaters gardent leur illustration en pied. Le nom, le pouvoir et les réserves sont superposés sur un dégradé translucide ; le texte et les contrôles se suivent sans zones de hauteur fixe. Le même principe est utilisé dans les douze cartes imprimables.
+
 La carte skater se trouve à gauche et le module à droite. Le repère **TOI** identifie ta table ; **TABLE DE** indique une table adverse. Les textes des cartes associent les composants à leurs icônes. Nosegrind exige **exactement 2 valeurs d’écart** (1–3, 2–4, 3–5 ou 4–6).
 
 Survoler une carte (ou la sélectionner au clavier) affiche un grand aperçu toujours à droite, dans un espace réservé qui ne recouvre ni les actions ni la main. Cela couvre les tricks en main, joués et archivés, les drafts et la collection, ainsi que les modules, la carte skater et le parc. L’aperçu fonctionne aussi hors de son tour et se rafraîchit en multijoueur sans déplacer la souris. Il est uniquement visuel : le clic et le glisser-déposer continuent d’agir sur la carte d’origine.

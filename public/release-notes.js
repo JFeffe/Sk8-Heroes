@@ -1,5 +1,9 @@
-export const APP_VERSION='0.6.9';
-export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-07',changes:[
+export const APP_VERSION='0.6.10';
+export const RELEASE_NOTES=[{version:APP_VERSION,date:'2026-11-08',changes:[
+ 'Les cartes des skaters montrent le personnage en pied, avec le nom, la spécialité et les jetons superposés sur un fond translucide.',
+ 'Le texte de spécialité et les réserves partagent une mise en page fluide : plus de description coupée ou recouverte par les jetons.',
+ 'Les exports des six skaters, en Base et Avancé, utilisent la même présentation. Les règles et sauvegardes sont conservées.'
+]},{version:'0.6.9',date:'2026-11-07',changes:[
  'Skater à gauche, module à droite et repère TOI pour identifier ta table.',
  'Tour actif en rouge contrasté avec un libellé visible dans la barre des joueurs.',
  'Nosegrind : exactement 2 valeurs d’écart. Icônes ajoutées dans les textes des cartes et contours superflus retirés.'

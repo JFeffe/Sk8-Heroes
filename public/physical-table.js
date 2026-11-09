@@ -24,7 +24,7 @@ export function skaterMat(player,controls=null){
  const g=player.game,skater=getSkater(player.skaterId);
  const stock=controls??`<div class="mat-token-slots">${['adjust','reroll','freeze'].map(t=>`<div>${tokenStack(t,g.bank[t]||0,{stock:true,limit:bonusLimit(g,t)})}<small>${{adjust:'±1',reroll:'Relance',freeze:'Gel'}[t]}</small></div>`).join('')}</div>`;
  const power=g.mode==='advanced'?SPECIALTIES[player.skaterId]:null;
- return `<section class="skater-mat poker-card ${power?'advanced-skater':''}" style="--rider:${skater?.color||player.color}" aria-label="Carte skater de ${esc(g.name)}"><img class="skater-portrait" src="${skater.image}" alt="${esc(skater.name)}" draggable="false"><h2>${esc(skater.name)}</h2>${power?`<div class="skater-specialty"><strong>${specialtyIcon(player.skaterId)}${esc(power.name)}</strong><p>${cardText(power.short||power.text)}</p><small>${power.passive?'Passif · toute la partie':'1 fois par module · 2 essais'}</small></div>`:''}<div class="skater-bonus-area">${stock}</div></section>`;
+ return `<section class="skater-mat poker-card ${power?'advanced-skater':''}" style="--rider:${skater?.color||player.color}" aria-label="Carte skater de ${esc(g.name)}"><img class="skater-portrait" src="${skater.image}" alt="${esc(skater.name)}" draggable="false"><h2>${esc(skater.name)}</h2><div class="skater-overlay">${power?`<div class="skater-specialty"><strong>${specialtyIcon(player.skaterId)}${esc(power.name)}</strong><p>${cardText(power.short||power.text)}</p><small>${power.passive?'Passif · toute la partie':'1 fois par module · 2 essais'}</small></div>`:''}<div class="skater-bonus-area">${stock}</div></div></section>`;
 }
 export function trophyStock(player){
  const count=player.game.pv||0;
